@@ -18,7 +18,7 @@ const AutoZastepczeZOC = () => {
         "Pełne ubezpieczenie",
         "Podstawienie w ciągu 24h"
       ],
-      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/76305d0f-89ec-4769-aaba-307d63ecc85b.png"
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -30,7 +30,7 @@ const AutoZastepczeZOC = () => {
         "Flota zastępcza",
         "Długoterminowy wynajem"
       ],
-      image: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/ed7a47ae-36e0-465d-ac4d-f9b660d03ffc.png"
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -42,7 +42,7 @@ const AutoZastepczeZOC = () => {
         "Szybka procedura odbioru",
         "Wsparcie telefoniczne"
       ],
-      image: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/93ced69c-ab42-4978-ae9c-74d304614342.png"
     },
     {
       icon: <CreditCard className="w-8 h-8" />,
@@ -54,7 +54,7 @@ const AutoZastepczeZOC = () => {
         "Brak zaliczek",
         "Transparentne warunki"
       ],
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/c3fc47fd-bd5c-47cc-8f97-eee71fe44429.png"
     }
   ];
 
@@ -112,7 +112,7 @@ const AutoZastepczeZOC = () => {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=600&q=80"
+                src="/lovable-uploads/76305d0f-89ec-4769-aaba-307d63ecc85b.png"
                 alt="Auto zastępcze - samochód na czas naprawy"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />

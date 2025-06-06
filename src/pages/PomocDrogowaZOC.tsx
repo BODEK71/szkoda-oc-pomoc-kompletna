@@ -18,7 +18,7 @@ const PomocDrogowaZOC = () => {
         "Rozliczenie z OC sprawcy",
         "Bez kosztów dla poszkodowanego"
       ],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/250f3df5-0af2-4c94-b521-bf9d59babee1.png"
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -30,7 +30,7 @@ const PomocDrogowaZOC = () => {
         "Średni czas dojazdu: 30 min",
         "Profesjonalna obsługa"
       ],
-      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/ed7a47ae-36e0-465d-ac4d-f9b660d03ffc.png"
     },
     {
       icon: <MapPin className="w-8 h-8" />,
@@ -42,7 +42,7 @@ const PomocDrogowaZOC = () => {
         "Oczyszczenie drogi",
         "Współpraca z policją"
       ],
-      image: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/0e823a63-eccb-449c-849f-922c9794e9aa.png"
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -54,7 +54,7 @@ const PomocDrogowaZOC = () => {
         "Holowanie motocykli",
         "Transport na długie dystanse"
       ],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/c3fc47fd-bd5c-47cc-8f97-eee71fe44429.png"
     }
   ];
 
@@ -122,7 +122,7 @@ const PomocDrogowaZOC = () => {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                src="/lovable-uploads/250f3df5-0af2-4c94-b521-bf9d59babee1.png"
                 alt="Pomoc drogowa - holowanie pojazdu"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />

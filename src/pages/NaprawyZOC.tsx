@@ -18,7 +18,7 @@ const NaprawyZOC = () => {
         "Gwarancja na wykonane naprawy", 
         "Możliwość dopłaty do wyższej jakości"
       ],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/98c1a9a6-892d-403f-a83e-d61e11ade53e.png"
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -30,7 +30,7 @@ const NaprawyZOC = () => {
         "Lakierowanie w technologii wodnej",
         "Dobór koloru komputerowy"
       ],
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/5679ec86-072c-4128-b1f8-0dec36dd67a9.png"
     },
     {
       icon: <Settings className="w-8 h-8" />,
@@ -42,7 +42,7 @@ const NaprawyZOC = () => {
         "Układy hamulcowe",
         "Mechanika silnika"
       ],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/a244758c-a742-4eab-a4e7-125d3d6649fd.png"
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -54,7 +54,7 @@ const NaprawyZOC = () => {
         "Spawanie aluminium",
         "Rekonstrukcja elementów"
       ],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/71edeeac-71be-4e75-ab8f-996c0158b06e.png"
     }
   ];
 
@@ -112,7 +112,7 @@ const NaprawyZOC = () => {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+                src="/lovable-uploads/98c1a9a6-892d-403f-a83e-d61e11ade53e.png"
                 alt="Naprawy powypadkowe - warsztat samochodowy"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
