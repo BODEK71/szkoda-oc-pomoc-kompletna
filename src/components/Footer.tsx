@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Car, Wrench, CreditCard, Truck } from "lucide-react";
 
@@ -10,11 +11,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">OC</span>
+                <span className="text-white font-bold text-xl">AR</span>
               </div>
               <div>
-                <span className="text-xl font-bold">AutoSzkoda</span>
-                <p className="text-xs text-gray-400">Obsługa szkód z OC sprawcy</p>
+                <span className="text-xl font-bold">Auto-Ram</span>
+                <p className="text-xs text-gray-400">Grodzisk Wielkopolski</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -28,11 +29,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>info@autoszkoda.pl</span>
+                <span>info@auto-ram.pl</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <MapPin className="w-4 h-4 text-blue-400" />
-                <span>ul. Przykładowa 123, Warszawa</span>
+                <span>Grodzisk Wielkopolski</span>
               </div>
             </div>
           </div>
@@ -92,7 +93,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400">
-              © 2024 AutoSzkoda. Wszystkie prawa zastrzeżone.
+              © 2024 Auto-Ram. Wszystkie prawa zastrzeżone.
             </div>
             <div className="flex space-x-6 text-sm">
               <Link to="/polityka-prywatnosci" className="text-gray-400 hover:text-white transition-colors">
@@ -119,7 +120,7 @@ const Footer = () => {
               </span>
               <span className="flex items-center space-x-1">
                 <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                <span>Specjalizacja w OC sprawcy</span>
+                <span>Grodzisk Wielkopolski</span>
               </span>
             </div>
           </div>

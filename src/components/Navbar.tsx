@@ -23,11 +23,11 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-xl">OC</span>
+              <span className="text-white font-bold text-xl">AR</span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-2xl font-bold text-autoram-text">AutoSzkoda</span>
-              <p className="text-xs text-autoram-gold">Obsługa szkód z OC sprawcy</p>
+              <span className="text-2xl font-bold text-autoram-text">Auto-Ram</span>
+              <p className="text-xs text-autoram-gold">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
             </div>
           </Link>
 
