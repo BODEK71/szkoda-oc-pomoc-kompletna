@@ -11,6 +11,12 @@ import NaprawyZOC from "./pages/NaprawyZOC";
 import AutoZastepczeZOC from "./pages/AutoZastepczeZOC";
 import PomocDrogowaZOC from "./pages/PomocDrogowaZOC";
 
+// Location-specific pages
+import ObslugaSzkodyZOCWolsztyn from "./pages/ObslugaSzkodyZOCWolsztyn";
+import ObslugaSzkodyZOCPoznan from "./pages/ObslugaSzkodyZOCPoznan";
+import AutoZastepczeZOCPoznan from "./pages/AutoZastepczeZOCPoznan";
+import HolowanieZOCGlogów from "./pages/HolowanieZOCGlogów";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,6 +31,13 @@ const App = () => (
           <Route path="/naprawy-z-oc" element={<NaprawyZOC />} />
           <Route path="/auto-zastepcze-z-oc" element={<AutoZastepczeZOC />} />
           <Route path="/pomoc-drogowa-z-oc" element={<PomocDrogowaZOC />} />
+          
+          {/* Location-specific routes */}
+          <Route path="/obsługa-szkody-z-oc-wolsztyn" element={<ObslugaSzkodyZOCWolsztyn />} />
+          <Route path="/obsługa-szkody-z-oc-poznan" element={<ObslugaSzkodyZOCPoznan />} />
+          <Route path="/auto-zastepcze-z-oc-poznan" element={<AutoZastepczeZOCPoznan />} />
+          <Route path="/holowanie-z-oc-glogów" element={<HolowanieZOCGlogów />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

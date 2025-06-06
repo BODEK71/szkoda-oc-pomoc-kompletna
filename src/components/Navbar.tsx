@@ -16,6 +16,13 @@ const Navbar = () => {
     { name: "Kontakt", href: "/kontakt" },
   ];
 
+  const locationItems = [
+    { name: "Obsługa OC Wolsztyn", href: "/obsługa-szkody-z-oc-wolsztyn" },
+    { name: "Obsługa OC Poznań", href: "/obsługa-szkody-z-oc-poznan" },
+    { name: "Auto zastępcze Poznań", href: "/auto-zastepcze-z-oc-poznan" },
+    { name: "Holowanie Głogów", href: "/holowanie-z-oc-glogów" },
+  ];
+
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,6 +90,21 @@ const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
+                
+                <div className="pt-4 border-t border-autoram-red">
+                  <p className="text-sm font-semibold text-autoram-text mb-2">Miasta:</p>
+                  {locationItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="block px-3 py-1 text-xs text-autoram-text-muted hover:text-autoram-red"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                
                 <div className="pt-4 border-t border-autoram-red">
                   <p className="text-sm font-semibold text-autoram-text">Telefon 24/7</p>
                   <p className="text-lg font-bold text-autoram-gold">123-456-789</p>

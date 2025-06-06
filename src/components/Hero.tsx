@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <Badge className="bg-autoram-gold text-black hover:bg-autoram-gold-dark font-bold">
-                ⭐ SPECJALIZACJA: Obsługa szkód z OC sprawcy
+                ⭐ OBSŁUGA SZKODY Z OC SPRAWCY - TWÓJ PARTNER PO WYPADKU
               </Badge>
               
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
@@ -22,6 +22,13 @@ const Hero = () => {
                 <br />
                 <span className="text-autoram-text">z OC sprawcy</span>
               </h1>
+              
+              <div className="bg-autoram-white p-4 rounded-lg border border-autoram-gold/30 shadow-sm">
+                <p className="text-sm font-semibold text-autoram-text mb-2">Działamy w:</p>
+                <p className="text-sm text-autoram-text-muted">
+                  Wolsztyn | Poznań | Zielona Góra | Nowy Tomyśl | Sława | Leszno | Głogów | Kościan | Szamotuły | Międzyrzecz
+                </p>
+              </div>
               
               <p className="text-xl text-autoram-text-muted leading-relaxed">
                 Kompleksowa pomoc poszkodowanym w komunikacji. 
@@ -35,7 +42,9 @@ const Hero = () => {
                 "Bezgotówkowa naprawa z OC sprawcy",
                 "Auto zastępcze bez limitu kilometrów",
                 "Bezpośrednia likwidacja szkód (BLS)",
-                "Holowanie i transport z OC sprawcy"
+                "Holowanie i transport z OC sprawcy",
+                "Kompleksowa pomoc poszkodowanym",
+                "Wycena szkody przez rzeczoznawcę"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3 bg-autoram-white p-3 rounded-lg border border-autoram-red/20 shadow-sm">
                   <CheckCircle className="w-5 h-5 text-autoram-gold-dark flex-shrink-0" />
