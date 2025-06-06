@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-autoram-darker via-autoram-dark to-autoram-darker py-24">
-      <div className="absolute inset-0 bg-gradient-to-r from-autoram-red/5 to-autoram-gold/5"></div>
+    <section className="relative bg-gradient-to-br from-autoram-light via-autoram-white to-autoram-gray py-24">
+      <div className="absolute inset-0 bg-gradient-to-r from-autoram-red-light/20 to-autoram-gold-light/20"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -20,12 +20,12 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-autoram-red">Obsługa szkody</span>
                 <br />
-                <span className="text-white">z OC sprawcy</span>
+                <span className="text-autoram-text">z OC sprawcy</span>
               </h1>
               
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl text-autoram-text-muted leading-relaxed">
                 Kompleksowa pomoc poszkodowanym w komunikacji. 
-                <span className="text-autoram-gold font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> - wszystko z OC sprawcy.
+                <span className="text-autoram-gold-dark font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> - wszystko z OC sprawcy.
               </p>
             </div>
 
@@ -37,9 +37,9 @@ const Hero = () => {
                 "Bezpośrednia likwidacja szkód (BLS)",
                 "Holowanie i transport z OC sprawcy"
               ].map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-autoram-dark/50 p-3 rounded-lg border border-autoram-red/20">
-                  <CheckCircle className="w-5 h-5 text-autoram-gold flex-shrink-0" />
-                  <span className="text-gray-200 font-medium">{benefit}</span>
+                <div key={index} className="flex items-center space-x-3 bg-autoram-white p-3 rounded-lg border border-autoram-red/20 shadow-sm">
+                  <CheckCircle className="w-5 h-5 text-autoram-gold-dark flex-shrink-0" />
+                  <span className="text-autoram-text font-medium">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -51,7 +51,7 @@ const Hero = () => {
                 Zgłoś szkodę: 123-456-789
               </Button>
               <Link to="/obsługa-szkody-z-oc">
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full sm:w-auto border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full sm:w-auto border-autoram-gold text-autoram-gold-dark hover:bg-autoram-gold hover:text-black">
                   Dowiedz się więcej
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -63,15 +63,15 @@ const Hero = () => {
               <div className="flex items-center space-x-8 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-autoram-gold rounded-full animate-pulse"></div>
-                  <span className="text-gray-300">Dostępni 24/7</span>
+                  <span className="text-autoram-text-muted">Dostępni 24/7</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-autoram-red rounded-full animate-pulse"></div>
-                  <span className="text-gray-300">Bezpłatna wycena</span>
+                  <span className="text-autoram-text-muted">Bezpłatna wycena</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-gray-300">Szybka realizacja</span>
+                  <span className="text-autoram-text-muted">Szybka realizacja</span>
                 </div>
               </div>
             </div>
@@ -85,21 +85,21 @@ const Hero = () => {
                 alt="Obsługa szkód powypadkowych - laptop z dokumentacją"
                 className="w-full h-[500px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-autoram-dark/80 via-transparent to-autoram-red/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-autoram-text/60 via-transparent to-autoram-red/20"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-lg font-semibold">Digitalna obsługa szkód</p>
-                <p className="text-sm text-autoram-gold">Nowoczesne podejście do likwidacji</p>
+                <p className="text-sm text-autoram-gold-light">Nowoczesne podejście do likwidacji</p>
               </div>
             </div>
             
             {/* Floating Cards */}
-            <div className="absolute -top-4 -right-4 bg-autoram-dark border border-autoram-gold rounded-lg shadow-xl p-4">
-              <p className="text-sm font-semibold text-white">Czas obsługi</p>
+            <div className="absolute -top-4 -right-4 bg-autoram-white border border-autoram-gold rounded-lg shadow-xl p-4">
+              <p className="text-sm font-semibold text-autoram-text">Czas obsługi</p>
               <p className="text-2xl font-bold text-autoram-gold">24h</p>
             </div>
             
-            <div className="absolute -bottom-4 -left-4 bg-autoram-dark border border-autoram-red rounded-lg shadow-xl p-4">
-              <p className="text-sm font-semibold text-white">Zadowoleni klienci</p>
+            <div className="absolute -bottom-4 -left-4 bg-autoram-white border border-autoram-red rounded-lg shadow-xl p-4">
+              <p className="text-sm font-semibold text-autoram-text">Zadowoleni klienci</p>
               <p className="text-2xl font-bold text-autoram-red">98%</p>
             </div>
           </div>

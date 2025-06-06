@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-autoram-dark shadow-2xl border-b-2 border-autoram-red sticky top-0 z-50">
+    <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           {/* Logo */}
@@ -26,7 +26,7 @@ const Navbar = () => {
               <span className="text-white font-bold text-xl">OC</span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-2xl font-bold text-white">AutoSzkoda</span>
+              <span className="text-2xl font-bold text-autoram-text">AutoSzkoda</span>
               <p className="text-xs text-autoram-gold">Obsługa szkód z OC sprawcy</p>
             </div>
           </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 className={`px-4 py-3 rounded-md text-sm font-medium transition-all duration-300 ${
                   item.highlight
                     ? "bg-autoram-red text-white hover:bg-autoram-red-dark shadow-lg"
-                    : "text-gray-300 hover:text-autoram-gold hover:bg-autoram-darker"
+                    : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                 }`}
               >
                 {item.name}
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-autoram-gold">
+            <div className="flex items-center space-x-2 text-sm text-autoram-gold-dark">
               <Phone className="w-4 h-4" />
               <span className="font-semibold">24/7: 123-456-789</span>
             </div>
@@ -63,11 +63,11 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="md:hidden text-white hover:bg-autoram-red">
+              <Button variant="ghost" size="sm" className="md:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-autoram-dark border-autoram-red">
+            <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
               <div className="flex flex-col space-y-4 mt-8">
                 {navItems.map((item) => (
                   <Link
@@ -76,7 +76,7 @@ const Navbar = () => {
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       item.highlight
                         ? "bg-autoram-red text-white"
-                        : "text-gray-300 hover:text-autoram-gold"
+                        : "text-autoram-text hover:text-autoram-red"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -84,7 +84,7 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <div className="pt-4 border-t border-autoram-red">
-                  <p className="text-sm font-semibold text-white">Telefon 24/7</p>
+                  <p className="text-sm font-semibold text-autoram-text">Telefon 24/7</p>
                   <p className="text-lg font-bold text-autoram-gold">123-456-789</p>
                 </div>
               </div>
