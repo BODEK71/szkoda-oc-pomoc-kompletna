@@ -18,7 +18,7 @@ const ServicesOverview = () => {
         "Zgłaszanie szkód",
         "Odszkodowania z OC sprawcy"
       ],
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/93ced69c-ab42-4978-ae9c-74d304614342.png",
       href: "/obsługa-szkody-z-oc",
       highlight: true
     },
@@ -33,7 +33,7 @@ const ServicesOverview = () => {
         "Mechanika powypadkowa",
         "Usługi specjalistyczne"
       ],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/98c1a9a6-892d-403f-a83e-d61e11ade53e.png",
       href: "/naprawy-z-oc"
     },
     {
@@ -47,7 +47,7 @@ const ServicesOverview = () => {
         "Bez limitu kilometrów",
         "Dla firm i osób prywatnych"
       ],
-      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/76305d0f-89ec-4769-aaba-307d63ecc85b.png",
       href: "/auto-zastepcze-z-oc"
     },
     {
@@ -61,7 +61,7 @@ const ServicesOverview = () => {
         "Usługi lawetą",
         "Usunięcie z miejsca wypadku"
       ],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/250f3df5-0af2-4c94-b521-bf9d59babee1.png",
       href: "/pomoc-drogowa-z-oc"
     }
   ];

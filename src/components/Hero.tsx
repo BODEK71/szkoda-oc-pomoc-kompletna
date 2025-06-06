@@ -81,14 +81,14 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-autoram-red/30">
               <img
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
-                alt="Obsługa szkód powypadkowych - laptop z dokumentacją"
+                src="/lovable-uploads/ed7a47ae-36e0-465d-ac4d-f9b660d03ffc.png"
+                alt="Obsługa szkód powypadkowych - uszkodzony pojazd"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-autoram-text/60 via-transparent to-autoram-red/20"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <p className="text-lg font-semibold">Digitalna obsługa szkód</p>
-                <p className="text-sm text-autoram-gold-light">Nowoczesne podejście do likwidacji</p>
+                <p className="text-lg font-semibold">Profesjonalna obsługa szkód</p>
+                <p className="text-sm text-autoram-gold-light">Kompleksowe rozwiązania powypadkowe</p>
               </div>
             </div>
             

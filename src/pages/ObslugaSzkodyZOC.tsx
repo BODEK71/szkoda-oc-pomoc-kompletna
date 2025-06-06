@@ -19,7 +19,7 @@ const ObslugaSzkodyZOC = () => {
         "Reprezentacja Twoich interesów",
         "Monitoring postępu sprawy"
       ],
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/c3fc47fd-bd5c-47cc-8f97-eee71fe44429.png"
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -31,7 +31,7 @@ const ObslugaSzkodyZOC = () => {
         "Eliminacja dodatkowych formalności",
         "Przyspieszony proces naprawy"
       ],
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/0e823a63-eccb-449c-849f-922c9794e9aa.png"
     },
     {
       icon: <Calculator className="w-8 h-8" />,
@@ -43,7 +43,7 @@ const ObslugaSzkodyZOC = () => {
         "Ocena ukrytych uszkodzeń",
         "Raport fotograficzny"
       ],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/a244758c-a742-4eab-a4e7-125d3d6649fd.png"
     },
     {
       icon: <CreditCard className="w-8 h-8" />,
@@ -55,7 +55,7 @@ const ObslugaSzkodyZOC = () => {
         "Rekompensata za holowanie",
         "Odszkodowanie za utracone korzyści"
       ],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/71edeeac-71be-4e75-ab8f-996c0158b06e.png"
     }
   ];
 
@@ -103,22 +103,22 @@ const ObslugaSzkodyZOC = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
+      <section className="relative bg-gradient-to-br from-autoram-light via-autoram-white to-autoram-gray py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-blue-100 text-blue-800">
+                <Badge className="bg-autoram-red text-white font-bold">
                   ⭐ GŁÓWNA SPECJALIZACJA
                 </Badge>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  <span className="text-blue-600">Obsługa szkody</span>
+                <h1 className="text-4xl lg:text-5xl font-bold text-autoram-text leading-tight">
+                  <span className="text-autoram-red">Obsługa szkody</span>
                   <br />
-                  <span className="text-gray-900">z OC sprawcy</span>
+                  <span className="text-autoram-text">z OC sprawcy</span>
                 </h1>
                 
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-autoram-text-muted leading-relaxed">
                   Kompleksowa obsługa szkód komunikacyjnych od momentu wypadku do naprawy pojazdu. 
                   Zajmujemy się wszystkim, abyś mógł spokojnie wrócić na drogę.
                 </p>
@@ -132,18 +132,18 @@ const ObslugaSzkodyZOC = () => {
                   "Reprezentacja wobec ubezpieczyciela"
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium">{benefit}</span>
+                    <CheckCircle className="w-5 h-5 text-autoram-gold flex-shrink-0" />
+                    <span className="text-autoram-text font-medium">{benefit}</span>
                   </div>
                 ))}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+                <Button size="lg" className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg px-8 py-4">
                   <Phone className="w-5 h-5 mr-2" />
                   Zgłoś szkodę: 123-456-789
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-autoram-gold text-autoram-gold-dark hover:bg-autoram-gold hover:text-black">
                   Bezpłatna wycena
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -152,14 +152,14 @@ const ObslugaSzkodyZOC = () => {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80"
-                alt="Obsługa szkód powypadkowych - profesjonalna dokumentacja"
+                src="/lovable-uploads/5679ec86-072c-4128-b1f8-0dec36dd67a9.png"
+                alt="Obsługa szkód powypadkowych - warsztat samochodowy"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
-                <p className="text-sm font-semibold text-gray-900">Średni czas obsługi</p>
-                <p className="text-3xl font-bold text-blue-600">14 dni</p>
-                <p className="text-xs text-gray-600">Od zgłoszenia do naprawy</p>
+              <div className="absolute -bottom-6 -left-6 bg-autoram-white rounded-lg shadow-lg p-6 border-l-4 border-autoram-red">
+                <p className="text-sm font-semibold text-autoram-text">Średni czas obsługi</p>
+                <p className="text-3xl font-bold text-autoram-red">14 dni</p>
+                <p className="text-xs text-autoram-text-muted">Od zgłoszenia do naprawy</p>
               </div>
             </div>
           </div>
@@ -167,20 +167,20 @@ const ObslugaSzkodyZOC = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-autoram-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-autoram-text mb-4">
               Zakres naszych usług
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-autoram-text-muted max-w-3xl mx-auto">
               Oferujemy kompleksową obsługę szkód z OC sprawcy - od zgłoszenia do naprawy pojazdu
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-autoram-white">
                 <div className="relative">
                   <img
                     src={service.image}
@@ -188,17 +188,17 @@ const ObslugaSzkodyZOC = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute bottom-4 right-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                    <div className="w-12 h-12 bg-autoram-red rounded-full flex items-center justify-center text-white">
                       {service.icon}
                     </div>
                   </div>
                 </div>
                 
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-bold text-gray-900">
+                  <CardTitle className="text-xl font-bold text-autoram-text">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-600">
+                  <CardDescription className="text-autoram-text-muted">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
@@ -207,8 +207,8 @@ const ObslugaSzkodyZOC = () => {
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-3">
-                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                        <span className="text-sm text-gray-700">{feature}</span>
+                        <CheckCircle className="w-4 h-4 text-autoram-gold flex-shrink-0" />
+                        <span className="text-sm text-autoram-text-muted">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -220,13 +220,13 @@ const ObslugaSzkodyZOC = () => {
       </section>
 
       {/* Process Timeline */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-autoram-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-autoram-text mb-4">
               Jak przebiega obsługa szkody?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-autoram-text-muted max-w-3xl mx-auto">
               Transparentny proces w 6 krokach - na każdym etapie informujemy o postępach
             </p>
           </div>
@@ -235,18 +235,18 @@ const ObslugaSzkodyZOC = () => {
             {processSteps.map((step, index) => (
               <div key={index} className="flex items-start space-x-6 group">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-autoram-red text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform duration-300">
                     {step.step}
                   </div>
                 </div>
-                <div className="flex-1 bg-white rounded-lg shadow-md p-6 group-hover:shadow-lg transition-shadow duration-300">
+                <div className="flex-1 bg-autoram-white rounded-lg shadow-md p-6 group-hover:shadow-lg transition-shadow duration-300">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
-                    <Badge variant="outline" className="text-blue-600 border-blue-600">
+                    <h3 className="text-xl font-bold text-autoram-text">{step.title}</h3>
+                    <Badge variant="outline" className="text-autoram-gold border-autoram-gold">
                       {step.time}
                     </Badge>
                   </div>
-                  <p className="text-gray-600">{step.description}</p>
+                  <p className="text-autoram-text-muted">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -255,21 +255,21 @@ const ObslugaSzkodyZOC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-autoram-red to-autoram-red-dark text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Gotowy na szybką obsługę szkody?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-autoram-light">
             Zadzwoń już teraz lub skorzystaj z formularza online. 
             Rozpoczniemy obsługę Twojej szkody w ciągu 24 godzin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
+            <Button size="lg" className="bg-autoram-white text-autoram-red hover:bg-autoram-gray text-lg px-8 py-4">
               <Phone className="w-5 h-5 mr-2" />
               Zadzwoń: 123-456-789
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+            <Button variant="outline" size="lg" className="border-autoram-white text-white hover:bg-white/10 text-lg px-8 py-4">
               <FileText className="w-5 h-5 mr-2" />
               Zgłoś szkodę online
             </Button>
