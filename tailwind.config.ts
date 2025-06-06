@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Autoram-inspired color scheme
+				autoram: {
+					dark: '#1a1a1a',
+					darker: '#0f0f0f',
+					red: '#dc2626',
+					'red-dark': '#b91c1c',
+					gold: '#fbbf24',
+					'gold-dark': '#f59e0b',
+					gray: '#374151',
+					'gray-light': '#6b7280'
 				}
 			},
 			borderRadius: {

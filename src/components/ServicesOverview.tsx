@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -67,19 +66,19 @@ const ServicesOverview = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-autoram-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge className="bg-blue-100 text-blue-800 mb-4">
+          <Badge className="bg-autoram-red text-white mb-4 font-bold">
             Nasze usługi
           </Badge>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Kompleksowa obsługa po wypadku
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Specjalizujemy się w obsłudze szkód z OC sprawcy. 
-            Oferujemy pełen zakres usług - od zgłoszenia szkody po naprawę pojazdu.
+            <span className="text-autoram-gold"> Oferujemy pełen zakres usług</span> - od zgłoszenia szkody po naprawę pojazdu.
           </p>
         </div>
 
@@ -88,8 +87,10 @@ const ServicesOverview = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`group hover:shadow-xl transition-all duration-300 overflow-hidden ${
-                service.highlight ? 'ring-2 ring-blue-500 bg-gradient-to-br from-blue-50 to-white' : 'hover:shadow-lg'
+              className={`group hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 ${
+                service.highlight 
+                  ? 'border-autoram-red bg-gradient-to-br from-autoram-darker to-autoram-dark shadow-2xl shadow-autoram-red/20' 
+                  : 'border-autoram-gray bg-autoram-darker hover:border-autoram-gold'
               }`}
             >
               <div className="relative">
@@ -98,52 +99,55 @@ const ServicesOverview = () => {
                   alt={service.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-autoram-darker/80 to-transparent"></div>
                 {service.highlight && (
-                  <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
+                  <Badge className="absolute top-4 left-4 bg-autoram-red text-white font-bold">
                     ⭐ SPECJALIZACJA
                   </Badge>
                 )}
                 <div className="absolute bottom-4 right-4">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white ${
-                    service.highlight ? 'bg-blue-600' : 'bg-gray-800'
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg ${
+                    service.highlight ? 'bg-autoram-red' : 'bg-autoram-gold'
                   }`}>
                     {service.icon}
                   </div>
                 </div>
               </div>
               
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-4 bg-autoram-darker">
                 <div className="flex items-center justify-between">
                   <div>
-                    <CardTitle className="text-xl font-bold text-gray-900">
+                    <CardTitle className="text-xl font-bold text-white">
                       {service.title}
                     </CardTitle>
-                    <Badge variant="outline" className="mt-2 text-xs">
+                    <Badge variant="outline" className="mt-2 text-xs border-autoram-gold text-autoram-gold">
                       {service.subtitle}
                     </Badge>
                   </div>
                 </div>
-                <CardDescription className="text-gray-600 mt-2">
+                <CardDescription className="text-gray-300 mt-2">
                   {service.description}
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="pt-0">
+              <CardContent className="pt-0 bg-autoram-darker">
                 <div className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{feature}</span>
+                      <CheckCircle className={`w-4 h-4 flex-shrink-0 ${
+                        service.highlight ? 'text-autoram-red' : 'text-autoram-gold'
+                      }`} />
+                      <span className="text-sm text-gray-300">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <Link to={service.href}>
                   <Button 
-                    className={`w-full group ${
+                    className={`w-full group font-bold ${
                       service.highlight 
-                        ? 'bg-blue-600 hover:bg-blue-700' 
-                        : 'bg-gray-800 hover:bg-gray-900'
+                        ? 'bg-autoram-red hover:bg-autoram-red-dark text-white' 
+                        : 'bg-autoram-gold hover:bg-autoram-gold-dark text-black'
                     }`}
                   >
                     Dowiedz się więcej
@@ -157,19 +161,19 @@ const ServicesOverview = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto border-t-4 border-blue-600">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-autoram-darker rounded-2xl shadow-2xl p-8 max-w-4xl mx-auto border-2 border-autoram-red">
+            <h3 className="text-2xl font-bold text-white mb-4">
               Potrzebujesz pomocy po wypadku?
             </h3>
-            <p className="text-gray-600 mb-6">
-              Skontaktuj się z nami już teraz. Oferujemy bezpłatną konsultację i szybką wycenę szkody.
+            <p className="text-gray-300 mb-6">
+              Skontaktuj się z nami już teraz. Oferujemy <span className="text-autoram-gold font-semibold">bezpłatną konsultację</span> i szybką wycenę szkody.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button size="lg" className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold">
                 <CreditCard className="w-5 h-5 mr-2" />
                 Zgłoś szkodę online
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="border-autoram-red text-autoram-red hover:bg-autoram-red hover:text-white">
                 <Car className="w-5 h-5 mr-2" />
                 Zamów auto zastępcze
               </Button>
