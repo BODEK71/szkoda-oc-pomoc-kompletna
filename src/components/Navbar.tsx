@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: "Naprawy z OC", href: "/naprawy-z-oc" },
     { name: "Auto zastępcze", href: "/auto-zastepcze-z-oc" },
     { name: "Pomoc drogowa", href: "/pomoc-drogowa-z-oc" },
+    { name: "Blog", href: "/blog" },
     { name: "Kontakt", href: "/kontakt" },
   ];
 

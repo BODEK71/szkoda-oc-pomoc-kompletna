@@ -17,6 +17,12 @@ import ObslugaSzkodyZOCPoznan from "./pages/ObslugaSzkodyZOCPoznan";
 import AutoZastepczeZOCPoznan from "./pages/AutoZastepczeZOCPoznan";
 import HolowanieZOCGlogów from "./pages/HolowanieZOCGlogów";
 
+// Blog pages
+import Blog from "./pages/Blog";
+import BlogObslugaSzkodyPrzewodnik from "./pages/BlogObslugaSzkodyPrzewodnik";
+import BlogAutoZastepczePrawa from "./pages/BlogAutoZastepczePrawa";
+import BlogBezposredniaLikwidacja from "./pages/BlogBezposredniaLikwidacja";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -37,6 +43,12 @@ const App = () => (
           <Route path="/obsługa-szkody-z-oc-poznan" element={<ObslugaSzkodyZOCPoznan />} />
           <Route path="/auto-zastepcze-z-oc-poznan" element={<AutoZastepczeZOCPoznan />} />
           <Route path="/holowanie-z-oc-glogów" element={<HolowanieZOCGlogów />} />
+          
+          {/* Blog routes */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/obsługa-szkody-oc-przewodnik" element={<BlogObslugaSzkodyPrzewodnik />} />
+          <Route path="/blog/auto-zastepcze-oc-prawa" element={<BlogAutoZastepczePrawa />} />
+          <Route path="/blog/bezposrednia-likwidacja-szkod-bls" element={<BlogBezposredniaLikwidacja />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
