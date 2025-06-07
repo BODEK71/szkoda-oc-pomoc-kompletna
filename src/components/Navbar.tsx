@@ -27,25 +27,25 @@ const Navbar = () => {
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-18">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-lg flex items-center justify-center shadow-lg">
+          <Link to="/" className="flex items-center space-x-4">
+            <div className="w-14 h-14 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-xl">AR</span>
             </div>
             <div className="hidden sm:block">
               <span className="text-2xl font-bold text-autoram-text">Auto-Ram</span>
-              <p className="text-xs text-autoram-gold">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
+              <p className="text-xs text-autoram-gold font-medium">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-4 py-3 rounded-md text-sm font-medium transition-all duration-300 ${
+                className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                   item.highlight
                     ? "bg-autoram-red text-white hover:bg-autoram-red-dark shadow-lg"
                     : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -57,12 +57,12 @@ const Navbar = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-autoram-gold-dark">
-              <Phone className="w-4 h-4" />
+          <div className="hidden lg:flex items-center space-x-6">
+            <div className="flex items-center space-x-3 text-sm text-autoram-gold-dark">
+              <Phone className="w-5 h-5" />
               <span className="font-semibold">24/7: 123-456-789</span>
             </div>
-            <Button className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold">
+            <Button className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-semibold px-6 py-3">
               <Phone className="w-4 h-4 mr-2" />
               Zadzwoń teraz
             </Button>
@@ -76,12 +76,12 @@ const Navbar = () => {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
-              <div className="flex flex-col space-y-4 mt-8">
+              <div className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                       item.highlight
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text hover:text-autoram-red"
@@ -92,13 +92,13 @@ const Navbar = () => {
                   </Link>
                 ))}
                 
-                <div className="pt-4 border-t border-autoram-red">
-                  <p className="text-sm font-semibold text-autoram-text mb-2">Miasta:</p>
+                <div className="pt-6 border-t border-autoram-red">
+                  <p className="text-sm font-semibold text-autoram-text mb-4">Miasta:</p>
                   {locationItems.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="block px-3 py-1 text-xs text-autoram-text-muted hover:text-autoram-red"
+                      className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -106,8 +106,8 @@ const Navbar = () => {
                   ))}
                 </div>
                 
-                <div className="pt-4 border-t border-autoram-red">
-                  <p className="text-sm font-semibold text-autoram-text">Telefon 24/7</p>
+                <div className="pt-6 border-t border-autoram-red">
+                  <p className="text-sm font-semibold text-autoram-text mb-2">Telefon 24/7</p>
                   <p className="text-lg font-bold text-autoram-gold">123-456-789</p>
                 </div>
               </div>
