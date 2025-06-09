@@ -7,9 +7,15 @@ import {
   obslugaSzkodyItems,
   lokalizacjaItems,
   getAllNaprawyItems,
-  wynajemItems,
   pomocDrogowaItems,
-  poradnikItems
+  poradnikItems,
+  // Nowe elementy wynajmu
+  samochodZastepczyZOCItems,
+  wynajemBezgotowkowyItems,
+  rodzajePojazdowZastepczychItems,
+  pojazdyNaCzasNaprawyItems,
+  pojazdyPoWypadkuItems,
+  parametryWynajmuItems
 } from "./NavigationItems";
 
 interface MobileMenuProps {
@@ -68,12 +74,49 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
             </div>
 
             <div>
-              <p className="font-semibold text-autoram-text mb-2">Wynajem pojazdów</p>
-              {wynajemItems.map((item) => (
+              <p className="font-semibold text-autoram-text mb-2">Wynajem pojazdów zastępczych</p>
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚙 Samochody Zastępcze z OC:</p>
+              {samochodZastepczyZOCItems.slice(0, 3).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wynajem Bezgotówkowy:</p>
+              {wynajemBezgotowkowyItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">⏰ Na Czas Naprawy:</p>
+              {pojazdyNaCzasNaprawyItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">📋 Parametry Wynajmu:</p>
+              {parametryWynajmuItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
