@@ -2,27 +2,59 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Menu, Phone, ChevronDown } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-  const navItems = [
-    { name: "Obsługa szkody z OC", href: "/obsługa-szkody-z-oc", highlight: true },
-    { name: "Naprawy z OC", href: "/naprawy-z-oc" },
-    { name: "Auto zastępcze", href: "/auto-zastepcze-z-oc" },
-    { name: "Pomoc drogowa", href: "/pomoc-drogowa-z-oc" },
-    { name: "Blog", href: "/blog" },
-    { name: "Kontakt", href: "/kontakt" },
-  ];
+  const isActivePath = (path: string) => {
+    return location.pathname === path;
+  };
 
-  const locationItems = [
+  const obslugaSzkodyItems = [
+    { name: "Obsługa szkody z OC", href: "/obsługa-szkody-z-oc" },
     { name: "Obsługa OC Wolsztyn", href: "/obsługa-szkody-z-oc-wolsztyn" },
     { name: "Obsługa OC Poznań", href: "/obsługa-szkody-z-oc-poznan" },
-    { name: "Auto zastępcze Poznań", href: "/auto-zastepcze-z-oc-poznan" },
-    { name: "Holowanie Głogów", href: "/holowanie-z-oc-glogów" },
+    { name: "Bezpośrednia likwidacja szkód", href: "/blog/bezposrednia-likwidacja-szkod-bls" },
   ];
+
+  const naprawyItems = [
+    { name: "Naprawy z OC", href: "/naprawy-z-oc" },
+    { name: "Naprawa bezgotówkowa", href: "/naprawy-z-oc" },
+    { name: "Blacharstwo lakiernictwo", href: "/naprawy-z-oc" },
+  ];
+
+  const autoZastepczeItems = [
+    { name: "Auto zastępcze", href: "/auto-zastepcze-z-oc" },
+    { name: "Auto zastępcze Poznań", href: "/auto-zastepcze-z-oc-poznan" },
+    { name: "Wynajem aut z OC", href: "/auto-zastepcze-z-oc" },
+  ];
+
+  const pomocDrogowaItems = [
+    { name: "Pomoc drogowa", href: "/pomoc-drogowa-z-oc" },
+    { name: "Holowanie Głogów", href: "/holowanie-z-oc-glogów" },
+    { name: "Pomoc drogowa 24h", href: "/pomoc-drogowa-z-oc" },
+    { name: "Laweta", href: "/pomoc-drogowa-z-oc" },
+  ];
+
+  const blogItems = [
+    { name: "Blog", href: "/blog" },
+    { name: "Przewodnik obsługi szkód", href: "/blog/obsługa-szkody-oc-przewodnik" },
+    { name: "Auto zastępcze - prawa", href: "/blog/auto-zastepcze-oc-prawa" },
+  ];
+
+  const isActiveSection = (items: any[]) => {
+    return items.some(item => isActivePath(item.href));
+  };
 
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
@@ -40,20 +72,148 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                  item.highlight
-                    ? "bg-autoram-red text-white hover:bg-autoram-red-dark shadow-lg"
-                    : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center">
+            <NavigationMenu>
+              <NavigationMenuList className="space-x-2">
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActiveSection(obslugaSzkodyItems)
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Obsługa szkody z OC
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
+                    <div className="grid gap-3">
+                      {obslugaSzkodyItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActiveSection(naprawyItems)
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Naprawy z OC
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
+                    <div className="grid gap-3">
+                      {naprawyItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActiveSection(autoZastepczeItems)
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Auto zastępcze
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
+                    <div className="grid gap-3">
+                      {autoZastepczeItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActiveSection(pomocDrogowaItems)
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Pomoc drogowa
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
+                    <div className="grid gap-3">
+                      {pomocDrogowaItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActiveSection(blogItems)
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Blog
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
+                    <div className="grid gap-3">
+                      {blogItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <Link
+                    to="/kontakt"
+                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActivePath("/kontakt")
+                        ? "bg-autoram-red text-white"
+                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                    }`}
+                  >
+                    Kontakt
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           {/* Contact Info */}
@@ -77,33 +237,85 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
               <div className="flex flex-col space-y-6 mt-8">
-                {navItems.map((item) => (
+                {/* Mobile menu content */}
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-semibold text-autoram-text mb-2">Obsługa szkody z OC</p>
+                    {obslugaSzkodyItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-autoram-text mb-2">Naprawy z OC</p>
+                    {naprawyItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-autoram-text mb-2">Auto zastępcze</p>
+                    {autoZastepczeItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-autoram-text mb-2">Pomoc drogowa</p>
+                    {pomocDrogowaItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-autoram-text mb-2">Blog</p>
+                    {blogItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+
                   <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                      item.highlight
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text hover:text-autoram-red"
-                    }`}
+                    to="/kontakt"
+                    className="block px-4 py-2 text-sm font-medium text-autoram-text hover:text-autoram-red"
                     onClick={() => setIsOpen(false)}
                   >
-                    {item.name}
+                    Kontakt
                   </Link>
-                ))}
-                
-                <div className="pt-6 border-t border-autoram-red">
-                  <p className="text-sm font-semibold text-autoram-text mb-4">Miasta:</p>
-                  {locationItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
                 </div>
                 
                 <div className="pt-6 border-t border-autoram-red">
