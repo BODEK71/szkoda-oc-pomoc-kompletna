@@ -58,188 +58,198 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
       <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
         <div className="flex flex-col space-y-6 mt-8">
           <div className="space-y-4">
-            {/* 📋 LIKWIDACJA SZKÓD */}
+            {/* 📋 OBSŁUGA SZKÓD UBEZPIECZENIOWYCH */}
             <div>
-              <p className="font-semibold text-autoram-text mb-2">📋 LIKWIDACJA SZKÓD</p>
+              <p className="font-bold text-autoram-text mb-3 text-base">📋 OBSŁUGA SZKÓD UBEZPIECZENIOWYCH</p>
+              <p className="text-xs text-autoram-text-muted mb-3 px-2">Główna kategoria dla obsługi szkód ubezpieczeniowych</p>
               
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Likwidacja Szkód Komunikacyjnych:</p>
-              {likwidacjaSzkodKomunikacyjnychItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {/* LIKWIDACJA SZKÓD */}
+              <div className="mb-4">
+                <p className="font-semibold text-autoram-text mb-2 text-sm">📋 LIKWIDACJA SZKÓD</p>
+                
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Likwidacja Szkód Komunikacyjnych:</p>
+                {likwidacjaSzkodKomunikacyjnychItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
 
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zgłaszanie Szkód:</p>
-              {zgaszanieSzkodItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zgłaszanie Szkód:</p>
+                {zgaszanieSzkodItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
 
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Odszkodowania:</p>
-              {odszkodowaniaItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Odszkodowania:</p>
+                {odszkodowaniaItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              {/* 💰 WYCENA I KOSZTORYSY */}
+              <div className="mb-4">
+                <p className="font-semibold text-autoram-text mb-2 text-sm">💰 WYCENA I KOSZTORYSY</p>
+                <p className="text-xs text-autoram-text-muted mb-2 px-2">Usługi związane z wyceną szkód</p>
+                
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wycena Szkód Powypadkowych:</p>
+                {wycenaSzkodPowypadkowychItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              {/* 📍 OBSŁUGA SZKÓD LOKALNA */}
+              <div className="mb-4">
+                <p className="font-semibold text-autoram-text mb-2 text-sm">📍 OBSŁUGA SZKÓD LOKALNA</p>
+                <p className="text-xs text-autoram-text-muted mb-2 px-2">Usługi w konkretnych lokalizacjach</p>
+                
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wolsztyn:</p>
+                {wolsztynSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Poznań:</p>
+                {poznanSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zielona Góra:</p>
+                {zielonaGoraSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Nowy Tomyśl:</p>
+                {nowyTomyslSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Sława:</p>
+                {slawaSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Leszno:</p>
+                {lesznoSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Głogów:</p>
+                {glogowSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Kościan:</p>
+                {koscianSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Szamotuły:</p>
+                {szamotulySzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Międzyrzecz:</p>
+                {miedzyrzeczSzkodyItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            {/* 💰 WYCENA I KOSZTORYSY */}
-            <div>
-              <p className="font-semibold text-autoram-text mb-2">💰 WYCENA I KOSZTORYSY</p>
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wycena Szkód Powypadkowych:</p>
-              {wycenaSzkodPowypadkowychItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-
-            {/* 📍 OBSŁUGA SZKÓD LOKALNA */}
-            <div>
-              <p className="font-semibold text-autoram-text mb-2">📍 OBSŁUGA SZKÓD LOKALNA</p>
-              
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wolsztyn:</p>
-              {wolsztynSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Poznań:</p>
-              {poznanSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zielona Góra:</p>
-              {zielonaGoraSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Nowy Tomyśl:</p>
-              {nowyTomyslSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Sława:</p>
-              {slawaSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Leszno:</p>
-              {lesznoSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Głogów:</p>
-              {glogowSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Kościan:</p>
-              {koscianSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Szamotuły:</p>
-              {szamotulySzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Międzyrzecz:</p>
-              {miedzyrzeczSzkodyItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-
+            {/* NAPRAWY POJAZDÓW */}
             <div>
               <p className="font-semibold text-autoram-text mb-2">Naprawy pojazdów</p>
               {getAllNaprawyItems().slice(0, 3).map((item) => (
@@ -254,6 +264,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* WYNAJEM POJAZDÓW ZASTĘPCZYCH */}
             <div>
               <p className="font-semibold text-autoram-text mb-2">Wynajem pojazdów zastępczych</p>
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚙 Samochody Zastępcze z OC:</p>
@@ -281,6 +292,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* POMOC DROGOWA */}
             <div>
               <p className="font-semibold text-autoram-text mb-2">Pomoc drogowa</p>
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚛 Pomoc Drogowa 24/7:</p>
@@ -308,6 +320,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* PORADNIK */}
             <div>
               <p className="font-semibold text-autoram-text mb-2">Poradnik</p>
               {poradnikItems.map((item) => (
@@ -322,6 +335,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* KONTAKT */}
             <Link
               to="/kontakt"
               className="block px-4 py-2 text-sm font-medium text-autoram-text hover:text-autoram-red"
