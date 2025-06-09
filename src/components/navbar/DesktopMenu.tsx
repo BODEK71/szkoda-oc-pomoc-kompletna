@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import {
   // Nowe zorganizowane kategorie szkód
@@ -22,7 +21,8 @@ import {
   // Funkcje pomocnicze do agregacji elementów
   getAllNaprawyItems,
   getAllWynajemItems,
-  getAllPomocDrogowaItems
+  getAllPomocDrogowaItems,
+  getAllUslugiKompleksoweItems
 } from "./NavigationItems";
 
 // Importujemy nowe komponenty menu
@@ -31,6 +31,7 @@ import NaprawyMenu from "./menu-sections/NaprawyMenu";
 import WynajemMenu from "./menu-sections/WynajemMenu";
 import PomocDrogowaMenu from "./menu-sections/PomocDrogowaMenu";
 import PoradnikMenu from "./menu-sections/PoradnikMenu";
+import UslugiKompleksoweMenu from "./menu-sections/UslugiKompleksoweMenu";
 
 const DesktopMenu = () => {
   const location = useLocation();
@@ -72,9 +73,16 @@ const DesktopMenu = () => {
     return isActiveSection(getAllPomocDrogowaItems());
   };
 
+  const isActiveUslugiKompleksowe = () => {
+    return isActiveSection(getAllUslugiKompleksoweItems());
+  };
+
   return (
     <div className="hidden lg:flex items-center justify-center h-16">
       <div className="flex items-center space-x-1">
+        {/* Usługi kompleksowe */}
+        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} />
+
         {/* Obsługa szkód ubezpieczeniowych */}
         <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} />
 

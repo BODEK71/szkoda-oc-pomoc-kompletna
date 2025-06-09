@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
@@ -42,6 +41,14 @@ import {
   pomocDrogowaPoznanItems
 } from "./NavigationItems";
 
+import {
+  // Usługi kompleksowe
+  kompleksowaObslugaPowypadkowaItems,
+  pakietyUslugItems,
+  centrum_wolsztynItems as centrum_wolsztynKompleksItems,
+  centrum_poznanItems as centrum_poznanKompleksItems
+} from "./NavigationItems";
+
 interface MobileMenuProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
@@ -58,6 +65,58 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
       <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
         <div className="flex flex-col space-y-6 mt-8">
           <div className="space-y-4">
+            {/* 🏢 USŁUGI KOMPLEKSOWE */}
+            <div>
+              <p className="font-bold text-autoram-text mb-3 text-base">🏢 USŁUGI KOMPLEKSOWE</p>
+              <p className="text-xs text-autoram-text-muted mb-3 px-2">Kompleksowa obsługa powypadkowa</p>
+              
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Centrum Pomocy Po Wypadku:</p>
+              {kompleksowaObslugaPowypadkowaItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Pakiety Usług:</p>
+              {pakietyUslugItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Centra Lokalne (przykłady):</p>
+              {centrum_wolsztynKompleksItems.slice(0, 1).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              {centrum_poznanKompleksItems.slice(0, 1).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
             {/* 📋 OBSŁUGA SZKÓD UBEZPIECZENIOWYCH */}
             <div>
               <p className="font-bold text-autoram-text mb-3 text-base">📋 OBSŁUGA SZKÓD UBEZPIECZENIOWYCH</p>

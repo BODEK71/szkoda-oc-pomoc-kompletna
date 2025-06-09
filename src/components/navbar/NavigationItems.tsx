@@ -1,4 +1,3 @@
-
 // Re-export all navigation items from organized modules
 export { obslugaSzkodyItems, lokalizacjaItems } from './navigation/ObslugaSzkodyItems';
 
@@ -82,3 +81,19 @@ export {
 } from './navigation/PomocDrogowaItems';
 
 export { poradnikItems } from './navigation/PoradnikItems';
+
+export { 
+  kompleksowaObslugaPowypadkowaItems,
+  pakietyUslugItems,
+  centrum_wolsztynItems,
+  centrum_poznanItems,
+  centrum_zielonaGoraItems,
+  centrum_nowyTomyslItems,
+  centrum_slawaItems,
+  centrum_lesznoItems,
+  centrum_glogowItems,
+  centrum_koscianItems,
+  centrum_szamotulyItems,
+  centrum_miedzyrzeczItems,
+  getAllUslugiKompleksoweItems
+} from './navigation/UslugiKompleksoweItems';
