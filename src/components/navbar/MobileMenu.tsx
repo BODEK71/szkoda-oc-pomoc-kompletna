@@ -7,7 +7,6 @@ import {
   obslugaSzkodyItems,
   lokalizacjaItems,
   getAllNaprawyItems,
-  pomocDrogowaItems,
   poradnikItems,
   // Nowe elementy wynajmu
   samochodZastepczyZOCItems,
@@ -15,7 +14,17 @@ import {
   rodzajePojazdowZastepczychItems,
   pojazdyNaCzasNaprawyItems,
   pojazdyPoWypadkuItems,
-  parametryWynajmuItems
+  parametryWynajmuItems,
+  // Nowe elementy pomocy drogowej
+  pomocDrogowa24Items,
+  holowaniePojazdowItems,
+  uslugiLawetaItems,
+  transportStandardowyItems,
+  transportSpecjalistycznyItems,
+  holowaniePoWypadkuItems,
+  holowanieZOCItems,
+  pomocDrogowaWolsztynItems,
+  pomocDrogowaPoznanItems
 } from "./NavigationItems";
 
 interface MobileMenuProps {
@@ -126,11 +135,60 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
 
             <div>
               <p className="font-semibold text-autoram-text mb-2">Pomoc drogowa</p>
-              {pomocDrogowaItems.map((item) => (
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚛 Pomoc Drogowa 24/7:</p>
+              {pomocDrogowa24Items.slice(0, 3).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Holowanie Pojazdów:</p>
+              {holowaniePojazdowItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚗 Transport Pojazdów:</p>
+              {transportStandardowyItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">💥 Holowanie z OC:</p>
+              {holowanieZOCItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">📍 Lokalne:</p>
+              {pomocDrogowaWolsztynItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
