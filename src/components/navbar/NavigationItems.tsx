@@ -3,6 +3,28 @@
 export { obslugaSzkodyItems, lokalizacjaItems } from './navigation/ObslugaSzkodyItems';
 
 export { 
+  // Nowe zorganizowane kategorie szkód
+  likwidacjaSzkodKomunikacyjnychItems,
+  zgaszanieSzkodItems,
+  odszkodowaniaItems,
+  wycenaSzkodPowypadkowychItems,
+  // Lokalne kategorie szkód
+  wolsztynSzkodyItems,
+  poznanSzkodyItems,
+  zielonaGoraSzkodyItems,
+  nowyTomyslSzkodyItems,
+  slawaSzkodyItems,
+  lesznoSzkodyItems,
+  glogowSzkodyItems,
+  koscianSzkodyItems,
+  szamotulySzkodyItems,
+  miedzyrzeczSzkodyItems,
+  // Funkcje pomocnicze
+  getAllObslugaSzkodyItems,
+  getAllLokalneSzkodyItems
+} from './navigation/ObslugaSzkodyItems';
+
+export { 
   naprawyPowypadkoweItems,
   uslugiBlacharsKieItems,
   lakierowaniePowypadkoweItems,
