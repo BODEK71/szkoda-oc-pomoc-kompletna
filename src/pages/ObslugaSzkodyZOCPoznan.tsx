@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -65,11 +64,6 @@ const ObslugaSzkodyZOCPoznan = () => {
                 alt="Obsługa szkód z OC sprawcy Poznań"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
-                <p className="text-sm font-semibold text-gray-900">Obszar działania</p>
-                <p className="text-3xl font-bold text-green-600">Poznań</p>
-                <p className="text-xs text-gray-600">i okolice</p>
-              </div>
             </div>
           </div>
         </div>
