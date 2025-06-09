@@ -4,18 +4,33 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
-  obslugaSzkodyItems,
-  lokalizacjaItems,
+  // Nowe zorganizowane kategorie szkód
+  likwidacjaSzkodKomunikacyjnychItems,
+  zgaszanieSzkodItems,
+  odszkodowaniaItems,
+  wycenaSzkodPowypadkowychItems,
+  // Lokalne kategorie szkód
+  wolsztynSzkodyItems,
+  poznanSzkodyItems,
+  zielonaGoraSzkodyItems,
+  nowyTomyslSzkodyItems,
+  slawaSzkodyItems,
+  lesznoSzkodyItems,
+  glogowSzkodyItems,
+  koscianSzkodyItems,
+  szamotulySzkodyItems,
+  miedzyrzeczSzkodyItems,
+  // Pozostałe kategorie
   getAllNaprawyItems,
   poradnikItems,
-  // Nowe elementy wynajmu
+  // Elementy wynajmu
   samochodZastepczyZOCItems,
   wynajemBezgotowkowyItems,
   rodzajePojazdowZastepczychItems,
   pojazdyNaCzasNaprawyItems,
   pojazdyPoWypadkuItems,
   parametryWynajmuItems,
-  // Nowe elementy pomocy drogowej
+  // Elementy pomocy drogowej
   pomocDrogowa24Items,
   holowaniePojazdowItems,
   uslugiLawetaItems,
@@ -44,8 +59,48 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
         <div className="flex flex-col space-y-6 mt-8">
           <div className="space-y-4">
             <div>
-              <p className="font-semibold text-autoram-text mb-2">Obsługa szkód ubezpieczeniowych</p>
-              {obslugaSzkodyItems.map((item) => (
+              <p className="font-semibold text-autoram-text mb-2">📋 Likwidacja Szkód</p>
+              
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Likwidacja Szkód Komunikacyjnych:</p>
+              {likwidacjaSzkodKomunikacyjnychItems.slice(0, 3).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zgłaszanie Szkód:</p>
+              {zgaszanieSzkodItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Odszkodowania:</p>
+              {odszkodowaniaItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            <div>
+              <p className="font-semibold text-autoram-text mb-2">💰 Wycena i Kosztorysy</p>
+              {wycenaSzkodPowypadkowychItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -55,8 +110,47 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
                   {item.name}
                 </Link>
               ))}
-              <p className="font-medium text-autoram-text mt-3 mb-2 px-4">Lokalizacja:</p>
-              {lokalizacjaItems.map((item) => (
+            </div>
+
+            <div>
+              <p className="font-semibold text-autoram-text mb-2">📍 Obsługa Szkód Lokalna</p>
+              
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wolsztyn:</p>
+              {wolsztynSzkodyItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Poznań:</p>
+              {poznanSzkodyItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Inne lokalizacje:</p>
+              {zielonaGoraSzkodyItems.slice(0, 1).map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              {nowyTomyslSzkodyItems.slice(0, 1).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -70,7 +164,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
 
             <div>
               <p className="font-semibold text-autoram-text mb-2">Naprawy pojazdów</p>
-              {getAllNaprawyItems().slice(0, 5).map((item) => (
+              {getAllNaprawyItems().slice(0, 3).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -85,7 +179,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
             <div>
               <p className="font-semibold text-autoram-text mb-2">Wynajem pojazdów zastępczych</p>
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚙 Samochody Zastępcze z OC:</p>
-              {samochodZastepczyZOCItems.slice(0, 3).map((item) => (
+              {samochodZastepczyZOCItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -97,31 +191,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
               
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wynajem Bezgotówkowy:</p>
-              {wynajemBezgotowkowyItems.slice(0, 2).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">⏰ Na Czas Naprawy:</p>
-              {pojazdyNaCzasNaprawyItems.slice(0, 2).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">📋 Parametry Wynajmu:</p>
-              {parametryWynajmuItems.slice(0, 2).map((item) => (
+              {wynajemBezgotowkowyItems.slice(0, 1).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -136,7 +206,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
             <div>
               <p className="font-semibold text-autoram-text mb-2">Pomoc drogowa</p>
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚛 Pomoc Drogowa 24/7:</p>
-              {pomocDrogowa24Items.slice(0, 3).map((item) => (
+              {pomocDrogowa24Items.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -147,44 +217,8 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
                 </Link>
               ))}
 
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Holowanie Pojazdów:</p>
-              {holowaniePojazdowItems.slice(0, 2).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">🚗 Transport Pojazdów:</p>
-              {transportStandardowyItems.slice(0, 2).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">💥 Holowanie z OC:</p>
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Holowanie z OC:</p>
               {holowanieZOCItems.slice(0, 2).map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">📍 Lokalne:</p>
-              {pomocDrogowaWolsztynItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
