@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -50,10 +49,90 @@ const Navbar = () => {
     { name: "Międzyrzecz", href: "/obsługa-szkody-miedzyrzecz" },
   ];
 
-  const naprawyItems = [
+  const naprawyPowypadkoweItems = [
+    { name: "Naprawy Bezgotówkowe z OC", href: "/naprawy-bezgotowkowe-z-oc" },
     { name: "Naprawy powypadkowe", href: "/naprawy-z-oc" },
-    { name: "Naprawa bezgotówkowa", href: "/naprawy-z-oc" },
-    { name: "Blacharstwo lakiernictwo", href: "/naprawy-z-oc" },
+    { name: "Naprawy z winy sprawcy", href: "/naprawy-z-winy-sprawcy" },
+    { name: "Naprawa bezgotówkowa", href: "/naprawa-bezgotowkowa" },
+    { name: "Naprawa powypadkowa bezgotówkowa", href: "/naprawa-powypadkowa-bezgotowkowa" },
+    { name: "Naprawy z OC", href: "/naprawy-z-oc" },
+    { name: "Naprawy ubezpieczeniowe", href: "/naprawy-ubezpieczeniowe" },
+    { name: "Naprawa auta po kolizji z OC sprawcy", href: "/naprawa-auta-po-kolizji" },
+    { name: "Naprawa auta po wypadku z OC sprawcy", href: "/naprawa-auta-po-wypadku" },
+    { name: "Naprawa pojazdu po stłuczce z OC sprawcy", href: "/naprawa-pojazdu-po-stluczce" },
+  ];
+
+  const uslugiBlacharsKieItems = [
+    { name: "Blacharstwo powypadkowe", href: "/blacharstwo-powypadkowe" },
+    { name: "Blacharz samochodowy", href: "/blacharz-samochodowy" },
+    { name: "Naprawy blacharskie", href: "/naprawy-blacharskie" },
+    { name: "Naprawy karoserii po stłuczce", href: "/naprawy-karoserii-po-stluczce" },
+    { name: "Prostowanie karoserii", href: "/prostowanie-karoserii" },
+    { name: "Usuwanie wgnieceń", href: "/usuwanie-wgniecen" },
+    { name: "Usuwanie uszkodzeń powypadkowych", href: "/usuwanie-uszkodzen-powypadkowych" },
+    { name: "Naprawa po gradobiciu", href: "/naprawa-po-gradobiciu" },
+  ];
+
+  const lakierowaniePowypadkoweItems = [
+    { name: "Naprawa blacharsko-lakiernicza z OC sprawcy", href: "/naprawa-blacharsko-lakiernicza" },
+    { name: "Lakierowanie z OC sprawcy", href: "/lakierowanie-z-oc-sprawcy" },
+    { name: "Lakierowanie powypadkowe", href: "/lakierowanie-powypadkowe" },
+    { name: "Lakiernik samochodowy", href: "/lakiernik-samochodowy" },
+  ];
+
+  const lakierowanieElementowItems = [
+    { name: "Lakierowanie samochodów", href: "/lakierowanie-samochodow" },
+    { name: "Lakierowanie elementów karoserii", href: "/lakierowanie-elementow-karoserii" },
+    { name: "Lakierowanie elementów", href: "/lakierowanie-elementow" },
+    { name: "Lakierowanie zderzaka", href: "/lakierowanie-zderzaka" },
+    { name: "Lakierowanie maski", href: "/lakierowanie-maski" },
+    { name: "Lakierowanie felg samochodowych", href: "/lakierowanie-felg" },
+  ];
+
+  const renowacjaLakieruItems = [
+    { name: "Malowanie auta", href: "/malowanie-auta" },
+    { name: "Renowacja lakieru samochodowego", href: "/renowacja-lakieru" },
+    { name: "Polerowanie lakieru samochodowego", href: "/polerowanie-lakieru" },
+    { name: "Dobór koloru lakieru samochodowego", href: "/dobor-koloru-lakieru" },
+    { name: "Naprawa lakieru", href: "/naprawa-lakieru" },
+    { name: "Usuwanie rys z lakieru", href: "/usuwanie-rys-z-lakieru" },
+    { name: "Lakierowanie punktowe", href: "/lakierowanie-punktowe" },
+  ];
+
+  const mechanikaPowypadkowaItems = [
+    { name: "Serwis mechaniczny powypadkowy", href: "/serwis-mechaniczny-powypadkowy" },
+    { name: "Naprawa silnika po kolizji", href: "/naprawa-silnika-po-kolizji" },
+    { name: "Wymiana rozrządu po wypadku", href: "/wymiana-rozrzadu-po-wypadku" },
+  ];
+
+  const serwisSilnikaItems = [
+    { name: "Mechanik samochodowy", href: "/mechanik-samochodowy" },
+    { name: "Naprawa silnika", href: "/naprawa-silnika" },
+    { name: "Naprawa samochodów osobowych", href: "/naprawa-samochodow-osobowych" },
+    { name: "Naprawa samochodów", href: "/naprawa-samochodow" },
+    { name: "Serwis samochodowy", href: "/serwis-samochodowy" },
+  ];
+
+  const ukladySamochodowe = [
+    { name: "Naprawa zawieszenia", href: "/naprawa-zawieszenia" },
+    { name: "Naprawa hamulców", href: "/naprawa-hamulcow" },
+    { name: "Naprawa układu hamulcowego", href: "/naprawa-ukladu-hamulcowego" },
+    { name: "Wymiana klocków hamulcowych", href: "/wymiana-klockow-hamulcowych" },
+    { name: "Naprawa układu kierowniczego", href: "/naprawa-ukladu-kierowniczego" },
+  ];
+
+  const diagnostykaItems = [
+    { name: "Diagnostyka komputerowa auta", href: "/diagnostyka-komputerowa-auta" },
+    { name: "Diagnostyka komputerowa", href: "/diagnostyka-komputerowa" },
+    { name: "Serwis klimatyzacji samochodowej", href: "/serwis-klimatyzacji" },
+    { name: "Wymiana oleju w samochodzie", href: "/wymiana-oleju-w-samochodzie" },
+    { name: "Wymiana oleju", href: "/wymiana-oleju" },
+  ];
+
+  const przegladyItems = [
+    { name: "Przegląd techniczny auta", href: "/przeglad-techniczny-auta" },
+    { name: "Przegląd samochodu", href: "/przeglad-samochodu" },
+    { name: "Serwis samochodowy po wypadku", href: "/serwis-samochodowy-po-wypadku" },
   ];
 
   const wynajemItems = [
@@ -74,12 +153,31 @@ const Navbar = () => {
     { name: "Auto zastępcze - prawa", href: "/blog/auto-zastepcze-oc-prawa" },
   ];
 
+  const getAllNaprawyItems = () => {
+    return [
+      ...naprawyPowypadkoweItems,
+      ...uslugiBlacharsKieItems,
+      ...lakierowaniePowypadkoweItems,
+      ...lakierowanieElementowItems,
+      ...renowacjaLakieruItems,
+      ...mechanikaPowypadkowaItems,
+      ...serwisSilnikaItems,
+      ...ukladySamochodowe,
+      ...diagnostykaItems,
+      ...przegladyItems
+    ];
+  };
+
   const isActiveSection = (items: any[]) => {
     return items.some(item => isActivePath(item.href));
   };
 
   const isActiveObslugaSzkody = () => {
     return isActiveSection(obslugaSzkodyItems) || isActiveSection(lokalizacjaItems);
+  };
+
+  const isActiveNaprawy = () => {
+    return isActiveSection(getAllNaprawyItems());
   };
 
   return (
@@ -144,7 +242,7 @@ const Navbar = () => {
 
                   <div>
                     <p className="font-semibold text-autoram-text mb-2">Naprawy pojazdów</p>
-                    {naprawyItems.map((item) => (
+                    {getAllNaprawyItems().slice(0, 5).map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
@@ -272,7 +370,7 @@ const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
-                    isActiveSection(naprawyItems)
+                    isActiveNaprawy()
                       ? "bg-autoram-red text-white"
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
@@ -281,8 +379,192 @@ const Navbar = () => {
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
-                {naprawyItems.map((item) => (
+              <DropdownMenuContent className="min-w-[400px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50 max-h-96 overflow-y-auto">
+                {/* 🚗 NAPRAWY POWYPADKOWE */}
+                <div className="px-4 py-2 text-xs font-semibold text-autoram-gold uppercase tracking-wide">
+                  🚗 Naprawy Powypadkowe
+                </div>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Naprawy Bezgotówkowe z OC
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg max-h-80 overflow-y-auto">
+                    {naprawyPowypadkoweItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Usługi Blacharskie
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg max-h-80 overflow-y-auto">
+                    {uslugiBlacharsKieItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSeparator />
+
+                {/* 🎨 LAKIEROWANIE I MALOWANIE */}
+                <div className="px-4 py-2 text-xs font-semibold text-autoram-gold uppercase tracking-wide">
+                  🎨 Lakierowanie i Malowanie
+                </div>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Lakierowanie Powypadkowe
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {lakierowaniePowypadkoweItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Lakierowanie Elementów
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {lakierowanieElementowItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Renowacja i Naprawa Lakieru
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {renowacjaLakieruItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSeparator />
+
+                {/* 🔧 MECHANIKA SAMOCHODOWA */}
+                <div className="px-4 py-2 text-xs font-semibold text-autoram-gold uppercase tracking-wide">
+                  🔧 Mechanika Samochodowa
+                </div>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Mechanika Powypadkowa
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {mechanikaPowypadkowaItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Serwis i Naprawa Silnika
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {serwisSilnikaItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Układy Samochodowe
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {ukladySamochodowe.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Diagnostyka i Serwis
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {diagnostykaItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
+                <DropdownMenuSeparator />
+
+                {/* 📋 PRZEGLĄDY I KONTROLE */}
+                <div className="px-4 py-2 text-xs font-semibold text-autoram-gold uppercase tracking-wide">
+                  📋 Przeglądy i Kontrole
+                </div>
+                {przegladyItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link
                       to={item.href}
