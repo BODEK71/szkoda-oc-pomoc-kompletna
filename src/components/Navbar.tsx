@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -20,10 +19,21 @@ const Navbar = () => {
   };
 
   const obslugaSzkodyItems = [
+    { name: "Likwidacja szkód komunikacyjnych", href: "/likwidacja-szkod-komunikacyjnych" },
+    { name: "Likwidacja szkody z OC", href: "/likwidacja-szkody-z-oc" },
     { name: "Obsługa szkody z OC", href: "/obsługa-szkody-z-oc" },
+    { name: "Zgłoszenie szkody komunikacyjnej", href: "/zgloszenie-szkody-komunikacyjnej" },
+    { name: "Zgłoszenie szkody ubezpieczeniowej", href: "/zgloszenie-szkody-ubezpieczeniowej" },
+    { name: "Wycena szkody powypadkowej", href: "/wycena-szkody-powypadkowej" },
+    { name: "Kosztorys naprawy z OC sprawcy", href: "/kosztorys-naprawy-z-oc-sprawcy" },
+    { name: "Ocena uszkodzeń pojazdu", href: "/ocena-uszkodzen-pojazdu" },
+    { name: "Bezpośrednia likwidacja szkód (BLS)", href: "/blog/bezposrednia-likwidacja-szkod-bls" },
+    { name: "Odszkodowanie z OC sprawcy", href: "/odszkodowanie-z-oc-sprawcy" },
+    { name: "Likwidator szkód", href: "/likwidator-szkod" },
     { name: "Obsługa OC Wolsztyn", href: "/obsługa-szkody-z-oc-wolsztyn" },
     { name: "Obsługa OC Poznań", href: "/obsługa-szkody-z-oc-poznan" },
-    { name: "Bezpośrednia likwidacja szkód", href: "/blog/bezposrednia-likwidacja-szkod-bls" },
+    { name: "Likwidacja szkody Grodzisk Wielkopolski", href: "/likwidacja-szkody-grodzisk-wielkopolski" },
+    { name: "Wycena szkody Poznań", href: "/wycena-szkody-poznan" },
   ];
 
   const naprawyItems = [
@@ -95,7 +105,7 @@ const Navbar = () => {
                 {/* Mobile menu content */}
                 <div className="space-y-4">
                   <div>
-                    <p className="font-semibold text-autoram-text mb-2">Obsługa szkody z OC</p>
+                    <p className="font-semibold text-autoram-text mb-2">Obsługa szkód ubezpieczeniowych</p>
                     {obslugaSzkodyItems.map((item) => (
                       <Link
                         key={item.name}
@@ -185,7 +195,7 @@ const Navbar = () => {
         {/* Bottom line - Navigation Menu */}
         <div className="hidden lg:flex items-center justify-center h-16">
           <div className="flex items-center space-x-1">
-            {/* Obsługa szkody z OC */}
+            {/* Obsługa szkód ubezpieczeniowych */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
@@ -196,11 +206,11 @@ const Navbar = () => {
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
                 >
-                  Obsługa szkody z OC
+                  Obsługa szkód ubezpieczeniowych
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+              <DropdownMenuContent className="min-w-[350px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50 max-h-80 overflow-y-auto">
                 {obslugaSzkodyItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link

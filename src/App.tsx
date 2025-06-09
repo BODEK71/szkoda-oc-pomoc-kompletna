@@ -23,6 +23,19 @@ import BlogObslugaSzkodyPrzewodnik from "./pages/BlogObslugaSzkodyPrzewodnik";
 import BlogAutoZastepczePrawa from "./pages/BlogAutoZastepczePrawa";
 import BlogBezposredniaLikwidacja from "./pages/BlogBezposredniaLikwidacja";
 
+// New service pages
+import LikwidacjaSzkodKomunikacyjnych from "./pages/LikwidacjaSzkodKomunikacyjnych";
+import LikwidacjaSzkodyZOC from "./pages/LikwidacjaSzkodyZOC";
+import ZgloszenieSzkodyKomunikacyjnej from "./pages/ZgloszenieSzkodyKomunikacyjnej";
+import ZgloszenieSzkodyUbezpieczeniowej from "./pages/ZgloszenieSzkodyUbezpieczeniowej";
+import WycenaSzkodyPowypadkowej from "./pages/WycenaSzkodyPowypadkowej";
+import KosztorysNaprawyZOCSprawcy from "./pages/KosztorysNaprawyZOCSprawcy";
+import OcenaUszkodzenPojazdu from "./pages/OcenaUszkodzenPojazdu";
+import OdszkodowanieZOCSprawcy from "./pages/OdszkodowanieZOCSprawcy";
+import LikwidatorSzkod from "./pages/LikwidatorSzkod";
+import LikwidacjaSzkodyGrodziskWielkopolski from "./pages/LikwidacjaSzkodyGrodziskWielkopolski";
+import WycenaSzkodyPoznan from "./pages/WycenaSzkodyPoznan";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -49,6 +62,19 @@ const App = () => (
           <Route path="/blog/obsługa-szkody-oc-przewodnik" element={<BlogObslugaSzkodyPrzewodnik />} />
           <Route path="/blog/auto-zastepcze-oc-prawa" element={<BlogAutoZastepczePrawa />} />
           <Route path="/blog/bezposrednia-likwidacja-szkod-bls" element={<BlogBezposredniaLikwidacja />} />
+          
+          {/* New service routes */}
+          <Route path="/likwidacja-szkod-komunikacyjnych" element={<LikwidacjaSzkodKomunikacyjnych />} />
+          <Route path="/likwidacja-szkody-z-oc" element={<LikwidacjaSzkodyZOC />} />
+          <Route path="/zgloszenie-szkody-komunikacyjnej" element={<ZgloszenieSzkodyKomunikacyjnej />} />
+          <Route path="/zgloszenie-szkody-ubezpieczeniowej" element={<ZgloszenieSzkodyUbezpieczeniowej />} />
+          <Route path="/wycena-szkody-powypadkowej" element={<WycenaSzkodyPowypadkowej />} />
+          <Route path="/kosztorys-naprawy-z-oc-sprawcy" element={<KosztorysNaprawyZOCSprawcy />} />
+          <Route path="/ocena-uszkodzen-pojazdu" element={<OcenaUszkodzenPojazdu />} />
+          <Route path="/odszkodowanie-z-oc-sprawcy" element={<OdszkodowanieZOCSprawcy />} />
+          <Route path="/likwidator-szkod" element={<LikwidatorSzkod />} />
+          <Route path="/likwidacja-szkody-grodzisk-wielkopolski" element={<LikwidacjaSzkodyGrodziskWielkopolski />} />
+          <Route path="/wycena-szkody-poznan" element={<WycenaSzkodyPoznan />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
