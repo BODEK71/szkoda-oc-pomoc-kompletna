@@ -59,25 +59,25 @@ const Navbar = () => {
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 lg:h-28">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-4">
-            <div className="w-14 h-14 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-xl">AR</span>
+          <Link to="/" className="flex items-center space-x-6">
+            <div className="w-16 h-16 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-2xl">AR</span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-2xl font-bold text-autoram-text">Auto-Ram</span>
-              <p className="text-xs text-autoram-gold font-medium">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
+              <span className="text-3xl font-bold text-autoram-text">Auto-Ram</span>
+              <p className="text-sm text-autoram-gold font-medium mt-1">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden xl:flex items-center flex-1 justify-center px-8">
             <NavigationMenu>
-              <NavigationMenuList className="space-x-2">
+              <NavigationMenuList className="space-x-1">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActiveSection(obslugaSzkodyItems)
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -102,7 +102,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActiveSection(naprawyItems)
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -127,7 +127,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActiveSection(autoZastepczeItems)
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -152,7 +152,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActiveSection(pomocDrogowaItems)
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -177,7 +177,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActiveSection(blogItems)
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -203,7 +203,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <Link
                     to="/kontakt"
-                    className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                       isActivePath("/kontakt")
                         ? "bg-autoram-red text-white"
                         : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
@@ -218,11 +218,11 @@ const Navbar = () => {
 
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center space-x-3 text-sm text-autoram-gold-dark">
+            <div className="flex items-center space-x-3 text-base text-autoram-gold-dark">
               <Phone className="w-5 h-5" />
               <span className="font-semibold">24/7: 123-456-789</span>
             </div>
-            <Button className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-semibold px-6 py-3">
+            <Button className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-semibold px-6 py-3 text-base">
               <Phone className="w-4 h-4 mr-2" />
               Zadzwoń teraz
             </Button>
@@ -231,7 +231,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="md:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
+              <Button variant="ghost" size="sm" className="xl:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
