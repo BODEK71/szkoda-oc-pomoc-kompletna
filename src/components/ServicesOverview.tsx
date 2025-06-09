@@ -67,119 +67,120 @@ const ServicesOverview = () => {
   ];
 
   return (
-    <section className="py-24 bg-autoram-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header - Centered */}
-        <div className="text-center mb-20">
-          <Badge className="bg-autoram-red text-white mb-6 font-semibold text-lg px-8 py-3 rounded-full mx-auto">
+    <section className="py-40 bg-autoram-white">
+      <div className="max-w-8xl mx-auto px-8 sm:px-12 lg:px-16">
+        {/* Section Header - Enhanced spacing and centering */}
+        <div className="text-center mb-32 max-w-6xl mx-auto">
+          <Badge className="bg-autoram-red text-white mb-12 font-semibold text-lg px-8 py-4 rounded-full">
             Nasze usługi
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-autoram-text mb-8 leading-tight mx-auto max-w-4xl">
-            Kompleksowa obsługa szkód z OC sprawcy
+          <h2 className="text-6xl lg:text-7xl font-bold text-autoram-text mb-12 leading-tight max-w-5xl mx-auto">
+            Kompleksowa obsługa po wypadku
           </h2>
-          <p className="text-xl lg:text-2xl text-autoram-text-muted mx-auto font-light leading-relaxed max-w-4xl">
-            Specjalizujemy się w obsłudze szkód z ubezpieczenia sprawcy wypadku. 
-            <span className="text-autoram-gold-dark font-semibold block mt-3 text-lg lg:text-xl"> 
-              Oferujemy pełen zakres usług od zgłoszenia szkody po naprawę pojazdu
+          <p className="text-3xl lg:text-4xl text-autoram-text-muted max-w-5xl mx-auto font-light leading-relaxed">
+            Specjalizujemy się w obsłudze szkód z OC sprawcy. 
+            <span className="text-autoram-gold-dark font-semibold block mt-4 text-2xl lg:text-3xl"> 
+              Oferujemy pełen zakres usług
+            </span> 
+            <span className="block mt-2 text-xl lg:text-2xl">
+              od zgłoszenia szkody po naprawę pojazdu
             </span>
           </p>
         </div>
 
-        {/* Services Grid - Centered */}
-        <div className="flex justify-center mb-20">
-          <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 max-w-6xl w-full">
-            {services.map((service, index) => (
-              <Card 
-                key={index} 
-                className={`group hover:shadow-2xl transition-all duration-500 overflow-hidden border-2 h-full transform hover:-translate-y-1 ${
-                  service.highlight 
-                    ? 'border-autoram-red bg-gradient-to-br from-autoram-white to-autoram-light shadow-xl shadow-autoram-red/10 scale-[1.01]' 
-                    : 'border-autoram-gray bg-autoram-light hover:border-autoram-gold hover:shadow-xl'
-                }`}
-              >
-                <div className="relative">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-autoram-text/60 to-transparent"></div>
-                  {service.highlight && (
-                    <Badge className="absolute top-6 left-6 bg-autoram-red text-white font-bold text-sm px-4 py-2 rounded-full shadow-lg">
-                      ⭐ SPECJALIZACJA
-                    </Badge>
-                  )}
-                  <div className="absolute bottom-6 right-6">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 transition-transform duration-300 ${
-                      service.highlight ? 'bg-autoram-red' : 'bg-autoram-gold'
-                    }`}>
-                      {service.icon}
-                    </div>
+        {/* Services Grid - Better spacing and layout */}
+        <div className="grid lg:grid-cols-2 gap-16 xl:gap-20 max-w-8xl mx-auto">
+          {services.map((service, index) => (
+            <Card 
+              key={index} 
+              className={`group hover:shadow-4xl transition-all duration-700 overflow-hidden border-3 h-full transform hover:-translate-y-2 ${
+                service.highlight 
+                  ? 'border-autoram-red bg-gradient-to-br from-autoram-white to-autoram-light shadow-3xl shadow-autoram-red/15 scale-[1.02]' 
+                  : 'border-autoram-gray bg-autoram-light hover:border-autoram-gold hover:shadow-2xl'
+              }`}
+            >
+              <div className="relative">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-autoram-text/70 to-transparent"></div>
+                {service.highlight && (
+                  <Badge className="absolute top-10 left-10 bg-autoram-red text-white font-bold text-base px-6 py-3 rounded-full shadow-lg">
+                    ⭐ SPECJALIZACJA
+                  </Badge>
+                )}
+                <div className="absolute bottom-10 right-10">
+                  <div className={`w-20 h-20 rounded-full flex items-center justify-center text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300 ${
+                    service.highlight ? 'bg-autoram-red' : 'bg-autoram-gold'
+                  }`}>
+                    {service.icon}
                   </div>
                 </div>
-                
-                <CardHeader className="pb-6 bg-autoram-white p-8">
-                  <div className="space-y-4">
-                    <Badge variant="outline" className="text-sm border-2 border-autoram-gold text-autoram-gold-dark px-4 py-2 w-fit font-semibold">
-                      {service.subtitle}
-                    </Badge>
-                    <CardTitle className="text-2xl lg:text-3xl font-bold text-autoram-text leading-tight">
-                      {service.title}
-                    </CardTitle>
-                    <CardDescription className="text-autoram-text-muted text-lg leading-relaxed">
-                      {service.description}
-                    </CardDescription>
-                  </div>
-                </CardHeader>
+              </div>
+              
+              <CardHeader className="pb-10 bg-autoram-white p-12">
+                <div className="space-y-6">
+                  <Badge variant="outline" className="text-base border-2 border-autoram-gold text-autoram-gold-dark px-6 py-3 w-fit font-semibold">
+                    {service.subtitle}
+                  </Badge>
+                  <CardTitle className="text-4xl font-bold text-autoram-text leading-tight">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-autoram-text-muted text-xl leading-relaxed">
+                    {service.description}
+                  </CardDescription>
+                </div>
+              </CardHeader>
 
-                <CardContent className="pt-0 bg-autoram-white p-8">
-                  <div className="space-y-4 mb-8">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-4">
-                        <CheckCircle className={`w-5 h-5 flex-shrink-0 ${
-                          service.highlight ? 'text-autoram-red' : 'text-autoram-gold'
-                        }`} />
-                        <span className="text-autoram-text-muted font-medium text-base">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+              <CardContent className="pt-0 bg-autoram-white p-12">
+                <div className="space-y-8 mb-12">
+                  {service.features.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center space-x-6">
+                      <CheckCircle className={`w-7 h-7 flex-shrink-0 ${
+                        service.highlight ? 'text-autoram-red' : 'text-autoram-gold'
+                      }`} />
+                      <span className="text-autoram-text-muted font-medium text-xl">{feature}</span>
+                    </div>
+                  ))}
+                </div>
 
-                  <Link to={service.href}>
-                    <Button 
-                      className={`w-full group font-bold text-lg py-6 px-6 rounded-xl transition-all duration-300 ${
-                        service.highlight 
-                          ? 'bg-autoram-red hover:bg-autoram-red-dark text-white shadow-lg hover:shadow-xl' 
-                          : 'bg-autoram-gold hover:bg-autoram-gold-dark text-black shadow-lg hover:shadow-xl'
-                      }`}
-                    >
-                      Dowiedz się więcej
-                      <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                <Link to={service.href}>
+                  <Button 
+                    className={`w-full group font-bold text-xl py-8 px-8 rounded-2xl transition-all duration-300 ${
+                      service.highlight 
+                        ? 'bg-autoram-red hover:bg-autoram-red-dark text-white shadow-xl hover:shadow-2xl' 
+                        : 'bg-autoram-gold hover:bg-autoram-gold-dark text-black shadow-xl hover:shadow-2xl'
+                    }`}
+                  >
+                    Dowiedz się więcej
+                    <ArrowRight className="w-7 h-7 ml-4 group-hover:translate-x-2 transition-transform duration-300" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
-        {/* Bottom CTA - Centered */}
-        <div className="flex justify-center">
-          <div className="bg-gradient-to-br from-autoram-light to-autoram-gray rounded-2xl shadow-xl p-16 max-w-5xl w-full border-2 border-autoram-red/20 text-center">
-            <h3 className="text-3xl lg:text-4xl font-bold text-autoram-text mb-8 leading-tight">
+        {/* Bottom CTA - Enhanced spacing and design */}
+        <div className="text-center mt-40">
+          <div className="bg-gradient-to-br from-autoram-light to-autoram-gray rounded-3xl shadow-3xl p-20 max-w-7xl mx-auto border-3 border-autoram-red/20">
+            <h3 className="text-5xl lg:text-6xl font-bold text-autoram-text mb-12 leading-tight max-w-5xl mx-auto">
               Potrzebujesz pomocy po wypadku?
             </h3>
-            <p className="text-autoram-text-muted mb-12 text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-autoram-text-muted mb-16 text-3xl leading-relaxed max-w-5xl mx-auto">
               Skontaktuj się z nami już teraz. Oferujemy 
               <span className="text-autoram-gold-dark font-semibold"> bezpłatną konsultację</span> 
               <span className="block mt-2">i szybką wycenę szkody.</span>
             </p>
-            <div className="flex flex-col lg:flex-row gap-6 justify-center max-w-3xl mx-auto">
-              <Button size="lg" className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold text-lg px-12 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                <CreditCard className="w-6 h-6 mr-4" />
+            <div className="flex flex-col lg:flex-row gap-10 justify-center max-w-4xl mx-auto">
+              <Button size="lg" className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold text-2xl px-16 py-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                <CreditCard className="w-8 h-8 mr-6" />
                 Zgłoś szkodę online
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-autoram-red text-autoram-red hover:bg-autoram-red hover:text-white font-bold text-lg px-12 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                <Car className="w-6 h-6 mr-4" />
+              <Button variant="outline" size="lg" className="border-3 border-autoram-red text-autoram-red hover:bg-autoram-red hover:text-white font-bold text-2xl px-16 py-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                <Car className="w-8 h-8 mr-6" />
                 Zamów auto zastępcze
               </Button>
             </div>
