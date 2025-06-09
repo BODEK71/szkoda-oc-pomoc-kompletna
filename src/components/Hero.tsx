@@ -100,17 +100,6 @@ const Hero = () => {
                 <p className="text-sm text-autoram-gold-light">Kompleksowe rozwiązania powypadkowe</p>
               </div>
             </div>
-            
-            {/* Floating Cards */}
-            <div className="absolute -top-6 -right-6 bg-autoram-white border-2 border-autoram-gold rounded-xl shadow-2xl p-6">
-              <p className="text-sm font-semibold text-autoram-text mb-1">Czas obsługi</p>
-              <p className="text-3xl font-bold text-autoram-gold">24h</p>
-            </div>
-            
-            <div className="absolute -bottom-6 -left-6 bg-autoram-white border-2 border-autoram-red rounded-xl shadow-2xl p-6">
-              <p className="text-sm font-semibold text-autoram-text mb-1">Zadowoleni klienci</p>
-              <p className="text-3xl font-bold text-autoram-red">98%</p>
-            </div>
           </div>
         </div>
       </div>
