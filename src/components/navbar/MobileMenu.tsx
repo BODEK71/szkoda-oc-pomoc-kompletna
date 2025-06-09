@@ -58,11 +58,12 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
       <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
         <div className="flex flex-col space-y-6 mt-8">
           <div className="space-y-4">
+            {/* 📋 LIKWIDACJA SZKÓD */}
             <div>
-              <p className="font-semibold text-autoram-text mb-2">📋 Likwidacja Szkód</p>
+              <p className="font-semibold text-autoram-text mb-2">📋 LIKWIDACJA SZKÓD</p>
               
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Likwidacja Szkód Komunikacyjnych:</p>
-              {likwidacjaSzkodKomunikacyjnychItems.slice(0, 3).map((item) => (
+              {likwidacjaSzkodKomunikacyjnychItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -98,13 +99,15 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* 💰 WYCENA I KOSZTORYSY */}
             <div>
-              <p className="font-semibold text-autoram-text mb-2">💰 Wycena i Kosztorysy</p>
+              <p className="font-semibold text-autoram-text mb-2">💰 WYCENA I KOSZTORYSY</p>
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wycena Szkód Powypadkowych:</p>
               {wycenaSzkodPowypadkowychItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-4 py-2 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -112,11 +115,12 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
             </div>
 
+            {/* 📍 OBSŁUGA SZKÓD LOKALNA */}
             <div>
-              <p className="font-semibold text-autoram-text mb-2">📍 Obsługa Szkód Lokalna</p>
+              <p className="font-semibold text-autoram-text mb-2">📍 OBSŁUGA SZKÓD LOKALNA</p>
               
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Wolsztyn:</p>
-              {wolsztynSzkodyItems.slice(0, 2).map((item) => (
+              {wolsztynSzkodyItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -128,7 +132,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               ))}
 
               <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Poznań:</p>
-              {poznanSzkodyItems.slice(0, 2).map((item) => (
+              {poznanSzkodyItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -139,8 +143,8 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
                 </Link>
               ))}
 
-              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Inne lokalizacje:</p>
-              {zielonaGoraSzkodyItems.slice(0, 1).map((item) => (
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Zielona Góra:</p>
+              {zielonaGoraSzkodyItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -150,7 +154,81 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
                   {item.name}
                 </Link>
               ))}
-              {nowyTomyslSzkodyItems.slice(0, 1).map((item) => (
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Nowy Tomyśl:</p>
+              {nowyTomyslSzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Sława:</p>
+              {slawaSzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Leszno:</p>
+              {lesznoSzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Głogów:</p>
+              {glogowSzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Kościan:</p>
+              {koscianSzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Szamotuły:</p>
+              {szamotulySzkodyItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+
+              <p className="font-medium text-autoram-text mt-2 mb-1 px-4 text-xs">Międzyrzecz:</p>
+              {miedzyrzeczSzkodyItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
