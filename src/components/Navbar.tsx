@@ -3,12 +3,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Menu, Phone, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -58,165 +57,21 @@ const Navbar = () => {
 
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
+      {/* Top line - Logo, Company Name, Contact */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 lg:h-28">
-          {/* Logo */}
+        <div className="flex justify-between items-center h-20 border-b border-autoram-gray">
+          {/* Logo and Company Name */}
           <Link to="/" className="flex items-center space-x-6">
-            <div className="w-16 h-16 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-2xl">AR</span>
+            <div className="w-14 h-14 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">AR</span>
             </div>
-            <div className="hidden sm:block">
-              <span className="text-3xl font-bold text-autoram-text">Auto-Ram</span>
-              <p className="text-sm text-autoram-gold font-medium mt-1">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
+            <div>
+              <span className="text-2xl font-bold text-autoram-text">Auto-Ram</span>
+              <p className="text-sm text-autoram-gold font-medium">Grodzisk Wielkopolski - Obsługa szkód z OC</p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center flex-1 justify-center px-8">
-            <NavigationMenu>
-              <NavigationMenuList className="space-x-1">
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActiveSection(obslugaSzkodyItems)
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Obsługa szkody z OC
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
-                    <div className="grid gap-3">
-                      {obslugaSzkodyItems.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActiveSection(naprawyItems)
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Naprawy z OC
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
-                    <div className="grid gap-3">
-                      {naprawyItems.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActiveSection(autoZastepczeItems)
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Auto zastępcze
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
-                    <div className="grid gap-3">
-                      {autoZastepczeItems.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActiveSection(pomocDrogowaItems)
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Pomoc drogowa
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
-                    <div className="grid gap-3">
-                      {pomocDrogowaItems.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActiveSection(blogItems)
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Blog
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg p-4">
-                    <div className="grid gap-3">
-                      {blogItems.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link
-                    to="/kontakt"
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      isActivePath("/kontakt")
-                        ? "bg-autoram-red text-white"
-                        : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-                    }`}
-                  >
-                    Kontakt
-                  </Link>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
-
-          {/* Contact Info */}
+          {/* Contact Info - Desktop */}
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-3 text-base text-autoram-gold-dark">
               <Phone className="w-5 h-5" />
@@ -231,7 +86,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="xl:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
+              <Button variant="ghost" size="sm" className="lg:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
@@ -325,6 +180,168 @@ const Navbar = () => {
               </div>
             </SheetContent>
           </Sheet>
+        </div>
+
+        {/* Bottom line - Navigation Menu */}
+        <div className="hidden lg:flex items-center justify-center h-16">
+          <div className="flex items-center space-x-1">
+            {/* Obsługa szkody z OC */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
+                    isActiveSection(obslugaSzkodyItems)
+                      ? "bg-autoram-red text-white"
+                      : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                  }`}
+                >
+                  Obsługa szkody z OC
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+                {obslugaSzkodyItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Naprawy z OC */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
+                    isActiveSection(naprawyItems)
+                      ? "bg-autoram-red text-white"
+                      : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                  }`}
+                >
+                  Naprawy z OC
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+                {naprawyItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Auto zastępcze */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
+                    isActiveSection(autoZastepczeItems)
+                      ? "bg-autoram-red text-white"
+                      : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                  }`}
+                >
+                  Auto zastępcze
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+                {autoZastepczeItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Pomoc drogowa */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
+                    isActiveSection(pomocDrogowaItems)
+                      ? "bg-autoram-red text-white"
+                      : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                  }`}
+                >
+                  Pomoc drogowa
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+                {pomocDrogowaItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Blog */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
+                    isActiveSection(blogItems)
+                      ? "bg-autoram-red text-white"
+                      : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+                  }`}
+                >
+                  Blog
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
+                {blogItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Kontakt */}
+            <Link
+              to="/kontakt"
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+                isActivePath("/kontakt")
+                  ? "bg-autoram-red text-white"
+                  : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+              }`}
+            >
+              Kontakt
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
