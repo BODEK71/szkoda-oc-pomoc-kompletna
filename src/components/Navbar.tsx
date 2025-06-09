@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -6,6 +7,10 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu, Phone, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -30,33 +35,41 @@ const Navbar = () => {
     { name: "Bezpośrednia likwidacja szkód (BLS)", href: "/blog/bezposrednia-likwidacja-szkod-bls" },
     { name: "Odszkodowanie z OC sprawcy", href: "/odszkodowanie-z-oc-sprawcy" },
     { name: "Likwidator szkód", href: "/likwidator-szkod" },
-    { name: "Obsługa OC Wolsztyn", href: "/obsługa-szkody-z-oc-wolsztyn" },
-    { name: "Obsługa OC Poznań", href: "/obsługa-szkody-z-oc-poznan" },
-    { name: "Likwidacja szkody Grodzisk Wielkopolski", href: "/likwidacja-szkody-grodzisk-wielkopolski" },
-    { name: "Wycena szkody Poznań", href: "/wycena-szkody-poznan" },
+  ];
+
+  const lokalizacjaItems = [
+    { name: "Poznań", href: "/wycena-szkody-poznan" },
+    { name: "Wolsztyn", href: "/obsługa-szkody-z-oc-wolsztyn" },
+    { name: "Zielona Góra", href: "/obsługa-szkody-zielona-gora" },
+    { name: "Nowy Tomyśl", href: "/obsługa-szkody-nowy-tomysl" },
+    { name: "Sława", href: "/obsługa-szkody-slawa" },
+    { name: "Leszno", href: "/obsługa-szkody-leszno" },
+    { name: "Głogów", href: "/holowanie-z-oc-glogów" },
+    { name: "Kościan", href: "/obsługa-szkody-koscian" },
+    { name: "Szamotuły", href: "/obsługa-szkody-szamotuly" },
+    { name: "Międzyrzecz", href: "/obsługa-szkody-miedzyrzecz" },
   ];
 
   const naprawyItems = [
-    { name: "Naprawy z OC", href: "/naprawy-z-oc" },
+    { name: "Naprawy powypadkowe", href: "/naprawy-z-oc" },
     { name: "Naprawa bezgotówkowa", href: "/naprawy-z-oc" },
     { name: "Blacharstwo lakiernictwo", href: "/naprawy-z-oc" },
   ];
 
-  const autoZastepczeItems = [
-    { name: "Auto zastępcze", href: "/auto-zastepcze-z-oc" },
+  const wynajemItems = [
+    { name: "Auto zastępcze z OC", href: "/auto-zastepcze-z-oc" },
     { name: "Auto zastępcze Poznań", href: "/auto-zastepcze-z-oc-poznan" },
-    { name: "Wynajem aut z OC", href: "/auto-zastepcze-z-oc" },
+    { name: "Wynajem aut z OC sprawcy", href: "/auto-zastepcze-z-oc" },
   ];
 
   const pomocDrogowaItems = [
-    { name: "Pomoc drogowa", href: "/pomoc-drogowa-z-oc" },
-    { name: "Holowanie Głogów", href: "/holowanie-z-oc-glogów" },
     { name: "Pomoc drogowa 24h", href: "/pomoc-drogowa-z-oc" },
+    { name: "Holowanie", href: "/pomoc-drogowa-z-oc" },
     { name: "Laweta", href: "/pomoc-drogowa-z-oc" },
   ];
 
-  const blogItems = [
-    { name: "Blog", href: "/blog" },
+  const poradnikItems = [
+    { name: "Poradnik", href: "/blog" },
     { name: "Przewodnik obsługi szkód", href: "/blog/obsługa-szkody-oc-przewodnik" },
     { name: "Auto zastępcze - prawa", href: "/blog/auto-zastepcze-oc-prawa" },
   ];
@@ -65,12 +78,15 @@ const Navbar = () => {
     return items.some(item => isActivePath(item.href));
   };
 
+  const isActiveObslugaSzkody = () => {
+    return isActiveSection(obslugaSzkodyItems) || isActiveSection(lokalizacjaItems);
+  };
+
   return (
     <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
       {/* Top line - Logo, Company Name, Contact */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 border-b border-autoram-gray">
-          {/* Logo and Company Name */}
           <Link to="/" className="flex items-center space-x-6">
             <div className="w-14 h-14 bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-xl">AR</span>
@@ -81,7 +97,6 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Contact Info - Desktop */}
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-3 text-base text-autoram-gold-dark">
               <Phone className="w-5 h-5" />
@@ -93,7 +108,6 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="sm" className="lg:hidden text-autoram-text hover:bg-autoram-red hover:text-white">
@@ -102,7 +116,6 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-autoram-white border-autoram-red">
               <div className="flex flex-col space-y-6 mt-8">
-                {/* Mobile menu content */}
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-autoram-text mb-2">Obsługa szkód ubezpieczeniowych</p>
@@ -116,10 +129,21 @@ const Navbar = () => {
                         {item.name}
                       </Link>
                     ))}
+                    <p className="font-medium text-autoram-text mt-3 mb-2 px-4">Lokalizacja:</p>
+                    {lokalizacjaItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-6 py-1 text-sm text-autoram-text-muted hover:text-autoram-red"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
                   </div>
 
                   <div>
-                    <p className="font-semibold text-autoram-text mb-2">Naprawy z OC</p>
+                    <p className="font-semibold text-autoram-text mb-2">Naprawy pojazdów</p>
                     {naprawyItems.map((item) => (
                       <Link
                         key={item.name}
@@ -133,8 +157,8 @@ const Navbar = () => {
                   </div>
 
                   <div>
-                    <p className="font-semibold text-autoram-text mb-2">Auto zastępcze</p>
-                    {autoZastepczeItems.map((item) => (
+                    <p className="font-semibold text-autoram-text mb-2">Wynajem pojazdów</p>
+                    {wynajemItems.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
@@ -161,8 +185,8 @@ const Navbar = () => {
                   </div>
 
                   <div>
-                    <p className="font-semibold text-autoram-text mb-2">Blog</p>
-                    {blogItems.map((item) => (
+                    <p className="font-semibold text-autoram-text mb-2">Poradnik</p>
+                    {poradnikItems.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
@@ -201,7 +225,7 @@ const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
-                    isActiveSection(obslugaSzkodyItems)
+                    isActiveObslugaSzkody()
                       ? "bg-autoram-red text-white"
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
@@ -221,10 +245,28 @@ const Navbar = () => {
                     </Link>
                   </DropdownMenuItem>
                 ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
+                    Lokalizacja
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="min-w-[200px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg">
+                    {lokalizacjaItems.map((item) => (
+                      <DropdownMenuItem key={item.name} asChild>
+                        <Link
+                          to={item.href}
+                          className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Naprawy z OC */}
+            {/* Naprawy pojazdów */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
@@ -235,7 +277,7 @@ const Navbar = () => {
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
                 >
-                  Naprawy z OC
+                  Naprawy pojazdów
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
@@ -253,23 +295,23 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Auto zastępcze */}
+            {/* Wynajem pojazdów */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="ghost" 
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
-                    isActiveSection(autoZastepczeItems)
+                    isActiveSection(wynajemItems)
                       ? "bg-autoram-red text-white"
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
                 >
-                  Auto zastępcze
+                  Wynajem pojazdów
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="min-w-[250px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
-                {autoZastepczeItems.map((item) => (
+                {wynajemItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link
                       to={item.href}
@@ -311,23 +353,23 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Blog */}
+            {/* Poradnik */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="ghost" 
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
-                    isActiveSection(blogItems)
+                    isActiveSection(poradnikItems)
                       ? "bg-autoram-red text-white"
                       : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
                   }`}
                 >
-                  Blog
+                  Poradnik
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="min-w-[300px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg z-50">
-                {blogItems.map((item) => (
+                {poradnikItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link
                       to={item.href}

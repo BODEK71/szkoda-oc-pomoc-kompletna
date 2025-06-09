@@ -17,13 +17,22 @@ import ObslugaSzkodyZOCPoznan from "./pages/ObslugaSzkodyZOCPoznan";
 import AutoZastepczeZOCPoznan from "./pages/AutoZastepczeZOCPoznan";
 import HolowanieZOCGlogów from "./pages/HolowanieZOCGlogów";
 
+// New location pages
+import ObslugaSzkodyZielonaGora from "./pages/ObslugaSzkodyZielonaGora";
+import ObslugaSzkodyNowyTomysl from "./pages/ObslugaSzkodyNowyTomysl";
+import ObslugaSzkodySlawa from "./pages/ObslugaSzkodySlawa";
+import ObslugaSzkodyLeszno from "./pages/ObslugaSzkodyLeszno";
+import ObslugaSzkodyKoscian from "./pages/ObslugaSzkodyKoscian";
+import ObslugaSzkodySzamotuly from "./pages/ObslugaSzkodySzamotuly";
+import ObslugaSzkodyMiedzyrzecz from "./pages/ObslugaSzkodyMiedzyrzecz";
+
 // Blog pages
 import Blog from "./pages/Blog";
 import BlogObslugaSzkodyPrzewodnik from "./pages/BlogObslugaSzkodyPrzewodnik";
 import BlogAutoZastepczePrawa from "./pages/BlogAutoZastepczePrawa";
 import BlogBezposredniaLikwidacja from "./pages/BlogBezposredniaLikwidacja";
 
-// New service pages
+// Service pages
 import LikwidacjaSzkodKomunikacyjnych from "./pages/LikwidacjaSzkodKomunikacyjnych";
 import LikwidacjaSzkodyZOC from "./pages/LikwidacjaSzkodyZOC";
 import ZgloszenieSzkodyKomunikacyjnej from "./pages/ZgloszenieSzkodyKomunikacyjnej";
@@ -57,13 +66,22 @@ const App = () => (
           <Route path="/auto-zastepcze-z-oc-poznan" element={<AutoZastepczeZOCPoznan />} />
           <Route path="/holowanie-z-oc-glogów" element={<HolowanieZOCGlogów />} />
           
+          {/* New location routes */}
+          <Route path="/obsługa-szkody-zielona-gora" element={<ObslugaSzkodyZielonaGora />} />
+          <Route path="/obsługa-szkody-nowy-tomysl" element={<ObslugaSzkodyNowyTomysl />} />
+          <Route path="/obsługa-szkody-slawa" element={<ObslugaSzkodySlawa />} />
+          <Route path="/obsługa-szkody-leszno" element={<ObslugaSzkodyLeszno />} />
+          <Route path="/obsługa-szkody-koscian" element={<ObslugaSzkodyKoscian />} />
+          <Route path="/obsługa-szkody-szamotuly" element={<ObslugaSzkodySzamotuly />} />
+          <Route path="/obsługa-szkody-miedzyrzecz" element={<ObslugaSzkodyMiedzyrzecz />} />
+          
           {/* Blog routes */}
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/obsługa-szkody-oc-przewodnik" element={<BlogObslugaSzkodyPrzewodnik />} />
           <Route path="/blog/auto-zastepcze-oc-prawa" element={<BlogAutoZastepczePrawa />} />
           <Route path="/blog/bezposrednia-likwidacja-szkod-bls" element={<BlogBezposredniaLikwidacja />} />
           
-          {/* New service routes */}
+          {/* Service routes */}
           <Route path="/likwidacja-szkod-komunikacyjnych" element={<LikwidacjaSzkodKomunikacyjnych />} />
           <Route path="/likwidacja-szkody-z-oc" element={<LikwidacjaSzkodyZOC />} />
           <Route path="/zgloszenie-szkody-komunikacyjnej" element={<ZgloszenieSzkodyKomunikacyjnej />} />
@@ -76,7 +94,7 @@ const App = () => (
           <Route path="/likwidacja-szkody-grodzisk-wielkopolski" element={<LikwidacjaSzkodyGrodziskWielkopolski />} />
           <Route path="/wycena-szkody-poznan" element={<WycenaSzkodyPoznan />} />
           
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
