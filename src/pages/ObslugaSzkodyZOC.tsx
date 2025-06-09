@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -156,11 +155,6 @@ const ObslugaSzkodyZOC = () => {
                 alt="Obsługa szkód powypadkowych - warsztat samochodowy"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-autoram-white rounded-lg shadow-lg p-6 border-l-4 border-autoram-red">
-                <p className="text-sm font-semibold text-autoram-text">Średni czas obsługi</p>
-                <p className="text-3xl font-bold text-autoram-red">14 dni</p>
-                <p className="text-xs text-autoram-text-muted">Od zgłoszenia do naprawy</p>
-              </div>
             </div>
           </div>
         </div>
