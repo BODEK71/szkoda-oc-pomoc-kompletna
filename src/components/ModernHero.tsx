@@ -158,16 +158,16 @@ const ModernHero = () => {
 
       {/* Benefits as tabs/tiles at the bottom */}
       <div className="relative z-10 bg-gradient-to-r from-black/80 via-black/70 to-black/80 backdrop-blur-md border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="grid grid-cols-6 gap-2">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 p-3 lg:p-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
+                className="flex flex-col items-center justify-center text-center bg-white/10 backdrop-blur-md border border-white/20 p-3 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 aspect-square"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-autoram-gold flex-shrink-0" />
-                <span className="text-white font-medium text-xs lg:text-sm">{benefit}</span>
+                <CheckCircle className="w-5 h-5 text-autoram-gold flex-shrink-0 mb-2" />
+                <span className="text-white font-medium text-xs leading-tight">{benefit}</span>
               </div>
             ))}
           </div>
