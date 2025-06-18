@@ -123,28 +123,35 @@ const WhyChooseUs = () => {
               {
                 step: "01",
                 title: "Zgłoś szkodę",
-                description: "Zadzwoń lub wypełnij formularz online"
+                description: "Zadzwoń lub wypełnij formularz online",
+                icon: <Phone className="w-6 h-6" />
               },
               {
                 step: "02", 
                 title: "Wycena szkody",
-                description: "Bezpłatna wycena uszkodzeń pojazdu"
+                description: "Bezpłatna wycena uszkodzeń pojazdu",
+                icon: <CheckCircle className="w-6 h-6" />
               },
               {
                 step: "03",
                 title: "Auto zastępcze",
-                description: "Podstawienie pojazdu na czas naprawy"
+                description: "Podstawienie pojazdu na czas naprawy",
+                icon: <Users className="w-6 h-6" />
               },
               {
                 step: "04",
                 title: "Naprawa",
-                description: "Bezgotówkowa naprawa z OC sprawcy"
+                description: "Bezgotówkowa naprawa z OC sprawcy",
+                icon: <Award className="w-6 h-6" />
               }
             ].map((step, index) => (
               <div key={index} className="text-center">
                 <div className="relative mb-6">
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                     {step.step}
+                  </div>
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mx-auto -mt-12 mb-4 text-red-600">
+                    {step.icon}
                   </div>
                 </div>
                 <h4 className="font-bold text-gray-900 mb-2">{step.title}</h4>
