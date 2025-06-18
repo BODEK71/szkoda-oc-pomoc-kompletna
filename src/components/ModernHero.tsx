@@ -148,10 +148,10 @@ const ModernHero = () => {
         {/* Cities section moved below benefits with matching styling */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <div className="grid grid-cols-5 md:grid-cols-10 gap-4">
+            <div className="grid grid-cols-5 md:grid-cols-10 gap-6">
               {cities.map((city, index) => (
-                <div key={index} className="flex items-center justify-center text-center">
-                  <div className="flex items-center space-x-3">
+                <div key={index} className="flex items-center justify-start">
+                  <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 bg-autoram-red rounded-full flex-shrink-0"></div>
                     <span className="text-autoram-text font-medium text-sm whitespace-nowrap">{city}</span>
                   </div>
