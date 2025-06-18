@@ -59,7 +59,7 @@ const ModernHero = () => {
 
   const cities = [
     "Wolsztyn", "Poznań", "Zielona Góra", "Nowy Tomyśl", "Sława", 
-    "Leszno", "Głogów", "Kościan", "Szamotuły", "Międzyrzecz"
+    "Leszno", "Głogów", "Kościan", "Szamotuły"
   ];
 
   return (
