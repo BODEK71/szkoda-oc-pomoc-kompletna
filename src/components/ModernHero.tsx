@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -82,7 +81,7 @@ const ModernHero = () => {
       </div>
 
       {/* Main Content - optimized for 14-17" monitors */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
         {/* Badge */}
         <div className="mb-4 animate-fade-in">
           <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
@@ -107,23 +106,13 @@ const ModernHero = () => {
           </p>
         </div>
 
-        {/* Cities - reduced size */}
-        <div className="mb-6">
-          <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 max-w-3xl">
-            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
-            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
-              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
-            </p>
-          </div>
-        </div>
-
-        {/* CTA Buttons - reduced size */}
+        {/* CTA Buttons - enlarged main button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button 
             size="lg" 
-            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-base px-6 py-4 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
+            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg px-8 py-6 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
           >
-            <Phone className="w-4 h-4 mr-2" />
+            <Phone className="w-5 h-5 mr-3" />
             Zgłoś szkodę: 123-456-789
           </Button>
           
@@ -139,19 +128,13 @@ const ModernHero = () => {
           </Link>
         </div>
 
-        {/* Trust Indicators - reduced size */}
-        <div className="grid sm:grid-cols-3 gap-4 max-w-xl mx-auto">
-          <div className="text-center">
-            <div className="w-4 h-4 bg-autoram-gold rounded-full mx-auto mb-2 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-sm">Dostępni 24/7</span>
-          </div>
-          <div className="text-center">
-            <div className="w-4 h-4 bg-autoram-red rounded-full mx-auto mb-2 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-sm">Bezpłatna wycena</span>
-          </div>
-          <div className="text-center">
-            <div className="w-4 h-4 bg-green-500 rounded-full mx-auto mb-2 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-sm">Szybka realizacja</span>
+        {/* Cities moved to bottom of image */}
+        <div className="mb-4">
+          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl">
+            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
+            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
+              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
+            </p>
           </div>
         </div>
       </div>
