@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -82,14 +83,6 @@ const ModernHero = () => {
 
       {/* Main Content - optimized for 14-17" monitors */}
       <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-8">
-        {/* Badge */}
-        <div className="mb-4 animate-fade-in">
-          <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
-            <Star className="w-4 h-4 mr-2" />
-            KOMPLEKSOWA OBSŁUGA POWYPADKOWA
-          </Badge>
-        </div>
-
         {/* Main Title with Typewriter Effect - reduced size */}
         <div className="mb-6">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-3">
@@ -104,6 +97,14 @@ const ModernHero = () => {
             <span className="text-autoram-gold font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> 
             - wszystko z OC sprawcy.
           </p>
+        </div>
+
+        {/* Badge moved below text */}
+        <div className="mb-4 animate-fade-in">
+          <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
+            <Star className="w-4 h-4 mr-2" />
+            KOMPLEKSOWA OBSŁUGA POWYPADKOWA
+          </Badge>
         </div>
       </div>
 
