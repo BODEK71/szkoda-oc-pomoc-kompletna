@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import {
   // Nowe zorganizowane kategorie szkód
@@ -108,9 +109,7 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
           className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
             isActivePath("/kontakt")
               ? "bg-autoram-red text-white"
-              : isScrolled
-                ? "text-white hover:text-autoram-gold hover:bg-white/10"
-                : "text-white/90 hover:text-autoram-gold hover:bg-white/10"
+              : "text-autoram-text hover:text-autoram-red hover:bg-gray-100"
           } ${isScrolled ? 'text-sm' : 'text-sm'}`}
         >
           Kontakt

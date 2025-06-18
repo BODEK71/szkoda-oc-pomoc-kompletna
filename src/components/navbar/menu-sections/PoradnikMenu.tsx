@@ -23,7 +23,7 @@ const PoradnikMenu = ({ isActive }: PoradnikMenuProps) => {
           className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center ${
             isActive
               ? "bg-autoram-red text-white"
-              : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
+              : "text-autoram-text hover:text-autoram-red hover:bg-gray-100"
           }`}
         >
           Poradnik
