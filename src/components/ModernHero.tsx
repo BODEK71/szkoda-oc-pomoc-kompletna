@@ -50,8 +50,17 @@ const ModernHero = () => {
     return () => clearInterval(timer);
   }, [backgroundImages.length]);
 
+  const benefits = [
+    "Bezgotówkowa naprawa z OC sprawcy",
+    "Auto zastępcze bez limitu kilometrów",
+    "Bezpośrednia likwidacja szkód (BLS)",
+    "Holowanie i transport z OC sprawcy",
+    "Kompleksowa pomoc poszkodowanym",
+    "Wycena szkody przez rzeczoznawcę"
+  ];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background Slideshow with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
@@ -72,8 +81,8 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      {/* Content - positioned lower to avoid navbar overlap */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 lg:pt-24">
+      {/* Main Content - positioned to fill most of the screen */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 lg:pt-24 pb-40">
         {/* Badge */}
         <div className="mb-6 animate-fade-in">
           <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-base lg:text-lg px-4 lg:px-6 py-2 lg:py-3 backdrop-blur-sm">
@@ -82,7 +91,7 @@ const ModernHero = () => {
           </Badge>
         </div>
 
-        {/* Main Title with Typewriter Effect - reduced size */}
+        {/* Main Title with Typewriter Effect */}
         <div className="mb-8 lg:mb-10">
           <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 lg:mb-6">
             <span className="text-white block mb-2 lg:mb-4">{currentText}</span>
@@ -98,7 +107,7 @@ const ModernHero = () => {
           </p>
         </div>
 
-        {/* Cities - more compact */}
+        {/* Cities */}
         <div className="mb-8 lg:mb-10">
           <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-xl lg:rounded-2xl p-4 lg:p-6 max-w-4xl">
             <p className="text-autoram-gold font-semibold mb-2 lg:mb-3 text-sm lg:text-base">Działamy w 10 miastach:</p>
@@ -106,27 +115,6 @@ const ModernHero = () => {
               Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
             </p>
           </div>
-        </div>
-
-        {/* Key Benefits Grid - more compact */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-8 lg:mb-10 max-w-5xl mx-auto">
-          {[
-            "Bezgotówkowa naprawa z OC sprawcy",
-            "Auto zastępcze bez limitu kilometrów", 
-            "Bezpośrednia likwidacja szkód (BLS)",
-            "Holowanie i transport z OC sprawcy",
-            "Kompleksowa pomoc poszkodowanym",
-            "Wycena szkody przez rzeczoznawcę"
-          ].map((benefit, index) => (
-            <div 
-              key={index} 
-              className="flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-6 rounded-lg lg:rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-105"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CheckCircle className="w-5 h-5 lg:w-6 lg:h-6 text-autoram-gold flex-shrink-0" />
-              <span className="text-white font-medium text-sm lg:text-base">{benefit}</span>
-            </div>
-          ))}
         </div>
 
         {/* CTA Buttons */}
@@ -168,19 +156,22 @@ const ModernHero = () => {
         </div>
       </div>
 
-      {/* Slideshow indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-        {backgroundImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImageIndex 
-                ? 'bg-autoram-gold scale-125' 
-                : 'bg-white/50 hover:bg-white/70'
-            }`}
-          />
-        ))}
+      {/* Benefits as tabs/tiles at the bottom */}
+      <div className="relative z-10 bg-gradient-to-r from-black/80 via-black/70 to-black/80 backdrop-blur-md border-t border-white/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+            {benefits.map((benefit, index) => (
+              <div 
+                key={index} 
+                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 p-3 lg:p-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-autoram-gold flex-shrink-0" />
+                <span className="text-white font-medium text-xs lg:text-sm">{benefit}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
