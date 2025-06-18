@@ -1,8 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Phone, ArrowRight, Star } from "lucide-react";
+import { CheckCircle, Phone, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ModernHero = () => {
@@ -51,12 +49,17 @@ const ModernHero = () => {
   }, [backgroundImages.length]);
 
   const benefits = [
-    "Bezgotówkowa naprawa z OC sprawcy",
+    "Bezgotówkowa naprawa z OC sprawcy", 
     "Auto zastępcze bez limitu kilometrów",
     "Bezpośrednia likwidacja szkód (BLS)",
     "Holowanie i transport z OC sprawcy",
     "Kompleksowa pomoc poszkodowanym",
     "Wycena szkody przez rzeczoznawcę"
+  ];
+
+  const cities = [
+    "Wolsztyn", "Poznań", "Zielona Góra", "Nowy Tomyśl", "Sława", 
+    "Leszno", "Głogów", "Kościan", "Szamotuły", "Międzyrzecz"
   ];
 
   return (
@@ -81,11 +84,11 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      {/* Main Content - increased padding for different screen sizes */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 sm:pt-36 md:pt-40 lg:pt-32 xl:pt-28 pb-8">
-        {/* Main Title with Typewriter Effect - reduced size */}
+      {/* Main Content - increased padding to prevent navbar overlap */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-40 sm:pt-44 md:pt-48 lg:pt-40 xl:pt-36 pb-8">
+        {/* Main Title with Typewriter Effect - reduced by 3 points */}
         <div className="mb-6">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-3">
+          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-3">
             <span className="text-white block mb-2">{currentText}</span>
             <span className="text-autoram-gold-light bg-gradient-to-r from-autoram-gold to-autoram-gold-light bg-clip-text text-transparent">
               Bez stresu, bez kosztów
@@ -98,28 +101,10 @@ const ModernHero = () => {
             - wszystko z OC sprawcy.
           </p>
         </div>
-
-        {/* Badge moved below text */}
-        <div className="mb-4 animate-fade-in">
-          <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
-            <Star className="w-4 h-4 mr-2" />
-            KOMPLEKSOWA OBSŁUGA POWYPADKOWA
-          </Badge>
-        </div>
       </div>
 
-      {/* Cities section and CTA Buttons at bottom of image */}
+      {/* CTA Buttons at bottom of image */}
       <div className="relative z-10 pb-4">
-        {/* Cities section - compact frame with only city names */}
-        <div className="flex justify-center px-4 mb-6">
-          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg px-6 py-3">
-            <p className="text-white/90 text-center text-sm lg:text-base font-medium">
-              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
-            </p>
-          </div>
-        </div>
-
-        {/* CTA Buttons - enlarged main button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
           <Button 
             size="lg" 
@@ -142,7 +127,7 @@ const ModernHero = () => {
         </div>
       </div>
 
-      {/* Benefits as tabs/tiles at the bottom - white background with red icons */}
+      {/* Benefits as tabs/tiles - white background with red icons */}
       <div className="relative z-10 bg-white shadow-lg border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="grid grid-cols-6 gap-3">
@@ -156,6 +141,22 @@ const ModernHero = () => {
                 <span className="text-autoram-text font-semibold text-base leading-tight">{benefit}</span>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Cities section moved below benefits with matching styling */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="grid grid-cols-5 md:grid-cols-10 gap-3">
+              {cities.map((city, index) => (
+                <div key={index} className="flex items-center justify-center text-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-autoram-red rounded-full flex-shrink-0"></div>
+                    <span className="text-autoram-text font-medium text-sm">{city}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
