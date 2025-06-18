@@ -81,8 +81,8 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      {/* Main Content - optimized for 14-17" monitors */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-8">
+      {/* Main Content - increased padding for different screen sizes */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 sm:pt-36 md:pt-40 lg:pt-32 xl:pt-28 pb-8">
         {/* Main Title with Typewriter Effect - reduced size */}
         <div className="mb-6">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-3">
