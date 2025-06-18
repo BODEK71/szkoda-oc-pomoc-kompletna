@@ -15,31 +15,31 @@ const WhyChooseUs = () => {
       icon: <Clock className="w-8 h-8" />,
       title: "Dostępność 24/7",
       description: "Pomoc drogowa i zgłaszanie szkód dostępne przez całą dobę, 7 dni w tygodniu",
-      color: "bg-green-100 text-green-600"
+      color: "bg-blue-100 text-blue-600"
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Bezgotówkowe rozliczenia",
       description: "Naprawy, auto zastępcze i holowanie bez Twojego udziału finansowego",
-      color: "bg-purple-100 text-purple-600"
+      color: "bg-blue-100 text-blue-600"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Doświadczona kadra",
       description: "Zespół ekspertów z wieloletnim doświadczeniem w branży ubezpieczeniowej",
-      color: "bg-orange-100 text-orange-600"
+      color: "bg-blue-100 text-blue-600"
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Certyfikowane usługi",
       description: "Współpracujemy z najlepszymi warsztatami i rzeczoznawcami w regionie",
-      color: "bg-red-100 text-red-600"
+      color: "bg-blue-100 text-blue-600"
     },
     {
       icon: <Phone className="w-8 h-8" />,
       title: "Szybka realizacja",
       description: "Rozpoczęcie procesu obsługi szkody w ciągu 24 godzin od zgłoszenia",
-      color: "bg-indigo-100 text-indigo-600"
+      color: "bg-blue-100 text-blue-600"
     }
   ];
 
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge className="bg-green-100 text-green-800 mb-4">
+          <Badge className="bg-blue-100 text-blue-800 mb-4">
             Dlaczego my?
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
         {/* Reasons Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {reasons.map((reason, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md bg-gradient-to-br from-blue-50 to-blue-100">
               <CardHeader className="pb-4">
                 <div className={`w-16 h-16 rounded-2xl ${reason.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   {reason.icon}
