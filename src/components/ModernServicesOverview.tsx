@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Car, Wrench, CreditCard, Truck, Shield, Clock } from "lucide-react";
+import { ArrowRight, Car, Wrench, CreditCard, Truck, Shield, Clock, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ModernServicesOverview = () => {

@@ -85,22 +85,22 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
     <div className="hidden lg:flex items-center justify-center">
       <div className="flex items-center space-x-1">
         {/* Usługi kompleksowe */}
-        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} isScrolled={isScrolled} />
+        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} />
 
         {/* Obsługa szkód ubezpieczeniowych */}
-        <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} isScrolled={isScrolled} />
+        <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} />
 
         {/* Naprawy pojazdów */}
-        <NaprawyMenu isActive={isActiveNaprawy()} isScrolled={isScrolled} />
+        <NaprawyMenu isActive={isActiveNaprawy()} />
 
         {/* Wynajem pojazdów zastępczych */}
-        <WynajemMenu isActive={isActiveWynajem()} isScrolled={isScrolled} />
+        <WynajemMenu isActive={isActiveWynajem()} />
 
         {/* Pomoc drogowa */}
-        <PomocDrogowaMenu isActive={isActivePomocDrogowa()} isScrolled={isScrolled} />
+        <PomocDrogowaMenu isActive={isActivePomocDrogowa()} />
 
         {/* Poradnik */}
-        <PoradnikMenu isActive={isActiveSection(poradnikItems)} isScrolled={isScrolled} />
+        <PoradnikMenu isActive={isActiveSection(poradnikItems)} />
 
         {/* Kontakt */}
         <Link
