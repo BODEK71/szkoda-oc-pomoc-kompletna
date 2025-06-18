@@ -21,11 +21,11 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/95 backdrop-blur-md shadow-2xl border-b border-gray-200' 
-        : 'bg-white/80 backdrop-blur-sm'
+        : 'bg-white/90 backdrop-blur-sm shadow-lg'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top line - Logo, Company Name, Contact */}
-        <div className={`transition-all duration-300 ${isScrolled ? 'py-2' : 'py-2'}`}>
+        <div className={`transition-all duration-300 ${isScrolled ? 'py-2' : 'py-3'}`}>
           <NavbarHeader isScrolled={isScrolled} />
         </div>
         
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         {/* Bottom line - Navigation Menu */}
-        <div className={`transition-all duration-300 ${isScrolled ? 'pb-2' : 'pb-2'}`}>
+        <div className={`transition-all duration-300 ${isScrolled ? 'pb-2' : 'pb-3'}`}>
           <DesktopMenu isScrolled={isScrolled} />
         </div>
       </div>

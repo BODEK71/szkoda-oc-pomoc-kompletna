@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, ArrowRight } from "lucide-react";
@@ -63,7 +64,7 @@ const ModernHero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden mt-20 lg:mt-24">
       {/* Background Slideshow with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
@@ -84,9 +85,9 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      {/* Main Content - increased padding to prevent navbar overlap */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-40 sm:pt-44 md:pt-48 lg:pt-40 xl:pt-36 pb-8">
-        {/* Main Title with Typewriter Effect - reduced by 3 points */}
+      {/* Main Content */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8">
+        {/* Main Title with Typewriter Effect */}
         <div className="mb-6">
           <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-3">
             <span className="text-white block mb-2">{currentText}</span>
@@ -144,10 +145,10 @@ const ModernHero = () => {
           </div>
         </div>
 
-        {/* Cities section - completely rebuilt */}
+        {/* Cities section */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+            <div className="flex flex-wrap justify-center gap-6">
               {cities.map((city, index) => (
                 <div key={index} className="flex items-center">
                   <div className="w-2 h-2 bg-autoram-red rounded-full mr-3"></div>
