@@ -1,49 +1,95 @@
 
-import { CheckCircle } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle, Users, Clock, Award, Shield } from "lucide-react";
 
 const BenefitsSection = () => {
   const benefits = [
-    "Bezgotówkowa naprawa z OC sprawcy", 
-    "Auto zastępcze bez limitu kilometrów",
-    "Bezpośrednia likwidacja szkód (BLS)",
-    "Holowanie i transport z OC sprawcy",
-    "Kompleksowa pomoc poszkodowanym",
-    "Wycena szkody przez rzeczoznawcę"
+    {
+      icon: CheckCircle,
+      title: "Bezpłatna wycena",
+      description: "Profesjonalna wycena szkody bez żadnych kosztów"
+    },
+    {
+      icon: Users,
+      title: "Doświadczenie",
+      description: "Ponad 10 lat na rynku ubezpieczeniowym"
+    },
+    {
+      icon: Clock,
+      title: "Szybka realizacja",
+      description: "Błyskawiczna obsługa i realizacja zleceń"
+    },
+    {
+      icon: Award,
+      title: "Jakość usług",
+      description: "Najwyższa jakość świadczonych usług"
+    }
+  ];
+
+  const stats = [
+    { number: "98%", label: "zadowolonych klientów" },
+    { number: "24h", label: "czas reakcji" },
+    { number: "5000+", label: "obsłużonych szkód" },
+    { number: "100%", label: "profesjonalizm" }
   ];
 
   const cities = [
-    "Wolsztyn", "Poznań", "Zielona Góra", "Nowy Tomyśl", "Sława", 
-    "Leszno", "Głogów", "Kościan", "Szamotuły"
+    "Poznań", "Leszno", "Kościan", "Wolsztyn", "Grodzisk Wielkopolski",
+    "Nowy Tomyśl", "Szamotuły", "Środa Wielkopolska", "Luboń", "Mosina"
   ];
 
   return (
-    <section className="relative z-10 bg-white shadow-lg border-t border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
+    <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Benefits Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {benefits.map((benefit, index) => (
-            <div 
-              key={index} 
-              className="flex flex-col items-center justify-center text-center bg-white border border-gray-200 p-6 rounded-lg hover:shadow-md transition-all duration-300 hover:scale-105 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CheckCircle className="w-8 h-8 text-autoram-red flex-shrink-0 mb-3" />
-              <span className="text-autoram-text font-semibold text-base leading-tight">{benefit}</span>
-            </div>
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <benefit.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">{benefit.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
 
-        {/* Cities section */}
-        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm animate-slide-up">
-          <h3 className="text-lg font-semibold text-autoram-text mb-4 text-center">
-            Obsługujemy szkody w regionach:
-          </h3>
-          <div className="flex flex-wrap justify-center gap-6">
-            {cities.map((city, index) => (
-              <div key={index} className="flex items-center">
-                <div className="w-2 h-2 bg-autoram-red rounded-full mr-3"></div>
-                <span className="text-autoram-text font-medium text-sm whitespace-nowrap">{city}</span>
+        {/* Statistics */}
+        <div className="bg-white rounded-3xl shadow-2xl p-12 mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <div key={index} className="group">
+                <div className="text-5xl lg:text-6xl font-bold text-red-600 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600 font-medium uppercase tracking-wide text-sm">
+                  {stat.label}
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Cities Section */}
+        <div className="text-center">
+          <Badge className="bg-blue-600 text-white mb-8 font-semibold text-lg px-6 py-3 rounded-full">
+            Obszar działania
+          </Badge>
+          <h3 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12">
+            Obsługujemy całą <span className="text-blue-600">Wielkopolskę</span>
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            {cities.map((city, index) => (
+              <Badge 
+                key={index} 
+                variant="outline" 
+                className="text-lg px-6 py-3 border-2 border-blue-200 text-blue-700 hover:bg-blue-50 transition-colors duration-300"
+              >
+                {city}
+              </Badge>
             ))}
           </div>
         </div>

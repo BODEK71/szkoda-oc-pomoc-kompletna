@@ -56,7 +56,7 @@ const ModernServicesOverview = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-5xl lg:text-6xl font-bold text-autoram-text mb-8">
-            Nasze <span className="text-blue-600">usługi</span>
+            Nasze <span className="text-red-600">usługi</span>
           </h2>
           <p className="text-xl text-autoram-text-muted max-w-3xl mx-auto leading-relaxed">
             Oferujemy kompleksową obsługę powypadkową - od zgłoszenia szkody, przez naprawę, 
@@ -75,7 +75,7 @@ const ModernServicesOverview = () => {
               
               <CardHeader className="relative z-10 pb-4">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="p-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="p-4 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
                   <div>
@@ -114,13 +114,13 @@ const ModernServicesOverview = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl p-12 text-white">
-          <Clock className="w-16 h-16 mx-auto mb-6 text-blue-100" />
+        <div className="text-center bg-gradient-to-r from-red-500 to-red-600 rounded-3xl p-12 text-white">
+          <Clock className="w-16 h-16 mx-auto mb-6 text-red-100" />
           <h3 className="text-3xl font-bold mb-4">Potrzebujesz pomocy już teraz?</h3>
           <p className="text-xl mb-8 text-white/90">Zadzwoń na naszą infolinię - jesteśmy dostępni 24/7</p>
           <Button 
             size="lg"
-            className="bg-white hover:bg-blue-50 text-blue-600 font-bold text-xl px-12 py-6 hover:scale-105 transition-all duration-300"
+            className="bg-white hover:bg-red-50 text-red-600 font-bold text-xl px-12 py-6 hover:scale-105 transition-all duration-300"
           >
             <Phone className="w-6 h-6 mr-3" />
             123-456-789
