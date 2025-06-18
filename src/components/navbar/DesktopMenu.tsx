@@ -33,7 +33,11 @@ import PomocDrogowaMenu from "./menu-sections/PomocDrogowaMenu";
 import PoradnikMenu from "./menu-sections/PoradnikMenu";
 import UslugiKompleksoweMenu from "./menu-sections/UslugiKompleksoweMenu";
 
-const DesktopMenu = () => {
+interface DesktopMenuProps {
+  isScrolled?: boolean;
+}
+
+const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
   const location = useLocation();
 
   const isActivePath = (path: string) => {
@@ -78,34 +82,36 @@ const DesktopMenu = () => {
   };
 
   return (
-    <div className="hidden lg:flex items-center justify-center h-16">
+    <div className="hidden lg:flex items-center justify-center">
       <div className="flex items-center space-x-1">
         {/* Usługi kompleksowe */}
-        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} />
+        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} isScrolled={isScrolled} />
 
         {/* Obsługa szkód ubezpieczeniowych */}
-        <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} />
+        <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} isScrolled={isScrolled} />
 
         {/* Naprawy pojazdów */}
-        <NaprawyMenu isActive={isActiveNaprawy()} />
+        <NaprawyMenu isActive={isActiveNaprawy()} isScrolled={isScrolled} />
 
         {/* Wynajem pojazdów zastępczych */}
-        <WynajemMenu isActive={isActiveWynajem()} />
+        <WynajemMenu isActive={isActiveWynajem()} isScrolled={isScrolled} />
 
         {/* Pomoc drogowa */}
-        <PomocDrogowaMenu isActive={isActivePomocDrogowa()} />
+        <PomocDrogowaMenu isActive={isActivePomocDrogowa()} isScrolled={isScrolled} />
 
         {/* Poradnik */}
-        <PoradnikMenu isActive={isActiveSection(poradnikItems)} />
+        <PoradnikMenu isActive={isActiveSection(poradnikItems)} isScrolled={isScrolled} />
 
         {/* Kontakt */}
         <Link
           to="/kontakt"
-          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+          className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
             isActivePath("/kontakt")
               ? "bg-autoram-red text-white"
-              : "text-autoram-text-muted hover:text-autoram-red hover:bg-autoram-gray"
-          }`}
+              : isScrolled
+                ? "text-white hover:text-autoram-gold hover:bg-white/10"
+                : "text-white/90 hover:text-autoram-gold hover:bg-white/10"
+          } ${isScrolled ? 'text-sm' : 'text-sm'}`}
         >
           Kontakt
         </Link>

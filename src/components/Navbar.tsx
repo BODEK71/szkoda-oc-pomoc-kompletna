@@ -1,17 +1,33 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavbarHeader from "./navbar/NavbarHeader";
 import MobileMenu from "./navbar/MobileMenu";
 import DesktopMenu from "./navbar/DesktopMenu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="bg-autoram-white shadow-lg border-b-2 border-autoram-red sticky top-0 z-50">
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-autoram-text/95 backdrop-blur-md shadow-2xl border-b border-white/10' 
+        : 'bg-black/20 backdrop-blur-sm'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top line - Logo, Company Name, Contact */}
-        <NavbarHeader />
+        <div className={`transition-all duration-300 ${isScrolled ? 'py-3' : 'py-4'}`}>
+          <NavbarHeader isScrolled={isScrolled} />
+        </div>
         
         {/* Mobile menu trigger */}
         <div className="lg:hidden absolute top-6 right-4">
@@ -19,7 +35,9 @@ const Navbar = () => {
         </div>
 
         {/* Bottom line - Navigation Menu */}
-        <DesktopMenu />
+        <div className={`transition-all duration-300 ${isScrolled ? 'pb-3' : 'pb-4'}`}>
+          <DesktopMenu isScrolled={isScrolled} />
+        </div>
       </div>
     </nav>
   );
