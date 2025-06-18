@@ -9,37 +9,37 @@ const WhyChooseUs = () => {
       icon: <Shield className="w-8 h-8" />,
       title: "Specjalizacja w OC sprawcy",
       description: "Skupiamy się wyłącznie na obsłudze szkód z ubezpieczenia sprawcy wypadku",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Dostępność 24/7",
       description: "Pomoc drogowa i zgłaszanie szkód dostępne przez całą dobę, 7 dni w tygodniu",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Bezgotówkowe rozliczenia",
       description: "Naprawy, auto zastępcze i holowanie bez Twojego udziału finansowego",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Doświadczona kadra",
       description: "Zespół ekspertów z wieloletnim doświadczeniem w branży ubezpieczeniowej",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Certyfikowane usługi",
       description: "Współpracujemy z najlepszymi warsztatami i rzeczoznawcami w regionie",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: <Phone className="w-8 h-8" />,
       title: "Szybka realizacja",
       description: "Rozpoczęcie procesu obsługi szkody w ciągu 24 godzin od zgłoszenia",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-red-100 text-red-600"
     }
   ];
 
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 mb-4">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-red-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm font-semibold text-gray-900 mb-1">
@@ -150,7 +150,7 @@ const WhyChooseUs = () => {
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                     {step.step}
                   </div>
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mx-auto -mt-12 mb-4 text-blue-600">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mx-auto -mt-12 mb-4 text-red-600">
                     {step.icon}
                   </div>
                 </div>
