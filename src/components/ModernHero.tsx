@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, ArrowRight } from "lucide-react";
@@ -152,7 +153,7 @@ const ModernHero = () => {
                 <div key={index} className="flex items-center justify-center text-center">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-autoram-red rounded-full flex-shrink-0"></div>
-                    <span className="text-autoram-text font-medium text-sm">{city}</span>
+                    <span className="text-autoram-text font-medium text-sm whitespace-nowrap">{city}</span>
                   </div>
                 </div>
               ))}
