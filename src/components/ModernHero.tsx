@@ -64,7 +64,7 @@ const ModernHero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden mt-20 lg:mt-24">
+    <section className="relative min-h-screen flex flex-col overflow-hidden mt-28 lg:mt-32">
       {/* Background Slideshow with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
