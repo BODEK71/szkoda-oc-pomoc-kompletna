@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -78,10 +79,22 @@ const ModernHero = () => {
         ))}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-autoram-text/60 to-autoram-red/30"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+        
+        {/* Cities section positioned at bottom of image */}
+        <div className="absolute bottom-0 left-0 right-0 z-20 pb-4">
+          <div className="flex justify-center">
+            <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl mx-4">
+              <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
+              <p className="text-white/90 leading-relaxed text-sm lg:text-base">
+                Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Main Content - optimized for 14-17" monitors */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
         {/* Badge */}
         <div className="mb-4 animate-fade-in">
           <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
@@ -126,16 +139,6 @@ const ModernHero = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
-        </div>
-
-        {/* Cities moved to bottom of image */}
-        <div className="mb-4">
-          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl">
-            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
-            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
-              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
-            </p>
-          </div>
         </div>
       </div>
 
