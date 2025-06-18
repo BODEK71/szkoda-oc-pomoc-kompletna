@@ -81,49 +81,49 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      {/* Main Content - positioned to fill most of the screen */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 lg:pt-24 pb-40">
+      {/* Main Content - optimized for 14-17" monitors */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
         {/* Badge */}
-        <div className="mb-6 animate-fade-in">
-          <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-base lg:text-lg px-4 lg:px-6 py-2 lg:py-3 backdrop-blur-sm">
-            <Star className="w-4 h-4 lg:w-5 lg:h-5 mr-2" />
+        <div className="mb-4 animate-fade-in">
+          <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
+            <Star className="w-4 h-4 mr-2" />
             KOMPLEKSOWA OBSŁUGA POWYPADKOWA
           </Badge>
         </div>
 
-        {/* Main Title with Typewriter Effect */}
-        <div className="mb-8 lg:mb-10">
-          <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 lg:mb-6">
-            <span className="text-white block mb-2 lg:mb-4">{currentText}</span>
+        {/* Main Title with Typewriter Effect - reduced size */}
+        <div className="mb-6">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-3">
+            <span className="text-white block mb-2">{currentText}</span>
             <span className="text-autoram-gold-light bg-gradient-to-r from-autoram-gold to-autoram-gold-light bg-clip-text text-transparent">
               Bez stresu, bez kosztów
             </span>
           </h1>
           
-          <p className="text-lg lg:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-base lg:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto font-light">
             Kompleksowa pomoc poszkodowanym w komunikacji. 
             <span className="text-autoram-gold font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> 
             - wszystko z OC sprawcy.
           </p>
         </div>
 
-        {/* Cities */}
-        <div className="mb-8 lg:mb-10">
-          <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-xl lg:rounded-2xl p-4 lg:p-6 max-w-4xl">
-            <p className="text-autoram-gold font-semibold mb-2 lg:mb-3 text-sm lg:text-base">Działamy w 10 miastach:</p>
-            <p className="text-white/90 leading-relaxed text-base lg:text-lg">
+        {/* Cities - reduced size */}
+        <div className="mb-6">
+          <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 max-w-3xl">
+            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
+            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
               Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
             </p>
           </div>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center mb-8 lg:mb-12">
+        {/* CTA Buttons - reduced size */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button 
             size="lg" 
-            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg lg:text-xl px-8 lg:px-12 py-6 lg:py-8 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-xl lg:rounded-2xl"
+            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-base px-6 py-4 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
           >
-            <Phone className="w-5 h-5 lg:w-6 lg:h-6 mr-3 lg:mr-4" />
+            <Phone className="w-4 h-4 mr-2" />
             Zgłoś szkodę: 123-456-789
           </Button>
           
@@ -131,42 +131,42 @@ const ModernHero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="text-lg lg:text-xl px-8 lg:px-12 py-6 lg:py-8 border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold rounded-xl lg:rounded-2xl backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
+              className="text-base px-6 py-4 border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold rounded-lg backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
             >
               Dowiedz się więcej
-              <ArrowRight className="w-5 h-5 lg:w-6 lg:h-6 ml-3 lg:ml-4" />
+              <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
         </div>
 
-        {/* Trust Indicators */}
-        <div className="grid sm:grid-cols-3 gap-6 lg:gap-8 max-w-2xl mx-auto">
+        {/* Trust Indicators - reduced size */}
+        <div className="grid sm:grid-cols-3 gap-4 max-w-xl mx-auto">
           <div className="text-center">
-            <div className="w-5 h-5 lg:w-6 lg:h-6 bg-autoram-gold rounded-full mx-auto mb-2 lg:mb-3 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-base lg:text-lg">Dostępni 24/7</span>
+            <div className="w-4 h-4 bg-autoram-gold rounded-full mx-auto mb-2 animate-pulse"></div>
+            <span className="text-white/80 font-semibold text-sm">Dostępni 24/7</span>
           </div>
           <div className="text-center">
-            <div className="w-5 h-5 lg:w-6 lg:h-6 bg-autoram-red rounded-full mx-auto mb-2 lg:mb-3 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-base lg:text-lg">Bezpłatna wycena</span>
+            <div className="w-4 h-4 bg-autoram-red rounded-full mx-auto mb-2 animate-pulse"></div>
+            <span className="text-white/80 font-semibold text-sm">Bezpłatna wycena</span>
           </div>
           <div className="text-center">
-            <div className="w-5 h-5 lg:w-6 lg:h-6 bg-green-500 rounded-full mx-auto mb-2 lg:mb-3 animate-pulse"></div>
-            <span className="text-white/80 font-semibold text-base lg:text-lg">Szybka realizacja</span>
+            <div className="w-4 h-4 bg-green-500 rounded-full mx-auto mb-2 animate-pulse"></div>
+            <span className="text-white/80 font-semibold text-sm">Szybka realizacja</span>
           </div>
         </div>
       </div>
 
-      {/* Benefits as tabs/tiles at the bottom */}
+      {/* Benefits as tabs/tiles at the bottom - adjusted height */}
       <div className="relative z-10 bg-gradient-to-r from-black/80 via-black/70 to-black/80 backdrop-blur-md border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="grid grid-cols-6 gap-2">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="flex flex-col items-center justify-center text-center bg-white/10 backdrop-blur-md border border-white/20 p-3 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 aspect-square"
+                className="flex flex-col items-center justify-center text-center bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 aspect-square"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-5 h-5 text-autoram-gold flex-shrink-0 mb-2" />
+                <CheckCircle className="w-4 h-4 text-autoram-gold flex-shrink-0 mb-1" />
                 <span className="text-white font-medium text-xs leading-tight">{benefit}</span>
               </div>
             ))}
