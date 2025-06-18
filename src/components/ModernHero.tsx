@@ -79,22 +79,10 @@ const ModernHero = () => {
         ))}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-autoram-text/60 to-autoram-red/30"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-        
-        {/* Cities section positioned at bottom of image */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 pb-4">
-          <div className="flex justify-center">
-            <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl mx-4">
-              <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
-              <p className="text-white/90 leading-relaxed text-sm lg:text-base">
-                Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Main Content - optimized for 14-17" monitors */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-8">
         {/* Badge */}
         <div className="mb-4 animate-fade-in">
           <Badge className="bg-autoram-gold/20 border border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-semibold text-sm px-4 py-2 backdrop-blur-sm">
@@ -112,15 +100,18 @@ const ModernHero = () => {
             </span>
           </h1>
           
-          <p className="text-base lg:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto font-light">
+          <p className="text-base lg:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto font-light mb-8">
             Kompleksowa pomoc poszkodowanym w komunikacji. 
             <span className="text-autoram-gold font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> 
             - wszystko z OC sprawcy.
           </p>
         </div>
+      </div>
 
-        {/* CTA Buttons - enlarged main button */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+      {/* CTA Buttons and Cities section at bottom of image */}
+      <div className="relative z-10 pb-4">
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6 px-4">
           <Button 
             size="lg" 
             className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg px-8 py-6 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
@@ -140,6 +131,16 @@ const ModernHero = () => {
             </Button>
           </Link>
         </div>
+
+        {/* Cities section */}
+        <div className="flex justify-center px-4">
+          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl">
+            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
+            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
+              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Benefits as tabs/tiles at the bottom - white background with red icons */}
@@ -152,8 +153,8 @@ const ModernHero = () => {
                 className="flex flex-col items-center justify-center text-center bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:scale-105 aspect-square shadow-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-6 h-6 text-autoram-red flex-shrink-0 mb-2" />
-                <span className="text-autoram-text font-medium text-sm leading-tight">{benefit}</span>
+                <CheckCircle className="w-8 h-8 text-autoram-red flex-shrink-0 mb-3" />
+                <span className="text-autoram-text font-semibold text-base leading-tight">{benefit}</span>
               </div>
             ))}
           </div>
