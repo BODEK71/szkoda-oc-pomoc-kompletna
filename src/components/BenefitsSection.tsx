@@ -35,8 +35,10 @@ const BenefitsSection = () => {
   ];
 
   const cities = [
-    "Poznań", "Leszno", "Kościan", "Wolsztyn", "Grodzisk Wielkopolski",
-    "Nowy Tomyśl", "Szamotuły", "Środa Wielkopolska", "Luboń", "Mosina"
+    "Poznań", "Wrocław", "Szczecin", "Bydgoszcz", "Zielona Góra", "Opole",
+    "Leszno", "Kalisz", "Gorzów Wielkopolski", "Wałbrzych", "Legnica",
+    "Jelenia Góra", "Konin", "Piła", "Koszalin", "Słupsk", "Żary",
+    "Bolesławiec", "Lubin", "Głogów", "Świdnica", "Dzierżoniów"
   ];
 
   return (
@@ -47,7 +49,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{benefit.title}</h3>
@@ -79,7 +81,7 @@ const BenefitsSection = () => {
             Obszar działania
           </Badge>
           <h3 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12">
-            Obsługujemy całą <span className="text-blue-600">Wielkopolskę</span>
+            Obsługujemy zachodnią <span className="text-blue-600">Polskę</span>
           </h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {cities.map((city, index) => (
