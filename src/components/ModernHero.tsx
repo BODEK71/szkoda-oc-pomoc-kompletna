@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -108,15 +107,24 @@ const ModernHero = () => {
         </div>
       </div>
 
-      {/* CTA Buttons and Cities section at bottom of image */}
+      {/* Cities section and CTA Buttons at bottom of image */}
       <div className="relative z-10 pb-4">
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6 px-4">
+        {/* Cities section - compact frame with only city names */}
+        <div className="flex justify-center px-4 mb-6">
+          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg px-6 py-3">
+            <p className="text-white/90 text-center text-sm lg:text-base font-medium">
+              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
+            </p>
+          </div>
+        </div>
+
+        {/* CTA Buttons - enlarged main button */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
           <Button 
             size="lg" 
-            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg px-8 py-6 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
+            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-xl px-10 py-7 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
           >
-            <Phone className="w-5 h-5 mr-3" />
+            <Phone className="w-6 h-6 mr-3" />
             Zgłoś szkodę: 123-456-789
           </Button>
           
@@ -130,16 +138,6 @@ const ModernHero = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
-        </div>
-
-        {/* Cities section */}
-        <div className="flex justify-center px-4">
-          <div className="inline-block bg-autoram-gold/20 backdrop-blur-md border border-autoram-gold/30 rounded-lg p-4 max-w-4xl">
-            <p className="text-autoram-gold font-semibold mb-2 text-sm">Działamy w 10 miastach:</p>
-            <p className="text-white/90 leading-relaxed text-sm lg:text-base">
-              Wolsztyn • Poznań • Zielona Góra • Nowy Tomyśl • Sława • Leszno • Głogów • Kościan • Szamotuły • Międzyrzecz
-            </p>
-          </div>
         </div>
       </div>
 
