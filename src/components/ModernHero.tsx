@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ModernHero = () => {
@@ -49,22 +49,8 @@ const ModernHero = () => {
     return () => clearInterval(timer);
   }, [backgroundImages.length]);
 
-  const benefits = [
-    "Bezgotówkowa naprawa z OC sprawcy", 
-    "Auto zastępcze bez limitu kilometrów",
-    "Bezpośrednia likwidacja szkód (BLS)",
-    "Holowanie i transport z OC sprawcy",
-    "Kompleksowa pomoc poszkodowanym",
-    "Wycena szkody przez rzeczoznawcę"
-  ];
-
-  const cities = [
-    "Wolsztyn", "Poznań", "Zielona Góra", "Nowy Tomyśl", "Sława", 
-    "Leszno", "Głogów", "Kościan", "Szamotuły"
-  ];
-
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden mt-28 lg:mt-32">
+    <section className="relative h-screen flex flex-col overflow-hidden mt-28 lg:mt-32">
       {/* Background Slideshow with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
@@ -105,7 +91,7 @@ const ModernHero = () => {
       </div>
 
       {/* CTA Buttons at bottom of image */}
-      <div className="relative z-10 pb-4">
+      <div className="relative z-10 pb-8">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
           <Button 
             size="lg" 
@@ -125,38 +111,6 @@ const ModernHero = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
-        </div>
-      </div>
-
-      {/* Benefits as tabs/tiles - white background with red icons */}
-      <div className="relative z-10 bg-white shadow-lg border-t border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="grid grid-cols-6 gap-3">
-            {benefits.map((benefit, index) => (
-              <div 
-                key={index} 
-                className="flex flex-col items-center justify-center text-center bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:scale-105 aspect-square shadow-sm"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CheckCircle className="w-8 h-8 text-autoram-red flex-shrink-0 mb-3" />
-                <span className="text-autoram-text font-semibold text-base leading-tight">{benefit}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Cities section */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <div className="flex flex-wrap justify-center gap-6">
-              {cities.map((city, index) => (
-                <div key={index} className="flex items-center">
-                  <div className="w-2 h-2 bg-autoram-red rounded-full mr-3"></div>
-                  <span className="text-autoram-text font-medium text-sm whitespace-nowrap">{city}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

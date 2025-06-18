@@ -7,6 +7,7 @@ import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Car, Wrench, CreditCard, 
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import ModernHero from "@/components/ModernHero";
+import BenefitsSection from "@/components/BenefitsSection";
 import ModernServicesOverview from "@/components/ModernServicesOverview";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactSection from "@/components/ContactSection";
@@ -17,6 +18,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <ModernHero />
+      <BenefitsSection />
       <ModernServicesOverview />
       <WhyChooseUs />
       <ContactSection />
