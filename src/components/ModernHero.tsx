@@ -156,18 +156,18 @@ const ModernHero = () => {
         </div>
       </div>
 
-      {/* Benefits as tabs/tiles at the bottom - adjusted height */}
-      <div className="relative z-10 bg-gradient-to-r from-black/80 via-black/70 to-black/80 backdrop-blur-md border-t border-white/20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="grid grid-cols-6 gap-2">
+      {/* Benefits as tabs/tiles at the bottom - white background with red icons */}
+      <div className="relative z-10 bg-white shadow-lg border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="grid grid-cols-6 gap-3">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="flex flex-col items-center justify-center text-center bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 aspect-square"
+                className="flex flex-col items-center justify-center text-center bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:scale-105 aspect-square shadow-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-4 h-4 text-autoram-gold flex-shrink-0 mb-1" />
-                <span className="text-white font-medium text-xs leading-tight">{benefit}</span>
+                <CheckCircle className="w-6 h-6 text-autoram-red flex-shrink-0 mb-2" />
+                <span className="text-autoram-text font-medium text-sm leading-tight">{benefit}</span>
               </div>
             ))}
           </div>
