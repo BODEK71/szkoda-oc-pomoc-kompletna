@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,8 +7,11 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ObslugaSzkodyZOC from "./pages/ObslugaSzkodyZOC";
 import NaprawyZOC from "./pages/NaprawyZOC";
+import NaprawyBezgotowkoweZOC from "./pages/NaprawyBezgotowkoweZOC";
 import AutoZastepczeZOC from "./pages/AutoZastepczeZOC";
 import PomocDrogowaZOC from "./pages/PomocDrogowaZOC";
+import NaprawyPowypadkowe from "./pages/NaprawyPowypadkowe";
+import Kontakt from "./pages/Kontakt";
 
 // Location-specific pages
 import ObslugaSzkodyZOCWolsztyn from "./pages/ObslugaSzkodyZOCWolsztyn";
@@ -57,8 +59,11 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/obsługa-szkody-z-oc" element={<ObslugaSzkodyZOC />} />
           <Route path="/naprawy-z-oc" element={<NaprawyZOC />} />
+          <Route path="/naprawy-bezgotowkowe-z-oc" element={<NaprawyBezgotowkoweZOC />} />
+          <Route path="/naprawy-powypadkowe" element={<NaprawyPowypadkowe />} />
           <Route path="/auto-zastepcze-z-oc" element={<AutoZastepczeZOC />} />
           <Route path="/pomoc-drogowa-z-oc" element={<PomocDrogowaZOC />} />
+          <Route path="/kontakt" element={<Kontakt />} />
           
           {/* Location-specific routes */}
           <Route path="/obsługa-szkody-z-oc-wolsztyn" element={<ObslugaSzkodyZOCWolsztyn />} />
