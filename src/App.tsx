@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -47,6 +46,16 @@ import OdszkodowanieZOCSprawcy from "./pages/OdszkodowanieZOCSprawcy";
 import LikwidatorSzkod from "./pages/LikwidatorSzkod";
 import LikwidacjaSzkodyGrodziskWielkopolski from "./pages/LikwidacjaSzkodyGrodziskWielkopolski";
 import WycenaSzkodyPoznan from "./pages/WycenaSzkodyPoznan";
+
+// New repair pages
+import NaprawyBezgotowkowe from "./pages/NaprawyBezgotowkowe";
+import BlacharstwoPowyypadkowe from "./pages/BlacharstwoPowyypadkowe";
+
+// New rental pages
+import WynajemBezgotowkowy from "./pages/WynajemBezgotowkowy";
+
+// New roadside assistance pages
+import Holowanie24h from "./pages/Holowanie24h";
 
 const queryClient = new QueryClient();
 
@@ -99,6 +108,18 @@ const App = () => (
           <Route path="/likwidator-szkod" element={<LikwidatorSzkod />} />
           <Route path="/likwidacja-szkody-grodzisk-wielkopolski" element={<LikwidacjaSzkodyGrodziskWielkopolski />} />
           <Route path="/wycena-szkody-poznan" element={<WycenaSzkodyPoznan />} />
+          
+          {/* New repair routes */}
+          <Route path="/naprawy-bezgotowkowe" element={<NaprawyBezgotowkowe />} />
+          <Route path="/naprawa-bezgotowkowa" element={<NaprawyBezgotowkowe />} />
+          <Route path="/blacharstwo-powypadkowe" element={<BlacharstwoPowyypadkowe />} />
+          
+          {/* New rental routes */}
+          <Route path="/wynajem-bezgotowkowy" element={<WynajemBezgotowkowy />} />
+          
+          {/* New roadside assistance routes */}
+          <Route path="/holowanie-24h" element={<Holowanie24h />} />
+          <Route path="/pomoc-drogowa-24h" element={<Holowanie24h />} />
           
           {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
