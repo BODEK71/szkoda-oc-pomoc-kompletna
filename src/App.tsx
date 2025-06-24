@@ -71,6 +71,14 @@ import PakietUslugPowypadkowych from "./pages/PakietUslugPowypadkowych";
 import WszystkoZJednegoMiejsca from "./pages/WszystkoZJednegoMiejsca";
 import ObslugaOdADoZ from "./pages/ObslugaOdADoZ";
 
+// Local comprehensive service pages
+import KompleksowaObslugaPowypadkowaWolsztyn from "./pages/KompleksowaObslugaPowypadkowaWolsztyn";
+import CentrumPomocyPoWypadkuWolsztyn from "./pages/CentrumPomocyPoWypadkuWolsztyn";
+import KompleksowaObslugaPowypadkowaPoznan from "./pages/KompleksowaObslugaPowypadkowaPoznan";
+import CentrumPomocyPoWypadkuPoznan from "./pages/CentrumPomocyPoWypadkuPoznan";
+import KompleksowaObslugaPowypadkowaZielonaGora from "./pages/KompleksowaObslugaPowypadkowaZielonaGora";
+import CentrumPomocyPoWypadkuZielonaGora from "./pages/CentrumPomocyPoWypadkuZielonaGora";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -147,6 +155,14 @@ const App = () => (
           <Route path="/pakiet-uslug-powypadkowych" element={<PakietUslugPowypadkowych />} />
           <Route path="/wszystko-z-jednego-miejsca" element={<WszystkoZJednegoMiejsca />} />
           <Route path="/obsluga-od-a-do-z" element={<ObslugaOdADoZ />} />
+          
+          {/* Local comprehensive service routes */}
+          <Route path="/kompleksowa-obsluga-powypadkowa-wolsztyn" element={<KompleksowaObslugaPowypadkowaWolsztyn />} />
+          <Route path="/centrum-pomocy-po-wypadku-wolsztyn" element={<CentrumPomocyPoWypadkuWolsztyn />} />
+          <Route path="/kompleksowa-obsluga-powypadkowa-poznan" element={<KompleksowaObslugaPowypadkowaPoznan />} />
+          <Route path="/centrum-pomocy-po-wypadku-poznan" element={<CentrumPomocyPoWypadkuPoznan />} />
+          <Route path="/kompleksowa-obsluga-powypadkowa-zielona-gora" element={<KompleksowaObslugaPowypadkowaZielonaGora />} />
+          <Route path="/centrum-pomocy-po-wypadku-zielona-gora" element={<CentrumPomocyPoWypadkuZielonaGora />} />
           
           {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
