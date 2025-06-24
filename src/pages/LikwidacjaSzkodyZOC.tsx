@@ -2,93 +2,142 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Phone, CheckCircle, FileText, Clock, Shield, CreditCard } from "lucide-react";
-import { Link } from "react-router-dom";
+import { CheckCircle, Phone, ArrowRight, Shield, Car, FileText, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import BenefitsSection from "@/components/BenefitsSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 const LikwidacjaSzkodyZOC = () => {
+  const benefits = [
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Pełna ochrona prawna",
+      description: "Reprezentacja w rozmowach z ubezpieczycielem",
+      features: ["Analiza praw klienta", "Negocjacje z towarzystwem", "Obrona interesów poszkodowanego"]
+    },
+    {
+      icon: <Car className="w-8 h-8" />,
+      title: "Auto zastępcze",
+      description: "Bezgotówkowy wynajem na czas likwidacji",
+      features: ["Pojazd tej samej klasy", "Bez zaliczek", "Odbiór i zwrot gratis"]
+    },
+    {
+      icon: <FileText className="w-8 h-8" />,
+      title: "Kompleksowa dokumentacja",
+      description: "Przygotowanie wszystkich niezbędnych dokumentów",
+      features: ["Wycena szkody", "Kosztorysy napraw", "Dokumentacja medyczna"]
+    },
+    {
+      icon: <Clock className="w-8 h-8" />,
+      title: "Szybka realizacja",
+      description: "Ekspresowe załatwienie formalności",
+      features: ["Kontakt w 24h", "Regularna informacja", "Monitoring postępów"]
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-autoram-light">
+    <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-autoram-light to-autoram-white">
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="bg-autoram-red text-white mb-6 font-semibold text-lg px-8 py-4 rounded-full">
-              Likwidacja szkody z OC
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-autoram-text mb-8 leading-tight">
-              Likwidacja szkody z OC sprawcy
-            </h1>
-            <p className="text-xl md:text-2xl text-autoram-text-muted max-w-4xl mx-auto mb-12 leading-relaxed">
-              Specjalizujemy się w profesjonalnej likwidacji szkód z ubezpieczenia OC sprawcy wypadku. 
-              Zapewniamy kompleksową obsługę od A do Z.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold text-xl px-12 py-8 rounded-2xl">
-                <Phone className="w-6 h-6 mr-3" />
-                Bezpłatna konsultacja
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-autoram-red text-autoram-red hover:bg-autoram-red hover:text-white font-bold text-xl px-12 py-8 rounded-2xl">
-                <CreditCard className="w-6 h-6 mr-3" />
-                Zgłoś szkodę z OC
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <Badge className="bg-blue-100 text-blue-800">
+                  🛡️ LIKWIDACJA Z OC
+                </Badge>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                  <span className="text-blue-600">Likwidacja szkody</span>
+                  <br />
+                  <span className="text-gray-900">z OC sprawcy</span>
+                </h1>
+                
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Specjalistyczna obsługa likwidacji szkód z ubezpieczenia OC sprawcy wypadku. 
+                  Maksymalne odszkodowanie bez Twojego zaangażowania finansowego.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "100% sukcesu w sprawach",
+                  "Bez kosztów z góry",
+                  "Pełne odszkodowanie",
+                  "Obsługa 24/7"
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <span className="text-gray-700 font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Zadzwoń: 123-456-789
+                </Button>
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-blue-200 text-blue-600 hover:bg-blue-50">
+                  Bezpłatna konsultacja
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src="/lovable-uploads/71edeeac-71be-4e75-ab8f-996c0158b06e.png"
+                alt="Likwidacja szkody z OC sprawcy"
+                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Process Steps */}
-      <section className="py-20 bg-autoram-white">
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-autoram-text mb-8">
-              Proces likwidacji szkody z OC
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Dlaczego warto skorzystać z naszych usług?
             </h2>
-            <p className="text-xl text-autoram-text-muted max-w-4xl mx-auto">
-              Prowadzimy Cię przez cały proces krok po kroku
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Kompleksowa obsługa likwidacji szkód z OC sprawcy
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                step: "1",
-                title: "Zgłoszenie",
-                description: "Zgłaszamy szkodę do ubezpieczyciela sprawcy"
-              },
-              {
-                step: "2", 
-                title: "Dokumentacja",
-                description: "Gromadzimy wszystkie niezbędne dokumenty"
-              },
-              {
-                step: "3",
-                title: "Wycena",
-                description: "Wykonujemy profesjonalną wycenę uszkodzeń"
-              },
-              {
-                step: "4",
-                title: "Odszkodowanie",
-                description: "Doprowadzamy do wypłaty odszkodowania"
-              }
-            ].map((step, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 border-2 border-autoram-gray hover:border-autoram-red">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-autoram-red rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
-                    {step.step}
+          <div className="grid md:grid-cols-2 gap-8">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300">
+                <CardHeader className="pb-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                      {benefit.icon}
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="text-xl font-bold text-gray-900 mb-2">
+                        {benefit.title}
+                      </CardTitle>
+                      <CardDescription className="text-gray-600">
+                        {benefit.description}
+                      </CardDescription>
+                    </div>
                   </div>
-                  <CardTitle className="text-xl font-bold text-autoram-text">
-                    {step.title}
-                  </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-autoram-text-muted text-base leading-relaxed">
-                    {step.description}
-                  </CardDescription>
+                <CardContent className="pt-0 pl-20">
+                  <div className="space-y-2">
+                    {benefit.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -96,43 +145,32 @@ const LikwidacjaSzkodyZOC = () => {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-20 bg-autoram-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-autoram-text mb-8">
-              Dlaczego warto nam zaufać?
-            </h2>
-          </div>
+      <BenefitsSection />
+      <WhyChooseUs />
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/lovable-uploads/93ced69c-ab42-4978-ae9c-74d304614342.png"
-                alt="Likwidacja szkody z OC"
-                className="w-full h-80 object-cover rounded-2xl shadow-xl"
-              />
-            </div>
-            <div className="space-y-6">
-              {[
-                "Doświadczenie w branży ubezpieczeniowej",
-                "Szybka i profesjonalna obsługa",
-                "Maksymalne odszkodowania dla klientów",
-                "Bezpłatna konsultacja i wycena",
-                "Obsługa w całej Polsce",
-                "Współpraca z wszystkimi ubezpieczycielami"
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <CheckCircle className="w-6 h-6 text-autoram-red flex-shrink-0" />
-                  <span className="text-lg text-autoram-text">{benefit}</span>
-                </div>
-              ))}
-            </div>
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            Miałeś wypadek? Nie jesteś sprawcą?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Skontaktuj się z nami natychmiast. Im szybciej zaczniemy działać, 
+            tym większe masz szanse na maksymalne odszkodowanie.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
+              <Phone className="w-5 h-5 mr-2" />
+              Zadzwoń teraz: 123-456-789
+            </Button>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+              <Shield className="w-5 h-5 mr-2" />
+              Sprawdź swoje prawa
+            </Button>
           </div>
         </div>
       </section>
 
-      <ContactSection />
       <Footer />
     </div>
   );

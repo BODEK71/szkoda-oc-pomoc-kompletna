@@ -2,103 +2,141 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Phone, CheckCircle, FileText, Clock, Shield } from "lucide-react";
-import { Link } from "react-router-dom";
+import { CheckCircle, Phone, ArrowRight, FileText, Shield, Clock, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import BenefitsSection from "@/components/BenefitsSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 const LikwidacjaSzkodKomunikacyjnych = () => {
+  const processSteps = [
+    {
+      icon: <Phone className="w-8 h-8" />,
+      title: "Zgłoszenie szkody",
+      description: "Kontakt telefoniczny lub przez formularz online",
+      details: ["Przyjęcie zgłoszenia 24/7", "Pierwsza pomoc prawna", "Ustalenie okoliczności"]
+    },
+    {
+      icon: <FileText className="w-8 h-8" />,
+      title: "Dokumentacja",
+      description: "Zebranie i przygotowanie niezbędnych dokumentów",
+      details: ["Protokół policji", "Dokumenty pojazdu", "Zaświadczenia lekarskie"]
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Negocjacje",
+      description: "Rozmowy z ubezpieczycielem sprawcy",
+      details: ["Ustalenie wysokości odszkodowania", "Negocjacja warunków", "Obrona Twoich praw"]
+    },
+    {
+      icon: <Clock className="w-8 h-8" />,
+      title: "Wypłata",
+      description: "Otrzymanie pełnego odszkodowania",
+      details: ["Szybka wypłata", "Bez ukrytych kosztów", "Pełne zadowolenie klienta"]
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-autoram-light">
+    <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-autoram-light to-autoram-white">
+      <section className="relative bg-gradient-to-br from-red-50 via-white to-red-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="bg-autoram-red text-white mb-6 font-semibold text-lg px-8 py-4 rounded-full">
-              Likwidacja szkód komunikacyjnych
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-autoram-text mb-8 leading-tight">
-              Profesjonalna likwidacja szkód komunikacyjnych
-            </h1>
-            <p className="text-xl md:text-2xl text-autoram-text-muted max-w-4xl mx-auto mb-12 leading-relaxed">
-              Kompleksowa obsługa szkód komunikacyjnych z ubezpieczenia OC sprawcy. 
-              Zajmujemy się całym procesem od zgłoszenia do wypłaty odszkodowania.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-autoram-gold hover:bg-autoram-gold-dark text-black font-bold text-xl px-12 py-8 rounded-2xl">
-                <Phone className="w-6 h-6 mr-3" />
-                Zadzwoń 123-456-789
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-autoram-red text-autoram-red hover:bg-autoram-red hover:text-white font-bold text-xl px-12 py-8 rounded-2xl">
-                <FileText className="w-6 h-6 mr-3" />
-                Zgłoś szkodę online
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <Badge className="bg-red-100 text-red-800">
+                  🚗 LIKWIDACJA SZKÓD
+                </Badge>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                  <span className="text-red-600">Likwidacja szkód</span>
+                  <br />
+                  <span className="text-gray-900">komunikacyjnych</span>
+                </h1>
+                
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Profesjonalna obsługa likwidacji szkód komunikacyjnych. 
+                  Załatwimy wszystko za Ciebie - od dokumentacji po wypłatę odszkodowania.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Bezpłatna wycena szkody",
+                  "Obsługa 24/7",
+                  "Pełne odszkodowanie",
+                  "Brak ukrytych kosztów"
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <span className="text-gray-700 font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-red-600 hover:bg-red-700 text-lg px-8 py-4">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Zadzwoń: 123-456-789
+                </Button>
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-red-200 text-red-600 hover:bg-red-50">
+                  Bezpłatna wycena
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src="/lovable-uploads/98c1a9a6-892d-403f-a83e-d61e11ade53e.png"
+                alt="Likwidacja szkód komunikacyjnych"
+                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-20 bg-autoram-white">
+      {/* Process Steps */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-autoram-text mb-8">
-              Nasze usługi w zakresie likwidacji szkód
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Jak przebiega proces likwidacji?
             </h2>
-            <p className="text-xl text-autoram-text-muted max-w-4xl mx-auto">
-              Oferujemy pełen zakres usług związanych z likwidacją szkód komunikacyjnych
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Profesjonalny proces likwidacji szkód w 4 prostych krokach
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <FileText className="w-8 h-8" />,
-                title: "Zgłoszenie szkody",
-                description: "Profesjonalne zgłoszenie szkody do ubezpieczyciela"
-              },
-              {
-                icon: <CheckCircle className="w-8 h-8" />,
-                title: "Wycena uszkodzeń",
-                description: "Szczegółowa wycena wszystkich uszkodzeń pojazdu"
-              },
-              {
-                icon: <Clock className="w-8 h-8" />,
-                title: "Szybka realizacja",
-                description: "Proces likwidacji w najkrótszym możliwym czasie"
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: "Bezpieczeństwo prawne",
-                description: "Pełna obsługa prawna procesu likwidacji"
-              },
-              {
-                icon: <Phone className="w-8 h-8" />,
-                title: "Kontakt z ubezpieczycielem",
-                description: "Załatwiamy wszystkie formalności z towarzystwem"
-              },
-              {
-                icon: <ArrowRight className="w-8 h-8" />,
-                title: "Wypłata odszkodowania",
-                description: "Doprowadzamy sprawę do końca - do wypłaty"
-              }
-            ].map((service, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 border-autoram-gray hover:border-autoram-gold">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-autoram-red rounded-xl flex items-center justify-center text-white mb-4">
-                    {service.icon}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 relative">
+                <div className="absolute -top-4 left-4 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                  {index + 1}
+                </div>
+                <CardHeader className="text-center pb-4 pt-8">
+                  <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-white group-hover:scale-110 transition-transform duration-300">
+                    {step.icon}
                   </div>
-                  <CardTitle className="text-xl font-bold text-autoram-text">
-                    {service.title}
+                  <CardTitle className="text-lg font-bold text-gray-900">
+                    {step.title}
                   </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-autoram-text-muted text-base leading-relaxed">
-                    {service.description}
+                  <CardDescription className="text-gray-600">
+                    {step.description}
                   </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="space-y-2">
+                    {step.details.map((detail, detailIndex) => (
+                      <div key={detailIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-gray-700">{detail}</span>
+                      </div>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -106,31 +144,32 @@ const LikwidacjaSzkodKomunikacyjnych = () => {
         </div>
       </section>
 
+      <BenefitsSection />
+      <WhyChooseUs />
+
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-autoram-light to-autoram-gray">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-4xl md:text-5xl font-bold text-autoram-text mb-8">
+          <h2 className="text-4xl font-bold mb-6">
             Potrzebujesz pomocy w likwidacji szkody?
-          </h3>
-          <p className="text-xl text-autoram-text-muted mb-12">
-            Skontaktuj się z nami już dziś. Oferujemy bezpłatną konsultację i wycenę szkody.
+          </h2>
+          <p className="text-xl mb-8 text-red-100">
+            Skontaktuj się z nami już teraz. Zajmiemy się wszystkimi formalnościami, 
+            abyś mógł skupić się na powrocie do normalności.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-autoram-red hover:bg-autoram-red-dark text-white font-bold text-xl px-12 py-8 rounded-2xl">
-              <Phone className="w-6 h-6 mr-3" />
-              Zadzwoń teraz
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 text-lg px-8 py-4">
+              <Phone className="w-5 h-5 mr-2" />
+              Zadzwoń: 123-456-789
             </Button>
-            <Link to="/kontakt">
-              <Button variant="outline" size="lg" className="border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold text-xl px-12 py-8 rounded-2xl">
-                Napisz do nas
-                <ArrowRight className="w-6 h-6 ml-3" />
-              </Button>
-            </Link>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+              <FileText className="w-5 h-5 mr-2" />
+              Bezpłatna konsultacja
+            </Button>
           </div>
         </div>
       </section>
 
-      <ContactSection />
       <Footer />
     </div>
   );
