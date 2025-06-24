@@ -66,6 +66,11 @@ import KompleksowaObslugaPowypadkowa from "./pages/KompleksowaObslugaPowypadkowa
 import CentrumPomocyPoWypadku from "./pages/CentrumPomocyPoWypadku";
 import PelnaObslugaPoszkodowanych from "./pages/PelnaObslugaPoszkodowanych";
 
+// New package service pages
+import PakietUslugPowypadkowych from "./pages/PakietUslugPowypadkowych";
+import WszystkoZJednegoMiejsca from "./pages/WszystkoZJednegoMiejsca";
+import ObslugaOdADoZ from "./pages/ObslugaOdADoZ";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -137,6 +142,11 @@ const App = () => (
           <Route path="/kompleksowa-obsluga-powypadkowa" element={<KompleksowaObslugaPowypadkowa />} />
           <Route path="/centrum-pomocy-po-wypadku" element={<CentrumPomocyPoWypadku />} />
           <Route path="/pelna-obsluga-poszkodowanych" element={<PelnaObslugaPoszkodowanych />} />
+          
+          {/* New package service routes */}
+          <Route path="/pakiet-uslug-powypadkowych" element={<PakietUslugPowypadkowych />} />
+          <Route path="/wszystko-z-jednego-miejsca" element={<WszystkoZJednegoMiejsca />} />
+          <Route path="/obsluga-od-a-do-z" element={<ObslugaOdADoZ />} />
           
           {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
