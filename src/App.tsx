@@ -93,6 +93,13 @@ import CentrumPomocyPoWypadkuSzamotuly from "./pages/CentrumPomocyPoWypadkuSzamo
 import KompleksowaObslugaPowypadkowaMiedzyrzecz from "./pages/KompleksowaObslugaPowypadkowaMiedzyrzecz";
 import CentrumPomocyPoWypadkuMiedzyrzecz from "./pages/CentrumPomocyPoWypadkuMiedzyrzecz";
 
+// NEW DAMAGES PAGES
+import LikwidacjaSzkodyWolsztyn from "./pages/LikwidacjaSzkodyWolsztyn";
+import WycenaSzkodyWolsztyn from "./pages/WycenaSzkodyWolsztyn";
+import LikwidacjaSzkodyPoznan from "./pages/LikwidacjaSzkodyPoznan";
+import ObslugaSzkodyOCPoznan from "./pages/ObslugaSzkodyOCPoznan";
+import LikwidacjaSzkodyZielonaGora from "./pages/LikwidacjaSzkodyZielonaGora";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -191,6 +198,13 @@ const App = () => (
           <Route path="/centrum-pomocy-po-wypadku-szamotuly" element={<CentrumPomocyPoWypadkuSzamotuly />} />
           <Route path="/kompleksowa-obsluga-powypadkowa-miedzyrzecz" element={<KompleksowaObslugaPowypadkowaMiedzyrzecz />} />
           <Route path="/centrum-pomocy-po-wypadku-miedzyrzecz" element={<CentrumPomocyPoWypadkuMiedzyrzecz />} />
+
+          {/* NEW DAMAGES ROUTES */}
+          <Route path="/likwidacja-szkody-wolsztyn" element={<LikwidacjaSzkodyWolsztyn />} />
+          <Route path="/wycena-szkody-wolsztyn" element={<WycenaSzkodyWolsztyn />} />
+          <Route path="/likwidacja-szkody-poznan" element={<LikwidacjaSzkodyPoznan />} />
+          <Route path="/obsługa-szkody-oc-poznan" element={<ObslugaSzkodyOCPoznan />} />
+          <Route path="/likwidacja-szkody-zielona-gora" element={<LikwidacjaSzkodyZielonaGora />} />
           
           {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
