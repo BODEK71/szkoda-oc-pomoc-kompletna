@@ -61,6 +61,11 @@ import WynajemBezgotowkowy from "./pages/WynajemBezgotowkowy";
 // New roadside assistance pages
 import Holowanie24h from "./pages/Holowanie24h";
 
+// New comprehensive service pages
+import KompleksowaObslugaPowypadkowa from "./pages/KompleksowaObslugaPowypadkowa";
+import CentrumPomocyPoWypadku from "./pages/CentrumPomocyPoWypadku";
+import PelnaObslugaPoszkodowanych from "./pages/PelnaObslugaPoszkodowanych";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -127,6 +132,11 @@ const App = () => (
           {/* New roadside assistance routes */}
           <Route path="/holowanie-24h" element={<Holowanie24h />} />
           <Route path="/pomoc-drogowa-24h" element={<Holowanie24h />} />
+          
+          {/* New comprehensive service routes */}
+          <Route path="/kompleksowa-obsluga-powypadkowa" element={<KompleksowaObslugaPowypadkowa />} />
+          <Route path="/centrum-pomocy-po-wypadku" element={<CentrumPomocyPoWypadku />} />
+          <Route path="/pelna-obsluga-poszkodowanych" element={<PelnaObslugaPoszkodowanych />} />
           
           {/* Catch-all route must be last */}
           <Route path="*" element={<NotFound />} />
