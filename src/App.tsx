@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -50,6 +51,9 @@ import WycenaSzkodyPoznan from "./pages/WycenaSzkodyPoznan";
 // New repair pages
 import NaprawyBezgotowkowe from "./pages/NaprawyBezgotowkowe";
 import BlacharstwoPowyypadkowe from "./pages/BlacharstwoPowyypadkowe";
+import NaprawyZWinySprawcy from "./pages/NaprawyZWinySprawcy";
+import CentrumNaprawPowypadkowych from "./pages/CentrumNaprawPowypadkowych";
+import LakierowaniePowypadkowe from "./pages/LakierowaniePowypadkowe";
 
 // New rental pages
 import WynajemBezgotowkowy from "./pages/WynajemBezgotowkowy";
@@ -113,6 +117,9 @@ const App = () => (
           <Route path="/naprawy-bezgotowkowe" element={<NaprawyBezgotowkowe />} />
           <Route path="/naprawa-bezgotowkowa" element={<NaprawyBezgotowkowe />} />
           <Route path="/blacharstwo-powypadkowe" element={<BlacharstwoPowyypadkowe />} />
+          <Route path="/naprawy-z-winy-sprawcy" element={<NaprawyZWinySprawcy />} />
+          <Route path="/centrum-napraw-powypadkowych" element={<CentrumNaprawPowypadkowych />} />
+          <Route path="/lakierowanie-powypadkowe" element={<LakierowaniePowypadkowe />} />
           
           {/* New rental routes */}
           <Route path="/wynajem-bezgotowkowy" element={<WynajemBezgotowkowy />} />
