@@ -99,6 +99,75 @@ const NaprawyPowypadkowe = () => {
         </div>
       </section>
 
+      {/* Main Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h1 className="text-4xl font-bold text-gray-900 mb-8">
+              Naprawy powypadkowe - profesjonalny serwis samochodowy po wypadku
+            </h1>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Nasza firma specjalizuje się w <strong>naprawach powypadkowych</strong> wszystkich typów pojazdów. Oferujemy kompleksową <strong>naprawę powypadkową bezgotówkową</strong>, która pozwala na szybkie przywrócenie samochodu do stanu pierwotnego bez konieczności ponoszenia kosztów z własnej kieszeni.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Kompleksowe naprawy ubezpieczeniowe</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Realizujemy <strong>naprawy ubezpieczeniowe</strong> w pełnym zakresie, współpracując z największymi towarzystwami ubezpieczeniowymi w Polsce. Nasza <strong>naprawa auta po kolizji z OC sprawcy</strong> obejmuje wszystkie niezbędne prace przywracające pojazd do stanu sprzed zdarzenia.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Specjalizujemy się w <strong>naprawie auta po wypadku z OC sprawcy</strong>, oferując najwyższą jakość wykonywanych usług. Bez względu na zakres uszkodzeń, nasza <strong>naprawa pojazdu po stłuczce z OC sprawcy</strong> jest przeprowadzana przez doświadczonych specjalistów z wykorzystaniem nowoczesnego sprzętu diagnostycznego.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Profesjonalne usuwanie uszkodzeń powypadkowych</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nasze <strong>usuwanie uszkodzeń powypadkowych</strong> to proces wieloetapowy, który rozpoczynamy od szczegółowej diagnostyki pojazdu. <strong>Naprawy karoserii po stłuczce</strong> wykonujemy z zachowaniem oryginalnych parametrów fabrycznych, stosując tylko oryginalne części zamienne lub ich odpowiedniki najwyższej jakości.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Nasz <strong>serwis samochodowy po wypadku</strong> to gwarancja profesjonalizmu i terminowości. Zespół wykwalifikowanych mechaników zapewnia kompleksową obsługę każdego zlecenia, od drobnych napraw po rozległe uszkodzenia strukturalne.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Serwis mechaniczny i naprawa samochodów</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Oferujemy profesjonalną <strong>naprawę samochodów osobowych</strong> wszystkich marek i modeli. Nasz <strong>serwis samochodowy</strong> wyposażony jest w najnowocześniejsze urządzenia diagnostyczne, co pozwala na precyzyjne określenie zakresu niezbędnych napraw.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <strong>Naprawa samochodów</strong> w naszym warsztacie to połączenie tradycyjnych metod rzemiosła z nowoczesnymi technologiami. Nasz <strong>serwis mechaniczny powypadkowy</strong> obejmuje naprawy silnika, układu hamulcowego, zawieszenia, układu kierowniczego oraz wszystkich innych systemów pojazdu.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Dlaczego warto wybrać nasze usługi?</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nasz warsztat to synonim jakości i niezawodności w branży napraw powypadkowych. Oferujemy:
+            </p>
+
+            <ul className="text-lg text-gray-700 leading-relaxed mb-8 space-y-2">
+              <li>• Bezgotówkową rozliczenie z ubezpieczycielem</li>
+              <li>• Gwarancję na wszystkie wykonane prace</li>
+              <li>• Szybkie terminy realizacji zleceń</li>
+              <li>• Profesjonalną obsługę klienta</li>
+              <li>• Współpracę z wszystkimi towarzystwami ubezpieczeniowymi</li>
+            </ul>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-12">
+              Zaufaj profesjonalistom - wybierz nasz serwis dla naprawy swojego pojazdu po wypadku. Kontakt telefoniczny dostępny całodobowo, bezpłatny dojazd po odbiór pojazdu na terenie całego województwa.
+            </p>
+
+            <hr className="border-gray-300 my-12" />
+
+            <p className="text-base text-gray-600 italic leading-relaxed">
+              Zapraszamy do kontaktu w celu omówienia szczegółów naprawy Twojego pojazdu. Nasi specjaliści chętnie udzielą wszystkich niezbędnych informacji dotyczących procesu naprawy i rozliczenia z ubezpieczeniem.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
