@@ -1,38 +1,21 @@
 
 import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import {
-  // Nowe zorganizowane kategorie szkód
-  likwidacjaSzkodKomunikacyjnychItems,
-  zgaszanieSzkodItems,
-  odszkodowaniaItems,
-  wycenaSzkodPowypadkowychItems,
-  // Lokalne kategorie szkód
-  wolsztynSzkodyItems,
-  poznanSzkodyItems,
-  zielonaGoraSzkodyItems,
-  nowyTomyslSzkodyItems,
-  slawaSzkodyItems,
-  lesznoSzkodyItems,
-  glogowSzkodyItems,
-  koscianSzkodyItems,
-  szamotulySzkodyItems,
-  miedzyrzeczSzkodyItems,
-  // Elementy poradnika
-  poradnikItems,
-  // Funkcje pomocnicze do agregacji elementów
-  getAllNaprawyItems,
-  getAllWynajemItems,
-  getAllPomocDrogowaItems,
-  getAllUslugiKompleksoweItems
-} from "./NavigationItems";
-
-// Importujemy nowe komponenty menu
-import ObslugaSzkodMenu from "./menu-sections/ObslugaSzkodMenu";
-import NaprawyMenu from "./menu-sections/NaprawyMenu";
-import WynajemMenu from "./menu-sections/WynajemMenu";
-import PomocDrogowaMenu from "./menu-sections/PomocDrogowaMenu";
-import PoradnikMenu from "./menu-sections/PoradnikMenu";
-import UslugiKompleksoweMenu from "./menu-sections/UslugiKompleksoweMenu";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown, Home, Wrench, Car, Truck, Clipboard, Building } from "lucide-react";
+import {
+  naprawyPowypadkoweItems,
+  autoZastepczeItems,
+  pomocDrogowaItems,
+  likwidacjaSzkodItems,
+  obslugaKompleksowaItems,
+} from "./navigation/NewNavigationStructure";
 
 interface DesktopMenuProps {
   isScrolled?: boolean;
@@ -49,68 +32,116 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
     return items.some(item => isActivePath(item.href));
   };
 
-  const isActiveObslugaSzkody = () => {
-    return isActiveSection(likwidacjaSzkodKomunikacyjnychItems) || 
-           isActiveSection(zgaszanieSzkodItems) || 
-           isActiveSection(odszkodowaniaItems) || 
-           isActiveSection(wycenaSzkodPowypadkowychItems) ||
-           isActiveSection(wolsztynSzkodyItems) ||
-           isActiveSection(poznanSzkodyItems) ||
-           isActiveSection(zielonaGoraSzkodyItems) ||
-           isActiveSection(nowyTomyslSzkodyItems) ||
-           isActiveSection(slawaSzkodyItems) ||
-           isActiveSection(lesznoSzkodyItems) ||
-           isActiveSection(glogowSzkodyItems) ||
-           isActiveSection(koscianSzkodyItems) ||
-           isActiveSection(szamotulySzkodyItems) ||
-           isActiveSection(miedzyrzeczSzkodyItems);
-  };
+  const menuItemClass = (isActive: boolean) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+    isActive
+      ? "bg-autoram-red text-white"
+      : "text-autoram-text hover:text-autoram-red hover:bg-gray-100"
+  } ${isScrolled ? 'text-sm' : 'text-sm'}`;
 
-  const isActiveNaprawy = () => {
-    return isActiveSection(getAllNaprawyItems());
-  };
-
-  const isActiveWynajem = () => {
-    return isActiveSection(getAllWynajemItems());
-  };
-
-  const isActivePomocDrogowa = () => {
-    return isActiveSection(getAllPomocDrogowaItems());
-  };
-
-  const isActiveUslugiKompleksowe = () => {
-    return isActiveSection(getAllUslugiKompleksoweItems());
-  };
+  const MenuDropdown = ({ 
+    title, 
+    items, 
+    icon: Icon, 
+    isActive 
+  }: { 
+    title: string; 
+    items: any[]; 
+    icon: any; 
+    isActive: boolean;
+  }) => (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button 
+          variant="ghost" 
+          className={`${menuItemClass(isActive)} flex items-center`}
+        >
+          <Icon className="w-4 h-4 mr-2" />
+          {title}
+          <ChevronDown className="w-4 h-4 ml-1" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="min-w-[300px] bg-white border border-gray-200 rounded-xl shadow-lg z-50">
+        {items.map((item, index) => (
+          <div key={item.name}>
+            {index === 1 && <DropdownMenuSeparator />}
+            <DropdownMenuItem asChild>
+              <Link
+                to={item.href}
+                className="px-4 py-3 text-sm text-gray-700 hover:text-autoram-red hover:bg-gray-50 rounded-lg transition-colors cursor-pointer w-full"
+              >
+                {item.name}
+              </Link>
+            </DropdownMenuItem>
+          </div>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 
   return (
     <div className="hidden lg:flex items-center justify-center">
       <div className="flex items-center space-x-1">
-        {/* Usługi kompleksowe */}
-        <UslugiKompleksoweMenu isActive={isActiveUslugiKompleksowe()} />
+        {/* Strona główna */}
+        <Link
+          to="/"
+          className={`${menuItemClass(isActivePath("/"))} flex items-center`}
+        >
+          <Home className="w-4 h-4 mr-2" />
+          Strona główna
+        </Link>
 
-        {/* Obsługa szkód ubezpieczeniowych */}
-        <ObslugaSzkodMenu isActive={isActiveObslugaSzkody()} />
+        {/* Naprawy powypadkowe */}
+        <MenuDropdown
+          title="Naprawy powypadkowe"
+          items={naprawyPowypadkoweItems}
+          icon={Wrench}
+          isActive={isActiveSection(naprawyPowypadkoweItems)}
+        />
 
-        {/* Naprawy pojazdów */}
-        <NaprawyMenu isActive={isActiveNaprawy()} />
-
-        {/* Wynajem pojazdów zastępczych */}
-        <WynajemMenu isActive={isActiveWynajem()} />
+        {/* Auto zastępcze */}
+        <MenuDropdown
+          title="Auto zastępcze"
+          items={autoZastepczeItems}
+          icon={Car}
+          isActive={isActiveSection(autoZastepczeItems)}
+        />
 
         {/* Pomoc drogowa */}
-        <PomocDrogowaMenu isActive={isActivePomocDrogowa()} />
+        <MenuDropdown
+          title="Pomoc drogowa"
+          items={pomocDrogowaItems}
+          icon={Truck}
+          isActive={isActiveSection(pomocDrogowaItems)}
+        />
+
+        {/* Likwidacja szkód */}
+        <MenuDropdown
+          title="Likwidacja szkód"
+          items={likwidacjaSzkodItems}
+          icon={Clipboard}
+          isActive={isActiveSection(likwidacjaSzkodItems)}
+        />
+
+        {/* Obsługa kompleksowa */}
+        <MenuDropdown
+          title="Obsługa kompleksowa"
+          items={obslugaKompleksowaItems}
+          icon={Building}
+          isActive={isActiveSection(obslugaKompleksowaItems)}
+        />
 
         {/* Poradnik */}
-        <PoradnikMenu isActive={isActiveSection(poradnikItems)} />
+        <Link
+          to="/blog"
+          className={menuItemClass(isActivePath("/blog"))}
+        >
+          Poradnik
+        </Link>
 
         {/* Kontakt */}
         <Link
           to="/kontakt"
-          className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
-            isActivePath("/kontakt")
-              ? "bg-autoram-red text-white"
-              : "text-autoram-text hover:text-autoram-red hover:bg-gray-100"
-          } ${isScrolled ? 'text-sm' : 'text-sm'}`}
+          className={menuItemClass(isActivePath("/kontakt"))}
         >
           Kontakt
         </Link>
