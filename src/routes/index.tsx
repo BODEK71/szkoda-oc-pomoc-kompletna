@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -27,6 +28,7 @@ import CentrumPomocyPoWypadku from "../pages/CentrumPomocyPoWypadku";
 import CentrumNaprawPowypadkowych from "../pages/CentrumNaprawPowypadkowych";
 import LakierowaniePowypadkowe from "../pages/LakierowaniePowypadkowe";
 import BlacharstwoPowyypadkowe from "../pages/BlacharstwoPowyypadkowe";
+import MechanikaSamochodowaPoWypadku from "../pages/MechanikaSamochodowaPoWypadku";
 import Holowanie24h from "../pages/Holowanie24h";
 
 // Service pages
@@ -105,7 +107,7 @@ const AppRoutes = () => {
       <Route path="/naprawy-z-oc-sprawcy" element={<NaprawyZOC />} />
       <Route path="/blacharstwo-samochodowe" element={<BlacharstwoPowyypadkowe />} />
       <Route path="/lakiernictwo-samochodowe" element={<LakierowaniePowypadkowe />} />
-      <Route path="/mechanika-samochodowa-po-wypadku" element={<NaprawyPowypadkowe />} />
+      <Route path="/mechanika-samochodowa-po-wypadku" element={<MechanikaSamochodowaPoWypadku />} />
       <Route path="/przeglady-i-serwis-ogolny" element={<NaprawyPowypadkowe />} />
       
       {/* Auto zastępcze subcategories */}
