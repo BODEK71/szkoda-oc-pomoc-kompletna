@@ -8,13 +8,13 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown, Home, Wrench, Car, Truck, Clipboard, Building } from "lucide-react";
+import { ChevronDown, Building, Truck, Wrench, Car, Clipboard } from "lucide-react";
 import {
+  obslugaKompleksowaItems,
+  pomocDrogowaItems,
   naprawyPowypadkoweItems,
   autoZastepczeItems,
-  pomocDrogowaItems,
   likwidacjaSzkodItems,
-  obslugaKompleksowaItems,
 } from "./navigation/NewNavigationStructure";
 
 interface DesktopMenuProps {
@@ -81,14 +81,21 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
   return (
     <div className="hidden lg:flex items-center justify-center">
       <div className="flex items-center space-x-1">
-        {/* Strona główna */}
-        <Link
-          to="/"
-          className={`${menuItemClass(isActivePath("/"))} flex items-center`}
-        >
-          <Home className="w-4 h-4 mr-2" />
-          Strona główna
-        </Link>
+        {/* Obsługa kompleksowa */}
+        <MenuDropdown
+          title="Obsługa kompleksowa"
+          items={obslugaKompleksowaItems}
+          icon={Building}
+          isActive={isActiveSection(obslugaKompleksowaItems)}
+        />
+
+        {/* Pomoc drogowa */}
+        <MenuDropdown
+          title="Pomoc drogowa"
+          items={pomocDrogowaItems}
+          icon={Truck}
+          isActive={isActiveSection(pomocDrogowaItems)}
+        />
 
         {/* Naprawy powypadkowe */}
         <MenuDropdown
@@ -106,28 +113,12 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
           isActive={isActiveSection(autoZastepczeItems)}
         />
 
-        {/* Pomoc drogowa */}
-        <MenuDropdown
-          title="Pomoc drogowa"
-          items={pomocDrogowaItems}
-          icon={Truck}
-          isActive={isActiveSection(pomocDrogowaItems)}
-        />
-
         {/* Likwidacja szkód */}
         <MenuDropdown
           title="Likwidacja szkód"
           items={likwidacjaSzkodItems}
           icon={Clipboard}
           isActive={isActiveSection(likwidacjaSzkodItems)}
-        />
-
-        {/* Obsługa kompleksowa */}
-        <MenuDropdown
-          title="Obsługa kompleksowa"
-          items={obslugaKompleksowaItems}
-          icon={Building}
-          isActive={isActiveSection(obslugaKompleksowaItems)}
         />
 
         {/* Poradnik */}
