@@ -37,7 +37,7 @@ const BlacharstwoPowyypadkowe = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 py-20">
+      <section className="relative bg-gradient-to-br from-yellow-50 via-white to-yellow-50 py-20 pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -91,6 +91,91 @@ const BlacharstwoPowyypadkowe = () => {
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h1 className="text-4xl font-bold text-gray-900 mb-8">
+              Blacharstwo powypadkowe - profesjonalne naprawy karoserii
+            </h1>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Nasze <strong>blacharstwo powypadkowe</strong> to gwarancja najwyższej jakości napraw karoserii po zdarzeniach drogowych. Dysponujemy nowoczesnym sprzętem i zespołem doświadczonych specjalistów, którzy przywrócą Twój pojazd do stanu pierwotnego z zachowaniem wszystkich parametrów bezpieczeństwa.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Doświadczony blacharz samochodowy - ekspert w naprawach</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nasz <strong>blacharz samochodowy</strong> to specjalista z wieloletnim doświadczeniem w branży motoryzacyjnej. Każdy członek naszego zespołu posiada odpowiednie kwalifikacje i certyfikaty, które potwierdzają wysokie kompetencje w zakresie napraw blacharskich wszystkich typów pojazdów.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Współpracujemy wyłącznie z wykwalifikowanymi blacharzami, którzy doskonale znają konstrukcję współczesnych samochodów. Dzięki temu możemy zagwarantować, że każda naprawa zostanie wykonana zgodnie z wymogami producenta pojazdu i zachowa wszystkie parametry bezpieczeństwa.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Kompleksowe naprawy blacharskie</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nasze <strong>naprawy blacharskie</strong> obejmują pełen zakres usług związanych z regeneracją karoserii po wypadkach i kolizjach. Specjalizujemy się w naprawach uszkodzeń zarówno powierzchniowych, jak i strukturalnych, stosując najnowocześniejsze technologie i metody pracy.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Zakres naszych usług blacharskich:
+            </p>
+
+            <ul className="text-lg text-gray-700 leading-relaxed mb-8 space-y-2">
+              <li>• <strong>Prostowanie i naprawy elementów karoserii</strong> - przywracamy pierwotny kształt uszkodzonych części</li>
+              <li>• <strong>Wymiana elementów karoserii</strong> - montujemy oryginalne części zamienne lub ich wysokiej jakości odpowiedniki</li>
+              <li>• <strong>Naprawy strukturalne</strong> - profesjonalna naprawa ram nośnych i elementów konstrukcyjnych</li>
+              <li>• <strong>Spawanie i lutowanie</strong> - precyzyjna naprawa pęknięć i uszkodzeń blach</li>
+              <li>• <strong>Przygotowanie powierzchni</strong> - szlifowanie, gruntowanie i przygotowanie do lakierowania</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Nowoczesne wyposażenie warsztatu blacharskiego</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nasz warsztat wyposażony jest w najnowocześniejszy sprzęt do napraw blacharskich. Dysponujemy urządzeniami do pomiaru geometrii nadwozia, co pozwala na precyzyjne odtworzenie oryginalnych wymiarów pojazdu. Używamy również nowoczesnych narzędzi do prostowania bez lakierowania (PDR) oraz specjalistycznych urządzeń spawalniczych.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Zaawansowane technologie pozwalają nam na wykonywanie napraw z najwyższą precyzją, zachowując wszystkie parametry bezpieczeństwa i komfortu jazdy. Każdy etap naprawy jest dokładnie kontrolowany, a jakość wykonanych prac sprawdzana przez doświadczonych specjalistów.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Proces naprawy blacharskiej</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Naprawy w naszym warsztacie przebiegają według sprawdzonej procedury:
+            </p>
+
+            <ol className="text-lg text-gray-700 leading-relaxed mb-8 space-y-2">
+              <li>1. <strong>Wstępna diagnostyka</strong> - szczegółowa ocena zakresu uszkodzeń karoserii</li>
+              <li>2. <strong>Demontaż elementów</strong> - bezpieczne zdjęcie uszkodzonych części i elementów wykończenia</li>
+              <li>3. <strong>Naprawa strukturalna</strong> - odtworzenie geometrii nadwozia i naprawy ram nośnych</li>
+              <li>4. <strong>Prostowanie i kształtowanie</strong> - przywrócenie pierwotnego kształtu elementów karoserii</li>
+              <li>5. <strong>Spawanie i łączenie</strong> - profesjonalne połączenie naprawianych elementów</li>
+              <li>6. <strong>Przygotowanie do lakierowania</strong> - szlifowanie, gruntowanie i przygotowanie powierzchni</li>
+              <li>7. <strong>Kontrola jakości</strong> - sprawdzenie wszystkich parametrów naprawionej karoserii</li>
+            </ol>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gwarancja jakości napraw blacharskich</h2>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Wszystkie wykonane przez nas naprawy blacharskie objęte są gwarancją jakości. Stosujemy wyłącznie sprawdzone materiały i oryginalne części zamienne, co zapewnia trwałość i niezawodność napraw. Nasze doświadczenie oraz nowoczesne wyposażenie gwarantują najwyższy standard wykonywanych usług.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-12">
+              Współpracujemy z największymi towarzystwami ubezpieczeniowymi, oferując bezgotówkowe rozliczenia dla napraw finansowanych z ubezpieczenia OC sprawcy. Zapewniamy również szybkie terminy realizacji oraz profesjonalną obsługę klienta na każdym etapie naprawy.
+            </p>
+
+            <hr className="border-gray-300 my-12" />
+
+            <p className="text-base text-gray-600 italic leading-relaxed">
+              Potrzebujesz profesjonalnych napraw blacharskich? Skontaktuj się z nami - nasi specjaliści ocenią zakres uszkodzeń i przedstawią optymalne rozwiązanie dla Twojego pojazdu.
+            </p>
           </div>
         </div>
       </section>
