@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -92,6 +91,7 @@ import WycenaSzkodyWolsztyn from "../pages/WycenaSzkodyWolsztyn";
 import LikwidacjaSzkodyPoznan from "../pages/LikwidacjaSzkodyPoznan";
 import ObslugaSzkodyOCPoznan from "../pages/ObslugaSzkodyOCPoznan";
 import LikwidacjaSzkodyZielonaGora from "../pages/LikwidacjaSzkodyZielonaGora";
+import WynajemAutZOCSprawcy from "../pages/WynajemAutZOCSprawcy";
 
 const AppRoutes = () => {
   return (
@@ -113,7 +113,7 @@ const AppRoutes = () => {
       <Route path="/przeglady-i-serwis-ogolny" element={<PrzegladyISerwisOgolny />} />
       
       {/* Auto zastępcze subcategories */}
-      <Route path="/wynajem-aut-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
+      <Route path="/wynajem-aut-z-oc-sprawcy" element={<WynajemAutZOCSprawcy />} />
       <Route path="/samochod-zastepczy-bezgotowkowo" element={<NaprawyBezgotowkoweZOC />} />
       <Route path="/auta-zastepcze-dla-firm" element={<AutoZastepczeZOC />} />
       <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
