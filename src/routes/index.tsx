@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -91,7 +92,6 @@ import WycenaSzkodyWolsztyn from "../pages/WycenaSzkodyWolsztyn";
 import LikwidacjaSzkodyPoznan from "../pages/LikwidacjaSzkodyPoznan";
 import ObslugaSzkodyOCPoznan from "../pages/ObslugaSzkodyOCPoznan";
 import LikwidacjaSzkodyZielonaGora from "../pages/LikwidacjaSzkodyZielonaGora";
-import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
 
 const AppRoutes = () => {
   return (
