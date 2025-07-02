@@ -29,6 +29,8 @@ import LakierowaniePowypadkowe from "../pages/LakierowaniePowypadkowe";
 import BlacharstwoPowyypadkowe from "../pages/BlacharstwoPowyypadkowe";
 import MechanikaSamochodowaPoWypadku from "../pages/MechanikaSamochodowaPoWypadku";
 import Holowanie24h from "../pages/Holowanie24h";
+import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
+import SamochodZastepczyZOCSprawcy from "../pages/SamochodZastepczyZOCSprawcy";
 
 // Service pages
 import ObslugaSzkodyZOC from "../pages/ObslugaSzkodyZOC";
@@ -116,6 +118,7 @@ const AppRoutes = () => {
       <Route path="/auta-zastepcze-dla-firm" element={<AutoZastepczeZOC />} />
       <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
       <Route path="/informacje-o-wynajmie-auta-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
+      <Route path="/samochod-zastepcze-z-oc-sprawcy" element={<SamochodZastepczyZOCSprawcy />} />
       
       {/* Pomoc drogowa subcategories */}
       <Route path="/holowanie-po-wypadku-awarii-kolizji" element={<Holowanie24h />} />
