@@ -93,6 +93,9 @@ import ObslugaSzkodyOCPoznan from "../pages/ObslugaSzkodyOCPoznan";
 import LikwidacjaSzkodyZielonaGora from "../pages/LikwidacjaSzkodyZielonaGora";
 import WynajemAutZOCSprawcy from "../pages/WynajemAutZOCSprawcy";
 
+// New import for the cash-free substitute car page
+import SamochodZastepczyBezgotowkowo from "../pages/SamochodZastepczyBezgotowkowo";
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -114,6 +117,7 @@ const AppRoutes = () => {
       
       {/* Auto zastępcze subcategories */}
       <Route path="/wynajem-aut-z-oc-sprawcy" element={<WynajemAutZOCSprawcy />} />
+      <Route path="/samochod-zastepczy-bezgotowkowo" element={<SamochodZastepczyBezgotowkowo />} />
       <Route path="/samochod-zastepczy-bezgotowkowo" element={<NaprawyBezgotowkoweZOC />} />
       <Route path="/auta-zastepcze-dla-firm" element={<AutoZastepczeZOC />} />
       <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
