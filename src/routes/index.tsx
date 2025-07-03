@@ -97,6 +97,7 @@ import WynajemAutZOCSprawcy from "../pages/WynajemAutZOCSprawcy";
 import SamochodZastepczyBezgotowkowo from "../pages/SamochodZastepczyBezgotowkowo";
 import AutoZastepczeDlaFirm from "../pages/AutoZastepczeDlaFirm";
 import WynajemSpecjalistycznyZOCSprawcy from "../pages/WynajemSpecjalistycznyZOCSprawcy";
+import InformacjeOWynajmieAutaZOCSprawcy from "../pages/InformacjeOWynajmieAutaZOCSprawcy";
 
 const AppRoutes = () => {
   return (
@@ -122,7 +123,7 @@ const AppRoutes = () => {
       <Route path="/samochod-zastepczy-bezgotowkowo" element={<SamochodZastepczyBezgotowkowo />} />
       <Route path="/auta-zastepcze-dla-firm" element={<AutoZastepczeDlaFirm />} />
       <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<WynajemSpecjalistycznyZOCSprawcy />} />
-      <Route path="/informacje-o-wynajmie-auta-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
+      <Route path="/informacje-o-wynajmie-auta-z-oc-sprawcy" element={<InformacjeOWynajmieAutaZOCSprawcy />} />
       <Route path="/samochod-zastepcze-z-oc-sprawcy" element={<SamochodZastepczyZOCSprawcy />} />
       
       {/* Pomoc drogowa subcategories */}
