@@ -93,9 +93,10 @@ import ObslugaSzkodyOCPoznan from "../pages/ObslugaSzkodyOCPoznan";
 import LikwidacjaSzkodyZielonaGora from "../pages/LikwidacjaSzkodyZielonaGora";
 import WynajemAutZOCSprawcy from "../pages/WynajemAutZOCSprawcy";
 
-// New imports for the cash-free substitute car page and company cars
+// New imports for the cash-free substitute car page, company cars and specialist rental
 import SamochodZastepczyBezgotowkowo from "../pages/SamochodZastepczyBezgotowkowo";
 import AutoZastepczeDlaFirm from "../pages/AutoZastepczeDlaFirm";
+import WynajemSpecjalistycznyZOCSprawcy from "../pages/WynajemSpecjalistycznyZOCSprawcy";
 
 const AppRoutes = () => {
   return (
@@ -120,7 +121,7 @@ const AppRoutes = () => {
       <Route path="/wynajem-aut-z-oc-sprawcy" element={<WynajemAutZOCSprawcy />} />
       <Route path="/samochod-zastepczy-bezgotowkowo" element={<SamochodZastepczyBezgotowkowo />} />
       <Route path="/auta-zastepcze-dla-firm" element={<AutoZastepczeDlaFirm />} />
-      <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
+      <Route path="/wynajem-specjalistyczny-z-oc-sprawcy" element={<WynajemSpecjalistycznyZOCSprawcy />} />
       <Route path="/informacje-o-wynajmie-auta-z-oc-sprawcy" element={<AutoZastepczeZOC />} />
       <Route path="/samochod-zastepcze-z-oc-sprawcy" element={<SamochodZastepczyZOCSprawcy />} />
       
