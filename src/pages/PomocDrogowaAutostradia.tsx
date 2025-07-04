@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Highway, Truck, Clock, CheckCircle, AlertTriangle, Phone, FileText, ArrowRight, Shield, Settings } from "lucide-react";
+import { Truck, Clock, CheckCircle, AlertTriangle, Phone, FileText, ArrowRight, Shield, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,13 +12,13 @@ const PomocDrogowaAutostradia = () => {
     {
       title: "Interwencja na autostradzie",
       description: "Specjalistyczna pomoc na trasach szybkiego ruchu",
-      icon: <Highway className="w-6 h-6" />,
+      icon: <Truck className="w-6 h-6" />,
       features: ["Uprawnienia do pracy na autostradzie", "Profesjonalne oznakowanie", "Szybka reakcja"]
     },
     {
       title: "Naprawa na miejscu",
       description: "Usunięcie podstawowych usterek bez holowania",
-      icon: <Settings className="w-6 h-6" />,
+      icon: <Shield className="w-6 h-6" />,
       features: ["Wymiana koła", "Doładowanie akumulatora", "Uzupełnienie paliwa"]
     },
     {
@@ -99,7 +99,7 @@ const PomocDrogowaAutostradia = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-red-100 text-red-800 px-3 py-1">
-            <Highway className="w-4 h-4 mr-2" />
+            <Truck className="w-4 h-4 mr-2" />
             Autostrada
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -207,92 +207,6 @@ const PomocDrogowaAutostradia = () => {
               </div>
             </section>
 
-            {/* Specyfika pracy na autostradzie */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Specyfika pracy na autostradzie
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <strong>Pomoc drogowa na autostradzie</strong> różni się od standardowych usług 
-                pomocy drogowej pod wieloma względami i wymaga specjalnych kwalifikacji.
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-gray-900">Wymagania specjalne</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <Shield className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Specjalne uprawnienia do pracy na autostradzie</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                      <span>Wymagania dotyczące oznakowania pojazdu</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <AlertTriangle className="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0" />
-                      <span>Ścisłe procedury bezpieczeństwa</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-gray-900">Współpraca z służbami</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <Highway className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Służby zarządzające autostradą</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <Clock className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                      <span>Najwyższe standardy czasowe reakcji</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <Phone className="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0" />
-                      <span>Koordynacja z centrami zarządzania ruchem</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Przygotowanie do podróży */}
-            <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Przygotowanie do podróży autostradą
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Właściwe przygotowanie pojazdu przed podróżą autostradą może zapobiec wielu awariom 
-                i zmniejszyć ryzyko konieczności wzywania pomocy drogowej.
-              </p>
-              
-              <div className="bg-gray-50 rounded-lg p-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Kontrola techniczna pojazdu</h3>
-                    <ul className="space-y-2 text-gray-700">
-                      <li>• Stan opon i ciśnienie</li>
-                      <li>• Poziom wszystkich płynów</li>
-                      <li>• Sprawność akumulatora</li>
-                      <li>• Działanie świateł i sygnalizacji</li>
-                      <li>• Kompletność wyposażenia awaryjnego</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Wyposażenie awaryjne</h3>
-                    <ul className="space-y-2 text-gray-700">
-                      <li>• Trójkąt ostrzegawczy</li>
-                      <li>• Kamizelka odblaskowa</li>
-                      <li>• Apteczka pierwszej pomocy</li>
-                      <li>• Gaśnica (jeśli wymagana)</li>
-                      <li>• Zapasowe koło i narzędzia</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
           </div>
 
           {/* Sidebar */}
@@ -311,7 +225,7 @@ const PomocDrogowaAutostradia = () => {
                     Zadzwoń - Autostrada
                   </Button>
                   <Button variant="outline" className="w-full border-white text-white hover:bg-white/10">
-                    <Highway className="w-4 h-4 mr-2" />
+                    <Truck className="w-4 h-4 mr-2" />
                     Zgłoś lokalizację
                   </Button>
                 </div>
