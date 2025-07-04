@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -132,7 +131,7 @@ const AppRoutes = () => {
       {/* Pomoc drogowa subcategories */}
       <Route path="/holowanie-po-wypadku-awarii-kolizji" element={<HolowaniePoWypadkuAwariiKolizji />} />
       <Route path="/transport-pojazdow" element={<TransportPojazdow />} />
-      <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<HolowaniePoWypadkuAwariiKolizji />} />
+      <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<BezplatneHolowanieZOCSprawcy />} />
       <Route path="/podstawienie-lawety-i-naprawa-na-miejscu" element={<PomocDrogowaZOC />} />
       <Route path="/pomoc-drogowa-na-autostradzie" element={<HolowaniePoWypadkuAwariiKolizji />} />
       
