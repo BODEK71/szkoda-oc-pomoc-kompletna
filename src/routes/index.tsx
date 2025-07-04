@@ -35,6 +35,7 @@ import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
 import SamochodZastepczyZOCSprawcy from "../pages/SamochodZastepczyZOCSprawcy";
 import BezplatneHolowanieZOCSprawcy from "../pages/BezplatneHolowanieZOCSprawcy";
 import PodstawienieLawetyINaprawaNaMiejscu from "../pages/PodstawienieLawetyINaprawaNaMiejscu";
+import PomocDrogowaAutostradia from "../pages/PomocDrogowaAutostradia";
 
 // Service pages
 import ObslugaSzkodyZOC from "../pages/ObslugaSzkodyZOC";
@@ -135,7 +136,7 @@ const AppRoutes = () => {
       <Route path="/transport-pojazdow" element={<TransportPojazdow />} />
       <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<BezplatneHolowanieZOCSprawcy />} />
       <Route path="/podstawienie-lawety-i-naprawa-na-miejscu" element={<PodstawienieLawetyINaprawaNaMiejscu />} />
-      <Route path="/pomoc-drogowa-na-autostradzie" element={<HolowaniePoWypadkuAwariiKolizji />} />
+      <Route path="/pomoc-drogowa-na-autostradzie" element={<PomocDrogowaAutostradia />} />
       
       {/* Likwidacja szkód subcategories */}
       <Route path="/zgloszenie-szkody-ubezpieczeniowej" element={<ZgloszenieSzkodyUbezpieczeniowej />} />
