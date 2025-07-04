@@ -33,6 +33,7 @@ import HolowaniePoWypadkuAwariiKolizji from "../pages/HolowaniePoWypadkuAwariiKo
 import TransportPojazdow from "../pages/TransportPojazdow";
 import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
 import SamochodZastepczyZOCSprawcy from "../pages/SamochodZastepczyZOCSprawcy";
+import BezplatneHolowanieZOCSprawcy from "../pages/BezplatneHolowanieZOCSprawcy";
 
 // Service pages
 import ObslugaSzkodyZOC from "../pages/ObslugaSzkodyZOC";
