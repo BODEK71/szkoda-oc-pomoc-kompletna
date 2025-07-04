@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -29,6 +30,7 @@ import LakierowaniePowypadkowe from "../pages/LakierowaniePowypadkowe";
 import BlacharstwoPowyypadkowe from "../pages/BlacharstwoPowyypadkowe";
 import MechanikaSamochodowaPoWypadku from "../pages/MechanikaSamochodowaPoWypadku";
 import Holowanie24h from "../pages/Holowanie24h";
+import HolowaniePoWypadkuAwariiKolizji from "../pages/HolowaniePoWypadkuAwariiKolizji";
 import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
 import SamochodZastepczyZOCSprawcy from "../pages/SamochodZastepczyZOCSprawcy";
 
@@ -127,11 +129,11 @@ const AppRoutes = () => {
       <Route path="/samochod-zastepcze-z-oc-sprawcy" element={<SamochodZastepczyZOCSprawcy />} />
       
       {/* Pomoc drogowa subcategories */}
-      <Route path="/holowanie-po-wypadku-awarii-kolizji" element={<Holowanie24h />} />
+      <Route path="/holowanie-po-wypadku-awarii-kolizji" element={<HolowaniePoWypadkuAwariiKolizji />} />
       <Route path="/transport-pojazdow" element={<PomocDrogowaZOC />} />
-      <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<Holowanie24h />} />
+      <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<HolowaniePoWypadkuAwariiKolizji />} />
       <Route path="/podstawienie-lawety-i-naprawa-na-miejscu" element={<PomocDrogowaZOC />} />
-      <Route path="/pomoc-drogowa-na-autostradzie" element={<Holowanie24h />} />
+      <Route path="/pomoc-drogowa-na-autostradzie" element={<HolowaniePoWypadkuAwariiKolizji />} />
       
       {/* Likwidacja szkód subcategories */}
       <Route path="/zgloszenie-szkody-ubezpieczeniowej" element={<ZgloszenieSzkodyUbezpieczeniowej />} />
