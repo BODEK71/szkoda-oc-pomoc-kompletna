@@ -31,6 +31,7 @@ import BlacharstwoPowyypadkowe from "../pages/BlacharstwoPowyypadkowe";
 import MechanikaSamochodowaPoWypadku from "../pages/MechanikaSamochodowaPoWypadku";
 import Holowanie24h from "../pages/Holowanie24h";
 import HolowaniePoWypadkuAwariiKolizji from "../pages/HolowaniePoWypadkuAwariiKolizji";
+import TransportPojazdow from "../pages/TransportPojazdow";
 import PrzegladyISerwisOgolny from "../pages/PrzegladyISerwisOgolny";
 import SamochodZastepczyZOCSprawcy from "../pages/SamochodZastepczyZOCSprawcy";
 
@@ -130,7 +131,7 @@ const AppRoutes = () => {
       
       {/* Pomoc drogowa subcategories */}
       <Route path="/holowanie-po-wypadku-awarii-kolizji" element={<HolowaniePoWypadkuAwariiKolizji />} />
-      <Route path="/transport-pojazdow" element={<PomocDrogowaZOC />} />
+      <Route path="/transport-pojazdow" element={<TransportPojazdow />} />
       <Route path="/bezplatne-holowanie-z-oc-sprawcy" element={<HolowaniePoWypadkuAwariiKolizji />} />
       <Route path="/podstawienie-lawety-i-naprawa-na-miejscu" element={<PomocDrogowaZOC />} />
       <Route path="/pomoc-drogowa-na-autostradzie" element={<HolowaniePoWypadkuAwariiKolizji />} />
