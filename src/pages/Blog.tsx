@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -59,8 +58,8 @@ const Blog = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Hero Section - Added pt-24 to account for fixed navbar */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 pt-24">
+      {/* Hero Section - Added pt-32 for better spacing from fixed navbar */}
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <div className="space-y-4">
