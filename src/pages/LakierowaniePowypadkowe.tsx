@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +11,7 @@ const LakierowaniePowypadkowe = () => {
   const services = [
     {
       icon: <Palette className="w-6 h-6" />,
-      title: "Lakierowanie punktowe",
+      title: "Lakierowanie punktowe", 
       description: "Naprawa lokalnych uszkodzeń lakieru"
     },
     {
@@ -29,6 +28,57 @@ const LakierowaniePowypadkowe = () => {
       icon: <Star className="w-6 h-6" />,
       title: "Dobór koloru",
       description: "Komputerowy dobór koloru lakieru"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "Ile trwa lakierowanie samochodu po wypadku?",
+      answer: "Czas lakierowania zależy od zakresu prac. Lakierowanie punktowe może potrwać 1-2 dni, natomiast kompleksowe lakierowanie kilku elementów wymaga 3-5 dni roboczych. Po wstępnej ocenie zawsze informujemy o dokładnym terminie realizacji."
+    },
+    {
+      question: "Czy lakierowanie jest objęte gwarancją?",
+      answer: "Tak, wszystkie wykonane przez nas prace lakiernicze objęte są 3-letnią gwarancją. Gwarancja obejmuje przyczepność lakieru, odporność na warunki atmosferyczne oraz zachowanie koloru."
+    },
+    {
+      question: "Jak dopasowujecie kolor lakieru do oryginalnego?",
+      answer: "Używamy komputerowego systemu mieszania farb, który analizuje oryginalny kolor lakieru. Dodatkowo uwzględniamy stopień wyblakłego lakieru, co pozwala na idealne dopasowanie odcienia do reszty karoserii."
+    },
+    {
+      question: "Jakie rodzaje lakierów stosujecie?",
+      answer: "Stosujemy wyłącznie wysokiej jakości lakiery wodne renomowanych producentów jak Spies Hecker, PPG czy DuPont. Lakiery wodne są bardziej ekologiczne i zapewniają doskonałą trwałość oraz głęboki połysk."
+    },
+    {
+      question: "Czy można lakierować samochód częściowo?",
+      answer: "Tak, specjalizujemy się w lakierowaniu punktowym i częściowym. Możemy polakierować pojedyncze elementy jak zderzak, maskę, drzwi czy błotniki, zachowując pełną zgodność kolorystyczną z resztą pojazdu."
+    },
+    {
+      question: "Co obejmuje proces lakierowania?",
+      answer: "Proces obejmuje: przygotowanie powierzchni, szlifowanie, odtłuszczanie, aplikację podkładu, nakładanie farby bazowej, lakierowanie bezbarwnym lakierem oraz polerowanie. Każdy etap jest starannie kontrolowany."
+    },
+    {
+      question: "Czy lakierujecie wszystkie marki samochodów?",
+      answer: "Tak, lakierujemy pojazdy wszystkich marek i modeli. Mamy doświadczenie z każdym typem lakieru fabrycznego, od zwykłych jednowarstwowych po lakiery efektowe i metaliczne."
+    },
+    {
+      question: "Jak przygotowujecie powierzchnię do lakierowania?",
+      answer: "Przygotowanie obejmuje dokładne mycie, odrdzewianie, szlifowanie, wypełnianie nierówności szpachlą, gruntowanie oraz ostateczne wygładzenie powierzchni. To najważniejszy etap wpływający na jakość końcową."
+    },
+    {
+      question: "Czy oferujecie bezgotówkowe rozliczenie z ubezpieczeniem?",
+      answer: "Tak, współpracujemy z wszystkimi towarzystwami ubezpieczeniowymi. Oferujemy pełne bezgotówkowe rozliczenie dla lakierowania finansowanego z OC sprawcy, zajmując się całą dokumentacją."
+    },
+    {
+      question: "Co to jest lakierowanie wodne i dlaczego je stosujecie?",
+      answer: "Lakierowanie wodne używa lakierów na bazie wody zamiast rozpuszczalników. Jest bardziej ekologiczne, bezpieczniejsze dla pracowników, zapewnia lepszą przyczepność i trwałość oraz daje równomierniejsze pokrycie."
+    },
+    {
+      question: "Czy można naprawić zarysowania bez pełnego lakierowania?",
+      answer: "Tak, powierzchowne zarysowania można usunąć metodą polerowania lub lakierowania punktowego. Głębokie rysy wymagają szpachlowania i lakierowania, ale można to zrobić lokalnie bez malowania całego elementu."
+    },
+    {
+      question: "Jak dbać o świeżo polakierowaną powierzchnię?",
+      answer: "Przez pierwsze 30 dni unikaj mycia automatycznego, nie parkuj pod drzewami, unikaj silnych detergentów. Po tym czasie zalecamy regularne woskowanie i używanie wysokiej jakości kosmetyków samochodowych."
     }
   ];
 
@@ -223,6 +273,29 @@ const LakierowaniePowypadkowe = () => {
                   </CardDescription>
                 </CardHeader>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Najczęściej zadawane pytania
+            </h2>
+            <p className="text-xl text-gray-600">
+              Odpowiedzi na pytania dotyczące lakierowania samochodów
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {faqItems.map((item, index) => (
+              <div key={index} className="bg-gray-50 rounded-lg shadow-sm border p-6 hover:shadow-md transition-shadow duration-300">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+              </div>
             ))}
           </div>
         </div>
