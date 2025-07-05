@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -67,6 +66,57 @@ const NaprawyZOC = () => {
       step: "6",
       title: "Odbiór gotowego pojazdu",
       description: "Dostarczamy naprawiony samochód do klienta"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "Jak działa naprawa bezgotówkowa z OC sprawcy?",
+      answer: "Naprawa bezgotówkowa oznacza, że nie płacisz za naprawę z własnej kieszeni. Rozliczamy się bezpośrednio z ubezpieczycielem sprawcy wypadku. Wystarczy, że dostarczysz pojazd i dokumenty - my zajmujemy się resztą formalności."
+    },
+    {
+      question: "Jakie dokumenty są potrzebne do naprawy z OC sprawcy?",
+      answer: "Potrzebujesz: dowodu rejestracyjnego pojazdu, prawa jazdy, oświadczenia o zdarzeniu drogowym, protokołu policji (jeśli był sporządzony) oraz danych ubezpieczyciela sprawcy. Pomożemy Ci w przygotowaniu wszystkich dokumentów."
+    },
+    {
+      question: "Ile trwa naprawa z ubezpieczenia sprawcy?",
+      answer: "Czas naprawy zależy od zakresu uszkodzeń. Drobne naprawy lakiernicze trwają 3-5 dni, kompleksowe naprawy blacharsko-lakiernicze mogą potrwać 1-3 tygodni. Po wstępnej ocenie podajemy dokładny termin."
+    },
+    {
+      question: "Czy mogę wybrać warsztat do naprawy z OC sprawcy?",
+      answer: "Tak, jako poszkodowany masz prawo wyboru warsztatu. Możesz wskazać nasz serwis ubezpieczycielowi sprawcy jako miejsce wykonania naprawy. Pomożemy Ci w załatwieniu wszystkich formalności."
+    },
+    {
+      question: "Jakiej gwarancji udzielacie na naprawy z OC sprawcy?",
+      answer: "Udzielamy pełnej gwarancji na wszystkie wykonane prace: lakiernicze do 5 lat, blacharskie do 3 lat, mechaniczne zgodnie ze standardami. Gwarancja obejmuje zarówno robociznę jak i użyte materiały."
+    },
+    {
+      question: "Co się dzieje, jeśli ubezpieczyciel nie chce pokryć pełnych kosztów naprawy?",
+      answer: "W takim przypadku reprezentujemy Twoje interesy w negocjacjach z ubezpieczycielem. Przygotowujemy szczegółowe uzasadnienie kosztów i przy potrzebie angażujemy rzeczoznawcę. Nie zostajesz sam z tym problemem."
+    },
+    {
+      question: "Czy naprawa z OC sprawcy obejmuje lakierowanie?",
+      answer: "Tak, lakierowanie z OC sprawcy jest w pełni pokryte przez ubezpieczenie. Wykonujemy profesjonalne lakierowanie z ideałnym dopasowaniem koloru i długoterminową gwarancją jakości."
+    },
+    {
+      question: "Jakie części zamienne używacie w naprawach z OC sprawcy?",
+      answer: "Stosujemy wyłącznie oryginalne części zamienne lub ich wysokiej jakości odpowiedniki zatwierdzone przez producentów. Wszystkie części są objęte gwarancją i akceptowane przez ubezpieczycieli."
+    },
+    {
+      question: "Czy oferujecie pojazd zastępczy podczas naprawy z OC sprawcy?",
+      answer: "Tak, organizujemy pojazd zastępczy na czas naprawy. Koszt może być pokryty przez ubezpieczenie sprawcy lub assistance. Pomożemy w załatwieniu wszystkich formalności z ubezpieczycielem."
+    },
+    {
+      question: "Jak szybko można rozpocząć naprawę po wypadku?",
+      answer: "Naprawę można rozpocząć natychmiast po uzgodnieniu zakresu prac z ubezpieczycielem sprawcy. Oferujemy bezpłatny odbiór pojazdu z miejsca wskazanego przez klienta."
+    },
+    {
+      question: "Co obejmuje naprawa blacharsko-lakiernicza z OC sprawcy?",
+      answer: "Kompleksowa naprawa obejmuje: prostowanie karoserii, wymianę uszkodzonych części, przygotowanie powierzchni, malowanie w komorze lakierniczej, polerowanie i montaż wszystkich elementów."
+    },
+    {
+      question: "Czy można śledzić postęp naprawy z OC sprawcy?",
+      answer: "Tak, regularnie informujemy o postępach w naprawie. Możesz odwiedzić warsztat w ustalonych terminach, a także kontaktować się telefonicznie w celu uzyskania aktualnych informacji o statusie naprawy."
     }
   ];
 
@@ -276,6 +326,29 @@ const NaprawyZOC = () => {
                   </div>
                 )}
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Najczęściej zadawane pytania
+            </h2>
+            <p className="text-xl text-gray-600">
+              Odpowiedzi na pytania dotyczące napraw z OC sprawcy
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {faqItems.map((item, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-sm border p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+              </div>
             ))}
           </div>
         </div>
