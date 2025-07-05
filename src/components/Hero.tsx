@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle, Phone, ArrowRight, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -13,18 +13,23 @@ const Hero = () => {
         {/* Centered Header Section */}
         <div className="text-center mb-16">
           <Badge className="bg-autoram-gold text-black hover:bg-autoram-gold-dark font-semibold text-sm px-4 py-2 mb-8">
-            ⭐ OBSŁUGA SZKODY Z OC SPRAWCY - TWÓJ PARTNER PO WYPADKU
+            🏢 CENTRUM LIKWIDACJI SZKÓD - WSZYSTKO W JEDNYM MIEJSCU
           </Badge>
           
           <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-8">
-            <span className="text-autoram-red">Obsługa szkody</span>
+            <span className="text-autoram-red">Centrum Likwidacji</span>
             <br />
-            <span className="text-autoram-text">z OC sprawcy</span>
+            <span className="text-autoram-text">Szkód</span>
           </h1>
+          
+          <p className="text-xl lg:text-2xl text-autoram-text-muted leading-relaxed font-light mb-8 max-w-4xl mx-auto">
+            Jedyne miejsce, gdzie załatwisz <span className="text-autoram-gold-dark font-semibold">wszystko po wypadku</span>. 
+            Kompleksowa obsługa szkód, naprawy, auto zastępcze i formalności - wszystko pod jednym dachem.
+          </p>
           
           {/* Cities Box - Centered */}
           <div className="bg-autoram-white p-6 rounded-xl border-2 border-autoram-gold/20 shadow-lg max-w-2xl mx-auto">
-            <p className="text-sm font-semibold text-autoram-text mb-3">Działamy w:</p>
+            <p className="text-sm font-semibold text-autoram-text mb-3">Nasze Centra działają w:</p>
             <p className="text-sm text-autoram-text-muted leading-relaxed">
               Wolsztyn | Poznań | Zielona Góra | Nowy Tomyśl | Sława | Leszno | Głogów | Kościan | Szamotuły | Międzyrzecz
             </p>
@@ -36,21 +41,20 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-10">
             <div className="space-y-8">
-              <p className="text-xl lg:text-2xl text-autoram-text-muted leading-relaxed font-light">
-                Kompleksowa pomoc poszkodowanym w komunikacji. 
-                <span className="text-autoram-gold-dark font-semibold"> Bezgotówkowa naprawa, auto zastępcze i holowanie</span> - wszystko z OC sprawcy.
-              </p>
+              <h2 className="text-2xl lg:text-3xl font-bold text-autoram-text">
+                Dlaczego nasze <span className="text-autoram-red">Centrum</span>?
+              </h2>
             </div>
 
             {/* Key Benefits */}
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Bezgotówkowa naprawa z OC sprawcy",
-                "Auto zastępcze bez limitu kilometrów",
-                "Bezpośrednia likwidacja szkód (BLS)",
-                "Holowanie i transport z OC sprawcy",
-                "Kompleksowa pomoc poszkodowanym",
-                "Wycena szkody przez rzeczoznawcę"
+                "Wszystko w jednym miejscu",
+                "Centrum czynne 24/7",
+                "Bezgotówkowa obsługa z OC",
+                "Auto zastępcze od razu",
+                "Specjaliści w każdym dziale",
+                "Kompleksowa pomoc prawna"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3 bg-autoram-white p-4 rounded-xl border border-autoram-red/10 shadow-sm hover:shadow-md transition-shadow">
                   <CheckCircle className="w-5 h-5 text-autoram-gold-dark flex-shrink-0" />
@@ -63,30 +67,28 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6">
               <Button size="lg" className="bg-autoram-red hover:bg-autoram-red-dark text-white text-lg px-8 py-6 shadow-2xl hover:shadow-xl transition-shadow font-semibold">
                 <Phone className="w-5 h-5 mr-3" />
-                Zgłoś szkodę: 123-456-789
+                Centrum Pomocy: 123-456-789
               </Button>
-              <Link to="/obsługa-szkody-z-oc">
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full sm:w-auto border-2 border-autoram-gold text-autoram-gold-dark hover:bg-autoram-gold hover:text-black font-semibold">
-                  Dowiedz się więcej
-                  <ArrowRight className="w-5 h-5 ml-3" />
-                </Button>
-              </Link>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full sm:w-auto border-2 border-autoram-gold text-autoram-gold-dark hover:bg-autoram-gold hover:text-black font-semibold">
+                <MapPin className="w-5 h-5 mr-3" />
+                Dojazd do Centrum
+              </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-autoram-red/20">
               <div className="grid sm:grid-cols-3 gap-6 text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start space-x-3">
-                  <div className="w-4 h-4 bg-autoram-gold rounded-full animate-pulse"></div>
-                  <span className="text-autoram-text-muted font-medium">Dostępni 24/7</span>
+                  <Clock className="w-5 h-5 text-autoram-gold animate-pulse" />
+                  <span className="text-autoram-text-muted font-medium">Centrum 24/7</span>
                 </div>
                 <div className="flex items-center justify-center sm:justify-start space-x-3">
                   <div className="w-4 h-4 bg-autoram-red rounded-full animate-pulse"></div>
-                  <span className="text-autoram-text-muted font-medium">Bezpłatna wycena</span>
+                  <span className="text-autoram-text-muted font-medium">Bezpłatna konsultacja</span>
                 </div>
                 <div className="flex items-center justify-center sm:justify-start space-x-3">
                   <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-autoram-text-muted font-medium">Szybka realizacja</span>
+                  <span className="text-autoram-text-muted font-medium">Natychmiastowa pomoc</span>
                 </div>
               </div>
             </div>
@@ -97,13 +99,13 @@ const Hero = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-autoram-red/20">
               <img
                 src="/lovable-uploads/ed7a47ae-36e0-465d-ac4d-f9b660d03ffc.png"
-                alt="Obsługa szkód powypadkowych - uszkodzony pojazd"
+                alt="Centrum Likwidacji Szkód - kompleksowa obsługa powypadkowa"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-autoram-text/50 via-transparent to-autoram-red/10"></div>
               <div className="absolute bottom-8 left-8 text-white">
-                <p className="text-xl font-semibold mb-2">Profesjonalna obsługa szkód</p>
-                <p className="text-sm text-autoram-gold-light">Kompleksowe rozwiązania powypadkowe</p>
+                <p className="text-xl font-semibold mb-2">Centrum Likwidacji Szkód</p>
+                <p className="text-sm text-autoram-gold-light">Wszystko pod jednym dachem</p>
               </div>
             </div>
           </div>
