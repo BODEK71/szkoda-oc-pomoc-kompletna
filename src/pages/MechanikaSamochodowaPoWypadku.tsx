@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +11,7 @@ const MechanikaSamochodowaPoWypadku = () => {
   const services = [
     {
       icon: <Wrench className="w-6 h-6" />,
-      title: "Naprawa silnika",
+      title: "Naprawa silnika", 
       description: "Kompleksowe naprawy jednostek napędowych"
     },
     {
@@ -29,6 +28,57 @@ const MechanikaSamochodowaPoWypadku = () => {
       icon: <Star className="w-6 h-6" />,
       title: "Systemy bezpieczeństwa",
       description: "Kontrola airbagów i systemów asystujących"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "Jakie uszkodzenia mechaniczne mogą wystąpić po wypadku?",
+      answer: "Po wypadku najczęstsze uszkodzenia mechaniczne to: uszkodzenia silnika (wyciek oleju, uszkodzenie bloku), problemy z układem chłodzenia, uszkodzenia skrzyni biegów, problemy z zawieszeniem, uszkodzenia układu hamulcowego oraz awarie układu kierowniczego. Każde z tych uszkodzeń wymaga fachowej diagnostyki."
+    },
+    {
+      question: "Ile trwa diagnostyka mechaniczna po wypadku?",
+      answer: "Podstawowa diagnostyka mechaniczna trwa zwykle 1-2 godziny, podczas gdy kompleksowa analiza wszystkich systemów może zająć do jednego dnia roboczego. Czas zależy od stopnia złożoności uszkodzeń i liczby systemów do sprawdzenia."
+    },
+    {
+      question: "Czy naprawy mechaniczne są objęte gwarancją?",
+      answer: "Tak, wszystkie wykonane przez nas naprawy mechaniczne objęte są gwarancją od 12 do 24 miesięcy, w zależności od rodzaju naprawy. Używamy wyłącznie oryginalnych części zamiennych lub ich wysokiej jakości odpowiedników od renomowanych producentów."
+    },
+    {
+      question: "Jak długo trwa naprawa silnika po kolizji?",
+      answer: "Czas naprawy silnika zależy od stopnia uszkodzeń. Drobne naprawy (wymiana uszczelnień, naprawy wycieków) trwają 1-3 dni. Poważniejsze naprawy jak regeneracja silnika mogą zająć 1-2 tygodnie. Po diagnostyce zawsze informujemy o dokładnym terminie."
+    },
+    {
+      question: "Kiedy konieczna jest wymiana rozrządu po wypadku?",
+      answer: "Wymiana rozrządu jest konieczna gdy doszło do przeskoczenia paska/łańcucha rozrządu, uszkodzenia mechanicznego elementów układu lub gdy rozrząd został uszkodzony na skutek nagłego zatrzymania silnika podczas kolizji. Objawy to nieprawidłowa praca silnika lub brak możliwości jego uruchomienia."
+    },
+    {
+      question: "Czy można naprawić każde uszkodzenie mechaniczne?",
+      answer: "Większość uszkodzeń mechanicznych da się naprawić, jednak czasem koszt naprawy może przewyższać wartość pojazdu. W takich przypadkach doradzimy najkorzystniejsze rozwiązanie. Zawsze przedstawiamy szczegółowy kosztorys przed rozpoczęciem prac."
+    },
+    {
+      question: "Jakie dokumenty są potrzebne do naprawy mechanicznej z OC?",
+      answer: "Potrzebne dokumenty to: protokół zdarzenia drogowego, zgłoszenie szkody do ubezpieczyciela, dowód rejestracyjny pojazdu, prawo jazdy oraz dokumenty potwierdzające tożsamość. W przypadku bezgotówkowej naprawy zajmujemy się całą dokumentacją z ubezpieczycielem."
+    },
+    {
+      question: "Czy oferujecie naprawy wszystkich marek samochodów?",
+      answer: "Tak, naprawiamy pojazdy wszystkich marek i modeli - od popularnych aut osobowych po samochody luksusowe i dostawcze. Nasz zespół ma doświadczenie z różnymi typami silników: benzynowymi, diesla, hybrydowymi oraz gazowymi."
+    },
+    {
+      question: "Co obejmuje diagnostyka komputerowa po wypadku?",
+      answer: "Diagnostyka komputerowa obejmuje: odczyt kodów błędów z wszystkich sterowników, sprawdzenie parametrów pracy silnika, kontrolę systemów bezpieczeństwa (airbagi, ABS, ESP), sprawdzenie układów asystujących oraz testowanie elektroniki pojazdu. Używamy profesjonalnych testerów diagnostycznych."
+    },
+    {
+      question: "Ile kosztuje naprawa mechaniczna po wypadku?",
+      answer: "Koszt naprawy zależy od zakresu uszkodzeń. Diagnostyka kosztuje 100-200 zł, drobne naprawy od 300-800 zł, większe naprawy silnika 2000-8000 zł, a kompleksowe remonty mogą kosztować 10000-20000 zł. Zawsze przedstawiamy dokładną wycenę przed rozpoczęciem prac."
+    },
+    {
+      question: "Czy można kontynuować jazdę z uszkodzonym silnikiem?",
+      answer: "Nie zalecamy kontynuowania jazdy z uszkodzonym silnikiem, ponieważ może to doprowadzić do poważniejszych awarii i znacznie wyższych kosztów naprawy. W przypadku problemów mechanicznych po wypadku najlepiej skorzystać z holowania do serwisu."
+    },
+    {
+      question: "Jak przygotować samochód do naprawy mechanicznej?",
+      answer: "Przed naprawą usuń wszystkie osobiste przedmioty z pojazdu, opróżnij bagażnik, przygotuj komplet kluczy oraz dokumenty pojazdu. W przypadku poważnych uszkodzeń nie próbuj uruchamiać silnika - pozostaw to specjalistom, aby uniknąć dodatkowych uszkodzeń."
     }
   ];
 
@@ -253,6 +303,29 @@ const MechanikaSamochodowaPoWypadku = () => {
                   </CardDescription>
                 </CardHeader>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Najczęściej zadawane pytania
+            </h2>
+            <p className="text-xl text-gray-600">
+              Odpowiedzi na pytania dotyczące mechaniki samochodowej po wypadku
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {faqItems.map((item, index) => (
+              <div key={index} className="bg-gray-50 rounded-lg shadow-sm border p-6 hover:shadow-md transition-shadow duration-300">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+              </div>
             ))}
           </div>
         </div>
