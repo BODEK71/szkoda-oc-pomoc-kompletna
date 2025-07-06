@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -101,7 +102,7 @@ const Hero = () => {
 
           {/* Cities Box */}
           <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-autoram-gold/20 shadow-lg max-w-2xl mx-auto mb-8">
-            <p className="text-sm font-semibold text-white mb-2">Nasze Centrum obsługuje</p>
+            <p className="text-sm font-semibold text-white mb-2">Centrum Likwidacji Szkód obsługuje: </p>
             <p className="text-sm text-white/90 leading-relaxed">
               {cityListString}
             </p>
