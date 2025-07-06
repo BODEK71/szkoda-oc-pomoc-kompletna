@@ -11,7 +11,6 @@ import BenefitsSection from "@/components/BenefitsSection";
 import AboutCenterSection from "@/components/AboutCenterSection";
 import HowCenterWorksSection from "@/components/HowCenterWorksSection";
 import CenterDepartmentsSection from "@/components/CenterDepartmentsSection";
-import CitiesSection from "@/components/CitiesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -22,7 +21,6 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AboutCenterSection />
-      <CitiesSection />
       <HowCenterWorksSection />
       <CenterDepartmentsSection />
       <BenefitsSection />
