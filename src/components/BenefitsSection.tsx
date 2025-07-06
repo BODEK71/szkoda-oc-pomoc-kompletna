@@ -35,10 +35,13 @@ const BenefitsSection = () => {
   ];
 
   const cities = [
-    "Poznań", "Wrocław", "Szczecin", "Bydgoszcz", "Zielona Góra", "Opole",
-    "Leszno", "Kalisz", "Gorzów Wielkopolski", "Wałbrzych", "Legnica",
-    "Jelenia Góra", "Konin", "Piła", "Koszalin", "Słupsk", "Żary",
-    "Bolesławiec", "Lubin", "Głogów", "Świdnica", "Dzierżoniów"
+    "Babimost", "Bojanowo", "Bolewice", "Boruja Kościelna", "Buk", "Czempiń", 
+    "Duszniki", "Głogów", "Gostyń", "Grodzisk Wielkopolski", "Jarocin", "Jordanowo", 
+    "Kargowa", "Kościan", "Kórnik", "Leszno", "Lubin", "Luboń", "Lwówek", "Mosina", 
+    "Niepruszewo", "Nowy Tomyśl", "Oborniki", "Opalenica", "Pniewy", "Poznań", 
+    "Rakoniewice", "Rawicz", "Siedlec", "Stęszew", "Sulechów", "Smigiel", 
+    "Środa Wielkopolska", "Śrem", "Świebodzin", "Trzciel", "Wschowa", "Wolsztyn", 
+    "Września", "Zbąszyń", "Zbąszynek", "Zielona Góra"
   ];
 
   return (
