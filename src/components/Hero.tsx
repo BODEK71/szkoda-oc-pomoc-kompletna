@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Phone, ArrowRight, MapPin, Clock } from "lucide-react";
+import { cities } from "@/config/cities";
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState("");
@@ -22,6 +22,9 @@ const Hero = () => {
     "/lovable-uploads/a244758c-a742-4eab-a4e7-125d3d6649fd.png",
     "/lovable-uploads/c3fc47fd-bd5c-47cc-8f97-eee71fe44429.png"
   ];
+  
+  // Generate city list string from cities config
+  const cityListString = cities.map(city => city.name).join(' | ');
   
   // Typewriter effect
   useEffect(() => {
@@ -96,7 +99,7 @@ const Hero = () => {
           <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-autoram-gold/20 shadow-lg max-w-2xl mx-auto mb-8">
             <p className="text-sm font-semibold text-white mb-2">Nasze Centra działają w:</p>
             <p className="text-sm text-white/90 leading-relaxed">
-              Wolsztyn | Poznań | Zielona Góra | Nowy Tomyśl | Sława | Leszno | Głogów | Kościan | Szamotuły | Międzyrzecz
+              {cityListString}
             </p>
           </div>
 

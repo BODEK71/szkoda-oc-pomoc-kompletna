@@ -1,4 +1,6 @@
 
+import { cities, generateWynajemItems } from '@/config/cities';
+
 // WYNAJEM POJAZDÓW ZASTĘPCZYCH
 export const samochodZastepczyZOCItems = [
   { name: "Samochód zastępczy z OC sprawcy", href: "/samochod-zastepcze-z-oc-sprawcy" },
@@ -42,66 +44,27 @@ export const parametryWynajmuItems = [
   { name: "Koszt wynajmu auta z OC sprawcy", href: "/koszt-wynajmu-auta-z-oc-sprawcy" },
 ];
 
-// WYNAJEM LOKALIZACJA
-export const wynajemLokalizacjaWolsztynItems = [
-  { name: "Auto zastępcze z OC Wolsztyn", href: "/auto-zastepcze-z-oc-wolsztyn" },
-  { name: "Wynajem aut z OC Wolsztyn", href: "/wynajem-aut-z-oc-wolsztyn" },
-  { name: "Samochód zastępczy Wolsztyn", href: "/samochod-zastepcze-wolsztyn" },
-];
+// WYNAJEM LOKALIZACJA - Generate from cities config
+const cityWynajemItemsMap = new Map();
+cities.forEach(city => {
+  const items = generateWynajemItems(city);
+  cityWynajemItemsMap.set(city.slug, items);
+});
 
-export const wynajemLokalizacjaPoznanItems = [
-  { name: "Auto zastępcze z OC Poznań", href: "/auto-zastepcze-z-oc-poznan" },
-  { name: "Wynajem aut z OC Poznań", href: "/wynajem-aut-z-oc-poznan" },
-  { name: "Samochód zastępczy Poznań", href: "/samochod-zastepcze-poznan" },
-];
+// Export individual city arrays for backward compatibility
+export const wynajemLokalizacjaWolsztynItems = cityWynajemItemsMap.get('wolsztyn') || [];
+export const wynajemLokalizacjaPoznanItems = cityWynajemItemsMap.get('poznan') || [];
+export const wynajemLokalizacjaZielonaGoraItems = cityWynajemItemsMap.get('zielona-gora') || [];
+export const wynajemLokalizacjaNowyTomyslItems = cityWynajemItemsMap.get('nowy-tomysl') || [];
+export const wynajemLokalizacjaSlawaItems = cityWynajemItemsMap.get('slawa') || [];
+export const wynajemLokalizacjaLesznoItems = cityWynajemItemsMap.get('leszno') || [];
+export const wynajemLokalizacjaGlogowItems = cityWynajemItemsMap.get('glogow') || [];
+export const wynajemLokalizacjaKoscianItems = cityWynajemItemsMap.get('koscian') || [];
+export const wynajemLokalizacjaSzamotulyItems = cityWynajemItemsMap.get('szamotuly') || [];
+export const wynajemLokalizacjaMiedzyrzeczItems = cityWynajemItemsMap.get('miedzyrzecz') || [];
 
-export const wynajemLokalizacjaZielonaGoraItems = [
-  { name: "Auto zastępcze z OC Zielona Góra", href: "/auto-zastepcze-z-oc-zielona-gora" },
-  { name: "Wynajem aut z OC Zielona Góra", href: "/wynajem-aut-z-oc-zielona-gora" },
-  { name: "Samochód zastępczy Zielona Góra", href: "/samochod-zastepcze-zielona-gora" },
-];
-
-export const wynajemLokalizacjaNowyTomyslItems = [
-  { name: "Auto zastępcze z OC Nowy Tomyśl", href: "/auto-zastepcze-z-oc-nowy-tomysl" },
-  { name: "Wynajem aut z OC Nowy Tomyśl", href: "/wynajem-aut-z-oc-nowy-tomysl" },
-  { name: "Samochód zastępczy Nowy Tomyśl", href: "/samochod-zastepcze-nowy-tomysl" },
-];
-
-export const wynajemLokalizacjaSlawaItems = [
-  { name: "Auto zastępcze z OC Sława", href: "/auto-zastepcze-z-oc-slawa" },
-  { name: "Wynajem aut z OC Sława", href: "/wynajem-aut-z-oc-slawa" },
-  { name: "Samochód zastępczy Sława", href: "/samochod-zastepcze-slawa" },
-];
-
-export const wynajemLokalizacjaLesznoItems = [
-  { name: "Auto zastępcze z OC Leszno", href: "/auto-zastepcze-z-oc-leszno" },
-  { name: "Wynajem aut z OC Leszno", href: "/wynajem-aut-z-oc-leszno" },
-  { name: "Samochód zastępczy Leszno", href: "/samochod-zastepcze-leszno" },
-];
-
-export const wynajemLokalizacjaGlogowItems = [
-  { name: "Auto zastępcze z OC Głogów", href: "/auto-zastepcze-z-oc-glogow" },
-  { name: "Wynajem aut z OC Głogów", href: "/wynajem-aut-z-oc-glogow" },
-  { name: "Samochód zastępczy Głogów", href: "/samochod-zastepcze-glogow" },
-];
-
-export const wynajemLokalizacjaKoscianItems = [
-  { name: "Auto zastępcze z OC Kościan", href: "/auto-zastepcze-z-oc-koscian" },
-  { name: "Wynajem aut z OC Kościan", href: "/wynajem-aut-z-oc-koscian" },
-  { name: "Samochód zastępczy Kościan", href: "/samochod-zastepcze-koscian" },
-];
-
-export const wynajemLokalizacjaSzamotulyItems = [
-  { name: "Auto zastępcze z OC Szamotuły", href: "/auto-zastepcze-z-oc-szamotuly" },
-  { name: "Wynajem aut z OC Szamotuły", href: "/wynajem-aut-z-oc-szamotuly" },
-  { name: "Samochód zastępczy Szamotuły", href: "/samochod-zastepcze-szamotuly" },
-];
-
-export const wynajemLokalizacjaMiedzyrzeczItems = [
-  { name: "Auto zastępcze z OC Międzyrzecz", href: "/auto-zastepcze-z-oc-miedzyrzecz" },
-  { name: "Wynajem aut z OC Międzyrzecz", href: "/wynajem-aut-z-oc-miedzyrzecz" },
-  { name: "Samochód zastępczy Międzyrzecz", href: "/samochod-zastepcze-miedzyrzecz" },
-];
+// Generate all new city items
+export const allCityWynajemItems = cityWynajemItemsMap;
 
 // LEGACY - STARE ELEMENTY WYNAJMU (zachowane dla kompatybilności)
 export const wynajemItems = [
@@ -118,15 +81,6 @@ export const getAllWynajemItems = () => {
     ...pojazdyNaCzasNaprawyItems,
     ...pojazdyPoWypadkuItems,
     ...parametryWynajmuItems,
-    ...wynajemLokalizacjaWolsztynItems,
-    ...wynajemLokalizacjaPoznanItems,
-    ...wynajemLokalizacjaZielonaGoraItems,
-    ...wynajemLokalizacjaNowyTomyslItems,
-    ...wynajemLokalizacjaSlawaItems,
-    ...wynajemLokalizacjaLesznoItems,
-    ...wynajemLokalizacjaGlogowItems,
-    ...wynajemLokalizacjaKoscianItems,
-    ...wynajemLokalizacjaSzamotulyItems,
-    ...wynajemLokalizacjaMiedzyrzeczItems
+    ...Array.from(cityWynajemItemsMap.values()).flat()
   ];
 };

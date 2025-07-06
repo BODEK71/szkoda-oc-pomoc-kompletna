@@ -1,4 +1,6 @@
 
+import { cities, generatePomocDrogowaItems } from '@/config/cities';
+
 // POMOC DROGOWA I HOLOWANIE
 export const pomocDrogowa24Items = [
   { name: "Pomoc drogowa", href: "/pomoc-drogowa" },
@@ -48,76 +50,27 @@ export const holowanieZOCItems = [
   { name: "Bezpłatne holowanie", href: "/bezplatne-holowanie" },
 ];
 
-// POMOC DROGOWA LOKALNA
-export const pomocDrogowaWolsztynItems = [
-  { name: "Pomoc drogowa Wolsztyn", href: "/pomoc-drogowa-wolsztyn" },
-  { name: "Laweta Wolsztyn", href: "/laweta-wolsztyn" },
-  { name: "Holowanie Wolsztyn", href: "/holowanie-wolsztyn" },
-  { name: "Pomoc drogowa 24h Wolsztyn", href: "/pomoc-drogowa-24h-wolsztyn" },
-];
+// POMOC DROGOWA LOKALNA - Generate from cities config
+const cityPomocDrogowaItemsMap = new Map();
+cities.forEach(city => {
+  const items = generatePomocDrogowaItems(city);
+  cityPomocDrogowaItemsMap.set(city.slug, items);
+});
 
-export const pomocDrogowaPoznanItems = [
-  { name: "Pomoc drogowa Poznań", href: "/pomoc-drogowa-poznan" },
-  { name: "Laweta Poznań", href: "/laweta-poznan" },
-  { name: "Holowanie Poznań", href: "/holowanie-poznan" },
-  { name: "Pomoc drogowa 24h Poznań", href: "/pomoc-drogowa-24h-poznan" },
-];
+// Export individual city arrays for backward compatibility
+export const pomocDrogowaWolsztynItems = cityPomocDrogowaItemsMap.get('wolsztyn') || [];
+export const pomocDrogowaPoznanItems = cityPomocDrogowaItemsMap.get('poznan') || [];
+export const pomocDrogowaZielonaGoraItems = cityPomocDrogowaItemsMap.get('zielona-gora') || [];
+export const pomocDrogowaNowyTomyslItems = cityPomocDrogowaItemsMap.get('nowy-tomysl') || [];
+export const pomocDrogowaSlawaItems = cityPomocDrogowaItemsMap.get('slawa') || [];
+export const pomocDrogowaLesznoItems = cityPomocDrogowaItemsMap.get('leszno') || [];
+export const pomocDrogowaGlogowItems = cityPomocDrogowaItemsMap.get('glogow') || [];
+export const pomocDrogowaKoscianItems = cityPomocDrogowaItemsMap.get('koscian') || [];
+export const pomocDrogowaSzamotulyItems = cityPomocDrogowaItemsMap.get('szamotuly') || [];
+export const pomocDrogowaMiedzyrzeczItems = cityPomocDrogowaItemsMap.get('miedzyrzecz') || [];
 
-export const pomocDrogowaZielonaGoraItems = [
-  { name: "Pomoc drogowa Zielona Góra", href: "/pomoc-drogowa-zielona-gora" },
-  { name: "Laweta Zielona Góra", href: "/laweta-zielona-gora" },
-  { name: "Holowanie Zielona Góra", href: "/holowanie-zielona-gora" },
-  { name: "Pomoc drogowa 24h Zielona Góra", href: "/pomoc-drogowa-24h-zielona-gora" },
-];
-
-export const pomocDrogowaNowyTomyslItems = [
-  { name: "Pomoc drogowa Nowy Tomyśl", href: "/pomoc-drogowa-nowy-tomysl" },
-  { name: "Laweta Nowy Tomyśl", href: "/laweta-nowy-tomysl" },
-  { name: "Holowanie Nowy Tomyśl", href: "/holowanie-nowy-tomysl" },
-  { name: "Pomoc drogowa 24h Nowy Tomyśl", href: "/pomoc-drogowa-24h-nowy-tomysl" },
-];
-
-export const pomocDrogowaSlawaItems = [
-  { name: "Pomoc drogowa Sława", href: "/pomoc-drogowa-slawa" },
-  { name: "Laweta Sława", href: "/laweta-slawa" },
-  { name: "Holowanie Sława", href: "/holowanie-slawa" },
-  { name: "Pomoc drogowa 24h Sława", href: "/pomoc-drogowa-24h-slawa" },
-];
-
-export const pomocDrogowaLesznoItems = [
-  { name: "Pomoc drogowa Leszno", href: "/pomoc-drogowa-leszno" },
-  { name: "Laweta Leszno", href: "/laweta-leszno" },
-  { name: "Holowanie Leszno", href: "/holowanie-leszno" },
-  { name: "Pomoc drogowa 24h Leszno", href: "/pomoc-drogowa-24h-leszno" },
-];
-
-export const pomocDrogowaGlogowItems = [
-  { name: "Pomoc drogowa Głogów", href: "/pomoc-drogowa-glogow" },
-  { name: "Laweta Głogów", href: "/laweta-glogow" },
-  { name: "Holowanie Głogów", href: "/holowanie-glogow" },
-  { name: "Pomoc drogowa 24h Głogów", href: "/pomoc-drogowa-24h-glogow" },
-];
-
-export const pomocDrogowaKoscianItems = [
-  { name: "Pomoc drogowa Kościan", href: "/pomoc-drogowa-koscian" },
-  { name: "Laweta Kościan", href: "/laweta-koscian" },
-  { name: "Holowanie Kościan", href: "/holowanie-koscian" },
-  { name: "Pomoc drogowa 24h Kościan", href: "/pomoc-drogowa-24h-koscian" },
-];
-
-export const pomocDrogowaSzamotulyItems = [
-  { name: "Pomoc drogowa Szamotuły", href: "/pomoc-drogowa-szamotuly" },
-  { name: "Laweta Szamotuły", href: "/laweta-szamotuly" },
-  { name: "Holowanie Szamotuły", href: "/holowanie-szamotuly" },
-  { name: "Pomoc drogowa 24h Szamotuły", href: "/pomoc-drogowa-24h-szamotuly" },
-];
-
-export const pomocDrogowaMiedzyrzeczItems = [
-  { name: "Pomoc drogowa Międzyrzecz", href: "/pomoc-drogowa-miedzyrzecz" },
-  { name: "Laweta Międzyrzecz", href: "/laweta-miedzyrzecz" },
-  { name: "Holowanie Międzyrzecz", href: "/holowanie-miedzyrzecz" },
-  { name: "Pomoc drogowa 24h Międzyrzecz", href: "/pomoc-drogowa-24h-miedzyrzecz" },
-];
+// Generate all new city items
+export const allCityPomocDrogowaItems = cityPomocDrogowaItemsMap;
 
 // LEGACY - STARE ELEMENTY POMOCY DROGOWEJ (zachowane dla kompatybilności)
 export const pomocDrogowaItems = [
@@ -135,15 +88,6 @@ export const getAllPomocDrogowaItems = () => {
     ...transportSpecjalistycznyItems,
     ...holowaniePoWypadkuItems,
     ...holowanieZOCItems,
-    ...pomocDrogowaWolsztynItems,
-    ...pomocDrogowaPoznanItems,
-    ...pomocDrogowaZielonaGoraItems,
-    ...pomocDrogowaNowyTomyslItems,
-    ...pomocDrogowaSlawaItems,
-    ...pomocDrogowaLesznoItems,
-    ...pomocDrogowaGlogowItems,
-    ...pomocDrogowaKoscianItems,
-    ...pomocDrogowaSzamotulyItems,
-    ...pomocDrogowaMiedzyrzeczItems
+    ...Array.from(cityPomocDrogowaItemsMap.values()).flat()
   ];
 };
