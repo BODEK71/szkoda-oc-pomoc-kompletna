@@ -1,4 +1,3 @@
-
 import { cities, generateWynajemItems } from '@/config/cities';
 
 // WYNAJEM POJAZDÓW ZASTĘPCZYCH
@@ -51,17 +50,29 @@ cities.forEach(city => {
   cityWynajemItemsMap.set(city.slug, items);
 });
 
-// Export individual city arrays for backward compatibility
-export const wynajemLokalizacjaWolsztynItems = cityWynajemItemsMap.get('wolsztyn') || [];
-export const wynajemLokalizacjaPoznanItems = cityWynajemItemsMap.get('poznan') || [];
-export const wynajemLokalizacjaZielonaGoraItems = cityWynajemItemsMap.get('zielona-gora') || [];
-export const wynajemLokalizacjaNowyTomyslItems = cityWynajemItemsMap.get('nowy-tomysl') || [];
-export const wynajemLokalizacjaSlawaItems = cityWynajemItemsMap.get('slawa') || [];
-export const wynajemLokalizacjaLesznoItems = cityWynajemItemsMap.get('leszno') || [];
+// Export individual city arrays for all main cities
+export const wynajemLokalizacjaBoleslawiccItems = cityWynajemItemsMap.get('boleslawiec') || [];
+export const wynajemLokalizacjaBydgoszczItems = cityWynajemItemsMap.get('bydgoszcz') || [];
+export const wynajemLokalizacjaDzierzoniowItems = cityWynajemItemsMap.get('dzierzoniow') || [];
 export const wynajemLokalizacjaGlogowItems = cityWynajemItemsMap.get('glogow') || [];
-export const wynajemLokalizacjaKoscianItems = cityWynajemItemsMap.get('koscian') || [];
-export const wynajemLokalizacjaSzamotulyItems = cityWynajemItemsMap.get('szamotuly') || [];
-export const wynajemLokalizacjaMiedzyrzeczItems = cityWynajemItemsMap.get('miedzyrzecz') || [];
+export const wynajemLokalizacjaGorzowWielkopolskiItems = cityWynajemItemsMap.get('gorzow-wielkopolski') || [];
+export const wynajemLokalizacjaJeleniaGoraItems = cityWynajemItemsMap.get('jelenia-gora') || [];
+export const wynajemLokalizacjaKaliszItems = cityWynajemItemsMap.get('kalisz') || [];
+export const wynajemLokalizacjaKoninItems = cityWynajemItemsMap.get('konin') || [];
+export const wynajemLokalizacjaKoszalinItems = cityWynajemItemsMap.get('koszalin') || [];
+export const wynajemLokalizacjaLegnicaItems = cityWynajemItemsMap.get('legnica') || [];
+export const wynajemLokalizacjaLesznoItems = cityWynajemItemsMap.get('leszno') || [];
+export const wynajemLokalizacjaLubinItems = cityWynajemItemsMap.get('lubin') || [];
+export const wynajemLokalizacjaOpoleItems = cityWynajemItemsMap.get('opole') || [];
+export const wynajemLokalizacjaPilaItems = cityWynajemItemsMap.get('pila') || [];
+export const wynajemLokalizacjaPoznanItems = cityWynajemItemsMap.get('poznan') || [];
+export const wynajemLokalizacjaSlupskItems = cityWynajemItemsMap.get('slupsk') || [];
+export const wynajemLokalizacjaSzczecinItems = cityWynajemItemsMap.get('szczecin') || [];
+export const wynajemLokalizacjaSwidnicaItems = cityWynajemItemsMap.get('swidnica') || [];
+export const wynajemLokalizacjaWalbrzychItems = cityWynajemItemsMap.get('walbrzych') || [];
+export const wynajemLokalizacjaWroclawItems = cityWynajemItemsMap.get('wroclaw') || [];
+export const wynajemLokalizacjaZielonaGoraItems = cityWynajemItemsMap.get('zielona-gora') || [];
+export const wynajemLokalizacjaZaryItems = cityWynajemItemsMap.get('zary') || [];
 
 // Generate all new city items
 export const allCityWynajemItems = cityWynajemItemsMap;
@@ -84,3 +95,11 @@ export const getAllWynajemItems = () => {
     ...Array.from(cityWynajemItemsMap.values()).flat()
   ];
 };
+
+// For backward compatibility, keep old exports pointing to new cities
+export const wynajemLokalizacjaWolsztynItems = wynajemLokalizacjaPoznanItems; // Fallback to Poznań
+export const wynajemLokalizacjaNowyTomyslItems = wynajemLokalizacjaPoznanItems; // Fallback to Poznań
+export const wynajemLokalizacjaSlawaItems = wynajemLokalizacjaZielonaGoraItems; // Fallback to Zielona Góra
+export const wynajemLokalizacjaKoscianItems = wynajemLokalizacjaPoznanItems; // Fallback to Poznań
+export const wynajemLokalizacjaSzamotulyItems = wynajemLokalizacjaPoznanItems; // Fallback to Poznań
+export const wynajemLokalizacjaMiedzyrzeczItems = wynajemLokalizacjaGorzowWielkopolskiItems; // Fallback to Gorzów Wielkopolski

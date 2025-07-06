@@ -1,4 +1,3 @@
-
 import { cities, generateUslugiKompleksoweItems } from '@/config/cities';
 
 // Kompleksowa obsługa powypadkowa - główne elementy
@@ -44,17 +43,29 @@ cities.forEach(city => {
   cityUslugiKompleksoweItemsMap.set(city.slug, items);
 });
 
-// Export individual city arrays for backward compatibility
-export const centrum_wolsztynItems = cityUslugiKompleksoweItemsMap.get('wolsztyn') || [];
-export const centrum_poznanItems = cityUslugiKompleksoweItemsMap.get('poznan') || [];
-export const centrum_zielonaGoraItems = cityUslugiKompleksoweItemsMap.get('zielona-gora') || [];
-export const centrum_nowyTomyslItems = cityUslugiKompleksoweItemsMap.get('nowy-tomysl') || [];
-export const centrum_slawaItems = cityUslugiKompleksoweItemsMap.get('slawa') || [];
-export const centrum_lesznoItems = cityUslugiKompleksoweItemsMap.get('leszno') || [];
+// Export individual city arrays for all main cities
+export const centrum_boleslawiccItems = cityUslugiKompleksoweItemsMap.get('boleslawiec') || [];
+export const centrum_bydgoszczItems = cityUslugiKompleksoweItemsMap.get('bydgoszcz') || [];
+export const centrum_dzierzoniowItems = cityUslugiKompleksoweItemsMap.get('dzierzoniow') || [];
 export const centrum_glogowItems = cityUslugiKompleksoweItemsMap.get('glogow') || [];
-export const centrum_koscianItems = cityUslugiKompleksoweItemsMap.get('koscian') || [];
-export const centrum_szamotulyItems = cityUslugiKompleksoweItemsMap.get('szamotuly') || [];
-export const centrum_miedzyrzeczItems = cityUslugiKompleksoweItemsMap.get('miedzyrzecz') || [];
+export const centrum_gorzowWielkopolskiItems = cityUslugiKompleksoweItemsMap.get('gorzow-wielkopolski') || [];
+export const centrum_jeleniaGoraItems = cityUslugiKompleksoweItemsMap.get('jelenia-gora') || [];
+export const centrum_kaliszItems = cityUslugiKompleksoweItemsMap.get('kalisz') || [];
+export const centrum_koninItems = cityUslugiKompleksoweItemsMap.get('konin') || [];
+export const centrum_koszalinItems = cityUslugiKompleksoweItemsMap.get('koszalin') || [];
+export const centrum_legnicaItems = cityUslugiKompleksoweItemsMap.get('legnica') || [];
+export const centrum_lesznoItems = cityUslugiKompleksoweItemsMap.get('leszno') || [];
+export const centrum_lubinItems = cityUslugiKompleksoweItemsMap.get('lubin') || [];
+export const centrum_opoleItems = cityUslugiKompleksoweItemsMap.get('opole') || [];
+export const centrum_pilaItems = cityUslugiKompleksoweItemsMap.get('pila') || [];
+export const centrum_poznanItems = cityUslugiKompleksoweItemsMap.get('poznan') || [];
+export const centrum_slupskItems = cityUslugiKompleksoweItemsMap.get('slupsk') || [];
+export const centrum_szczecinItems = cityUslugiKompleksoweItemsMap.get('szczecin') || [];
+export const centrum_swidnicaItems = cityUslugiKompleksoweItemsMap.get('swidnica') || [];
+export const centrum_walbrzychItems = cityUslugiKompleksoweItemsMap.get('walbrzych') || [];
+export const centrum_wroclawItems = cityUslugiKompleksoweItemsMap.get('wroclaw') || [];
+export const centrum_zielonaGoraItems = cityUslugiKompleksoweItemsMap.get('zielona-gora') || [];
+export const centrum_zaryItems = cityUslugiKompleksoweItemsMap.get('zary') || [];
 
 // Generate all new city items
 export const allCityUslugiKompleksoweItems = cityUslugiKompleksoweItemsMap;
@@ -67,3 +78,11 @@ export const getAllUslugiKompleksoweItems = () => {
     ...Array.from(cityUslugiKompleksoweItemsMap.values()).flat()
   ];
 };
+
+// For backward compatibility, keep old exports pointing to new cities
+export const centrum_wolsztynItems = centrum_poznanItems; // Fallback to Poznań
+export const centrum_nowyTomyslItems = centrum_poznanItems; // Fallback to Poznań
+export const centrum_slawaItems = centrum_zielonaGoraItems; // Fallback to Zielona Góra
+export const centrum_koscianItems = centrum_poznanItems; // Fallback to Poznań
+export const centrum_szamotulyItems = centrum_poznanItems; // Fallback to Poznań
+export const centrum_miedzyrzeczItems = centrum_gorzowWielkopolskiItems; // Fallback to Gorzów Wielkopolski

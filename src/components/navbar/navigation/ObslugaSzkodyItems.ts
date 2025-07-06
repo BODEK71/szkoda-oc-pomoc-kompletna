@@ -1,4 +1,3 @@
-
 import { cities, generateLikwidacjaSzkodItems } from '@/config/cities';
 
 // LIKWIDACJA SZKÓD - Główna kategoria dla obsługi szkód ubezpieczeniowych
@@ -33,19 +32,31 @@ cities.forEach(city => {
   cityItemsMap.set(city.slug, items);
 });
 
-// Export individual city arrays for backward compatibility
-export const wolsztynSzkodyItems = cityItemsMap.get('wolsztyn') || [];
-export const poznanSzkodyItems = cityItemsMap.get('poznan') || [];
-export const zielonaGoraSzkodyItems = cityItemsMap.get('zielona-gora') || [];
-export const nowyTomyslSzkodyItems = cityItemsMap.get('nowy-tomysl') || [];
-export const slawaSzkodyItems = cityItemsMap.get('slawa') || [];
-export const lesznoSzkodyItems = cityItemsMap.get('leszno') || [];
+// Export individual city arrays for main cities
+export const boleslawiecSzkodyItems = cityItemsMap.get('boleslawiec') || [];
+export const bydgoszczSzkodyItems = cityItemsMap.get('bydgoszcz') || [];
+export const dzierzoniowSzkodyItems = cityItemsMap.get('dzierzoniow') || [];
 export const glogowSzkodyItems = cityItemsMap.get('glogow') || [];
-export const koscianSzkodyItems = cityItemsMap.get('koscian') || [];
-export const szamotulySzkodyItems = cityItemsMap.get('szamotuly') || [];
-export const miedzyrzeczSzkodyItems = cityItemsMap.get('miedzyrzecz') || [];
+export const gorzowWielkopolskiSzkodyItems = cityItemsMap.get('gorzow-wielkopolski') || [];
+export const jeleniaGoraSzkodyItems = cityItemsMap.get('jelenia-gora') || [];
+export const kaliszSzkodyItems = cityItemsMap.get('kalisz') || [];
+export const koninSzkodyItems = cityItemsMap.get('konin') || [];
+export const koszalinSzkodyItems = cityItemsMap.get('koszalin') || [];
+export const legnicaSzkodyItems = cityItemsMap.get('legnica') || [];
+export const lesznoSzkodyItems = cityItemsMap.get('leszno') || [];
+export const lubinSzkodyItems = cityItemsMap.get('lubin') || [];
+export const opoleSzkodyItems = cityItemsMap.get('opole') || [];
+export const pilaSzkodyItems = cityItemsMap.get('pila') || [];
+export const poznanSzkodyItems = cityItemsMap.get('poznan') || [];
+export const slupskSzkodyItems = cityItemsMap.get('slupsk') || [];
+export const szczecinSzkodyItems = cityItemsMap.get('szczecin') || [];
+export const swidnicaSzkodyItems = cityItemsMap.get('swidnica') || [];
+export const walbrzychSzkodyItems = cityItemsMap.get('walbrzych') || [];
+export const wroclawSzkodyItems = cityItemsMap.get('wroclaw') || [];
+export const zielonaGoraSzkodyItems = cityItemsMap.get('zielona-gora') || [];
+export const zarySzkodyItems = cityItemsMap.get('zary') || [];
 
-// Generate all new city items
+// Generate all city items map for dynamic access
 export const allCitySzkodyItems = cityItemsMap;
 
 // LEGACY - zachowane dla kompatybilności z istniejącym kodem
@@ -82,3 +93,11 @@ export const getAllObslugaSzkodyItems = () => {
 export const getAllLokalneSzkodyItems = () => {
   return Array.from(cityItemsMap.values()).flat();
 };
+
+// For backward compatibility, keep old exports pointing to new cities
+export const wolsztynSzkodyItems = poznanSzkodyItems; // Fallback to Poznań
+export const nowyTomyslSzkodyItems = poznanSzkodyItems; // Fallback to Poznań
+export const slawaSzkodyItems = zielonaGoraSzkodyItems; // Fallback to Zielona Góra
+export const koscianSzkodyItems = poznanSzkodyItems; // Fallback to Poznań
+export const szamotulySzkodyItems = poznanSzkodyItems; // Fallback to Poznań
+export const miedzyrzeczSzkodyItems = gorzowWielkopolskiSzkodyItems; // Fallback to Gorzów Wielkopolski

@@ -1,4 +1,3 @@
-
 import { cities, generatePomocDrogowaItems } from '@/config/cities';
 
 // POMOC DROGOWA I HOLOWANIE
@@ -57,17 +56,29 @@ cities.forEach(city => {
   cityPomocDrogowaItemsMap.set(city.slug, items);
 });
 
-// Export individual city arrays for backward compatibility
-export const pomocDrogowaWolsztynItems = cityPomocDrogowaItemsMap.get('wolsztyn') || [];
-export const pomocDrogowaPoznanItems = cityPomocDrogowaItemsMap.get('poznan') || [];
-export const pomocDrogowaZielonaGoraItems = cityPomocDrogowaItemsMap.get('zielona-gora') || [];
-export const pomocDrogowaNowyTomyslItems = cityPomocDrogowaItemsMap.get('nowy-tomysl') || [];
-export const pomocDrogowaSlawaItems = cityPomocDrogowaItemsMap.get('slawa') || [];
-export const pomocDrogowaLesznoItems = cityPomocDrogowaItemsMap.get('leszno') || [];
+// Export individual city arrays for all main cities
+export const pomocDrogowaBoleslawiccItems = cityPomocDrogowaItemsMap.get('boleslawiec') || [];
+export const pomocDrogowaBydgoszczItems = cityPomocDrogowaItemsMap.get('bydgoszcz') || [];
+export const pomocDrogowaDzierzoniowItems = cityPomocDrogowaItemsMap.get('dzierzoniow') || [];
 export const pomocDrogowaGlogowItems = cityPomocDrogowaItemsMap.get('glogow') || [];
-export const pomocDrogowaKoscianItems = cityPomocDrogowaItemsMap.get('koscian') || [];
-export const pomocDrogowaSzamotulyItems = cityPomocDrogowaItemsMap.get('szamotuly') || [];
-export const pomocDrogowaMiedzyrzeczItems = cityPomocDrogowaItemsMap.get('miedzyrzecz') || [];
+export const pomocDrogowaGorzowWielkopolskiItems = cityPomocDrogowaItemsMap.get('gorzow-wielkopolski') || [];
+export const pomocDrogowaJeleniaGoraItems = cityPomocDrogowaItemsMap.get('jelenia-gora') || [];
+export const pomocDrogowaKaliszItems = cityPomocDrogowaItemsMap.get('kalisz') || [];
+export const pomocDrogowaKoninItems = cityPomocDrogowaItemsMap.get('konin') || [];
+export const pomocDrogowaKoszalinItems = cityPomocDrogowaItemsMap.get('koszalin') || [];
+export const pomocDrogowaLegnicaItems = cityPomocDrogowaItemsMap.get('legnica') || [];
+export const pomocDrogowaLesznoItems = cityPomocDrogowaItemsMap.get('leszno') || [];
+export const pomocDrogowaLubinItems = cityPomocDrogowaItemsMap.get('lubin') || [];
+export const pomocDrogowaOpoleItems = cityPomocDrogowaItemsMap.get('opole') || [];
+export const pomocDrogowaPilaItems = cityPomocDrogowaItemsMap.get('pila') || [];
+export const pomocDrogowaPoznanItems = cityPomocDrogowaItemsMap.get('poznan') || [];
+export const pomocDrogowaSlupskItems = cityPomocDrogowaItemsMap.get('slupsk') || [];
+export const pomocDrogowaSzczecinItems = cityPomocDrogowaItemsMap.get('szczecin') || [];
+export const pomocDrogowaSwidnicaItems = cityPomocDrogowaItemsMap.get('swidnica') || [];
+export const pomocDrogowaWalbrzychItems = cityPomocDrogowaItemsMap.get('walbrzych') || [];
+export const pomocDrogowaWroclawItems = cityPomocDrogowaItemsMap.get('wroclaw') || [];
+export const pomocDrogowaZielonaGoraItems = cityPomocDrogowaItemsMap.get('zielona-gora') || [];
+export const pomocDrogowaZaryItems = cityPomocDrogowaItemsMap.get('zary') || [];
 
 // Generate all new city items
 export const allCityPomocDrogowaItems = cityPomocDrogowaItemsMap;
@@ -91,3 +102,11 @@ export const getAllPomocDrogowaItems = () => {
     ...Array.from(cityPomocDrogowaItemsMap.values()).flat()
   ];
 };
+
+// For backward compatibility, keep old exports pointing to new cities
+export const pomocDrogowaWolsztynItems = pomocDrogowaPoznanItems; // Fallback to Poznań
+export const pomocDrogowaNowyTomyslItems = pomocDrogowaPoznanItems; // Fallback to Poznań
+export const pomocDrogowaSlawaItems = pomocDrogowaZielonaGoraItems; // Fallback to Zielona Góra
+export const pomocDrogowaKoscianItems = pomocDrogowaPoznanItems; // Fallback to Poznań
+export const pomocDrogowaSzamotulyItems = pomocDrogowaPoznanItems; // Fallback to Poznań
+export const pomocDrogowaMiedzyrzeczItems = pomocDrogowaGorzowWielkopolskiItems; // Fallback to Gorzów Wielkopolski
