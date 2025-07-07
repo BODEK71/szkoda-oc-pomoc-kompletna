@@ -30,13 +30,15 @@ const NavbarHeader = ({ isScrolled = false }: NavbarHeaderProps) => {
           isScrolled ? 'text-sm text-autoram-text' : 'text-base text-autoram-text'
         }`}>
           <Phone className={`transition-all duration-300 ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}`} />
-          <span className="font-semibold">24/7: 123-456-789</span>
+          <span className="font-semibold">24/7: +48 506 066 525</span>
         </div>
         <Button className={`bg-autoram-gold hover:bg-autoram-gold-dark text-black font-semibold transition-all duration-300 ${
           isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3 text-base'
-        }`}>
-          <Phone className={`mr-2 transition-all duration-300 ${isScrolled ? 'w-3 h-3' : 'w-4 h-4'}`} />
-          Zadzwoń teraz
+        }`} asChild>
+          <a href="tel:+48506066525">
+            <Phone className={`mr-2 transition-all duration-300 ${isScrolled ? 'w-3 h-3' : 'w-4 h-4'}`} />
+            Zadzwoń teraz
+          </a>
         </Button>
       </div>
     </div>

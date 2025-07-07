@@ -35,10 +35,12 @@ const ContactSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <div className="text-3xl font-bold mb-4">123-456-789</div>
-              <Button className="bg-white text-red-600 hover:bg-gray-100 w-full">
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń teraz
+              <div className="text-3xl font-bold mb-4">+48 506 066 525</div>
+              <Button className="bg-white text-red-600 hover:bg-gray-100 w-full" asChild>
+                <a href="tel:+48506066525">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Zadzwoń teraz
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -58,9 +60,9 @@ const ContactSection = () => {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Telefon biura</h4>
-                    <p className="text-gray-300">+48 123 456 789</p>
-                    <p className="text-sm text-gray-400">Pon-Pt: 8:00 - 18:00</p>
+                    <h4 className="font-semibold mb-1">Telefon</h4>
+                    <p className="text-gray-300">+48 506 066 525</p>
+                    <p className="text-sm text-gray-400">Dostępny 24/7</p>
                   </div>
                 </div>
 
@@ -70,7 +72,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-300">info@autoszkoda.pl</p>
+                    <p className="text-gray-300">office24@autoram.eu</p>
                     <p className="text-sm text-gray-400">Odpowiedź w ciągu 2h</p>
                   </div>
                 </div>
@@ -81,8 +83,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Adres</h4>
-                    <p className="text-gray-300">ul. Przykładowa 123</p>
-                    <p className="text-gray-300">00-000 Warszawa</p>
+                    <p className="text-gray-300">ul. Zdrojowa 17</p>
+                    <p className="text-gray-300">62-065 Grodzisk Wielkopolski</p>
                   </div>
                 </div>
 
@@ -93,7 +95,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Godziny pracy</h4>
                     <p className="text-gray-300">Pomoc 24/7</p>
-                    <p className="text-sm text-gray-400">Biuro: Pon-Pt 8-18</p>
+                    <p className="text-sm text-gray-400">Cały tydzień</p>
                   </div>
                 </div>
               </div>
@@ -111,13 +113,17 @@ const ContactSection = () => {
             <Car className="w-5 h-5 mr-2" />
             Zamów auto zastępcze
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 h-16 text-lg">
-            <Phone className="w-5 h-5 mr-2" />
-            Bezpłatna wycena
+          <Button variant="outline" className="border-white text-white hover:bg-white/10 h-16 text-lg" asChild>
+            <a href="tel:+48506066525">
+              <Phone className="w-5 h-5 mr-2" />
+              Bezpłatna wycena
+            </a>
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 h-16 text-lg">
-            <MapPin className="w-5 h-5 mr-2" />
-            Znajdź warsztat
+          <Button variant="outline" className="border-white text-white hover:bg-white/10 h-16 text-lg" asChild>
+            <a href="https://maps.google.com/maps?q=ul.+Zdrojowa+17,+62-065+Grodzisk+Wielkopolski" target="_blank" rel="noopener noreferrer">
+              <MapPin className="w-5 h-5 mr-2" />
+              Znajdź nas
+            </a>
           </Button>
         </div>
 
@@ -127,12 +133,14 @@ const ContactSection = () => {
             ⚠️ Miałeś wypadek? Zachowaj spokój!
           </h3>
           <p className="text-yellow-100 mb-4">
-            Zadzwoń natychmiast na numer 123-456-789. Poprowadzimy Cię przez cały proces 
+            Zadzwoń natychmiast na numer +48 506 066 525. Poprowadzimy Cię przez cały proces 
             obsługi szkody i zapewnimy natychmiastową pomoc.
           </p>
-          <Button className="bg-yellow-600 hover:bg-yellow-700 text-black font-bold">
-            <Phone className="w-4 h-4 mr-2" />
-            Zadzwoń na linię awaryjną
+          <Button className="bg-yellow-600 hover:bg-yellow-700 text-black font-bold" asChild>
+            <a href="tel:+48506066525">
+              <Phone className="w-4 h-4 mr-2" />
+              Zadzwoń na linię awaryjną
+            </a>
           </Button>
         </div>
       </div>

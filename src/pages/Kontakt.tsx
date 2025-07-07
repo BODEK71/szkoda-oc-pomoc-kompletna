@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,28 +14,28 @@ const Kontakt = () => {
       icon: <Phone className="w-8 h-8" />,
       title: "Telefon 24/7",
       description: "Całodobowa linia pomocy",
-      contact: "123-456-789",
-      action: "tel:123456789"
+      contact: "+48 506 066 525",
+      action: "tel:+48506066525"
     },
     {
       icon: <Mail className="w-8 h-8" />,
       title: "Email",
       description: "Napisz do nas",
-      contact: "kontakt@autoram.pl",
-      action: "mailto:kontakt@autoram.pl"
+      contact: "office24@autoram.eu",
+      action: "mailto:office24@autoram.eu"
     },
     {
       icon: <MapPin className="w-8 h-8" />,
       title: "Lokalizacja",
       description: "Nasze biuro",
-      contact: "ul. Przykładowa 123, 00-000 Poznań",
-      action: ""
+      contact: "ul. Zdrojowa 17, 62-065 Grodzisk Wielkopolski",
+      action: "https://maps.google.com/maps?q=ul.+Zdrojowa+17,+62-065+Grodzisk+Wielkopolski"
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Godziny pracy",
-      description: "Poniedziałek - Piątek",
-      contact: "8:00 - 18:00",
+      description: "Pomoc dostępna",
+      contact: "24/7",
       action: ""
     }
   ];
@@ -83,13 +84,17 @@ const Kontakt = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
-                <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń teraz: 123-456-789
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
+                <a href="tel:+48506066525">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Zadzwoń teraz: +48 506 066 525
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-blue-200 text-blue-600 hover:bg-blue-50">
-                <Mail className="w-5 h-5 mr-2" />
-                Napisz email
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-blue-200 text-blue-600 hover:bg-blue-50" asChild>
+                <a href="mailto:office24@autoram.eu">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Napisz email
+                </a>
               </Button>
             </div>
           </div>
@@ -126,6 +131,8 @@ const Kontakt = () => {
                   {method.action ? (
                     <a 
                       href={method.action}
+                      target={method.action.startsWith('http') ? '_blank' : undefined}
+                      rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}
                       className="text-blue-600 font-semibold hover:text-blue-700 break-all"
                     >
                       {method.contact}
@@ -162,39 +169,45 @@ const Kontakt = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Imię i nazwisko</label>
-                  <Input placeholder="Jan Kowalski" />
+              <form action="mailto:office24@autoram.eu" method="post" encType="text/plain">
+                <div className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-gray-700">Imię i nazwisko</label>
+                      <Input placeholder="Jan Kowalski" name="name" required />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-gray-700">Telefon</label>
+                      <Input placeholder="+48 506 066 525" type="tel" name="phone" required />
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700">Email</label>
+                    <Input placeholder="jan.kowalski@email.com" type="email" name="email" required />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700">Temat</label>
+                    <Input placeholder="Zgłoszenie szkody komunikacyjnej" name="subject" required />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700">Opis sytuacji</label>
+                    <Textarea 
+                      placeholder="Opisz szczegółowo swoją sytuację, rodzaj szkody, okoliczności wypadku..."
+                      rows={6}
+                      name="message"
+                      required
+                    />
+                  </div>
+                  
+                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-6">
+                    <Mail className="w-5 h-5 mr-2" />
+                    Wyślij wiadomość
+                  </Button>
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Telefon</label>
-                  <Input placeholder="123-456-789" type="tel" />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Email</label>
-                <Input placeholder="jan.kowalski@email.com" type="email" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Temat</label>
-                <Input placeholder="Zgłoszenie szkody komunikacyjnej" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Opis sytuacji</label>
-                <Textarea 
-                  placeholder="Opisz szczegółowo swoją sytuację, rodzaj szkody, okoliczności wypadku..."
-                  rows={6}
-                />
-              </div>
-              
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-6">
-                <Mail className="w-5 h-5 mr-2" />
-                Wyślij wiadomość
-              </Button>
+              </form>
               
               <p className="text-sm text-gray-500 text-center">
                 Wysyłając formularz akceptujesz naszą politykę prywatności. 
@@ -234,9 +247,11 @@ const Kontakt = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
-              <Phone className="w-5 h-5 mr-2" />
-              Zadzwoń teraz: 123-456-789
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4" asChild>
+              <a href="tel:+48506066525">
+                <Phone className="w-5 h-5 mr-2" />
+                Zadzwoń teraz: +48 506 066 525
+              </a>
             </Button>
           </div>
         </div>

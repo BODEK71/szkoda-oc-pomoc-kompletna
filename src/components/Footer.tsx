@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Car, Wrench, CreditCard, Truck } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -25,15 +24,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span>24/7: <strong>123-456-789</strong></span>
+                <span>24/7: <strong>+48 506 066 525</strong></span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>info@auto-ram.pl</span>
+                <span>office24@autoram.eu</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <MapPin className="w-4 h-4 text-blue-400" />
-                <span>Grodzisk Wielkopolski</span>
+                <span>ul. Zdrojowa 17, 62-065 Grodzisk Wielkopolski</span>
               </div>
             </div>
           </div>
@@ -41,7 +40,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center">
-              <CreditCard className="w-5 h-5 mr-2 text-blue-400" />
+              <div className="w-5 h-5 mr-2 text-blue-400">💳</div>
               Obsługa szkód z OC
             </h3>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -56,7 +55,7 @@ const Footer = () => {
           {/* Other Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center">
-              <Wrench className="w-5 h-5 mr-2 text-green-400" />
+              <div className="w-5 h-5 mr-2 text-green-400">🔧</div>
               Pozostałe usługi
             </h3>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -77,13 +76,17 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="bg-red-600/20 border border-red-600/30 rounded-lg p-4">
                 <p className="text-sm text-red-300 mb-2">Miałeś wypadek?</p>
-                <p className="text-2xl font-bold text-white">123-456-789</p>
+                <a href="tel:+48506066525" className="text-2xl font-bold text-white hover:text-red-300 transition-colors">
+                  +48 506 066 525
+                </a>
                 <p className="text-xs text-red-300">Dostępne 24/7</p>
               </div>
               <div className="bg-blue-600/20 border border-blue-600/30 rounded-lg p-4">
-                <p className="text-sm text-blue-300 mb-2">Biuro obsługi klientów</p>
-                <p className="text-lg font-semibold text-white">+48 123 456 789</p>
-                <p className="text-xs text-blue-300">Pon-Pt: 8:00 - 18:00</p>
+                <p className="text-sm text-blue-300 mb-2">Email kontaktowy</p>
+                <a href="mailto:office24@autoram.eu" className="text-lg font-semibold text-white hover:text-blue-300 transition-colors break-all">
+                  office24@autoram.eu
+                </a>
+                <p className="text-xs text-blue-300">Odpowiedź w ciągu 2h</p>
               </div>
             </div>
           </div>
