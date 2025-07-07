@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
 import NotFound from "../pages/NotFound";
@@ -103,6 +104,9 @@ import SamochodZastepczyBezgotowkowo from "../pages/SamochodZastepczyBezgotowkow
 import AutoZastepczeDlaFirm from "../pages/AutoZastepczeDlaFirm";
 import WynajemSpecjalistycznyZOCSprawcy from "../pages/WynajemSpecjalistycznyZOCSprawcy";
 import InformacjeOWynajmieAutaZOCSprawcy from "../pages/InformacjeOWynajmieAutaZOCSprawcy";
+
+// New Poznań damage center page
+import CentrumLikwidacjiSzkodPoznan from "../pages/CentrumLikwidacjiSzkodPoznan";
 
 const AppRoutes = () => {
   return (
@@ -227,6 +231,9 @@ const AppRoutes = () => {
       <Route path="/likwidacja-szkody-poznan" element={<LikwidacjaSzkodyPoznan />} />
       <Route path="/obsługa-szkody-oc-poznan" element={<ObslugaSzkodyOCPoznan />} />
       <Route path="/likwidacja-szkody-zielona-gora" element={<LikwidacjaSzkodyZielonaGora />} />
+      
+      {/* New Poznań damage center page */}
+      <Route path="/centrum-likwidacji-szkod-poznan" element={<CentrumLikwidacjiSzkodPoznan />} />
       
       {/* Catch-all route must be last */}
       <Route path="*" element={<NotFound />} />
