@@ -34,8 +34,8 @@ const Kontakt = () => {
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Godziny pracy",
-      description: "Pomoc dostępna",
-      contact: "24/7",
+      description: "Warsztat i biuro",
+      contact: "Pn-Pt: 7:30-17:30, Sb: 7:30-15:00",
       action: ""
     }
   ];
@@ -78,8 +78,7 @@ const Kontakt = () => {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Jesteśmy dostępni 24/7, aby pomóc Ci w każdej sytuacji. 
-                Zadzwoń, napisz lub odwiedź nas osobiście.
+                Pomoc drogowa dostępna 24/7. Warsztat otwarty od poniedziałku do soboty.
               </p>
             </div>
 
@@ -138,9 +137,11 @@ const Kontakt = () => {
                       {method.contact}
                     </a>
                   ) : (
-                    <p className="text-gray-700 font-medium">
-                      {method.contact}
-                    </p>
+                    <div className="text-gray-700 font-medium">
+                      <p>{method.contact}</p>
+                      <p className="text-sm text-gray-500 mt-1">Niedziela: Nieczynne</p>
+                      <p className="text-sm text-green-600 mt-1">Assistance: 24/7</p>
+                    </div>
                   )}
                 </CardContent>
               </Card>
@@ -149,8 +150,84 @@ const Kontakt = () => {
         </div>
       </section>
 
+      {/* Operating Hours Detail */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Godziny pracy
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-xl text-center flex items-center justify-center">
+                  <Clock className="w-6 h-6 mr-2 text-blue-600" />
+                  Warsztat i Biuro
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Poniedziałek</span>
+                  <span className="text-gray-600">7:30 - 17:30</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Wtorek</span>
+                  <span className="text-gray-600">7:30 - 17:30</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Środa</span>
+                  <span className="text-gray-600">7:30 - 17:30</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Czwartek</span>
+                  <span className="text-gray-600">7:30 - 17:30</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Piątek</span>
+                  <span className="text-gray-600">7:30 - 17:30</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="font-medium">Sobota</span>
+                  <span className="text-gray-600">7:30 - 15:00</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-medium">Niedziela</span>
+                  <span className="text-red-600 font-medium">Nieczynne</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg bg-gradient-to-br from-red-50 to-red-100 border-red-200">
+              <CardHeader>
+                <CardTitle className="text-xl text-center flex items-center justify-center text-red-700">
+                  <Phone className="w-6 h-6 mr-2" />
+                  Pomoc Drogowa
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center space-y-4">
+                <div className="text-4xl font-bold text-red-600">24/7</div>
+                <p className="text-red-700 font-medium">
+                  Całodobowa pomoc drogowa
+                </p>
+                <p className="text-red-600 text-sm">
+                  Dostępna przez wszystkie dni tygodnia
+                </p>
+                <Button className="bg-red-600 hover:bg-red-700 text-white w-full" asChild>
+                  <a href="tel:+48506066525">
+                    <Phone className="w-4 h-4 mr-2" />
+                    +48 506 066 525
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">

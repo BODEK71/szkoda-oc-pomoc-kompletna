@@ -17,8 +17,8 @@ const ContactSection = () => {
             Potrzebujesz pomocy?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Jesteśmy dostępni przez całą dobę. Skontaktuj się z nami już teraz 
-            i otrzymaj profesjonalną pomoc po wypadku.
+            Pomoc drogowa dostępna 24/7. Warsztat otwarty od poniedziałku do soboty. 
+            Skontaktuj się z nami już teraz i otrzymaj profesjonalną pomoc po wypadku.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Telefon</h4>
                     <p className="text-gray-300">+48 506 066 525</p>
-                    <p className="text-sm text-gray-400">Dostępny 24/7</p>
+                    <p className="text-sm text-gray-400">Assistance dostępne 24/7</p>
                   </div>
                 </div>
 
@@ -94,8 +94,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Godziny pracy</h4>
-                    <p className="text-gray-300">Pomoc 24/7</p>
-                    <p className="text-sm text-gray-400">Cały tydzień</p>
+                    <p className="text-gray-300">Warsztat: Pn-Pt 7:30-17:30, Sb 7:30-15:00</p>
+                    <p className="text-sm text-gray-400">Assistance: 24/7</p>
                   </div>
                 </div>
               </div>
