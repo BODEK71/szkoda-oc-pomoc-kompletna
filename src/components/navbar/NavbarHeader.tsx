@@ -11,12 +11,16 @@ const NavbarHeader = ({ isScrolled = false }: NavbarHeaderProps) => {
   return (
     <div className="flex justify-between items-center">
       <Link to="/" className="flex items-center space-x-4">
-        <div className={`bg-gradient-to-r from-autoram-red to-autoram-red-dark rounded-xl flex items-center justify-center shadow-lg transition-all duration-300 ${
+        <div className={`transition-all duration-300 ${
           isScrolled ? 'w-10 h-10' : 'w-12 h-12'
         }`}>
-          <span className={`text-white font-bold transition-all duration-300 ${
-            isScrolled ? 'text-base' : 'text-lg'
-          }`}>AR</span>
+          <img 
+            src="/lovable-uploads/ed8c5a38-cfbd-4a21-b07e-4517801a5206.png" 
+            alt="Auto-Ram Logo" 
+            className={`transition-all duration-300 object-contain ${
+              isScrolled ? 'h-10' : 'h-12'
+            }`}
+          />
         </div>
         <div>
           <span className={`font-bold transition-all duration-300 ${
