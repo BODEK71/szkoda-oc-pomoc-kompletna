@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -162,19 +163,25 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-autoram-red hover:bg-autoram-red-dark text-white text-xl px-10 py-7 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
+            asChild
           >
-            <Phone className="w-6 h-6 mr-3" />
-            Centrum Pomocy: 123-456-789
+            <a href="tel:+48506066525">
+              <Phone className="w-6 h-6 mr-3" />
+              Centrum Pomocy: +48 506 066 525
+            </a>
           </Button>
           
           <Button 
             variant="outline" 
             size="lg" 
             className="text-lg px-8 py-6 border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold rounded-lg backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
+            asChild
           >
-            <MapPin className="w-5 h-5 mr-3" />
-            Dojazd do Centrum
-            <ArrowRight className="w-5 h-5 ml-2" />
+            <a href="https://maps.google.com/maps?q=ul.+Zdrojowa+17,+62-065+Grodzisk+Wielkopolski" target="_blank" rel="noopener noreferrer">
+              <MapPin className="w-5 h-5 mr-3" />
+              Dojazd do Centrum
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </a>
           </Button>
         </div>
       </div>

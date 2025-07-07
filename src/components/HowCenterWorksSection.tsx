@@ -9,7 +9,7 @@ const HowCenterWorksSection = () => {
       step: "1",
       title: "Zadzwoń do Centrum",
       description: "Jeden telefon i wszystko się zaczyna. Nasz koordynator przyjmuje zgłoszenie i organizuje pomoc.",
-      details: "Tel: 123-456-789 (24/7)"
+      details: "Tel: +48 506 066 525 (24/7)"
     },
     {
       icon: <Car className="w-8 h-8" />,
@@ -101,9 +101,9 @@ const HowCenterWorksSection = () => {
               Jeden telefon wystarczy, żeby uruchomić cały proces w naszym Centrum
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:123456789" className="inline-flex items-center justify-center px-8 py-4 bg-autoram-red text-white font-semibold rounded-lg hover:bg-autoram-red-dark transition-colors">
+              <a href="tel:+48506066525" className="inline-flex items-center justify-center px-8 py-4 bg-autoram-red text-white font-semibold rounded-lg hover:bg-autoram-red-dark transition-colors">
                 <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń teraz: 123-456-789
+                Zadzwoń teraz: +48 506 066 525
               </a>
             </div>
           </div>
