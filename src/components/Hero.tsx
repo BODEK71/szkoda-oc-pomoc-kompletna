@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Phone, ArrowRight, MapPin, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cities } from "@/config/cities";
 
 const Hero = () => {
@@ -24,13 +24,26 @@ const Hero = () => {
     "/lovable-uploads/c3fc47fd-bd5c-47cc-8f97-eee71fe44429.png"
   ];
   
-  // Generate city list string from cities config - sorted alphabetically
-  const cityListString = cities
+  // Generate city list with links - sorted alphabetically
+  const cityListElements = cities
     .slice() // Create a copy to avoid mutating the original array
     .sort((a, b) => a.name.localeCompare(b.name))
-    .map(city => city.name)
-    .join(' | ');
-  
+    .map((city, index, array) => (
+      <span key={city.name}>
+        {city.name === "Poznań" ? (
+          <Link 
+            to="/centrum-likwidacji-szkod-poznan" 
+            className="text-autoram-gold hover:text-autoram-gold-light underline font-semibold"
+          >
+            {city.name}
+          </Link>
+        ) : (
+          <span>{city.name}</span>
+        )}
+        {index < array.length - 1 ? " | " : ""}
+      </span>
+    ));
+
   // Typewriter effect
   useEffect(() => {
     let index = 0;
@@ -104,7 +117,7 @@ const Hero = () => {
           <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-autoram-gold/20 shadow-lg max-w-2xl mx-auto mb-8">
             <p className="text-sm font-semibold text-white mb-2">Centrum Likwidacji Szkód obsługuje: </p>
             <p className="text-sm text-white/90 leading-relaxed">
-              {cityListString}
+              {cityListElements}
             </p>
           </div>
 
