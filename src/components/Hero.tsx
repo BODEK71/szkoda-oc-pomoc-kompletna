@@ -114,30 +114,6 @@ const Hero = () => {
             Kompleksowa obsługa szkód, naprawy, auto zastępcze i formalności - wszystko pod jednym dachem.
           </p>
 
-          {/* Cities Box */}
-          <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-autoram-gold/20 shadow-lg max-w-2xl mx-auto mb-8">
-            <p className="text-sm font-semibold text-white mb-2">Centrum Likwidacji Szkód obsługuje: </p>
-            <p className="text-sm text-white/90 leading-relaxed">
-              {cityListElements}
-            </p>
-          </div>
-
-          {/* Key Benefits */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8 max-w-4xl mx-auto">
-            {[
-              "Centrum czynne 24/7",
-              "Wszystko w jednym miejscu", 
-              "Bezgotówkowa obsługa z OC",
-              "Auto zastępcze od razu",
-              "Specjaliści w każdym dziale",
-              "Kompleksowa pomoc prawna"
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm p-3 rounded-lg border border-autoram-gold/20">
-                <CheckCircle className="w-4 h-4 text-autoram-gold flex-shrink-0" />
-                <span className="text-white font-medium text-sm">{benefit}</span>
-              </div>
-            ))}
-          </div>
 
           {/* Trust Indicators */}
           <div className="grid sm:grid-cols-3 gap-4 text-center mb-8 max-w-2xl mx-auto">

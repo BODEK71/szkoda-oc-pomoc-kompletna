@@ -7,6 +7,7 @@ import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Car, Wrench, CreditCard, 
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import KeyBenefitsSection from "@/components/KeyBenefitsSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import AboutCenterSection from "@/components/AboutCenterSection";
 import HowCenterWorksSection from "@/components/HowCenterWorksSection";
@@ -20,6 +21,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
+      <KeyBenefitsSection />
       <AboutCenterSection />
       <HowCenterWorksSection />
       <CenterDepartmentsSection />
