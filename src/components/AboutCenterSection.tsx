@@ -92,45 +92,6 @@ const AboutCenterSection = () => {
           {/* Right Column - Content */}
           <div className="space-y-8">
             <div>
-              <Badge className="bg-blue-100 text-blue-800 mb-4">
-                🌍 OBSZAR DZIAŁANIA
-              </Badge>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Obsługujemy całą Wielkopolskę i Dolny Śląsk
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Nasze centrum likwidacji szkód działa w największych miastach regionu, 
-                zapewniając profesjonalną obsługę powypadkową tam, gdzie jesteś.
-              </p>
-
-              <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                <p className="text-lg font-semibold text-gray-900 mb-4">
-                  Miasta obsługiwane przez nasze centrum:
-                </p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 text-sm">
-                  {cities
-                    .slice()
-                    .sort((a, b) => a.name.localeCompare(b.name))
-                    .map((city) => (
-                      <div key={city.name} className="text-center">
-                        {city.name === "Poznań" ? (
-                          <Link 
-                            to="/centrum-likwidacji-szkod-poznan" 
-                            className="text-blue-600 hover:text-blue-700 underline font-semibold"
-                          >
-                            {city.name}
-                          </Link>
-                        ) : (
-                          <span className="text-gray-700">{city.name}</span>
-                        )}
-                      </div>
-                    ))
-                  }
-                </div>
-              </div>
-            </div>
-
-            <div>
               <Badge className="bg-green-100 text-green-800 mb-4">
                 🤝 ZAUFAJ EKSPERTOM
               </Badge>
