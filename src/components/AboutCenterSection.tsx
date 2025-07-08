@@ -103,13 +103,30 @@ const AboutCenterSection = () => {
                 zapewniając profesjonalną obsługę powypadkową tam, gdzie jesteś.
               </p>
 
-              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                <p className="text-sm font-semibold text-gray-900 mb-2">
+              <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                <p className="text-lg font-semibold text-gray-900 mb-4">
                   Miasta obsługiwane przez nasze centrum:
                 </p>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  {cityListElements}
-                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 text-sm">
+                  {cities
+                    .slice()
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map((city) => (
+                      <div key={city.name} className="text-center">
+                        {city.name === "Poznań" ? (
+                          <Link 
+                            to="/centrum-likwidacji-szkod-poznan" 
+                            className="text-blue-600 hover:text-blue-700 underline font-semibold"
+                          >
+                            {city.name}
+                          </Link>
+                        ) : (
+                          <span className="text-gray-700">{city.name}</span>
+                        )}
+                      </div>
+                    ))
+                  }
+                </div>
               </div>
             </div>
 
