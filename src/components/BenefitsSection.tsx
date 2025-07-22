@@ -34,16 +34,6 @@ const BenefitsSection = () => {
     { number: "100%", label: "profesjonalizm" }
   ];
 
-  const cities = [
-    "Babimost", "Bojanowo", "Bolewice", "Boruja Kościelna", "Buk", "Czempiń", 
-    "Duszniki", "Głogów", "Gostyń", "Grodzisk Wielkopolski", "Jarocin", "Jordanowo", 
-    "Kargowa", "Kościan", "Kórnik", "Leszno", "Lubin", "Luboń", "Lwówek", "Mosina", 
-    "Niepruszewo", "Nowy Tomyśl", "Oborniki", "Opalenica", "Pniewy", "Poznań", 
-    "Rakoniewice", "Rawicz", "Siedlec", "Stęszew", "Sulechów", "Smigiel", 
-    "Środa Wielkopolska", "Śrem", "Świebodzin", "Trzciel", "Wschowa", "Wolsztyn", 
-    "Września", "Zbąszyń", "Zbąszynek", "Zielona Góra"
-  ];
-
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +53,7 @@ const BenefitsSection = () => {
         </div>
 
         {/* Statistics */}
-        <div className="bg-white rounded-3xl shadow-2xl p-12 mb-20">
+        <div className="bg-white rounded-3xl shadow-2xl p-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index} className="group">
@@ -74,27 +64,6 @@ const BenefitsSection = () => {
                   {stat.label}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Cities Section */}
-        <div className="text-center">
-          <Badge className="bg-blue-600 text-white mb-8 font-semibold text-lg px-6 py-3 rounded-full">
-            Obszar działania
-          </Badge>
-          <h3 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12">
-            Obsługujemy zachodnią <span className="text-blue-600">Polskę</span>
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            {cities.map((city, index) => (
-              <Badge 
-                key={index} 
-                variant="outline" 
-                className="text-lg px-6 py-3 border-2 border-blue-200 text-blue-700 hover:bg-blue-50 transition-colors duration-300"
-              >
-                {city}
-              </Badge>
             ))}
           </div>
         </div>
