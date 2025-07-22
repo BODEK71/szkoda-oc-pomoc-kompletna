@@ -136,6 +136,122 @@ const CentrumLikwidacjiSzkodKalisz = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Kalisz - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Kalisz - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Kalisz oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Kalisz, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Kalisz - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Kalisz to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Kalisz, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Kalisz</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Kalisz</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Kalisz</li>
+              <li>Naprawa powypadkowa bezgotówkowa Kalisz</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Kalisz - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Kalisz</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Kalisz oferuje profesjonalne usuwanie uszkodzeń powypadkowych Kalisz. 
+              Naprawy karoserii po stłuczce Kalisz wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Kalisz</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Kalisz obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Kalisz</li>
+              <li>Lakierowanie zderzaka Kalisz</li>
+              <li>Lakierowanie maski Kalisz</li>
+              <li>Malowanie auta Kalisz</li>
+              <li>Lakierowanie powypadkowe Kalisz</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Kalisz gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Kalisz 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Kalisz - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Kalisz</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Kalisz oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Kalisz</li>
+              <li>Mechanika samochodowa Kalisz</li>
+              <li>Naprawa silnika po kolizji Kalisz</li>
+              <li>Wymiana rozrządu po wypadku Kalisz</li>
+              <li>Naprawa silnika Kalisz</li>
+              <li>Przegląd techniczny auta Kalisz</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Kalisz posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Kalisz - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Kalisz</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Kalisz</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Kalisz</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Kalisz</li>
+              <li>Auto na czas szkody z OC Kalisz</li>
+              <li>Pojazd zastępczy z OC Kalisz</li>
+              <li>Samochód na czas likwidacji szkody Kalisz</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Kalisz</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Kalisz oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Kalisz</li>
+              <li>Pojazd zastępczy na czas naprawy Kalisz</li>
+              <li>Samochód zastępczy na czas naprawy Kalisz</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Kalisz</li>
+              <li>Wynajem auta z OC sprawcy Kalisz</li>
+              <li>Wynajem pojazdu z OC sprawcy Kalisz</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Kalisz</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Kalisz - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Kalisz</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Kalisz oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Kalisz</li>
+              <li>Laweta Kalisz</li>
+              <li>Laweta 24h Kalisz</li>
+              <li>Usługi lawetą Kalisz</li>
+              <li>Holowanie samochodu Kalisz</li>
+              <li>Holowanie Kalisz</li>
+              <li>Ściąganie samochodu z drogi Kalisz</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Kalisz</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Kalisz</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Kalisz obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Kalisz</li>
+              <li>Zgłoszenie szkody komunikacyjnej Kalisz</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Kalisz</li>
+              <li>Wycena szkody powypadkowej Kalisz</li>
+              <li>Kosztorys naprawy z OC sprawcy Kalisz</li>
+              <li>Ocena uszkodzeń pojazdu Kalisz</li>
+              <li>Odszkodowanie z OC sprawcy Kalisz</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Kalisz to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

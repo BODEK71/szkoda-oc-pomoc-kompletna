@@ -136,6 +136,122 @@ const CentrumLikwidacjiSzkodPila = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Piła - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Piła - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Piła oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Piła, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Piła - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Piła to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Piła, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Piła</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Piła</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Piła</li>
+              <li>Naprawa powypadkowa bezgotówkowa Piła</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Piła - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Piła</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Piła oferuje profesjonalne usuwanie uszkodzeń powypadkowych Piła. 
+              Naprawy karoserii po stłuczce Piła wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Piła</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Piła obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Piła</li>
+              <li>Lakierowanie zderzaka Piła</li>
+              <li>Lakierowanie maski Piła</li>
+              <li>Malowanie auta Piła</li>
+              <li>Lakierowanie powypadkowe Piła</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Piła gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Piła 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Piła - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Piła</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Piła oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Piła</li>
+              <li>Mechanika samochodowa Piła</li>
+              <li>Naprawa silnika po kolizji Piła</li>
+              <li>Wymiana rozrządu po wypadku Piła</li>
+              <li>Naprawa silnika Piła</li>
+              <li>Przegląd techniczny auta Piła</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Piła posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Piła - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Piła</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Piła</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Piła</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Piła</li>
+              <li>Auto na czas szkody z OC Piła</li>
+              <li>Pojazd zastępczy z OC Piła</li>
+              <li>Samochód na czas likwidacji szkody Piła</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Piła</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Piła oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Piła</li>
+              <li>Pojazd zastępczy na czas naprawy Piła</li>
+              <li>Samochód zastępczy na czas naprawy Piła</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Piła</li>
+              <li>Wynajem auta z OC sprawcy Piła</li>
+              <li>Wynajem pojazdu z OC sprawcy Piła</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Piła</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Piła - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Piła</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Piła oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Piła</li>
+              <li>Laweta Piła</li>
+              <li>Laweta 24h Piła</li>
+              <li>Usługi lawetą Piła</li>
+              <li>Holowanie samochodu Piła</li>
+              <li>Holowanie Piła</li>
+              <li>Ściąganie samochodu z drogi Piła</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Piła</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Piła</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Piła obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Piła</li>
+              <li>Zgłoszenie szkody komunikacyjnej Piła</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Piła</li>
+              <li>Wycena szkody powypadkowej Piła</li>
+              <li>Kosztorys naprawy z OC sprawcy Piła</li>
+              <li>Ocena uszkodzeń pojazdu Piła</li>
+              <li>Odszkodowanie z OC sprawcy Piła</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Piła to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

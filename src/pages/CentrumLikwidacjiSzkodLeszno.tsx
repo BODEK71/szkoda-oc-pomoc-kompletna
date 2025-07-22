@@ -136,6 +136,122 @@ const CentrumLikwidacjiSzkodLeszno = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Leszno - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Leszno - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Leszno oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Leszno, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Leszno - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Leszno to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Leszno, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Leszno</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Leszno</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Leszno</li>
+              <li>Naprawa powypadkowa bezgotówkowa Leszno</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Leszno - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Leszno</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Leszno oferuje profesjonalne usuwanie uszkodzeń powypadkowych Leszno. 
+              Naprawy karoserii po stłuczce Leszno wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Leszno</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Leszno obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Leszno</li>
+              <li>Lakierowanie zderzaka Leszno</li>
+              <li>Lakierowanie maski Leszno</li>
+              <li>Malowanie auta Leszno</li>
+              <li>Lakierowanie powypadkowe Leszno</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Leszno gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Leszno 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Leszno - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Leszno</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Leszno oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Leszno</li>
+              <li>Mechanika samochodowa Leszno</li>
+              <li>Naprawa silnika po kolizji Leszno</li>
+              <li>Wymiana rozrządu po wypadku Leszno</li>
+              <li>Naprawa silnika Leszno</li>
+              <li>Przegląd techniczny auta Leszno</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Leszno posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Leszno - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Leszno</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Leszno</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Leszno</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Leszno</li>
+              <li>Auto na czas szkody z OC Leszno</li>
+              <li>Pojazd zastępczy z OC Leszno</li>
+              <li>Samochód na czas likwidacji szkody Leszno</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Leszno</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Leszno oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Leszno</li>
+              <li>Pojazd zastępczy na czas naprawy Leszno</li>
+              <li>Samochód zastępczy na czas naprawy Leszno</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Leszno</li>
+              <li>Wynajem auta z OC sprawcy Leszno</li>
+              <li>Wynajem pojazdu z OC sprawcy Leszno</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Leszno</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Leszno - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Leszno</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Leszno oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Leszno</li>
+              <li>Laweta Leszno</li>
+              <li>Laweta 24h Leszno</li>
+              <li>Usługi lawetą Leszno</li>
+              <li>Holowanie samochodu Leszno</li>
+              <li>Holowanie Leszno</li>
+              <li>Ściąganie samochodu z drogi Leszno</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Leszno</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Leszno</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Leszno obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Leszno</li>
+              <li>Zgłoszenie szkody komunikacyjnej Leszno</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Leszno</li>
+              <li>Wycena szkody powypadkowej Leszno</li>
+              <li>Kosztorys naprawy z OC sprawcy Leszno</li>
+              <li>Ocena uszkodzeń pojazdu Leszno</li>
+              <li>Odszkodowanie z OC sprawcy Leszno</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Leszno to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

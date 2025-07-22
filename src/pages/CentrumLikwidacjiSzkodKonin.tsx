@@ -136,6 +136,122 @@ const CentrumLikwidacjiSzkodKonin = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Konin - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Konin - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Konin oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Konin, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Konin - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Konin to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Konin, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Konin</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Konin</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Konin</li>
+              <li>Naprawa powypadkowa bezgotówkowa Konin</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Konin - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Konin</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Konin oferuje profesjonalne usuwanie uszkodzeń powypadkowych Konin. 
+              Naprawy karoserii po stłuczce Konin wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Konin</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Konin obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Konin</li>
+              <li>Lakierowanie zderzaka Konin</li>
+              <li>Lakierowanie maski Konin</li>
+              <li>Malowanie auta Konin</li>
+              <li>Lakierowanie powypadkowe Konin</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Konin gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Konin 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Konin - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Konin</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Konin oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Konin</li>
+              <li>Mechanika samochodowa Konin</li>
+              <li>Naprawa silnika po kolizji Konin</li>
+              <li>Wymiana rozrządu po wypadku Konin</li>
+              <li>Naprawa silnika Konin</li>
+              <li>Przegląd techniczny auta Konin</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Konin posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Konin - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Konin</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Konin</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Konin</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Konin</li>
+              <li>Auto na czas szkody z OC Konin</li>
+              <li>Pojazd zastępczy z OC Konin</li>
+              <li>Samochód na czas likwidacji szkody Konin</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Konin</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Konin oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Konin</li>
+              <li>Pojazd zastępczy na czas naprawy Konin</li>
+              <li>Samochód zastępczy na czas naprawy Konin</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Konin</li>
+              <li>Wynajem auta z OC sprawcy Konin</li>
+              <li>Wynajem pojazdu z OC sprawcy Konin</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Konin</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Konin - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Konin</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Konin oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Konin</li>
+              <li>Laweta Konin</li>
+              <li>Laweta 24h Konin</li>
+              <li>Usługi lawetą Konin</li>
+              <li>Holowanie samochodu Konin</li>
+              <li>Holowanie Konin</li>
+              <li>Ściąganie samochodu z drogi Konin</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Konin</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Konin</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Konin obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Konin</li>
+              <li>Zgłoszenie szkody komunikacyjnej Konin</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Konin</li>
+              <li>Wycena szkody powypadkowej Konin</li>
+              <li>Kosztorys naprawy z OC sprawcy Konin</li>
+              <li>Ocena uszkodzeń pojazdu Konin</li>
+              <li>Odszkodowanie z OC sprawcy Konin</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Konin to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

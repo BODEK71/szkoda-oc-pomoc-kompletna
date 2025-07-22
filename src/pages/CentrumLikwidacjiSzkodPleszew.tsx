@@ -136,6 +136,122 @@ const CentrumLikwidacjiSzkodPleszew = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Pleszew - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Pleszew - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Pleszew oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Pleszew, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Pleszew - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Pleszew to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Pleszew, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Pleszew</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Pleszew</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Pleszew</li>
+              <li>Naprawa powypadkowa bezgotówkowa Pleszew</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Pleszew - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Pleszew</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Pleszew oferuje profesjonalne usuwanie uszkodzeń powypadkowych Pleszew. 
+              Naprawy karoserii po stłuczce Pleszew wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Pleszew</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Pleszew obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Pleszew</li>
+              <li>Lakierowanie zderzaka Pleszew</li>
+              <li>Lakierowanie maski Pleszew</li>
+              <li>Malowanie auta Pleszew</li>
+              <li>Lakierowanie powypadkowe Pleszew</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Pleszew gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Pleszew 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Pleszew - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Pleszew</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Pleszew oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Pleszew</li>
+              <li>Mechanika samochodowa Pleszew</li>
+              <li>Naprawa silnika po kolizji Pleszew</li>
+              <li>Wymiana rozrządu po wypadku Pleszew</li>
+              <li>Naprawa silnika Pleszew</li>
+              <li>Przegląd techniczny auta Pleszew</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Pleszew posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Pleszew - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Pleszew</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Pleszew</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Pleszew</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Pleszew</li>
+              <li>Auto na czas szkody z OC Pleszew</li>
+              <li>Pojazd zastępczy z OC Pleszew</li>
+              <li>Samochód na czas likwidacji szkody Pleszew</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Pleszew</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Pleszew oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Pleszew</li>
+              <li>Pojazd zastępczy na czas naprawy Pleszew</li>
+              <li>Samochód zastępczy na czas naprawy Pleszew</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Pleszew</li>
+              <li>Wynajem auta z OC sprawcy Pleszew</li>
+              <li>Wynajem pojazdu z OC sprawcy Pleszew</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Pleszew</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Pleszew - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Pleszew</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Pleszew oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Pleszew</li>
+              <li>Laweta Pleszew</li>
+              <li>Laweta 24h Pleszew</li>
+              <li>Usługi lawetą Pleszew</li>
+              <li>Holowanie samochodu Pleszew</li>
+              <li>Holowanie Pleszew</li>
+              <li>Ściąganie samochodu z drogi Pleszew</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Pleszew</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Pleszew</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Pleszew obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Pleszew</li>
+              <li>Zgłoszenie szkody komunikacyjnej Pleszew</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Pleszew</li>
+              <li>Wycena szkody powypadkowej Pleszew</li>
+              <li>Kosztorys naprawy z OC sprawcy Pleszew</li>
+              <li>Ocena uszkodzeń pojazdu Pleszew</li>
+              <li>Odszkodowanie z OC sprawcy Pleszew</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Pleszew to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
