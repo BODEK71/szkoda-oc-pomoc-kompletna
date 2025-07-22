@@ -1,3 +1,4 @@
+
 import { Route } from "react-router-dom";
 import CentrumLikwidacjiSzkodPoznan from "../pages/CentrumLikwidacjiSzkodPoznan";
 import CentrumLikwidacjiSzkodBojanowo from "../pages/CentrumLikwidacjiSzkodBojanowo";
@@ -6,6 +7,10 @@ import CentrumLikwidacjiSzkodChodziez from "../pages/CentrumLikwidacjiSzkodChodz
 import CentrumLikwidacjiSzkodCzarnkow from "../pages/CentrumLikwidacjiSzkodCzarnkow";
 import CentrumLikwidacjiSzkodGniezno from "../pages/CentrumLikwidacjiSzkodGniezno";
 import CentrumLikwidacjiSzkodGostyn from "../pages/CentrumLikwidacjiSzkodGostyn";
+import CentrumLikwidacjiSzkodGrodziskWielkopolski from "../pages/CentrumLikwidacjiSzkodGrodziskWielkopolski";
+import CentrumLikwidacjiSzkodGlogow from "../pages/CentrumLikwidacjiSzkodGlogow";
+import CentrumLikwidacjiSzkodJarocin from "../pages/CentrumLikwidacjiSzkodJarocin";
+import CentrumLikwidacjiSzkodJastrowie from "../pages/CentrumLikwidacjiSzkodJastrowie";
 
 export const CentrumLikwidacjiRoutes = () => (
   <>
@@ -16,5 +21,9 @@ export const CentrumLikwidacjiRoutes = () => (
     <Route path="/centrum-likwidacji-szkod-czarnkow" element={<CentrumLikwidacjiSzkodCzarnkow />} />
     <Route path="/centrum-likwidacji-szkod-gniezno" element={<CentrumLikwidacjiSzkodGniezno />} />
     <Route path="/centrum-likwidacji-szkod-gostyn" element={<CentrumLikwidacjiSzkodGostyn />} />
+    <Route path="/centrum-likwidacji-szkod-grodzisk-wielkopolski" element={<CentrumLikwidacjiSzkodGrodziskWielkopolski />} />
+    <Route path="/centrum-likwidacji-szkod-glogow" element={<CentrumLikwidacjiSzkodGlogow />} />
+    <Route path="/centrum-likwidacji-szkod-jarocin" element={<CentrumLikwidacjiSzkodJarocin />} />
+    <Route path="/centrum-likwidacji-szkod-jastrowie" element={<CentrumLikwidacjiSzkodJastrowie />} />
   </>
 );
