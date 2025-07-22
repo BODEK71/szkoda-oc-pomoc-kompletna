@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -26,7 +25,6 @@ import {
   centrum_szamotulyItems,
   centrum_miedzyrzeczItems,
 } from "../navigation/UslugiKompleksoweItems";
-import { cities } from "@/config/cities";
 
 interface UslugiKompleksoweMenuProps {
   isActive: boolean;
@@ -83,24 +81,6 @@ const UslugiKompleksoweMenu = ({ isActive }: UslugiKompleksoweMenuProps) => {
                   className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
                 >
                   {item.name}
-                </Link>
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuSubContent>
-        </DropdownMenuSub>
-
-        <DropdownMenuSub>
-          <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer">
-            Regionalne centra likwidacji szkód
-          </DropdownMenuSubTrigger>
-          <DropdownMenuSubContent className="min-w-[350px] bg-autoram-white border border-autoram-red rounded-xl shadow-lg max-h-80 overflow-y-auto">
-            {cities.map((city) => (
-              <DropdownMenuItem key={city.slug} asChild>
-                <Link
-                  to={`/centrum-likwidacji-szkod-${city.slug}`}
-                  className="px-4 py-2 text-sm text-autoram-text hover:text-autoram-red hover:bg-autoram-gray rounded-lg transition-colors cursor-pointer"
-                >
-                  Centrum likwidacji szkód {city.name}
                 </Link>
               </DropdownMenuItem>
             ))}

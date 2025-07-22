@@ -7,6 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Building, Truck, Wrench, Car, Clipboard } from "lucide-react";
 import {
@@ -16,6 +19,7 @@ import {
   autoZastepczeItems,
   likwidacjaSzkodItems,
 } from "./navigation/NewNavigationStructure";
+import { cities } from "@/config/cities";
 
 interface DesktopMenuProps {
   isScrolled?: boolean;
@@ -30,6 +34,14 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
 
   const isActiveSection = (items: any[]) => {
     return items.some(item => isActivePath(item.href));
+  };
+
+  const isActiveObslugaKompleksowa = () => {
+    // Check regular items
+    const hasActiveItem = obslugaKompleksowaItems.some(item => isActivePath(item.href));
+    // Check city-specific items
+    const hasCityItem = cities.some(city => isActivePath(`/centrum-likwidacji-szkod-${city.slug}`));
+    return hasActiveItem || hasCityItem;
   };
 
   const menuItemClass = (isActive: boolean) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
@@ -81,13 +93,55 @@ const DesktopMenu = ({ isScrolled = false }: DesktopMenuProps) => {
   return (
     <div className="hidden lg:flex items-center justify-center">
       <div className="flex items-center space-x-1">
-        {/* Obsługa kompleksowa */}
-        <MenuDropdown
-          title="Obsługa kompleksowa"
-          items={obslugaKompleksowaItems}
-          icon={Building}
-          isActive={isActiveSection(obslugaKompleksowaItems)}
-        />
+        {/* Obsługa kompleksowa with submenu */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button 
+              variant="ghost" 
+              className={`${menuItemClass(isActiveObslugaKompleksowa())} flex items-center`}
+            >
+              <Building className="w-4 h-4 mr-2" />
+              Obsługa kompleksowa
+              <ChevronDown className="w-4 h-4 ml-1" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="min-w-[350px] bg-white border border-gray-200 rounded-xl shadow-lg z-50">
+            {obslugaKompleksowaItems.map((item, index) => (
+              <div key={item.name}>
+                {index === 1 && <DropdownMenuSeparator />}
+                <DropdownMenuItem asChild>
+                  <Link
+                    to={item.href}
+                    className="px-4 py-3 text-sm text-gray-700 hover:text-autoram-red hover:bg-gray-50 rounded-lg transition-colors cursor-pointer w-full"
+                  >
+                    {item.name}
+                  </Link>
+                </DropdownMenuItem>
+              </div>
+            ))}
+            
+            <DropdownMenuSeparator />
+            
+            {/* Regionalne centra likwidacji szkód submenu */}
+            <DropdownMenuSub>
+              <DropdownMenuSubTrigger className="px-4 py-3 text-sm text-gray-700 hover:text-autoram-red hover:bg-gray-50 rounded-lg transition-colors cursor-pointer">
+                Regionalne centra likwidacji szkód
+              </DropdownMenuSubTrigger>
+              <DropdownMenuSubContent className="min-w-[350px] bg-white border border-gray-200 rounded-xl shadow-lg max-h-80 overflow-y-auto">
+                {cities.map((city) => (
+                  <DropdownMenuItem key={city.slug} asChild>
+                    <Link
+                      to={`/centrum-likwidacji-szkod-${city.slug}`}
+                      className="px-4 py-2 text-sm text-gray-700 hover:text-autoram-red hover:bg-gray-50 rounded-lg transition-colors cursor-pointer"
+                    >
+                      Centrum likwidacji szkód {city.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuSubContent>
+            </DropdownMenuSub>
+          </DropdownMenuContent>
+        </DropdownMenu>
 
         {/* Pomoc drogowa */}
         <MenuDropdown
