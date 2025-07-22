@@ -136,8 +136,207 @@ const CentrumLikwidacjiSzkodLubin = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Detailed SEO Content Section - Lubin specific content */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-16">
+            
+            {/* Naprawy powypadkowe */}
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Naprawy powypadkowe Lubin - Profesjonalne usługi dla mieszkańców
+              </h2>
+              <p className="text-lg text-gray-700 mb-8">
+                Nasze centrum napraw powypadkowych Lubin oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Lubin, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+              </p>
+              
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Naprawy z OC sprawcy Lubin - Bezgotówkowa obsługa
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasza naprawa bezgotówkowa Lubin to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Lubin, które obejmują:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-8">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa auta po kolizji z OC sprawcy Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa auta po wypadku z OC sprawcy Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa pojazdu po stłuczce z OC sprawcy Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa powypadkowa bezgotówkowa Lubin</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Blacharstwo */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Blacharstwo powypadkowe Lubin - Specjalistyczne usługi
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasz blacharz samochodowy Lubin oferuje profesjonalne usuwanie uszkodzeń powypadkowych Lubin. Naprawy karoserii po stłuczce Lubin wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+              </p>
+            </div>
+
+            {/* Lakierowanie */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Lakierowanie samochodów Lubin
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasze lakierowanie z OC sprawcy Lubin obejmuje:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Lakierowanie elementów karoserii Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Lakierowanie zderzaka Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Lakierowanie maski Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Malowanie auta Lubin</span>
+                </li>
+              </ul>
+              <p className="text-gray-700">
+                Nasz lakiernik samochodowy Lubin gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Lubin jest wykonywana zgodnie ze standardami producentów.
+              </p>
+            </div>
+
+            {/* Serwis */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Serwis samochodowy Lubin - Kompleksowa obsługa
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasz serwis mechaniczny powypadkowy Lubin oferuje:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa samochodów osobowych Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Mechanika samochodowa Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Naprawa silnika po kolizji Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Wymiana rozrządu po wypadku Lubin</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pojazdy zastępcze */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Pojazdy zastępcze Lubin - Mobilność podczas naprawy
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Auto zastępcze z OC sprawcy Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Auto zastępcze po wypadku z OC sprawcy Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Auto zastępcze z OC sprawcy bezgotówkowo Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Pojazd zastępczy z OC Lubin</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pomoc drogowa */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Pomoc drogowa Lubin - Całodobowa obsługa
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasza pomoc drogowa 24/7 Lubin oferuje:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Autolaweta Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Laweta 24h Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Holowanie samochodu Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Ściąganie samochodu z drogi Lubin</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Likwidacja szkód */}
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                Likwidacja szkód komunikacyjnych Lubin
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Nasza likwidacja szkody z OC Lubin obejmuje:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 mb-6">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Bezpośrednia likwidacja szkód (BLS) Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Zgłoszenie szkody komunikacyjnej Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Wycena szkody powypadkowej Lubin</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700">Odszkodowanie z OC sprawcy Lubin</span>
+                </li>
+              </ul>
+              <p className="text-gray-700">
+                Nasze centrum napraw powypadkowych Lubin to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
