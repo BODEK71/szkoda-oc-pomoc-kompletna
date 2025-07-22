@@ -125,6 +125,122 @@ const CentrumLikwidacjiSzkodCzarnkow = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Czarnków - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Czarnków - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Czarnków oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Czarnków, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Czarnków - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Czarnków to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Czarnków, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Czarnków</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Czarnków</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Czarnków</li>
+              <li>Naprawa powypadkowa bezgotówkowa Czarnków</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Czarnków - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Czarnków</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Czarnków oferuje profesjonalne usuwanie uszkodzeń powypadkowych Czarnków. 
+              Naprawy karoserii po stłuczce Czarnków wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Czarnków</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Czarnków obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Czarnków</li>
+              <li>Lakierowanie zderzaka Czarnków</li>
+              <li>Lakierowanie maski Czarnków</li>
+              <li>Malowanie auta Czarnków</li>
+              <li>Lakierowanie powypadkowe Czarnków</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Czarnków gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Czarnków 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Czarnków - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Czarnków</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Czarnków oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Czarnków</li>
+              <li>Mechanika samochodowa Czarnków</li>
+              <li>Naprawa silnika po kolizji Czarnków</li>
+              <li>Wymiana rozrządu po wypadku Czarnków</li>
+              <li>Naprawa silnika Czarnków</li>
+              <li>Przegląd techniczny auta Czarnków</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Czarnków posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Czarnków - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Czarnków</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Czarnków</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Czarnków</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Czarnków</li>
+              <li>Auto na czas szkody z OC Czarnków</li>
+              <li>Pojazd zastępczy z OC Czarnków</li>
+              <li>Samochód na czas likwidacji szkody Czarnków</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Czarnków</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Czarnków oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Czarnków</li>
+              <li>Pojazd zastępczy na czas naprawy Czarnków</li>
+              <li>Samochód zastępczy na czas naprawy Czarnków</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Czarnków</li>
+              <li>Wynajem auta z OC sprawcy Czarnków</li>
+              <li>Wynajem pojazdu z OC sprawcy Czarnków</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Czarnków</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Czarnków - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Czarnków</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Czarnków oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Czarnków</li>
+              <li>Laweta Czarnków</li>
+              <li>Laweta 24h Czarnków</li>
+              <li>Usługi lawetą Czarnków</li>
+              <li>Holowanie samochodu Czarnków</li>
+              <li>Holowanie Czarnków</li>
+              <li>Ściąganie samochodu z drogi Czarnków</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Czarnków</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Czarnków</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Czarnków obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Czarnków</li>
+              <li>Zgłoszenie szkody komunikacyjnej Czarnków</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Czarnków</li>
+              <li>Wycena szkody powypadkowej Czarnków</li>
+              <li>Kosztorys naprawy z OC sprawcy Czarnków</li>
+              <li>Ocena uszkodzeń pojazdu Czarnków</li>
+              <li>Odszkodowanie z OC sprawcy Czarnków</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Czarnków to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

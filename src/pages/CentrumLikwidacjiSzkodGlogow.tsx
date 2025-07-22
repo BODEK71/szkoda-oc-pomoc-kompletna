@@ -124,6 +124,58 @@ const CentrumLikwidacjiSzkodGlogow = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Głogów - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Głogów - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Głogów oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Głogów, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Głogów - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Głogów to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Głogów, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Głogów</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Głogów</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Głogów</li>
+              <li>Naprawa powypadkowa bezgotówkowa Głogów</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Głogów - Specjalistyczne usługi</h3>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Głogów oferuje profesjonalne usuwanie uszkodzeń powypadkowych Głogów. 
+              Naprawy karoserii po stłuczce Głogów wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii. 
+              Oferujemy także lakierowanie z OC sprawcy Głogów oraz malowanie auta Głogów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Głogów - Kompleksowa obsługa</h3>
+            <p className="text-gray-600 mb-6">
+              Nasz serwis mechaniczny powypadkowy Głogów oferuje naprawa samochodów osobowych Głogów, mechanika samochodowa Głogów, 
+              naprawa silnika po kolizji Głogów oraz przegląd techniczny auta Głogów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Głogów - Mobilność podczas naprawy</h3>
+            <p className="text-gray-600 mb-6">
+              Oferujemy auto zastępcze z OC sprawcy Głogów, pojazd zastępczy na czas naprawy Głogów, wynajem pojazdów zastępczych z OC sprawcy Głogów 
+              oraz samochód zastępczy na czas naprawy Głogów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Głogów - Całodobowa obsługa</h3>
+            <p className="text-gray-600 mb-6">
+              Nasza pomoc drogowa 24/7 Głogów oferuje laweta 24h Głogów, holowanie samochodu Głogów, autolaweta Głogów 
+              oraz ściąganie samochodu z drogi Głogów.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

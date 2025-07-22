@@ -125,6 +125,122 @@ const CentrumLikwidacjiSzkodGostyn = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Gostyń - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Gostyń - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Gostyń oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Gostyń, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Gostyń - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-4">
+              Nasza naprawa bezgotówkowa Gostyń to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Gostyń, które obejmują:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Naprawa auta po kolizji z OC sprawcy Gostyń</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Gostyń</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Gostyń</li>
+              <li>Naprawa powypadkowa bezgotówkowa Gostyń</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo powypadkowe Gostyń - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy blacharskie Gostyń</h4>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Gostyń oferuje profesjonalne usuwanie uszkodzeń powypadkowych Gostyń. 
+              Naprawy karoserii po stłuczce Gostyń wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Lakierowanie samochodów Gostyń</h3>
+            <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Gostyń obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Lakierowanie elementów karoserii Gostyń</li>
+              <li>Lakierowanie zderzaka Gostyń</li>
+              <li>Lakierowanie maski Gostyń</li>
+              <li>Malowanie auta Gostyń</li>
+              <li>Lakierowanie powypadkowe Gostyń</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz lakiernik samochodowy Gostyń gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Gostyń 
+              jest wykonywana zgodnie ze standardami producentów.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis samochodowy Gostyń - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Serwis samochodowy po wypadku Gostyń</h4>
+            <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Gostyń oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Naprawa samochodów osobowych Gostyń</li>
+              <li>Mechanika samochodowa Gostyń</li>
+              <li>Naprawa silnika po kolizji Gostyń</li>
+              <li>Wymiana rozrządu po wypadku Gostyń</li>
+              <li>Naprawa silnika Gostyń</li>
+              <li>Przegląd techniczny auta Gostyń</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasz mechanik samochodowy Gostyń posiada wieloletnie doświadczenie w naprawach powypadkowych.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pojazdy zastępcze Gostyń - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Samochód zastępczy z OC sprawcy Gostyń</h4>
+            <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Auto zastępcze z OC sprawcy Gostyń</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Gostyń</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Gostyń</li>
+              <li>Auto na czas szkody z OC Gostyń</li>
+              <li>Pojazd zastępczy z OC Gostyń</li>
+              <li>Samochód na czas likwidacji szkody Gostyń</li>
+            </ul>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Wynajem pojazdów z OC sprawcy Gostyń</h4>
+            <p className="text-gray-600 mb-4">Nasza wypożyczalnia współpracująca z ubezpieczalniami Gostyń oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Auto zastępcze ze szkody sprawcy Gostyń</li>
+              <li>Pojazd zastępczy na czas naprawy Gostyń</li>
+              <li>Samochód zastępczy na czas naprawy Gostyń</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Gostyń</li>
+              <li>Wynajem auta z OC sprawcy Gostyń</li>
+              <li>Wynajem pojazdu z OC sprawcy Gostyń</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Gostyń</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Gostyń - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Pomoc drogowa 24h Gostyń</h4>
+            <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Gostyń oferuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-6">
+              <li>Autolaweta Gostyń</li>
+              <li>Laweta Gostyń</li>
+              <li>Laweta 24h Gostyń</li>
+              <li>Usługi lawetą Gostyń</li>
+              <li>Holowanie samochodu Gostyń</li>
+              <li>Holowanie Gostyń</li>
+              <li>Ściąganie samochodu z drogi Gostyń</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Likwidacja szkód komunikacyjnych Gostyń</h3>
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Obsługa szkody z OC Gostyń</h4>
+            <p className="text-gray-600 mb-4">Nasza likwidacja szkody z OC Gostyń obejmuje:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Bezpośrednia likwidacja szkód (BLS) Gostyń</li>
+              <li>Zgłoszenie szkody komunikacyjnej Gostyń</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Gostyń</li>
+              <li>Wycena szkody powypadkowej Gostyń</li>
+              <li>Kosztorys naprawy z OC sprawcy Gostyń</li>
+              <li>Ocena uszkodzeń pojazdu Gostyń</li>
+              <li>Odszkodowanie z OC sprawcy Gostyń</li>
+            </ul>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Gostyń to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

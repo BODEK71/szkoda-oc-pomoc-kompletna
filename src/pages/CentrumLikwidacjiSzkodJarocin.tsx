@@ -124,6 +124,44 @@ const CentrumLikwidacjiSzkodJarocin = () => {
         </div>
       </section>
 
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Jarocin - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Naprawy powypadkowe Jarocin - Profesjonalne usługi dla mieszkańców</h3>
+            <p className="text-gray-600 mb-6">
+              Nasze centrum napraw powypadkowych Jarocin oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+              Specjalizujemy się w naprawach z winy sprawcy Jarocin, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-800 mb-3">Naprawy z OC sprawcy Jarocin - Bezgotówkowa obsługa</h4>
+            <p className="text-gray-600 mb-6">
+              Nasza naprawa bezgotówkowa Jarocin to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Jarocin oraz naprawa powypadkowa bezgotówkowa Jarocin.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Blacharstwo i lakierowanie Jarocin</h3>
+            <p className="text-gray-600 mb-6">
+              Nasz blacharz samochodowy Jarocin oferuje naprawy karoserii po stłuczce Jarocin, lakierowanie z OC sprawcy Jarocin, 
+              lakierowanie elementów karoserii Jarocin oraz lakierowanie powypadkowe Jarocin.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Serwis i pojazdy zastępcze Jarocin</h3>
+            <p className="text-gray-600 mb-6">
+              Oferujemy serwis mechaniczny powypadkowy Jarocin, auto zastępcze z OC sprawcy Jarocin, wynajem pojazdów zastępczych z OC sprawcy Jarocin 
+              oraz pojazd zastępczy na czas naprawy Jarocin.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Pomoc drogowa Jarocin</h3>
+            <p className="text-gray-600 mb-6">
+              Nasza pomoc drogowa 24/7 Jarocin oferuje laweta Jarocin, holowanie samochodu Jarocin oraz autolaweta Jarocin.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
