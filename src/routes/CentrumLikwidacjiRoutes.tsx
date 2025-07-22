@@ -20,6 +20,17 @@ import CentrumLikwidacjiSzkodKrotoszyn from "../pages/CentrumLikwidacjiSzkodKrot
 import CentrumLikwidacjiSzkodLeszno from "../pages/CentrumLikwidacjiSzkodLeszno";
 import CentrumLikwidacjiSzkodLubin from "../pages/CentrumLikwidacjiSzkodLubin";
 import CentrumLikwidacjiSzkodMiedzychod from "../pages/CentrumLikwidacjiSzkodMiedzychod";
+import CentrumLikwidacjiSzkodMiedzyrzecz from "../pages/CentrumLikwidacjiSzkodMiedzyrzecz";
+import CentrumLikwidacjiSzkodNowyTomysl from "../pages/CentrumLikwidacjiSzkodNowyTomysl";
+import CentrumLikwidacjiSzkodZielonaGora from "../pages/CentrumLikwidacjiSzkodZielonaGora";
+import CentrumLikwidacjiSzkodOborniki from "../pages/CentrumLikwidacjiSzkodOborniki";
+import CentrumLikwidacjiSzkodOpalenica from "../pages/CentrumLikwidacjiSzkodOpalenica";
+import CentrumLikwidacjiSzkodOstrowWielkopolski from "../pages/CentrumLikwidacjiSzkodOstrowWielkopolski";
+import CentrumLikwidacjiSzkodPila from "../pages/CentrumLikwidacjiSzkodPila";
+import CentrumLikwidacjiSzkodPleszew from "../pages/CentrumLikwidacjiSzkodPleszew";
+import CentrumLikwidacjiSzkodRawicz from "../pages/CentrumLikwidacjiSzkodRawicz";
+import CentrumLikwidacjiSzkodSlupca from "../pages/CentrumLikwidacjiSzkodSlupca";
+import CentrumLikwidacjiSzkodSzamotuly from "../pages/CentrumLikwidacjiSzkodSzamotuly";
 
 export const CentrumLikwidacjiRoutes = () => (
   <>
