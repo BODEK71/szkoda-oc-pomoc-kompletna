@@ -124,7 +124,84 @@ const CentrumLikwidacjiSzkodJastrowie = () => {
         </div>
       </section>
 
+      {/* Detailed Services Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 text-center">
+              Kompleksowa obsługa powypadkowa Jastrowie
+            </h2>
+            
+            <div className="space-y-12 mt-8">
+              {/* Naprawy powypadkowe */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Naprawy powypadkowe Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum napraw powypadkowych Jastrowie oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Jastrowie, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasza naprawa bezgotówkowa Jastrowie to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Jastrowie, które obejmują naprawę auta po kolizji z OC sprawcy Jastrowie, naprawę auta po wypadku z OC sprawcy Jastrowie, naprawę pojazdu po stłuczce z OC sprawcy Jastrowie oraz naprawę powypadkową bezgotówkową Jastrowie.
+                </p>
+              </div>
+              
+              {/* Blacharstwo powypadkowe */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Blacharstwo powypadkowe Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasz blacharz samochodowy Jastrowie oferuje profesjonalne usuwanie uszkodzeń powypadkowych Jastrowie. Naprawy karoserii po stłuczce Jastrowie wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasze lakierowanie z OC sprawcy Jastrowie obejmuje lakierowanie elementów karoserii Jastrowie, lakierowanie zderzaka Jastrowie, lakierowanie maski Jastrowie, malowanie auta Jastrowie oraz lakierowanie powypadkowe Jastrowie. Nasz lakiernik samochodowy Jastrowie gwarantuje najwyższą jakość wykonanych prac.
+                </p>
+              </div>
+              
+              {/* Serwis samochodowy */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Serwis samochodowy Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasz serwis mechaniczny powypadkowy Jastrowie oferuje naprawę samochodów osobowych Jastrowie, mechanikę samochodową Jastrowie, naprawę silnika po kolizji Jastrowie, wymianę rozrządu po wypadku Jastrowie, naprawę silnika Jastrowie oraz przegląd techniczny auta Jastrowie.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasz mechanik samochodowy Jastrowie posiada wieloletnie doświadczenie w naprawach powypadkowych.
+                </p>
+              </div>
+              
+              {/* Pojazdy zastępcze */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Pojazdy zastępcze Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych: auto zastępcze z OC sprawcy Jastrowie, auto zastępcze po wypadku z OC sprawcy Jastrowie, auto zastępcze z OC sprawcy bezgotówkowo Jastrowie, auto na czas szkody z OC Jastrowie, pojazd zastępczy z OC Jastrowie i samochód na czas likwidacji szkody Jastrowie.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasza wypożyczalnia współpracująca z ubezpieczalniami Jastrowie oferuje: auto zastępcze ze szkody sprawcy Jastrowie, pojazd zastępczy na czas naprawy Jastrowie, wynajem pojazdów zastępczych z OC sprawcy Jastrowie i wynajem auta z OC sprawcy Jastrowie.
+                </p>
+              </div>
+              
+              {/* Pomoc drogowa */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Pomoc drogowa Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasza pomoc drogowa 24/7 Jastrowie oferuje: autolaweta Jastrowie, laweta Jastrowie, laweta 24h Jastrowie, usługi lawetą Jastrowie, holowanie samochodu Jastrowie, holowanie Jastrowie i ściąganie samochodu z drogi Jastrowie.
+                </p>
+              </div>
+              
+              {/* Likwidacja szkód */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Likwidacja szkód komunikacyjnych Jastrowie</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasza likwidacja szkody z OC Jastrowie obejmuje: bezpośrednia likwidacja szkód (BLS) Jastrowie, zgłoszenie szkody komunikacyjnej Jastrowie, zgłoszenie szkody ubezpieczeniowej Jastrowie, wycena szkody powypadkowej Jastrowie, kosztorys naprawy z OC sprawcy Jastrowie, ocena uszkodzeń pojazdu Jastrowie i odszkodowanie z OC sprawcy Jastrowie.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum napraw powypadkowych Jastrowie to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -150,6 +227,7 @@ const CentrumLikwidacjiSzkodJastrowie = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
       <section className="py-20 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
