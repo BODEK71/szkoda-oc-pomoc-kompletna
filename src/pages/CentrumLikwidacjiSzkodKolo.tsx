@@ -1,8 +1,9 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Phone, ArrowRight, MapPin, Clock, Car, Shield, Wrench, Palette, Users } from "lucide-react";
+import { CheckCircle, Phone, Mail, MapPin, Car, Wrench, Palette, Shield, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -24,7 +25,7 @@ const CentrumLikwidacjiSzkodKolo = () => {
       description: "Wysokiej jakości lakierowanie pojazdów"
     },
     {
-      icon: <Users className="w-6 h-6" />,
+      icon: <Shield className="w-6 h-6" />,
       title: "Pojazdy zastępcze",
       description: "Auto zastępcze na czas naprawy"
     }
@@ -136,8 +137,59 @@ const CentrumLikwidacjiSzkodKolo = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Detailed Services Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 text-center">
+              Kompleksowa obsługa powypadkowa Koło
+            </h2>
+            
+            <div className="space-y-12 mt-8">
+              {/* Naprawy powypadkowe */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Naprawy powypadkowe Koło</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum napraw powypadkowych Koło oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Koło, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasza naprawa bezgotówkowa Koło to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Koło, które obejmują naprawę auta po kolizji z OC sprawcy Koło, naprawę auta po wypadku z OC sprawcy Koło, naprawę pojazdu po stłuczce z OC sprawcy Koło oraz naprawę powypadkową bezgotówkową Koło.
+                </p>
+              </div>
+              
+              {/* Blacharstwo i lakierowanie */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Blacharstwo i lakierowanie Koło</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasz blacharz samochodowy Koło oferuje profesjonalne naprawy karoserii po stłuczce Koło, lakierowanie z OC sprawcy Koło, lakierowanie elementów karoserii Koło oraz malowanie auta Koło.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Wszystkie naprawy blacharskie i lakiernicze wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii, gwarantując najwyższą jakość usług w Kole.
+                </p>
+              </div>
+              
+              {/* Serwis i pojazdy zastępcze */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Serwis i pojazdy zastępcze Koło</h3>
+                <p className="text-gray-600 mb-4">
+                  Oferujemy kompleksowy serwis mechaniczny powypadkowy Koło, naprawę samochodów osobowych Koło oraz profesjonalną mechanikę samochodową Koło. W naszym centrum dostępne są również pojazdy zastępcze: auto zastępcze z OC sprawcy Koło, pojazd zastępczy na czas naprawy Koło oraz wynajem auta z OC sprawcy Koło.
+                </p>
+              </div>
+              
+              {/* Pomoc drogowa */}
+              <div>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">Pomoc drogowa Koło</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasza pomoc drogowa 24/7 Koło oferuje lawetę Koło, holowanie samochodu Koło, autolawetę Koło oraz ściąganie samochodu z drogi Koło. Usługi holowania realizujemy 24 godziny na dobę, 7 dni w tygodniu na terenie Koła i okolic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">

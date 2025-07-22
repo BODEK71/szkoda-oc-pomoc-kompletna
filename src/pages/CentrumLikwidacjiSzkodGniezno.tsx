@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -58,16 +59,16 @@ const CentrumLikwidacjiSzkodGniezno = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 pt-36">
+      <section className="relative bg-gradient-to-br from-red-50 via-white to-red-50 py-20 pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <Badge className="bg-blue-100 text-blue-800">
+              <Badge className="bg-red-100 text-red-800">
                 🏢 CENTRUM LIKWIDACJI SZKÓD GNIEZNO
               </Badge>
               
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                <span className="text-blue-600">Centrum likwidacji szkód</span>
+                <span className="text-red-600">Centrum likwidacji szkód</span>
                 <br />
                 <span className="text-gray-900">Gniezno</span>
               </h1>
@@ -79,13 +80,13 @@ const CentrumLikwidacjiSzkodGniezno = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
+              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-lg px-8 py-4" asChild>
                 <a href="tel:+48506066525">
                   <Phone className="w-5 h-5 mr-2" />
                   Zadzwoń: +48 506 066 525
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-blue-200 text-blue-600 hover:bg-blue-50">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-red-200 text-red-600 hover:bg-red-50">
                 Zgłoś szkodę
               </Button>
             </div>
@@ -109,7 +110,7 @@ const CentrumLikwidacjiSzkodGniezno = () => {
             {services.map((service, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 text-red-600">
                     {service.icon}
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -125,8 +126,84 @@ const CentrumLikwidacjiSzkodGniezno = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Detailed Services Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 text-center">
+              Kompleksowa obsługa powypadkowa Gniezno
+            </h2>
+            
+            <div className="space-y-12 mt-8">
+              {/* Naprawy powypadkowe */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Naprawy powypadkowe Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum napraw powypadkowych Gniezno oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Gniezno, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasza naprawa bezgotówkowa Gniezno to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Gniezno, które obejmują naprawę auta po kolizji z OC sprawcy Gniezno, naprawę auta po wypadku z OC sprawcy Gniezno, naprawę pojazdu po stłuczce z OC sprawcy Gniezno oraz naprawę powypadkową bezgotówkową Gniezno.
+                </p>
+              </div>
+              
+              {/* Blacharstwo powypadkowe */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Blacharstwo powypadkowe Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasz blacharz samochodowy Gniezno oferuje profesjonalne usuwanie uszkodzeń powypadkowych Gniezno. Naprawy karoserii po stłuczce Gniezno wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasze lakierowanie z OC sprawcy Gniezno obejmuje lakierowanie elementów karoserii Gniezno, lakierowanie zderzaka Gniezno, lakierowanie maski Gniezno, malowanie auta Gniezno oraz lakierowanie powypadkowe Gniezno. Nasz lakiernik samochodowy Gniezno gwarantuje najwyższą jakość wykonanych prac.
+                </p>
+              </div>
+              
+              {/* Serwis samochodowy */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Serwis samochodowy Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasz serwis mechaniczny powypadkowy Gniezno oferuje naprawę samochodów osobowych Gniezno, mechanikę samochodową Gniezno, naprawę silnika po kolizji Gniezno, wymianę rozrządu po wypadku Gniezno, naprawę silnika Gniezno oraz przegląd techniczny auta Gniezno.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasz mechanik samochodowy Gniezno posiada wieloletnie doświadczenie w naprawach powypadkowych.
+                </p>
+              </div>
+              
+              {/* Pojazdy zastępcze */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Pojazdy zastępcze Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych: auto zastępcze z OC sprawcy Gniezno, auto zastępcze po wypadku z OC sprawcy Gniezno, auto zastępcze z OC sprawcy bezgotówkowo Gniezno, auto na czas szkody z OC Gniezno, pojazd zastępczy z OC Gniezno i samochód na czas likwidacji szkody Gniezno.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasza wypożyczalnia współpracująca z ubezpieczalniami Gniezno oferuje: auto zastępcze ze szkody sprawcy Gniezno, pojazd zastępczy na czas naprawy Gniezno, wynajem pojazdów zastępczych z OC sprawcy Gniezno i wynajem auta z OC sprawcy Gniezno.
+                </p>
+              </div>
+              
+              {/* Pomoc drogowa */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Pomoc drogowa Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasza pomoc drogowa 24/7 Gniezno oferuje: autolaweta Gniezno, laweta Gniezno, laweta 24h Gniezno, usługi lawetą Gniezno, holowanie samochodu Gniezno, holowanie Gniezno i ściąganie samochodu z drogi Gniezno.
+                </p>
+              </div>
+              
+              {/* Likwidacja szkód */}
+              <div>
+                <h3 className="text-2xl font-bold text-red-600 mb-4">Likwidacja szkód komunikacyjnych Gniezno</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasza likwidacja szkody z OC Gniezno obejmuje: bezpośrednia likwidacja szkód (BLS) Gniezno, zgłoszenie szkody komunikacyjnej Gniezno, zgłoszenie szkody ubezpieczeniowej Gniezno, wycena szkody powypadkowej Gniezno, kosztorys naprawy z OC sprawcy Gniezno, ocena uszkodzeń pojazdu Gniezno i odszkodowanie z OC sprawcy Gniezno.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum napraw powypadkowych Gniezno to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -153,7 +230,7 @@ const CentrumLikwidacjiSzkodGniezno = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-red-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Skontaktuj się z nami
@@ -180,7 +257,7 @@ const CentrumLikwidacjiSzkodGniezno = () => {
             </div>
           </div>
 
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" asChild>
+          <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100" asChild>
             <a href="tel:+48506066525">
               <Phone className="w-5 h-5 mr-2" />
               Zadzwoń teraz
