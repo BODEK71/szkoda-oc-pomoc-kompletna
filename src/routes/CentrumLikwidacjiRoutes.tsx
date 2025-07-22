@@ -1,4 +1,3 @@
-
 import { Route } from "react-router-dom";
 import CentrumLikwidacjiSzkodPoznan from "../pages/CentrumLikwidacjiSzkodPoznan";
 import CentrumLikwidacjiSzkodBojanowo from "../pages/CentrumLikwidacjiSzkodBojanowo";
@@ -31,6 +30,17 @@ import CentrumLikwidacjiSzkodPleszew from "../pages/CentrumLikwidacjiSzkodPlesze
 import CentrumLikwidacjiSzkodRawicz from "../pages/CentrumLikwidacjiSzkodRawicz";
 import CentrumLikwidacjiSzkodSlupca from "../pages/CentrumLikwidacjiSzkodSlupca";
 import CentrumLikwidacjiSzkodSzamotuly from "../pages/CentrumLikwidacjiSzkodSzamotuly";
+import CentrumLikwidacjiSzkodSrem from "../pages/CentrumLikwidacjiSzkodSrem";
+import CentrumLikwidacjiSzkodSrodaWielkopolska from "../pages/CentrumLikwidacjiSzkodSrodaWielkopolska";
+import CentrumLikwidacjiSzkodTurek from "../pages/CentrumLikwidacjiSzkodTurek";
+import CentrumLikwidacjiSzkodWagrowiec from "../pages/CentrumLikwidacjiSzkodWagrowiec";
+import CentrumLikwidacjiSzkodWolsztyn from "../pages/CentrumLikwidacjiSzkodWolsztyn";
+import CentrumLikwidacjiSzkodWronki from "../pages/CentrumLikwidacjiSzkodWronki";
+import CentrumLikwidacjiSzkodWrzesnia from "../pages/CentrumLikwidacjiSzkodWrzesnia";
+import CentrumLikwidacjiSzkodWyrzysk from "../pages/CentrumLikwidacjiSzkodWyrzysk";
+import CentrumLikwidacjiSzkodZbaszyn from "../pages/CentrumLikwidacjiSzkodZbaszyn";
+import CentrumLikwidacjiSzkodZbaszynek from "../pages/CentrumLikwidacjiSzkodZbaszynek";
+import CentrumLikwidacjiSzkodZlotow from "../pages/CentrumLikwidacjiSzkodZlotow";
 
 export const CentrumLikwidacjiRoutes = () => (
   <>
@@ -54,5 +64,27 @@ export const CentrumLikwidacjiRoutes = () => (
     <Route path="/centrum-likwidacji-szkod-leszno" element={<CentrumLikwidacjiSzkodLeszno />} />
     <Route path="/centrum-likwidacji-szkod-lubin" element={<CentrumLikwidacjiSzkodLubin />} />
     <Route path="/centrum-likwidacji-szkod-miedzychod" element={<CentrumLikwidacjiSzkodMiedzychod />} />
+    <Route path="/centrum-likwidacji-szkod-miedzyrzecz" element={<CentrumLikwidacjiSzkodMiedzyrzecz />} />
+    <Route path="/centrum-likwidacji-szkod-nowy-tomysl" element={<CentrumLikwidacjiSzkodNowyTomysl />} />
+    <Route path="/centrum-likwidacji-szkod-zielona-gora" element={<CentrumLikwidacjiSzkodZielonaGora />} />
+    <Route path="/centrum-likwidacji-szkod-oborniki" element={<CentrumLikwidacjiSzkodOborniki />} />
+    <Route path="/centrum-likwidacji-szkod-opalenica" element={<CentrumLikwidacjiSzkodOpalenica />} />
+    <Route path="/centrum-likwidacji-szkod-ostrow-wielkopolski" element={<CentrumLikwidacjiSzkodOstrowWielkopolski />} />
+    <Route path="/centrum-likwidacji-szkod-pila" element={<CentrumLikwidacjiSzkodPila />} />
+    <Route path="/centrum-likwidacji-szkod-pleszew" element={<CentrumLikwidacjiSzkodPleszew />} />
+    <Route path="/centrum-likwidacji-szkod-rawicz" element={<CentrumLikwidacjiSzkodRawicz />} />
+    <Route path="/centrum-likwidacji-szkod-slupca" element={<CentrumLikwidacjiSzkodSlupca />} />
+    <Route path="/centrum-likwidacji-szkod-szamotuly" element={<CentrumLikwidacjiSzkodSzamotuly />} />
+    <Route path="/centrum-likwidacji-szkod-srem" element={<CentrumLikwidacjiSzkodSrem />} />
+    <Route path="/centrum-likwidacji-szkod-sroda-wielkopolska" element={<CentrumLikwidacjiSzkodSrodaWielkopolska />} />
+    <Route path="/centrum-likwidacji-szkod-turek" element={<CentrumLikwidacjiSzkodTurek />} />
+    <Route path="/centrum-likwidacji-szkod-wagrowiec" element={<CentrumLikwidacjiSzkodWagrowiec />} />
+    <Route path="/centrum-likwidacji-szkod-wolsztyn" element={<CentrumLikwidacjiSzkodWolsztyn />} />
+    <Route path="/centrum-likwidacji-szkod-wronki" element={<CentrumLikwidacjiSzkodWronki />} />
+    <Route path="/centrum-likwidacji-szkod-wrzesnia" element={<CentrumLikwidacjiSzkodWrzesnia />} />
+    <Route path="/centrum-likwidacji-szkod-wyrzysk" element={<CentrumLikwidacjiSzkodWyrzysk />} />
+    <Route path="/centrum-likwidacji-szkod-zbaszyn" element={<CentrumLikwidacjiSzkodZbaszyn />} />
+    <Route path="/centrum-likwidacji-szkod-zbaszynek" element={<CentrumLikwidacjiSzkodZbaszynek />} />
+    <Route path="/centrum-likwidacji-szkod-zlotow" element={<CentrumLikwidacjiSzkodZlotow />} />
   </>
 );
