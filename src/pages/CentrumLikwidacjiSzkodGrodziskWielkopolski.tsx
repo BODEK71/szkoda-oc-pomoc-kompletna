@@ -60,8 +60,8 @@ const CentrumLikwidacjiSzkodGrodziskWielkopolski = () => {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Kompleksowa obsługa powypadkowa dla mieszkańców Grodziska Wielkopolskiego. 
-                Profesjonalne usługi napraw, likwidacji szkód i pomocy drogowej.
+                Nasze centrum napraw powypadkowych Grodzisk Wielkopolski oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. 
+                Specjalizujemy się w naprawach z winy sprawcy Grodzisk Wielkopolski, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
               </p>
             </div>
 
@@ -84,11 +84,26 @@ const CentrumLikwidacjiSzkodGrodziskWielkopolski = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Nasze usługi w Grodzisku Wielkopolskim
+              Naprawy z OC sprawcy Grodzisk Wielkopolski - Bezgotówkowa obsługa
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Oferujemy pełen zakres usług powypadkowych dla mieszkańców Grodziska Wielkopolskiego i okolic
+              Nasza naprawa bezgotówkowa Grodzisk Wielkopolski to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. 
+              Oferujemy naprawy ubezpieczeniowe Grodzisk Wielkopolski.
             </p>
+            <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-left max-w-4xl mx-auto">
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">• Naprawa auta po kolizji z OC sprawcy Grodzisk Wielkopolski</p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">• Naprawa auta po wypadku z OC sprawcy Grodzisk Wielkopolski</p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">• Naprawa pojazdu po stłuczce z OC sprawcy Grodzisk Wielkopolski</p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">• Naprawa powypadkowa bezgotówkowa Grodzisk Wielkopolski</p>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -112,7 +127,68 @@ const CentrumLikwidacjiSzkodGrodziskWielkopolski = () => {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Blacharstwo powypadkowe Grodzisk Wielkopolski - Specjalistyczne usługi
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Nasz blacharz samochodowy Grodzisk Wielkopolski oferuje profesjonalne usuwanie uszkodzeń powypadkowych Grodzisk Wielkopolski. 
+              Naprawy karoserii po stłuczce Grodzisk Wielkopolski wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Lakierowanie samochodów Grodzisk Wielkopolski</h3>
+              <p className="text-gray-600 mb-4">Nasze lakierowanie z OC sprawcy Grodzisk Wielkopolski obejmuje:</p>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Lakierowanie elementów karoserii Grodzisk Wielkopolski</li>
+                <li>• Lakierowanie zderzaka Grodzisk Wielkopolski</li>
+                <li>• Lakierowanie maski Grodzisk Wielkopolski</li>
+                <li>• Malowanie auta Grodzisk Wielkopolski</li>
+                <li>• Lakierowanie powypadkowe Grodzisk Wielkopolski</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Serwis samochodowy Grodzisk Wielkopolski</h3>
+              <p className="text-gray-600 mb-4">Nasz serwis mechaniczny powypadkowy Grodzisk Wielkopolski oferuje:</p>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Naprawa samochodów osobowych Grodzisk Wielkopolski</li>
+                <li>• Mechanika samochodowa Grodzisk Wielkopolski</li>
+                <li>• Naprawa silnika po kolizji Grodzisk Wielkopolski</li>
+                <li>• Wymiana rozrządu po wypadku Grodzisk Wielkopolski</li>
+                <li>• Naprawa silnika Grodzisk Wielkopolski</li>
+                <li>• Przegląd techniczny auta Grodzisk Wielkopolski</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Pojazdy zastępcze Grodzisk Wielkopolski</h3>
+              <p className="text-gray-600 mb-4">Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Auto zastępcze z OC sprawcy Grodzisk Wielkopolski</li>
+                <li>• Auto zastępcze po wypadku z OC sprawcy Grodzisk Wielkopolski</li>
+                <li>• Auto zastępcze z OC sprawcy bezgotówkowo Grodzisk Wielkopolski</li>
+                <li>• Pojazd zastępczy na czas naprawy Grodzisk Wielkopolski</li>
+                <li>• Wynajem pojazdów zastępczych z OC sprawcy Grodzisk Wielkopolski</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Pomoc drogowa Grodzisk Wielkopolski</h3>
+              <p className="text-gray-600 mb-4">Nasza pomoc drogowa 24/7 Grodzisk Wielkopolski oferuje:</p>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Autolaweta Grodzisk Wielkopolski</li>
+                <li>• Laweta 24h Grodzisk Wielkopolski</li>
+                <li>• Holowanie samochodu Grodzisk Wielkopolski</li>
+                <li>• Ściąganie samochodu z drogi Grodzisk Wielkopolski</li>
+                <li>• Usługi lawetą Grodzisk Wielkopolski</li>
+              </ul>
+            </div>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Najczęściej zadawane pytania
