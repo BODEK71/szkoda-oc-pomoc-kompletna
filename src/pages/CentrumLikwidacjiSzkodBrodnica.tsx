@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Phone, Mail, MapPin, Car, Wrench, Palette, Shield } from "lucide-react";
+import { CheckCircle, Phone, Mail, MapPin, Car, Wrench, Palette, Shield, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -58,7 +58,6 @@ const CentrumLikwidacjiSzkodBrodnica = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
@@ -94,7 +93,6 @@ const CentrumLikwidacjiSzkodBrodnica = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -126,7 +124,238 @@ const CentrumLikwidacjiSzkodBrodnica = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Detailed SEO Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Kompleksowe usługi powypadkowe w Brodnicy
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Sprawdź naszą szeroką ofertę usług dla pojazdów po kolizjach i wypadkach
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {/* Naprawy powypadkowe */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Naprawy powypadkowe Brodnica</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum likwidacji szkód w Brodnicy specjalizuje się w profesjonalnych naprawach powypadkowych. Oferujemy kompleksowe usługi naprawy samochodów po kolizjach drogowych, zapewniając najwyższą jakość wykonania.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Naprawy powypadkowe Brodnica wykonujemy z zachowaniem standardów producenta, przywracając pojazdy do stanu sprzed wypadku. Wykorzystujemy oryginalne części zamienne i zaawansowane technologie naprawcze.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Bezgotówkowe naprawy powypadkowe z OC sprawcy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Kompleksowa naprawa struktury pojazdu</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Przywrócenie geometrii nadwozia</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                <h4 className="text-xl font-semibold text-blue-800 mb-4">Korzyści napraw powypadkowych w Brodnicy</h4>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Szybki czas realizacji</h5>
+                      <p className="text-gray-600 text-sm">Naprawy powypadkowe Brodnica realizujemy w możliwie najkrótszym czasie</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Gwarancja na naprawy</h5>
+                      <p className="text-gray-600 text-sm">Wszystkie naprawy powypadkowe objęte są pełną gwarancją</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Zachowanie wartości pojazdu</h5>
+                      <p className="text-gray-600 text-sm">Profesjonalne naprawy zachowują wartość rynkową pojazdu</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Blacharstwo powypadkowe */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1 bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                <h4 className="text-xl font-semibold text-blue-800 mb-4">Profesjonalne blacharstwo samochodowe</h4>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Naprawa karoserii</h5>
+                      <p className="text-gray-600 text-sm">Usuwanie wgnieceń, naprawa blach i elementów karoserii</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Wymiana elementów</h5>
+                      <p className="text-gray-600 text-sm">Profesjonalna wymiana uszkodzonych elementów karoserii</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Renowacja zabytkowych pojazdów</h5>
+                      <p className="text-gray-600 text-sm">Specjalistyczne usługi blacharskie dla samochodów klasycznych</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="order-1 md:order-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Blacharstwo powypadkowe Brodnica</h3>
+                <p className="text-gray-600 mb-4">
+                  Nasze centrum w Brodnicy oferuje pełen zakres usług blacharskich dla pojazdów po kolizjach i wypadkach. Nasi doświadczeni blacharze wykonują precyzyjne naprawy karoserii, przywracając pojazdy do idealnego stanu.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Blacharstwo powypadkowe Brodnica w naszym centrum to gwarancja profesjonalnej obsługi i najwyższej jakości wykonania. Wykorzystujemy specjalistyczne narzędzia i technologie do naprawy wszelkich uszkodzeń blacharskich.
+                </p>
+                <Button className="bg-blue-600 hover:bg-blue-700">
+                  Dowiedz się więcej
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Lakierowanie samochodów */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Lakierowanie samochodów Brodnica</h3>
+                <p className="text-gray-600 mb-4">
+                  Profesjonalne lakierowanie pojazdów w Brodnicy to nasza specjalność. Oferujemy kompleksowe usługi lakiernicze z wykorzystaniem najwyższej jakości materiałów i nowoczesnych technologii.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Lakierowanie samochodów Brodnica wykonujemy w kabinach lakierniczych zapewniających idealną czystość i warunki do uzyskania perfekcyjnego efektu. Gwarantujemy dokładne dopasowanie koloru i wysoką jakość wykończenia.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Lakierowanie całościowe i częściowe</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Dobór koloru i lakierowanie zaprawkowe</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Lakierowanie po naprawach blacharskich</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                <h4 className="text-xl font-semibold text-blue-800 mb-4">Zalety naszego lakierowania</h4>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Najwyższa jakość materiałów</h5>
+                      <p className="text-gray-600 text-sm">Używamy tylko renomowanych lakierów samochodowych</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Gwarancja trwałości</h5>
+                      <p className="text-gray-600 text-sm">Nasze lakierowanie jest odporne na warunki atmosferyczne</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Idealne dopasowanie koloru</h5>
+                      <p className="text-gray-600 text-sm">Komputerowy system doboru kolorów lakieru</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Pojazdy zastępcze */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1 bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                <h4 className="text-xl font-semibold text-blue-800 mb-4">Dlaczego warto wybrać auto zastępcze z OC sprawcy?</h4>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Bezkosztowe rozwiązanie</h5>
+                      <p className="text-gray-600 text-sm">Samochód zastępczy bez wydatków z własnej kieszeni</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Szybka dostępność</h5>
+                      <p className="text-gray-600 text-sm">Auto zastępcze dostępne od ręki lub w ciągu 24h</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-0.5">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900">Pełne ubezpieczenie</h5>
+                      <p className="text-gray-600 text-sm">Auta zastępcze z pełnym pakietem ubezpieczeń</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="order-1 md:order-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Pojazdy zastępcze Brodnica</h3>
+                <p className="text-gray-600 mb-4">
+                  Potrzebujesz samochodu na czas naprawy? W naszym centrum w Brodnicy zapewniamy auta zastępcze z OC sprawcy. Oferujemy bezgotówkowy wynajem samochodów zastępczych na czas naprawy pojazdu po kolizji.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Auto zastępcze z OC sprawcy Brodnica to wygodne rozwiązanie, które pozwala zachować mobilność w trakcie naprawy. Nasz zespół pomoże w uzyskaniu samochodu zastępczego z ubezpieczenia sprawcy wypadku.
+                </p>
+                <Button className="bg-blue-600 hover:bg-blue-700">
+                  Zamów auto zastępcze
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -153,7 +382,6 @@ const CentrumLikwidacjiSzkodBrodnica = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
