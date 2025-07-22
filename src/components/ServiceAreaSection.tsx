@@ -37,10 +37,7 @@ const ServiceAreaSection = () => {
                 <div key={city.name}>
                   <Button
                     variant="outline"
-                    className={`${city.name === "Poznań" 
-                      ? "bg-white hover:bg-blue-50 border-blue-200 text-blue-700 hover:text-blue-800 hover:scale-105" 
-                      : "bg-white hover:bg-gray-50 border-gray-200 text-gray-700 hover:text-gray-800"
-                    } font-medium px-4 py-2 h-auto transition-all duration-200`}
+                    className="bg-white hover:bg-blue-50 border-blue-200 text-blue-700 hover:text-blue-800 hover:scale-105 font-medium px-4 py-2 h-auto transition-all duration-200"
                     asChild
                   >
                     <Link to={`/centrum-likwidacji-szkod-${city.slug}`}>
