@@ -113,6 +113,7 @@ import CentrumLikwidacjiSzkodChodziez from "../pages/CentrumLikwidacjiSzkodChodz
 import CentrumLikwidacjiSzkodCzarnkow from "../pages/CentrumLikwidacjiSzkodCzarnkow";
 import CentrumLikwidacjiSzkodGniezno from "../pages/CentrumLikwidacjiSzkodGniezno";
 import CentrumLikwidacjiSzkodGostyn from "../pages/CentrumLikwidacjiSzkodGostyn";
+import CentrumLikwidacjiSzkodGrodziskWielkopolski from "../pages/CentrumLikwidacjiSzkodGrodziskWielkopolski";
 
 const AppRoutes = () => {
   return (
@@ -246,6 +247,7 @@ const AppRoutes = () => {
       <Route path="/centrum-likwidacji-szkod-czarnkow" element={<CentrumLikwidacjiSzkodCzarnkow />} />
       <Route path="/centrum-likwidacji-szkod-gniezno" element={<CentrumLikwidacjiSzkodGniezno />} />
       <Route path="/centrum-likwidacji-szkod-gostyn" element={<CentrumLikwidacjiSzkodGostyn />} />
+      <Route path="/centrum-likwidacji-szkod-grodzisk-wielkopolski" element={<CentrumLikwidacjiSzkodGrodziskWielkopolski />} />
       
       {/* Catch-all route must be last */}
       <Route path="*" element={<NotFound />} />
