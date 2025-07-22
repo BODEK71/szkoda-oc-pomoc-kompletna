@@ -11,6 +11,15 @@ import CentrumLikwidacjiSzkodGrodziskWielkopolski from "../pages/CentrumLikwidac
 import CentrumLikwidacjiSzkodGlogow from "../pages/CentrumLikwidacjiSzkodGlogow";
 import CentrumLikwidacjiSzkodJarocin from "../pages/CentrumLikwidacjiSzkodJarocin";
 import CentrumLikwidacjiSzkodJastrowie from "../pages/CentrumLikwidacjiSzkodJastrowie";
+import CentrumLikwidacjiSzkodKalisz from "../pages/CentrumLikwidacjiSzkodKalisz";
+import CentrumLikwidacjiSzkodKolo from "../pages/CentrumLikwidacjiSzkodKolo";
+import CentrumLikwidacjiSzkodKonin from "../pages/CentrumLikwidacjiSzkodKonin";
+import CentrumLikwidacjiSzkodKoscian from "../pages/CentrumLikwidacjiSzkodKoscian";
+import CentrumLikwidacjiSzkodKrobia from "../pages/CentrumLikwidacjiSzkodKrobia";
+import CentrumLikwidacjiSzkodKrotoszyn from "../pages/CentrumLikwidacjiSzkodKrotoszyn";
+import CentrumLikwidacjiSzkodLeszno from "../pages/CentrumLikwidacjiSzkodLeszno";
+import CentrumLikwidacjiSzkodLubin from "../pages/CentrumLikwidacjiSzkodLubin";
+import CentrumLikwidacjiSzkodMiedzychod from "../pages/CentrumLikwidacjiSzkodMiedzychod";
 
 export const CentrumLikwidacjiRoutes = () => (
   <>
@@ -25,5 +34,14 @@ export const CentrumLikwidacjiRoutes = () => (
     <Route path="/centrum-likwidacji-szkod-glogow" element={<CentrumLikwidacjiSzkodGlogow />} />
     <Route path="/centrum-likwidacji-szkod-jarocin" element={<CentrumLikwidacjiSzkodJarocin />} />
     <Route path="/centrum-likwidacji-szkod-jastrowie" element={<CentrumLikwidacjiSzkodJastrowie />} />
+    <Route path="/centrum-likwidacji-szkod-kalisz" element={<CentrumLikwidacjiSzkodKalisz />} />
+    <Route path="/centrum-likwidacji-szkod-kolo" element={<CentrumLikwidacjiSzkodKolo />} />
+    <Route path="/centrum-likwidacji-szkod-konin" element={<CentrumLikwidacjiSzkodKonin />} />
+    <Route path="/centrum-likwidacji-szkod-koscian" element={<CentrumLikwidacjiSzkodKoscian />} />
+    <Route path="/centrum-likwidacji-szkod-krobia" element={<CentrumLikwidacjiSzkodKrobia />} />
+    <Route path="/centrum-likwidacji-szkod-krotoszyn" element={<CentrumLikwidacjiSzkodKrotoszyn />} />
+    <Route path="/centrum-likwidacji-szkod-leszno" element={<CentrumLikwidacjiSzkodLeszno />} />
+    <Route path="/centrum-likwidacji-szkod-lubin" element={<CentrumLikwidacjiSzkodLubin />} />
+    <Route path="/centrum-likwidacji-szkod-miedzychod" element={<CentrumLikwidacjiSzkodMiedzychod />} />
   </>
 );
