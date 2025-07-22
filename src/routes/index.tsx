@@ -105,8 +105,14 @@ import AutoZastepczeDlaFirm from "../pages/AutoZastepczeDlaFirm";
 import WynajemSpecjalistycznyZOCSprawcy from "../pages/WynajemSpecjalistycznyZOCSprawcy";
 import InformacjeOWynajmieAutaZOCSprawcy from "../pages/InformacjeOWynajmieAutaZOCSprawcy";
 
-// New Poznań damage center page
+// New damage center pages for all cities
 import CentrumLikwidacjiSzkodPoznan from "../pages/CentrumLikwidacjiSzkodPoznan";
+import CentrumLikwidacjiSzkodBojanowo from "../pages/CentrumLikwidacjiSzkodBojanowo";
+import CentrumLikwidacjiSzkodBrodnica from "../pages/CentrumLikwidacjiSzkodBrodnica";
+import CentrumLikwidacjiSzkodChodziez from "../pages/CentrumLikwidacjiSzkodChodziez";
+import CentrumLikwidacjiSzkodCzarnkow from "../pages/CentrumLikwidacjiSzkodCzarnkow";
+import CentrumLikwidacjiSzkodGniezno from "../pages/CentrumLikwidacjiSzkodGniezno";
+import CentrumLikwidacjiSzkodGostyn from "../pages/CentrumLikwidacjiSzkodGostyn";
 
 const AppRoutes = () => {
   return (
@@ -232,8 +238,14 @@ const AppRoutes = () => {
       <Route path="/obsługa-szkody-oc-poznan" element={<ObslugaSzkodyOCPoznan />} />
       <Route path="/likwidacja-szkody-zielona-gora" element={<LikwidacjaSzkodyZielonaGora />} />
       
-      {/* New Poznań damage center page */}
+      {/* Centrum likwidacji szkód - all cities */}
       <Route path="/centrum-likwidacji-szkod-poznan" element={<CentrumLikwidacjiSzkodPoznan />} />
+      <Route path="/centrum-likwidacji-szkod-bojanowo" element={<CentrumLikwidacjiSzkodBojanowo />} />
+      <Route path="/centrum-likwidacji-szkod-brodnica" element={<CentrumLikwidacjiSzkodBrodnica />} />
+      <Route path="/centrum-likwidacji-szkod-chodziez" element={<CentrumLikwidacjiSzkodChodziez />} />
+      <Route path="/centrum-likwidacji-szkod-czarnkow" element={<CentrumLikwidacjiSzkodCzarnkow />} />
+      <Route path="/centrum-likwidacji-szkod-gniezno" element={<CentrumLikwidacjiSzkodGniezno />} />
+      <Route path="/centrum-likwidacji-szkod-gostyn" element={<CentrumLikwidacjiSzkodGostyn />} />
       
       {/* Catch-all route must be last */}
       <Route path="*" element={<NotFound />} />
