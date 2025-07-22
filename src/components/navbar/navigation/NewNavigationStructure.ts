@@ -5,7 +5,6 @@ export const obslugaKompleksowaItems = [
   { name: "Kompleksowa obsługa powypadkowa", href: "/obsluga-kompleksowa" },
   { name: "Centrum pomocy po wypadku", href: "/centrum-pomocy-po-wypadku" },
   { name: "Centrum napraw powypadkowych", href: "/centrum-napraw-powypadkowych" },
-  { name: "Centrum likwidacji szkód Poznań", href: "/centrum-likwidacji-szkod-poznan" },
 ];
 
 export const pomocDrogowaItems = [
