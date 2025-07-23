@@ -136,8 +136,108 @@ const CentrumLikwidacjiSzkodMiedzyrzecz = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* SEO Content Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Międzyrzecz - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy powypadkowe Międzyrzecz - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Międzyrzecz oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Międzyrzecz, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy z OC sprawcy Międzyrzecz - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Międzyrzecz to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Międzyrzecz, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Międzyrzecz</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Międzyrzecz</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Międzyrzecz</li>
+              <li>Naprawa powypadkowa bezgotówkowa Międzyrzecz</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Blacharstwo powypadkowe Międzyrzecz - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Naprawy blacharskie Międzyrzecz</h4>
+            <p>Nasz blacharz samochodowy Międzyrzecz oferuje profesjonalne usuwanie uszkodzeń powypadkowych Międzyrzecz. Naprawy karoserii po stłuczce Międzyrzecz wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Lakierowanie samochodów Międzyrzecz</h4>
+            <p>Nasze lakierowanie z OC sprawcy Międzyrzecz obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Międzyrzecz</li>
+              <li>Lakierowanie zderzaka Międzyrzecz</li>
+              <li>Lakierowanie maski Międzyrzecz</li>
+              <li>Malowanie auta Międzyrzecz</li>
+              <li>Lakierowanie powypadkowe Międzyrzecz</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Międzyrzecz gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Międzyrzecz jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Serwis samochodowy Międzyrzecz - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Serwis samochodowy po wypadku Międzyrzecz</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Międzyrzecz oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Międzyrzecz</li>
+              <li>Mechanika samochodowa Międzyrzecz</li>
+              <li>Naprawa silnika po kolizji Międzyrzecz</li>
+              <li>Wymiana rozrządu po wypadku Międzyrzecz</li>
+              <li>Naprawa silnika Międzyrzecz</li>
+              <li>Przegląd techniczny auta Międzyrzecz</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Międzyrzecz posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pojazdy zastępcze Międzyrzecz - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Samochód zastępczy z OC sprawcy Międzyrzecz</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Międzyrzecz</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Międzyrzecz</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Międzyrzecz</li>
+              <li>Auto na czas szkody z OC Międzyrzecz</li>
+              <li>Pojazd zastępczy z OC Międzyrzecz</li>
+              <li>Samochód na czas likwidacji szkody Międzyrzecz</li>
+            </ul>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Wynajem pojazdów z OC sprawcy Międzyrzecz</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Międzyrzecz oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Międzyrzecz</li>
+              <li>Pojazd zastępczy na czas naprawy Międzyrzecz</li>
+              <li>Samochód zastępczy na czas naprawy Międzyrzecz</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Międzyrzecz</li>
+              <li>Wynajem auta z OC sprawcy Międzyrzecz</li>
+              <li>Wynajem pojazdu z OC sprawcy Międzyrzecz</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Międzyrzecz</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pomoc drogowa Międzyrzecz - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Pomoc drogowa 24h Międzyrzecz</h4>
+            <p>Nasza pomoc drogowa 24/7 Międzyrzecz oferuje:</p>
+            <ul>
+              <li>Autolaweta Międzyrzecz</li>
+              <li>Laweta Międzyrzecz</li>
+              <li>Laweta 24h Międzyrzecz</li>
+              <li>Usługi lawetą Międzyrzecz</li>
+              <li>Holowanie samochodu Międzyrzecz</li>
+              <li>Holowanie Międzyrzecz</li>
+              <li>Ściąganie samochodu z drogi Międzyrzecz</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Likwidacja szkód komunikacyjnych Międzyrzecz</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Obsługa szkody z OC Międzyrzecz</h4>
+            <p>Nasza likwidacja szkody z OC Międzyrzecz obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Międzyrzecz</li>
+              <li>Zgłoszenie szkody komunikacyjnej Międzyrzecz</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Międzyrzecz</li>
+              <li>Wycena szkody powypadkowej Międzyrzecz</li>
+              <li>Kosztorys naprawy z OC sprawcy Międzyrzecz</li>
+              <li>Ocena uszkodzeń pojazdu Międzyrzecz</li>
+              <li>Odszkodowanie z OC sprawcy Międzyrzecz</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Międzyrzecz to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">

@@ -136,8 +136,108 @@ const CentrumLikwidacjiSzkodNowyTomysl = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* SEO Content Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Nowy Tomyśl - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy powypadkowe Nowy Tomyśl - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Nowy Tomyśl oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Nowy Tomyśl, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy z OC sprawcy Nowy Tomyśl - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Nowy Tomyśl to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Nowy Tomyśl, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Nowy Tomyśl</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Nowy Tomyśl</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Nowy Tomyśl</li>
+              <li>Naprawa powypadkowa bezgotówkowa Nowy Tomyśl</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Blacharstwo powypadkowe Nowy Tomyśl - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Naprawy blacharskie Nowy Tomyśl</h4>
+            <p>Nasz blacharz samochodowy Nowy Tomyśl oferuje profesjonalne usuwanie uszkodzeń powypadkowych Nowy Tomyśl. Naprawy karoserii po stłuczce Nowy Tomyśl wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Lakierowanie samochodów Nowy Tomyśl</h4>
+            <p>Nasze lakierowanie z OC sprawcy Nowy Tomyśl obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Nowy Tomyśl</li>
+              <li>Lakierowanie zderzaka Nowy Tomyśl</li>
+              <li>Lakierowanie maski Nowy Tomyśl</li>
+              <li>Malowanie auta Nowy Tomyśl</li>
+              <li>Lakierowanie powypadkowe Nowy Tomyśl</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Nowy Tomyśl gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Nowy Tomyśl jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Serwis samochodowy Nowy Tomyśl - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Serwis samochodowy po wypadku Nowy Tomyśl</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Nowy Tomyśl oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Nowy Tomyśl</li>
+              <li>Mechanika samochodowa Nowy Tomyśl</li>
+              <li>Naprawa silnika po kolizji Nowy Tomyśl</li>
+              <li>Wymiana rozrządu po wypadku Nowy Tomyśl</li>
+              <li>Naprawa silnika Nowy Tomyśl</li>
+              <li>Przegląd techniczny auta Nowy Tomyśl</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Nowy Tomyśl posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pojazdy zastępcze Nowy Tomyśl - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Samochód zastępczy z OC sprawcy Nowy Tomyśl</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Nowy Tomyśl</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Nowy Tomyśl</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Nowy Tomyśl</li>
+              <li>Auto na czas szkody z OC Nowy Tomyśl</li>
+              <li>Pojazd zastępczy z OC Nowy Tomyśl</li>
+              <li>Samochód na czas likwidacji szkody Nowy Tomyśl</li>
+            </ul>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Wynajem pojazdów z OC sprawcy Nowy Tomyśl</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Nowy Tomyśl oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Nowy Tomyśl</li>
+              <li>Pojazd zastępczy na czas naprawy Nowy Tomyśl</li>
+              <li>Samochód zastępczy na czas naprawy Nowy Tomyśl</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Nowy Tomyśl</li>
+              <li>Wynajem auta z OC sprawcy Nowy Tomyśl</li>
+              <li>Wynajem pojazdu z OC sprawcy Nowy Tomyśl</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Nowy Tomyśl</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pomoc drogowa Nowy Tomyśl - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Pomoc drogowa 24h Nowy Tomyśl</h4>
+            <p>Nasza pomoc drogowa 24/7 Nowy Tomyśl oferuje:</p>
+            <ul>
+              <li>Autolaweta Nowy Tomyśl</li>
+              <li>Laweta Nowy Tomyśl</li>
+              <li>Laweta 24h Nowy Tomyśl</li>
+              <li>Usługi lawetą Nowy Tomyśl</li>
+              <li>Holowanie samochodu Nowy Tomyśl</li>
+              <li>Holowanie Nowy Tomyśl</li>
+              <li>Ściąganie samochodu z drogi Nowy Tomyśl</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Likwidacja szkód komunikacyjnych Nowy Tomyśl</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Obsługa szkody z OC Nowy Tomyśl</h4>
+            <p>Nasza likwidacja szkody z OC Nowy Tomyśl obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Nowy Tomyśl</li>
+              <li>Zgłoszenie szkody komunikacyjnej Nowy Tomyśl</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Nowy Tomyśl</li>
+              <li>Wycena szkody powypadkowej Nowy Tomyśl</li>
+              <li>Kosztorys naprawy z OC sprawcy Nowy Tomyśl</li>
+              <li>Ocena uszkodzeń pojazdu Nowy Tomyśl</li>
+              <li>Odszkodowanie z OC sprawcy Nowy Tomyśl</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Nowy Tomyśl to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">

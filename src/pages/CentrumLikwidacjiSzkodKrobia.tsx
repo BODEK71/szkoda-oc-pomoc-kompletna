@@ -136,8 +136,108 @@ const CentrumLikwidacjiSzkodKrobia = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* SEO Content Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Centrum likwidacji szkód Krobia - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy powypadkowe Krobia - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Krobia oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Krobia, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Naprawy z OC sprawcy Krobia - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Krobia to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Krobia, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Krobia</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Krobia</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Krobia</li>
+              <li>Naprawa powypadkowa bezgotówkowa Krobia</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Blacharstwo powypadkowe Krobia - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Naprawy blacharskie Krobia</h4>
+            <p>Nasz blacharz samochodowy Krobia oferuje profesjonalne usuwanie uszkodzeń powypadkowych Krobia. Naprawy karoserii po stłuczce Krobia wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Lakierowanie samochodów Krobia</h4>
+            <p>Nasze lakierowanie z OC sprawcy Krobia obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Krobia</li>
+              <li>Lakierowanie zderzaka Krobia</li>
+              <li>Lakierowanie maski Krobia</li>
+              <li>Malowanie auta Krobia</li>
+              <li>Lakierowanie powypadkowe Krobia</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Krobia gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Krobia jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Serwis samochodowy Krobia - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Serwis samochodowy po wypadku Krobia</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Krobia oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Krobia</li>
+              <li>Mechanika samochodowa Krobia</li>
+              <li>Naprawa silnika po kolizji Krobia</li>
+              <li>Wymiana rozrządu po wypadku Krobia</li>
+              <li>Naprawa silnika Krobia</li>
+              <li>Przegląd techniczny auta Krobia</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Krobia posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pojazdy zastępcze Krobia - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Samochód zastępczy z OC sprawcy Krobia</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Krobia</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Krobia</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Krobia</li>
+              <li>Auto na czas szkody z OC Krobia</li>
+              <li>Pojazd zastępczy z OC Krobia</li>
+              <li>Samochód na czas likwidacji szkody Krobia</li>
+            </ul>
+            
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Wynajem pojazdów z OC sprawcy Krobia</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Krobia oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Krobia</li>
+              <li>Pojazd zastępczy na czas naprawy Krobia</li>
+              <li>Samochód zastępczy na czas naprawy Krobia</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Krobia</li>
+              <li>Wynajem auta z OC sprawcy Krobia</li>
+              <li>Wynajem pojazdu z OC sprawcy Krobia</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Krobia</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Pomoc drogowa Krobia - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Pomoc drogowa 24h Krobia</h4>
+            <p>Nasza pomoc drogowa 24/7 Krobia oferuje:</p>
+            <ul>
+              <li>Autolaweta Krobia</li>
+              <li>Laweta Krobia</li>
+              <li>Laweta 24h Krobia</li>
+              <li>Usługi lawetą Krobia</li>
+              <li>Holowanie samochodu Krobia</li>
+              <li>Holowanie Krobia</li>
+              <li>Ściąganie samochodu z drogi Krobia</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Likwidacja szkód komunikacyjnych Krobia</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Obsługa szkody z OC Krobia</h4>
+            <p>Nasza likwidacja szkody z OC Krobia obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Krobia</li>
+              <li>Zgłoszenie szkody komunikacyjnej Krobia</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Krobia</li>
+              <li>Wycena szkody powypadkowej Krobia</li>
+              <li>Kosztorys naprawy z OC sprawcy Krobia</li>
+              <li>Ocena uszkodzeń pojazdu Krobia</li>
+              <li>Odszkodowanie z OC sprawcy Krobia</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Krobia to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
