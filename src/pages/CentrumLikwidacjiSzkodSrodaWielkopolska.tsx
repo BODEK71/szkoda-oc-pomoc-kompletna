@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodSrodaWielkopolska = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Środa Wielkopolska - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Środa Wielkopolska - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Środa Wielkopolska oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Środa Wielkopolska, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Środa Wielkopolska - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Środa Wielkopolska to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Środa Wielkopolska, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Środa Wielkopolska</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Środa Wielkopolska</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Środa Wielkopolska</li>
+              <li>Naprawa powypadkowa bezgotówkowa Środa Wielkopolska</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Środa Wielkopolska - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Środa Wielkopolska</h4>
+            <p>Nasz blacharz samochodowy Środa Wielkopolska oferuje profesjonalne usuwanie uszkodzeń powypadkowych Środa Wielkopolska. Naprawy karoserii po stłuczce Środa Wielkopolska wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Środa Wielkopolska</h4>
+            <p>Nasze lakierowanie z OC sprawcy Środa Wielkopolska obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Środa Wielkopolska</li>
+              <li>Lakierowanie zderzaka Środa Wielkopolska</li>
+              <li>Lakierowanie maski Środa Wielkopolska</li>
+              <li>Malowanie auta Środa Wielkopolska</li>
+              <li>Lakierowanie powypadkowe Środa Wielkopolska</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Środa Wielkopolska gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Środa Wielkopolska jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Środa Wielkopolska - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Środa Wielkopolska</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Środa Wielkopolska oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Środa Wielkopolska</li>
+              <li>Mechanika samochodowa Środa Wielkopolska</li>
+              <li>Naprawa silnika po kolizji Środa Wielkopolska</li>
+              <li>Wymiana rozrządu po wypadku Środa Wielkopolska</li>
+              <li>Naprawa silnika Środa Wielkopolska</li>
+              <li>Przegląd techniczny auta Środa Wielkopolska</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Środa Wielkopolska posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Środa Wielkopolska - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Środa Wielkopolska</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Środa Wielkopolska</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Środa Wielkopolska</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Środa Wielkopolska</li>
+              <li>Auto na czas szkody z OC Środa Wielkopolska</li>
+              <li>Pojazd zastępczy z OC Środa Wielkopolska</li>
+              <li>Samochód na czas likwidacji szkody Środa Wielkopolska</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Środa Wielkopolska</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Środa Wielkopolska oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Środa Wielkopolska</li>
+              <li>Pojazd zastępczy na czas naprawy Środa Wielkopolska</li>
+              <li>Samochód zastępczy na czas naprawy Środa Wielkopolska</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Środa Wielkopolska</li>
+              <li>Wynajem auta z OC sprawcy Środa Wielkopolska</li>
+              <li>Wynajem pojazdu z OC sprawcy Środa Wielkopolska</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Środa Wielkopolska</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Środa Wielkopolska - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Środa Wielkopolska</h4>
+            <p>Nasza pomoc drogowa 24/7 Środa Wielkopolska oferuje:</p>
+            <ul>
+              <li>Autolaweta Środa Wielkopolska</li>
+              <li>Laweta Środa Wielkopolska</li>
+              <li>Laweta 24h Środa Wielkopolska</li>
+              <li>Usługi lawetą Środa Wielkopolska</li>
+              <li>Holowanie samochodu Środa Wielkopolska</li>
+              <li>Holowanie Środa Wielkopolska</li>
+              <li>Ściąganie samochodu z drogi Środa Wielkopolska</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Środa Wielkopolska</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Środa Wielkopolska</h4>
+            <p>Nasza likwidacja szkody z OC Środa Wielkopolska obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Środa Wielkopolska</li>
+              <li>Zgłoszenie szkody komunikacyjnej Środa Wielkopolska</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Środa Wielkopolska</li>
+              <li>Wycena szkody powypadkowej Środa Wielkopolska</li>
+              <li>Kosztorys naprawy z OC sprawcy Środa Wielkopolska</li>
+              <li>Ocena uszkodzeń pojazdu Środa Wielkopolska</li>
+              <li>Odszkodowanie z OC sprawcy Środa Wielkopolska</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Środa Wielkopolska to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodWagrowiec = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Wągrowiec - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Wągrowiec - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Wągrowiec oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Wągrowiec, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Wągrowiec - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Wągrowiec to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Wągrowiec, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Wągrowiec</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Wągrowiec</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Wągrowiec</li>
+              <li>Naprawa powypadkowa bezgotówkowa Wągrowiec</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Wągrowiec - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Wągrowiec</h4>
+            <p>Nasz blacharz samochodowy Wągrowiec oferuje profesjonalne usuwanie uszkodzeń powypadkowych Wągrowiec. Naprawy karoserii po stłuczce Wągrowiec wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Wągrowiec</h4>
+            <p>Nasze lakierowanie z OC sprawcy Wągrowiec obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Wągrowiec</li>
+              <li>Lakierowanie zderzaka Wągrowiec</li>
+              <li>Lakierowanie maski Wągrowiec</li>
+              <li>Malowanie auta Wągrowiec</li>
+              <li>Lakierowanie powypadkowe Wągrowiec</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Wągrowiec gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Wągrowiec jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Wągrowiec - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Wągrowiec</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Wągrowiec oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Wągrowiec</li>
+              <li>Mechanika samochodowa Wągrowiec</li>
+              <li>Naprawa silnika po kolizji Wągrowiec</li>
+              <li>Wymiana rozrządu po wypadku Wągrowiec</li>
+              <li>Naprawa silnika Wągrowiec</li>
+              <li>Przegląd techniczny auta Wągrowiec</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Wągrowiec posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Wągrowiec - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Wągrowiec</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Wągrowiec</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Wągrowiec</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Wągrowiec</li>
+              <li>Auto na czas szkody z OC Wągrowiec</li>
+              <li>Pojazd zastępczy z OC Wągrowiec</li>
+              <li>Samochód na czas likwidacji szkody Wągrowiec</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Wągrowiec</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Wągrowiec oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Wągrowiec</li>
+              <li>Pojazd zastępczy na czas naprawy Wągrowiec</li>
+              <li>Samochód zastępczy na czas naprawy Wągrowiec</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Wągrowiec</li>
+              <li>Wynajem auta z OC sprawcy Wągrowiec</li>
+              <li>Wynajem pojazdu z OC sprawcy Wągrowiec</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Wągrowiec</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Wągrowiec - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Wągrowiec</h4>
+            <p>Nasza pomoc drogowa 24/7 Wągrowiec oferuje:</p>
+            <ul>
+              <li>Autolaweta Wągrowiec</li>
+              <li>Laweta Wągrowiec</li>
+              <li>Laweta 24h Wągrowiec</li>
+              <li>Usługi lawetą Wągrowiec</li>
+              <li>Holowanie samochodu Wągrowiec</li>
+              <li>Holowanie Wągrowiec</li>
+              <li>Ściąganie samochodu z drogi Wągrowiec</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Wągrowiec</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Wągrowiec</h4>
+            <p>Nasza likwidacja szkody z OC Wągrowiec obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Wągrowiec</li>
+              <li>Zgłoszenie szkody komunikacyjnej Wągrowiec</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Wągrowiec</li>
+              <li>Wycena szkody powypadkowej Wągrowiec</li>
+              <li>Kosztorys naprawy z OC sprawcy Wągrowiec</li>
+              <li>Ocena uszkodzeń pojazdu Wągrowiec</li>
+              <li>Odszkodowanie z OC sprawcy Wągrowiec</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Wągrowiec to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

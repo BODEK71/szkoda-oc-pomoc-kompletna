@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodSrem = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Śrem - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Śrem - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Śrem oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Śrem, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Śrem - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Śrem to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Śrem, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Śrem</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Śrem</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Śrem</li>
+              <li>Naprawa powypadkowa bezgotówkowa Śrem</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Śrem - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Śrem</h4>
+            <p>Nasz blacharz samochodowy Śrem oferuje profesjonalne usuwanie uszkodzeń powypadkowych Śrem. Naprawy karoserii po stłuczce Śrem wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Śrem</h4>
+            <p>Nasze lakierowanie z OC sprawcy Śrem obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Śrem</li>
+              <li>Lakierowanie zderzaka Śrem</li>
+              <li>Lakierowanie maski Śrem</li>
+              <li>Malowanie auta Śrem</li>
+              <li>Lakierowanie powypadkowe Śrem</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Śrem gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Śrem jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Śrem - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Śrem</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Śrem oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Śrem</li>
+              <li>Mechanika samochodowa Śrem</li>
+              <li>Naprawa silnika po kolizji Śrem</li>
+              <li>Wymiana rozrządu po wypadku Śrem</li>
+              <li>Naprawa silnika Śrem</li>
+              <li>Przegląd techniczny auta Śrem</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Śrem posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Śrem - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Śrem</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Śrem</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Śrem</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Śrem</li>
+              <li>Auto na czas szkody z OC Śrem</li>
+              <li>Pojazd zastępczy z OC Śrem</li>
+              <li>Samochód na czas likwidacji szkody Śrem</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Śrem</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Śrem oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Śrem</li>
+              <li>Pojazd zastępczy na czas naprawy Śrem</li>
+              <li>Samochód zastępczy na czas naprawy Śrem</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Śrem</li>
+              <li>Wynajem auta z OC sprawcy Śrem</li>
+              <li>Wynajem pojazdu z OC sprawcy Śrem</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Śrem</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Śrem - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Śrem</h4>
+            <p>Nasza pomoc drogowa 24/7 Śrem oferuje:</p>
+            <ul>
+              <li>Autolaweta Śrem</li>
+              <li>Laweta Śrem</li>
+              <li>Laweta 24h Śrem</li>
+              <li>Usługi lawetą Śrem</li>
+              <li>Holowanie samochodu Śrem</li>
+              <li>Holowanie Śrem</li>
+              <li>Ściąganie samochodu z drogi Śrem</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Śrem</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Śrem</h4>
+            <p>Nasza likwidacja szkody z OC Śrem obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Śrem</li>
+              <li>Zgłoszenie szkody komunikacyjnej Śrem</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Śrem</li>
+              <li>Wycena szkody powypadkowej Śrem</li>
+              <li>Kosztorys naprawy z OC sprawcy Śrem</li>
+              <li>Ocena uszkodzeń pojazdu Śrem</li>
+              <li>Odszkodowanie z OC sprawcy Śrem</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Śrem to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
