@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodSlupca = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Słupca - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Słupca - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Słupca oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Słupca, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Słupca - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Słupca to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Słupca, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Słupca</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Słupca</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Słupca</li>
+              <li>Naprawa powypadkowa bezgotówkowa Słupca</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Słupca - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Słupca</h4>
+            <p>Nasz blacharz samochodowy Słupca oferuje profesjonalne usuwanie uszkodzeń powypadkowych Słupca. Naprawy karoserii po stłuczce Słupca wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Słupca</h4>
+            <p>Nasze lakierowanie z OC sprawcy Słupca obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Słupca</li>
+              <li>Lakierowanie zderzaka Słupca</li>
+              <li>Lakierowanie maski Słupca</li>
+              <li>Malowanie auta Słupca</li>
+              <li>Lakierowanie powypadkowe Słupca</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Słupca gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Słupca jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Słupca - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Słupca</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Słupca oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Słupca</li>
+              <li>Mechanika samochodowa Słupca</li>
+              <li>Naprawa silnika po kolizji Słupca</li>
+              <li>Wymiana rozrządu po wypadku Słupca</li>
+              <li>Naprawa silnika Słupca</li>
+              <li>Przegląd techniczny auta Słupca</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Słupca posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Słupca - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Słupca</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Słupca</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Słupca</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Słupca</li>
+              <li>Auto na czas szkody z OC Słupca</li>
+              <li>Pojazd zastępczy z OC Słupca</li>
+              <li>Samochód na czas likwidacji szkody Słupca</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Słupca</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Słupca oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Słupca</li>
+              <li>Pojazd zastępczy na czas naprawy Słupca</li>
+              <li>Samochód zastępczy na czas naprawy Słupca</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Słupca</li>
+              <li>Wynajem auta z OC sprawcy Słupca</li>
+              <li>Wynajem pojazdu z OC sprawcy Słupca</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Słupca</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Słupca - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Słupca</h4>
+            <p>Nasza pomoc drogowa 24/7 Słupca oferuje:</p>
+            <ul>
+              <li>Autolaweta Słupca</li>
+              <li>Laweta Słupca</li>
+              <li>Laweta 24h Słupca</li>
+              <li>Usługi lawetą Słupca</li>
+              <li>Holowanie samochodu Słupca</li>
+              <li>Holowanie Słupca</li>
+              <li>Ściąganie samochodu z drogi Słupca</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Słupca</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Słupca</h4>
+            <p>Nasza likwidacja szkody z OC Słupca obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Słupca</li>
+              <li>Zgłoszenie szkody komunikacyjnej Słupca</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Słupca</li>
+              <li>Wycena szkody powypadkowej Słupca</li>
+              <li>Kosztorys naprawy z OC sprawcy Słupca</li>
+              <li>Ocena uszkodzeń pojazdu Słupca</li>
+              <li>Odszkodowanie z OC sprawcy Słupca</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Słupca to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodOpalenica = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Opalenica - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Opalenica - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Opalenica oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Opalenica, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Opalenica - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Opalenica to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Opalenica, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Opalenica</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Opalenica</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Opalenica</li>
+              <li>Naprawa powypadkowa bezgotówkowa Opalenica</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Opalenica - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Opalenica</h4>
+            <p>Nasz blacharz samochodowy Opalenica oferuje profesjonalne usuwanie uszkodzeń powypadkowych Opalenica. Naprawy karoserii po stłuczce Opalenica wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Opalenica</h4>
+            <p>Nasze lakierowanie z OC sprawcy Opalenica obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Opalenica</li>
+              <li>Lakierowanie zderzaka Opalenica</li>
+              <li>Lakierowanie maski Opalenica</li>
+              <li>Malowanie auta Opalenica</li>
+              <li>Lakierowanie powypadkowe Opalenica</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Opalenica gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Opalenica jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Opalenica - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Opalenica</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Opalenica oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Opalenica</li>
+              <li>Mechanika samochodowa Opalenica</li>
+              <li>Naprawa silnika po kolizji Opalenica</li>
+              <li>Wymiana rozrządu po wypadku Opalenica</li>
+              <li>Naprawa silnika Opalenica</li>
+              <li>Przegląd techniczny auta Opalenica</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Opalenica posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Opalenica - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Opalenica</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Opalenica</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Opalenica</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Opalenica</li>
+              <li>Auto na czas szkody z OC Opalenica</li>
+              <li>Pojazd zastępczy z OC Opalenica</li>
+              <li>Samochód na czas likwidacji szkody Opalenica</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Opalenica</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Opalenica oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Opalenica</li>
+              <li>Pojazd zastępczy na czas naprawy Opalenica</li>
+              <li>Samochód zastępczy na czas naprawy Opalenica</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Opalenica</li>
+              <li>Wynajem auta z OC sprawcy Opalenica</li>
+              <li>Wynajem pojazdu z OC sprawcy Opalenica</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Opalenica</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Opalenica - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Opalenica</h4>
+            <p>Nasza pomoc drogowa 24/7 Opalenica oferuje:</p>
+            <ul>
+              <li>Autolaweta Opalenica</li>
+              <li>Laweta Opalenica</li>
+              <li>Laweta 24h Opalenica</li>
+              <li>Usługi lawetą Opalenica</li>
+              <li>Holowanie samochodu Opalenica</li>
+              <li>Holowanie Opalenica</li>
+              <li>Ściąganie samochodu z drogi Opalenica</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Opalenica</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Opalenica</h4>
+            <p>Nasza likwidacja szkody z OC Opalenica obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Opalenica</li>
+              <li>Zgłoszenie szkody komunikacyjnej Opalenica</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Opalenica</li>
+              <li>Wycena szkody powypadkowej Opalenica</li>
+              <li>Kosztorys naprawy z OC sprawcy Opalenica</li>
+              <li>Ocena uszkodzeń pojazdu Opalenica</li>
+              <li>Odszkodowanie z OC sprawcy Opalenica</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Opalenica to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

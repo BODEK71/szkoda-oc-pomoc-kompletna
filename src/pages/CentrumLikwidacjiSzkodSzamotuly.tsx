@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodSzamotuly = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Szamotuły - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Szamotuły - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Szamotuły oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Szamotuły, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Szamotuły - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Szamotuły to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Szamotuły, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Szamotuły</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Szamotuły</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Szamotuły</li>
+              <li>Naprawa powypadkowa bezgotówkowa Szamotuły</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Szamotuły - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Szamotuły</h4>
+            <p>Nasz blacharz samochodowy Szamotuły oferuje profesjonalne usuwanie uszkodzeń powypadkowych Szamotuły. Naprawy karoserii po stłuczce Szamotuły wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Szamotuły</h4>
+            <p>Nasze lakierowanie z OC sprawcy Szamotuły obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Szamotuły</li>
+              <li>Lakierowanie zderzaka Szamotuły</li>
+              <li>Lakierowanie maski Szamotuły</li>
+              <li>Malowanie auta Szamotuły</li>
+              <li>Lakierowanie powypadkowe Szamotuły</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Szamotuły gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Szamotuły jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Szamotuły - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Szamotuły</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Szamotuły oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Szamotuły</li>
+              <li>Mechanika samochodowa Szamotuły</li>
+              <li>Naprawa silnika po kolizji Szamotuły</li>
+              <li>Wymiana rozrządu po wypadku Szamotuły</li>
+              <li>Naprawa silnika Szamotuły</li>
+              <li>Przegląd techniczny auta Szamotuły</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Szamotuły posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Szamotuły - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Szamotuły</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Szamotuły</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Szamotuły</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Szamotuły</li>
+              <li>Auto na czas szkody z OC Szamotuły</li>
+              <li>Pojazd zastępczy z OC Szamotuły</li>
+              <li>Samochód na czas likwidacji szkody Szamotuły</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Szamotuły</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Szamotuły oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Szamotuły</li>
+              <li>Pojazd zastępczy na czas naprawy Szamotuły</li>
+              <li>Samochód zastępczy na czas naprawy Szamotuły</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Szamotuły</li>
+              <li>Wynajem auta z OC sprawcy Szamotuły</li>
+              <li>Wynajem pojazdu z OC sprawcy Szamotuły</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Szamotuły</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Szamotuły - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Szamotuły</h4>
+            <p>Nasza pomoc drogowa 24/7 Szamotuły oferuje:</p>
+            <ul>
+              <li>Autolaweta Szamotuły</li>
+              <li>Laweta Szamotuły</li>
+              <li>Laweta 24h Szamotuły</li>
+              <li>Usługi lawetą Szamotuły</li>
+              <li>Holowanie samochodu Szamotuły</li>
+              <li>Holowanie Szamotuły</li>
+              <li>Ściąganie samochodu z drogi Szamotuły</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Szamotuły</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Szamotuły</h4>
+            <p>Nasza likwidacja szkody z OC Szamotuły obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Szamotuły</li>
+              <li>Zgłoszenie szkody komunikacyjnej Szamotuły</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Szamotuły</li>
+              <li>Wycena szkody powypadkowej Szamotuły</li>
+              <li>Kosztorys naprawy z OC sprawcy Szamotuły</li>
+              <li>Ocena uszkodzeń pojazdu Szamotuły</li>
+              <li>Odszkodowanie z OC sprawcy Szamotuły</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Szamotuły to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

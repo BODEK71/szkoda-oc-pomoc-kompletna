@@ -136,6 +136,106 @@ const CentrumLikwidacjiSzkodOstrowWielkopolski = () => {
         </div>
       </section>
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-primary mb-8">Centrum likwidacji szkód Ostrów Wielkopolski - Kompleksowa obsługa powypadkowa</h2>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy powypadkowe Ostrów Wielkopolski - Profesjonalne usługi dla mieszkańców</h3>
+            <p>Nasze centrum napraw powypadkowych Ostrów Wielkopolski oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Ostrów Wielkopolski, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Naprawy z OC sprawcy Ostrów Wielkopolski - Bezgotówkowa obsługa</h3>
+            <p>Nasza naprawa bezgotówkowa Ostrów Wielkopolski to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Ostrów Wielkopolski, które obejmują:</p>
+            <ul>
+              <li>Naprawa auta po kolizji z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Naprawa auta po wypadku z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Naprawa pojazdu po stłuczce z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Naprawa powypadkowa bezgotówkowa Ostrów Wielkopolski</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Blacharstwo powypadkowe Ostrów Wielkopolski - Specjalistyczne usługi</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Naprawy blacharskie Ostrów Wielkopolski</h4>
+            <p>Nasz blacharz samochodowy Ostrów Wielkopolski oferuje profesjonalne usuwanie uszkodzeń powypadkowych Ostrów Wielkopolski. Naprawy karoserii po stłuczce Ostrów Wielkopolski wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.</p>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Lakierowanie samochodów Ostrów Wielkopolski</h4>
+            <p>Nasze lakierowanie z OC sprawcy Ostrów Wielkopolski obejmuje:</p>
+            <ul>
+              <li>Lakierowanie elementów karoserii Ostrów Wielkopolski</li>
+              <li>Lakierowanie zderzaka Ostrów Wielkopolski</li>
+              <li>Lakierowanie maski Ostrów Wielkopolski</li>
+              <li>Malowanie auta Ostrów Wielkopolski</li>
+              <li>Lakierowanie powypadkowe Ostrów Wielkopolski</li>
+            </ul>
+            <p>Nasz lakiernik samochodowy Ostrów Wielkopolski gwarantuje najwyższą jakość wykonanych prac i naprawa blacharsko-lakiernicza z OC sprawcy Ostrów Wielkopolski jest wykonywana zgodnie ze standardami producentów.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Serwis samochodowy Ostrów Wielkopolski - Kompleksowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Serwis samochodowy po wypadku Ostrów Wielkopolski</h4>
+            <p>Nasz serwis mechaniczny powypadkowy Ostrów Wielkopolski oferuje:</p>
+            <ul>
+              <li>Naprawa samochodów osobowych Ostrów Wielkopolski</li>
+              <li>Mechanika samochodowa Ostrów Wielkopolski</li>
+              <li>Naprawa silnika po kolizji Ostrów Wielkopolski</li>
+              <li>Wymiana rozrządu po wypadku Ostrów Wielkopolski</li>
+              <li>Naprawa silnika Ostrów Wielkopolski</li>
+              <li>Przegląd techniczny auta Ostrów Wielkopolski</li>
+            </ul>
+            <p>Nasz mechanik samochodowy Ostrów Wielkopolski posiada wieloletnie doświadczenie w naprawach powypadkowych.</p>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pojazdy zastępcze Ostrów Wielkopolski - Mobilność podczas naprawy</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Samochód zastępczy z OC sprawcy Ostrów Wielkopolski</h4>
+            <p>Oferujemy kompleksowe usługi wynajmu pojazdów zastępczych:</p>
+            <ul>
+              <li>Auto zastępcze z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Auto zastępcze po wypadku z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Auto zastępcze z OC sprawcy bezgotówkowo Ostrów Wielkopolski</li>
+              <li>Auto na czas szkody z OC Ostrów Wielkopolski</li>
+              <li>Pojazd zastępczy z OC Ostrów Wielkopolski</li>
+              <li>Samochód na czas likwidacji szkody Ostrów Wielkopolski</li>
+            </ul>
+            
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Wynajem pojazdów z OC sprawcy Ostrów Wielkopolski</h4>
+            <p>Nasza wypożyczalnia współpracująca z ubezpieczalniami Ostrów Wielkopolski oferuje:</p>
+            <ul>
+              <li>Auto zastępcze ze szkody sprawcy Ostrów Wielkopolski</li>
+              <li>Pojazd zastępczy na czas naprawy Ostrów Wielkopolski</li>
+              <li>Samochód zastępczy na czas naprawy Ostrów Wielkopolski</li>
+              <li>Wynajem pojazdów zastępczych z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Wynajem auta z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Wynajem pojazdu z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Wynajem samochodu zastępczego z OC sprawcy Ostrów Wielkopolski</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Pomoc drogowa Ostrów Wielkopolski - Całodobowa obsługa</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Pomoc drogowa 24h Ostrów Wielkopolski</h4>
+            <p>Nasza pomoc drogowa 24/7 Ostrów Wielkopolski oferuje:</p>
+            <ul>
+              <li>Autolaweta Ostrów Wielkopolski</li>
+              <li>Laweta Ostrów Wielkopolski</li>
+              <li>Laweta 24h Ostrów Wielkopolski</li>
+              <li>Usługi lawetą Ostrów Wielkopolski</li>
+              <li>Holowanie samochodu Ostrów Wielkopolski</li>
+              <li>Holowanie Ostrów Wielkopolski</li>
+              <li>Ściąganie samochodu z drogi Ostrów Wielkopolski</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-primary mt-8 mb-4">Likwidacja szkód komunikacyjnych Ostrów Wielkopolski</h3>
+            <h4 className="text-xl font-medium text-primary mt-6 mb-3">Obsługa szkody z OC Ostrów Wielkopolski</h4>
+            <p>Nasza likwidacja szkody z OC Ostrów Wielkopolski obejmuje:</p>
+            <ul>
+              <li>Bezpośrednia likwidacja szkód (BLS) Ostrów Wielkopolski</li>
+              <li>Zgłoszenie szkody komunikacyjnej Ostrów Wielkopolski</li>
+              <li>Zgłoszenie szkody ubezpieczeniowej Ostrów Wielkopolski</li>
+              <li>Wycena szkody powypadkowej Ostrów Wielkopolski</li>
+              <li>Kosztorys naprawy z OC sprawcy Ostrów Wielkopolski</li>
+              <li>Ocena uszkodzeń pojazdu Ostrów Wielkopolski</li>
+              <li>Odszkodowanie z OC sprawcy Ostrów Wielkopolski</li>
+            </ul>
+            <p>Nasze centrum napraw powypadkowych Ostrów Wielkopolski to miejsce, gdzie znajdziesz kompleksową pomoc po każdym wypadku drogowym.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
