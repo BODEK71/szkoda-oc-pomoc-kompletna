@@ -72,7 +72,7 @@ const Hero = () => {
   }, [backgroundImages.length]);
 
   return (
-    <section className="relative h-screen flex flex-col overflow-hidden">
+    <section className="relative min-h-screen pt-20 flex flex-col overflow-hidden">
       {/* Background Slideshow with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
@@ -94,69 +94,68 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8">
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-6 sm:py-8">
         {/* Badge */}
-        <div className="mb-6">
-          <Badge className="bg-autoram-gold text-black hover:bg-autoram-gold-dark font-semibold text-sm px-4 py-2 mb-8">
+        <div className="mb-4 sm:mb-6">
+          <Badge className="bg-autoram-gold text-black hover:bg-autoram-gold-dark font-semibold text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 mb-4 sm:mb-8">
             🏢 CENTRUM LIKWIDACJI SZKÓD - WSZYSTKO W JEDNYM MIEJSCU
           </Badge>
           
           {/* Main Title with Typewriter Effect */}
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-3">
-            <span className="text-white block mb-2">{currentText}</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-2 sm:mb-3">
+            <span className="text-white block mb-1 sm:mb-2">{currentText}</span>
             <span className="text-autoram-gold-light bg-gradient-to-r from-autoram-gold to-autoram-gold-light bg-clip-text text-transparent">
               Wszystko w jednym miejscu
             </span>
           </h1>
           
-          <p className="text-lg lg:text-xl text-white/90 leading-relaxed max-w-4xl mx-auto font-light mb-8">
+          <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed max-w-4xl mx-auto font-light mb-4 sm:mb-8 px-2">
             Jedyne miejsce, gdzie załatwisz <span className="text-autoram-gold font-semibold">wszystko po wypadku</span>. 
             Kompleksowa obsługa szkód, naprawy, auto zastępcze i formalności - wszystko pod jednym dachem.
           </p>
 
-
           {/* Trust Indicators */}
-          <div className="grid sm:grid-cols-3 gap-4 text-center mb-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mb-4 sm:mb-8 max-w-2xl mx-auto">
             <div className="flex items-center justify-center space-x-2">
               <Clock className="w-4 h-4 text-autoram-gold animate-pulse" />
-              <span className="text-white/90 font-medium text-sm">Centrum 24/7</span>
+              <span className="text-white/90 font-medium text-xs sm:text-sm">Centrum 24/7</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <div className="w-3 h-3 bg-autoram-red rounded-full animate-pulse"></div>
-              <span className="text-white/90 font-medium text-sm">Bezpłatna konsultacja</span>
+              <span className="text-white/90 font-medium text-xs sm:text-sm">Bezpłatna konsultacja</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-white/90 font-medium text-sm">Natychmiastowa pomoc</span>
+              <span className="text-white/90 font-medium text-xs sm:text-sm">Natychmiastowa pomoc</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* CTA Buttons at bottom of image */}
-      <div className="relative z-10 pb-8">
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+      <div className="relative z-10 pb-4 sm:pb-8">
+        <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center px-4">
           <Button 
             size="lg" 
-            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-xl px-10 py-7 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg"
+            className="bg-autoram-red hover:bg-autoram-red-dark text-white text-sm sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-4 sm:py-6 md:py-7 shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold rounded-lg w-full sm:w-auto"
             asChild
           >
             <a href="tel:+48506066525">
-              <Phone className="w-6 h-6 mr-3" />
-              Centrum Pomocy: +48 506 066 525
+              <Phone className="w-4 h-4 sm:w-5 md:w-6 sm:h-5 md:h-6 mr-2 sm:mr-3" />
+              <span className="truncate">Centrum Pomocy: +48 506 066 525</span>
             </a>
           </Button>
           
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-lg px-8 py-6 border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold rounded-lg backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
+            className="text-sm sm:text-base md:text-lg px-6 sm:px-8 py-4 sm:py-6 border-2 border-autoram-gold text-autoram-gold hover:bg-autoram-gold hover:text-black font-bold rounded-lg backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             asChild
           >
             <a href="https://maps.google.com/maps?q=ul.+Zdrojowa+17,+62-065+Grodzisk+Wielkopolski" target="_blank" rel="noopener noreferrer">
-              <MapPin className="w-5 h-5 mr-3" />
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
               Dojazd do Centrum
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </a>
           </Button>
         </div>
