@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Phone, ArrowRight, MapPin, Clock, Car, Shield, Wrench, Palette, Users } from "lucide-react";
+import { CheckCircle, Phone, ArrowRight, MapPin, Clock, Car, Shield, Wrench, Palette, Users, Zap, DollarSign, FileText, Award } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -10,23 +10,43 @@ const CentrumLikwidacjiSzkodWronki = () => {
   const services = [
     {
       icon: <Car className="w-6 h-6" />,
-      title: "Naprawy powypadkowe",
-      description: "Kompleksowe naprawy pojazdów uszkodzonych w wypadkach"
+      title: "Naprawy powypadkowe Wronki",
+      description: "Kompleksowa obsługa powypadkowa dla mieszkańców Wronek"
     },
     {
       icon: <Wrench className="w-6 h-6" />,
-      title: "Blacharstwo i mechanika", 
-      description: "Profesjonalne usługi blacharskie i mechaniczne"
+      title: "Blacharstwo powypadkowe Wronki", 
+      description: "Profesjonalne usługi blacharskie i mechaniczne po wypadkach"
     },
     {
       icon: <Palette className="w-6 h-6" />,
-      title: "Lakierowanie",
-      description: "Wysokiej jakości lakierowanie pojazdów"
+      title: "Lakierowanie Wronki",
+      description: "Lakierowanie z OC sprawcy - najwyższa jakość wykonanych prac"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Pojazdy zastępcze",
-      description: "Auto zastępcze na czas naprawy"
+      title: "Pojazdy zastępcze Wronki",
+      description: "Auto zastępcze z OC sprawcy na czas naprawy"
+    },
+    {
+      icon: <Zap className="w-6 h-6" />,
+      title: "Pomoc drogowa Wronki",
+      description: "Całodobowa pomoc drogowa i holowanie 24h"
+    },
+    {
+      icon: <Shield className="w-6 h-6" />,
+      title: "Likwidacja szkód Wronki",
+      description: "Bezpośrednia likwidacja szkód (BLS) i obsługa z OC"
+    },
+    {
+      icon: <DollarSign className="w-6 h-6" />,
+      title: "Naprawy bezgotówkowe Wronki",
+      description: "Naprawy ubezpieczeniowe i bezgotówkowe z OC sprawcy"
+    },
+    {
+      icon: <FileText className="w-6 h-6" />,
+      title: "Wycena szkód Wronki",
+      description: "Kosztorys naprawy i ocena uszkodzeń pojazdu"
     }
   ];
 
@@ -66,14 +86,13 @@ const CentrumLikwidacjiSzkodWronki = () => {
             </Badge>
             
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              <span className="text-blue-600">Centrum Likwidacji Szkód</span>
+              <span className="text-blue-600">Centrum likwidacji szkód Wronki</span>
               <br />
-              <span className="text-gray-900">Wronki</span>
+              <span className="text-gray-900">Kompleksowa obsługa powypadkowa</span>
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Profesjonalna obsługa szkód komunikacyjnych we Wronkach. 
-              Kompleksowe naprawy powypadkowe, blacharstwo, lakierowanie i pojazdy zastępcze.
+              Nasze centrum napraw powypadkowych Wronki oferuje kompleksową obsługę powypadkową dla wszystkich mieszkańców miasta i okolic. Specjalizujemy się w naprawach z winy sprawcy Wronki, oferując pełen zakres usług związanych z likwidacją szkód komunikacyjnych.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -132,6 +151,204 @@ const CentrumLikwidacjiSzkodWronki = () => {
                 </CardHeader>
               </Card>
             ))}
+          </div>
+
+          {/* Detailed Services Content */}
+          <div className="mt-20 space-y-16">
+            {/* Naprawy z OC sprawcy */}
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Naprawy z OC sprawcy Wronki - Bezgotówkowa obsługa</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Nasza naprawa bezgotówkowa Wronki to rozwiązanie dla wszystkich poszkodowanych w wypadkach drogowych. Oferujemy naprawy ubezpieczeniowe Wronki, które obejmują:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa auta po kolizji z OC sprawcy Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa auta po wypadku z OC sprawcy Wronki</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa pojazdu po stłuczce z OC sprawcy Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa powypadkowa bezgotówkowa Wronki</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blacharstwo powypadkowe */}
+            <div className="bg-blue-50 rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Blacharstwo powypadkowe Wronki - Specjalistyczne usługi</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Naprawy blacharskie Wronki</h3>
+                  <p className="text-gray-600 mb-4">
+                    Nasz blacharz samochodowy Wronki oferuje profesjonalne usuwanie uszkodzeń powypadkowych Wronki. Naprawy karoserii po stłuczce Wronki wykonujemy przy użyciu najnowocześniejszego sprzętu i technologii.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Lakierowanie samochodów Wronki</h3>
+                  <p className="text-gray-600 mb-4">
+                    Nasze lakierowanie z OC sprawcy Wronki obejmuje lakierowanie elementów karoserii, zderzaka, maski oraz malowanie auta Wronki. Nasz lakiernik samochodowy Wronki gwarantuje najwyższą jakość.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Serwis samochodowy */}
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Serwis samochodowy Wronki - Kompleksowa obsługa</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Nasz serwis mechaniczny powypadkowy Wronki oferuje pełen zakres usług mechanicznych:
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa samochodów osobowych Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Mechanika samochodowa Wronki</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa silnika po kolizji Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Wymiana rozrządu po wypadku Wronki</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Naprawa silnika Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Przegląd techniczny auta Wronki</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pojazdy zastępcze */}
+            <div className="bg-green-50 rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pojazdy zastępcze Wronki - Mobilność podczas naprawy</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Samochód zastępczy z OC sprawcy Wronki</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Auto zastępcze z OC sprawcy Wronki</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Auto zastępcze po wypadku z OC sprawcy Wronki</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Auto zastępcze z OC sprawcy bezgotówkowo Wronki</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Wynajem pojazdów z OC sprawcy Wronki</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Wynajem pojazdów zastępczych z OC sprawcy Wronki</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Wynajem samochodu zastępczego z OC sprawcy Wronki</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Samochód na czas likwidacji szkody Wronki</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pomoc drogowa */}
+            <div className="bg-orange-50 rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pomoc drogowa Wronki - Całodobowa obsługa</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Pomoc drogowa 24h Wronki</h3>
+                  <p className="text-gray-600 mb-4">
+                    Nasza pomoc drogowa 24/7 Wronki oferuje pełen zakres usług holowniczych i transportowych.
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Autolaweta Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Laweta 24h Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Holowanie samochodu Wronki</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Likwidacja szkód */}
+            <div className="bg-purple-50 rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Likwidacja szkód komunikacyjnych Wronki</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Nasza likwidacja szkody z OC Wronki obejmuje pełen zakres usług związanych z obsługą szkód:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Bezpośrednia likwidacja szkód (BLS) Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Zgłoszenie szkody komunikacyjnej Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Zgłoszenie szkody ubezpieczeniowej Wronki</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Wycena szkody powypadkowej Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Kosztorys naprawy z OC sprawcy Wronki</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span>Odszkodowanie z OC sprawcy Wronki</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
